@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace AplicacioEscritori
+namespace Formulari_04
 {
-    public partial class Form4 : Form
+    public partial class Formulari_04 : Form
     {
-        public Form4()
+        public Formulari_04()
         {
             InitializeComponent();
         }
