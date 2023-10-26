@@ -1,0 +1,7 @@
+E:\App_Escritorio_Polistecnics\AplicacioEscritori\AplicacioEscritori\obj\Debug\net6.0-windows\AplicacioEscritori.Form1.resources
+E:\App_Escritorio_Polistecnics\AplicacioEscritori\AplicacioEscritori\obj\Debug\net6.0-windows\Forumario3ByPau.Form1.resources
+E:\App_Escritorio_Polistecnics\AplicacioEscritori\AplicacioEscritori\obj\Debug\net6.0-windows\AplicacioEscritori.csproj.GenerateResource.cache
+E:\App_Escritorio_Polistecnics\AplicacioEscritori\AplicacioEscritori\obj\Debug\net6.0-windows\AplicacioEscritori.GeneratedMSBuildEditorConfig.editorconfig
+E:\App_Escritorio_Polistecnics\AplicacioEscritori\AplicacioEscritori\obj\Debug\net6.0-windows\AplicacioEscritori.AssemblyInfoInputs.cache
+E:\App_Escritorio_Polistecnics\AplicacioEscritori\AplicacioEscritori\obj\Debug\net6.0-windows\AplicacioEscritori.AssemblyInfo.cs
+E:\App_Escritorio_Polistecnics\AplicacioEscritori\AplicacioEscritori\obj\Debug\net6.0-windows\AplicacioEscritori.csproj.CoreCompileInputs.cache
