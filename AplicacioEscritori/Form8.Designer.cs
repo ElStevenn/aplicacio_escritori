@@ -1,16 +1,16 @@
-﻿namespace AplicacioEscritori
+﻿namespace Formulari_08
 {
-    partial class Form8
+    partial class Form1
     {
         /// <summary>
-        /// Required designer variable.
+        /// Variable del diseñador necesaria.
         /// </summary>
         private System.ComponentModel.IContainer components = null;
 
         /// <summary>
-        /// Clean up any resources being used.
+        /// Limpiar los recursos que se estén usando.
         /// </summary>
-        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        /// <param name="disposing">true si los recursos administrados se deben desechar; false en caso contrario.</param>
         protected override void Dispose(bool disposing)
         {
             if (disposing && (components != null))
@@ -20,20 +20,55 @@
             base.Dispose(disposing);
         }
 
-        #region Windows Form Designer generated code
+        #region Código generado por el Diseñador de Windows Forms
 
         /// <summary>
-        /// Required method for Designer support - do not modify
-        /// the contents of this method with the code editor.
+        /// Método necesario para admitir el Diseñador. No se puede modificar
+        /// el contenido de este método con el editor de código.
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form8";
+            button1ConfigPreg = new Button();
+            button2ConfImagPunt = new Button();
+            SuspendLayout();
+            // 
+            // button1ConfigPreg
+            // 
+            button1ConfigPreg.Location = new Point(14, 14);
+            button1ConfigPreg.Margin = new Padding(4, 3, 4, 3);
+            button1ConfigPreg.Name = "button1ConfigPreg";
+            button1ConfigPreg.Size = new Size(226, 27);
+            button1ConfigPreg.TabIndex = 0;
+            button1ConfigPreg.Text = "Configurar preguntes";
+            button1ConfigPreg.UseVisualStyleBackColor = true;
+            // 
+            // button2ConfImagPunt
+            // 
+            button2ConfImagPunt.Location = new Point(14, 48);
+            button2ConfImagPunt.Margin = new Padding(4, 3, 4, 3);
+            button2ConfImagPunt.Name = "button2ConfImagPunt";
+            button2ConfImagPunt.Size = new Size(226, 27);
+            button2ConfImagPunt.TabIndex = 1;
+            button2ConfImagPunt.Text = "Configurar imatges / puntuació";
+            button2ConfImagPunt.UseVisualStyleBackColor = true;
+            // 
+            // Form1
+            // 
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(254, 87);
+            Controls.Add(button2ConfImagPunt);
+            Controls.Add(button1ConfigPreg);
+            Margin = new Padding(4, 3, 4, 3);
+            Name = "Form1";
+            Text = "Formulari_08";
+            ResumeLayout(false);
         }
 
         #endregion
+
+        private Button button1ConfigPreg;
+        private Button button2ConfImagPunt;
     }
 }
+

@@ -5,3 +5,22 @@ E:\App_Escritorio_Polistecnics\AplicacioEscritori\AplicacioEscritori\obj\Debug\n
 E:\App_Escritorio_Polistecnics\AplicacioEscritori\AplicacioEscritori\obj\Debug\net6.0-windows\AplicacioEscritori.AssemblyInfoInputs.cache
 E:\App_Escritorio_Polistecnics\AplicacioEscritori\AplicacioEscritori\obj\Debug\net6.0-windows\AplicacioEscritori.AssemblyInfo.cs
 E:\App_Escritorio_Polistecnics\AplicacioEscritori\AplicacioEscritori\obj\Debug\net6.0-windows\AplicacioEscritori.csproj.CoreCompileInputs.cache
+C:\GDrive_CEP\La meva unitat\M13 Projecte\M13p1_github\escriptori\AplicacioEscritori\obj\Debug\net6.0-windows\AplicacioEscritori.Form1.resources
+C:\GDrive_CEP\La meva unitat\M13 Projecte\M13p1_github\escriptori\AplicacioEscritori\obj\Debug\net6.0-windows\AplicacioEscritori.Form10.resources
+C:\GDrive_CEP\La meva unitat\M13 Projecte\M13p1_github\escriptori\AplicacioEscritori\obj\Debug\net6.0-windows\AplicacioEscritori.Form11.resources
+C:\GDrive_CEP\La meva unitat\M13 Projecte\M13p1_github\escriptori\AplicacioEscritori\obj\Debug\net6.0-windows\AplicacioEscritori.Form12.resources
+C:\GDrive_CEP\La meva unitat\M13 Projecte\M13p1_github\escriptori\AplicacioEscritori\obj\Debug\net6.0-windows\AplicacioEscritori.Form13.resources
+C:\GDrive_CEP\La meva unitat\M13 Projecte\M13p1_github\escriptori\AplicacioEscritori\obj\Debug\net6.0-windows\AplicacioEscritori.Form14.resources
+C:\GDrive_CEP\La meva unitat\M13 Projecte\M13p1_github\escriptori\AplicacioEscritori\obj\Debug\net6.0-windows\AplicacioEscritori.Form2.resources
+C:\GDrive_CEP\La meva unitat\M13 Projecte\M13p1_github\escriptori\AplicacioEscritori\obj\Debug\net6.0-windows\Forumario3ByPau.Form1.resources
+C:\GDrive_CEP\La meva unitat\M13 Projecte\M13p1_github\escriptori\AplicacioEscritori\obj\Debug\net6.0-windows\Formulari_04.Formulari_04.resources
+C:\GDrive_CEP\La meva unitat\M13 Projecte\M13p1_github\escriptori\AplicacioEscritori\obj\Debug\net6.0-windows\AplicacioEscritori.Form5.resources
+C:\GDrive_CEP\La meva unitat\M13 Projecte\M13p1_github\escriptori\AplicacioEscritori\obj\Debug\net6.0-windows\AplicacioEscritori.Form6.resources
+C:\GDrive_CEP\La meva unitat\M13 Projecte\M13p1_github\escriptori\AplicacioEscritori\obj\Debug\net6.0-windows\AplicacioEscritori.Form7.resources
+C:\GDrive_CEP\La meva unitat\M13 Projecte\M13p1_github\escriptori\AplicacioEscritori\obj\Debug\net6.0-windows\Formulari_08.Form1.resources
+C:\GDrive_CEP\La meva unitat\M13 Projecte\M13p1_github\escriptori\AplicacioEscritori\obj\Debug\net6.0-windows\AplicacioEscritori.Form9.resources
+C:\GDrive_CEP\La meva unitat\M13 Projecte\M13p1_github\escriptori\AplicacioEscritori\obj\Debug\net6.0-windows\AplicacioEscritori.csproj.GenerateResource.cache
+C:\GDrive_CEP\La meva unitat\M13 Projecte\M13p1_github\escriptori\AplicacioEscritori\obj\Debug\net6.0-windows\AplicacioEscritori.GeneratedMSBuildEditorConfig.editorconfig
+C:\GDrive_CEP\La meva unitat\M13 Projecte\M13p1_github\escriptori\AplicacioEscritori\obj\Debug\net6.0-windows\AplicacioEscritori.AssemblyInfoInputs.cache
+C:\GDrive_CEP\La meva unitat\M13 Projecte\M13p1_github\escriptori\AplicacioEscritori\obj\Debug\net6.0-windows\AplicacioEscritori.AssemblyInfo.cs
+C:\GDrive_CEP\La meva unitat\M13 Projecte\M13p1_github\escriptori\AplicacioEscritori\obj\Debug\net6.0-windows\AplicacioEscritori.csproj.CoreCompileInputs.cache

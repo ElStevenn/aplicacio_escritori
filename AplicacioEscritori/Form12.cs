@@ -8,13 +8,14 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace AplicacioEscritori
+namespace Formulari_12
 {
-    public partial class Form12 : Form
+    public partial class Formulari_12 : Form
     {
-        public Form12()
+        public Formulari_12()
         {
             InitializeComponent();
         }
+
     }
 }
