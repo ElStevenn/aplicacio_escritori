@@ -8,23 +8,19 @@
     "net6.0-windows7.0": []
   },
   "packageFolders": {
-    "C:\\Users\\cep.CEPNET0\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\cep\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\.POLITECNICS\\GithubProject\\aplicacio_escritori\\AplicacioEscritori\\AplicacioEscritori.csproj",
+      "projectUniqueName": "C:\\Users\\cep\\Source\\Repos\\aplicacio_escritori\\AplicacioEscritori\\AplicacioEscritori.csproj",
       "projectName": "AplicacioEscritori",
-      "projectPath": "E:\\.POLITECNICS\\GithubProject\\aplicacio_escritori\\AplicacioEscritori\\AplicacioEscritori.csproj",
-      "packagesPath": "C:\\Users\\cep.CEPNET0\\.nuget\\packages\\",
-      "outputPath": "E:\\.POLITECNICS\\GithubProject\\aplicacio_escritori\\AplicacioEscritori\\obj\\",
+      "projectPath": "C:\\Users\\cep\\Source\\Repos\\aplicacio_escritori\\AplicacioEscritori\\AplicacioEscritori.csproj",
+      "packagesPath": "C:\\Users\\cep\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\cep\\Source\\Repos\\aplicacio_escritori\\AplicacioEscritori\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-      ],
       "configFilePaths": [
-        "C:\\Users\\cep.CEPNET0\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\cep\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -68,7 +64,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
       }
     }
   }
