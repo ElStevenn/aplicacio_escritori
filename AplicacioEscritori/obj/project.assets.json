@@ -8,19 +8,19 @@
     "net6.0-windows7.0": []
   },
   "packageFolders": {
-    "C:\\Users\\alex\\.nuget\\packages\\": {}
+    "C:\\Users\\cep\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\GDrive_CEP\\La meva unitat\\M13 Projecte\\M13p1_github\\escriptori\\AplicacioEscritori\\AplicacioEscritori.csproj",
+      "projectUniqueName": "C:\\Users\\cep\\Source\\Repos\\aplicacio_escritori\\AplicacioEscritori\\AplicacioEscritori.csproj",
       "projectName": "AplicacioEscritori",
-      "projectPath": "C:\\GDrive_CEP\\La meva unitat\\M13 Projecte\\M13p1_github\\escriptori\\AplicacioEscritori\\AplicacioEscritori.csproj",
-      "packagesPath": "C:\\Users\\alex\\.nuget\\packages\\",
-      "outputPath": "C:\\GDrive_CEP\\La meva unitat\\M13 Projecte\\M13p1_github\\escriptori\\AplicacioEscritori\\obj\\",
+      "projectPath": "C:\\Users\\cep\\Source\\Repos\\aplicacio_escritori\\AplicacioEscritori\\AplicacioEscritori.csproj",
+      "packagesPath": "C:\\Users\\cep\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\cep\\Source\\Repos\\aplicacio_escritori\\AplicacioEscritori\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\alex\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\cep\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
