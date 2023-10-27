@@ -1,4 +1,4 @@
-﻿namespace AplicacioEscritori
+﻿namespace AplicacioEscritori.AplicacioEscritori
 {
     partial class Form13
     {

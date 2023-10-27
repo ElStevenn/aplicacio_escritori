@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace AplicacioEscritori
+namespace AplicacioEscritori.AplicacioEscritori
 {
     public partial class Form13 : Form
     {
