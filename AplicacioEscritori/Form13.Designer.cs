@@ -88,7 +88,7 @@
             this.textBox_dificultad.TabIndex = 5;
             this.textBox_dificultad.Text = "Que dificultad quieres configurar";
             // 
-            // Form1
+            // Form13
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -99,8 +99,8 @@
             this.Controls.Add(this.button_normal);
             this.Controls.Add(this.button_facil);
             this.Controls.Add(this.textBoxformulario13);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Name = "Form13";
+            this.Text = "Form13";
             this.ResumeLayout(false);
             this.PerformLayout();
 

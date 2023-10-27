@@ -117,14 +117,14 @@
             this.pictureBoxElement.TabIndex = 0;
             this.pictureBoxElement.TabStop = false;
             // 
-            // Form1
+            // Form7
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(404, 279);
             this.Controls.Add(this.groupBoxElimElement);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Name = "Form7";
+            this.Text = "Form7";
             this.groupBoxElimElement.ResumeLayout(false);
             this.groupBoxElimElement.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxElement)).EndInit();
