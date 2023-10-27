@@ -28,131 +28,142 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.groupBox1Resultat = new System.Windows.Forms.GroupBox();
-            this.radioButton1ZeroQuatre = new System.Windows.Forms.RadioButton();
-            this.radioButton2CincVuit = new System.Windows.Forms.RadioButton();
-            this.radioButton3NouDeu = new System.Windows.Forms.RadioButton();
-            this.label1 = new System.Windows.Forms.Label();
-            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
-            this.groupBox2ImatgeVehicle = new System.Windows.Forms.GroupBox();
-            this.button2Enrere = new System.Windows.Forms.Button();
-            this.button3ConfirmarCanvis = new System.Windows.Forms.Button();
-            this.button1SeleccionarImatge = new System.Windows.Forms.Button();
-            this.groupBox1Resultat.SuspendLayout();
-            this.SuspendLayout();
+            groupBox1Resultat = new GroupBox();
+            radioButton3NouDeu = new RadioButton();
+            radioButton2CincVuit = new RadioButton();
+            radioButton1ZeroQuatre = new RadioButton();
+            label1 = new Label();
+            openFileDialog1 = new OpenFileDialog();
+            groupBox2ImatgeVehicle = new GroupBox();
+            button2Enrere = new Button();
+            button3ConfirmarCanvis = new Button();
+            button1SeleccionarImatge = new Button();
+            groupBox1Resultat.SuspendLayout();
+            SuspendLayout();
             // 
             // groupBox1Resultat
             // 
-            this.groupBox1Resultat.Controls.Add(this.radioButton3NouDeu);
-            this.groupBox1Resultat.Controls.Add(this.radioButton2CincVuit);
-            this.groupBox1Resultat.Controls.Add(this.radioButton1ZeroQuatre);
-            this.groupBox1Resultat.Location = new System.Drawing.Point(13, 12);
-            this.groupBox1Resultat.Name = "groupBox1Resultat";
-            this.groupBox1Resultat.Size = new System.Drawing.Size(234, 46);
-            this.groupBox1Resultat.TabIndex = 0;
-            this.groupBox1Resultat.TabStop = false;
-            this.groupBox1Resultat.Text = "Resultat:";
-            // 
-            // radioButton1ZeroQuatre
-            // 
-            this.radioButton1ZeroQuatre.AutoSize = true;
-            this.radioButton1ZeroQuatre.Location = new System.Drawing.Point(6, 19);
-            this.radioButton1ZeroQuatre.Name = "radioButton1ZeroQuatre";
-            this.radioButton1ZeroQuatre.Size = new System.Drawing.Size(40, 17);
-            this.radioButton1ZeroQuatre.TabIndex = 0;
-            this.radioButton1ZeroQuatre.TabStop = true;
-            this.radioButton1ZeroQuatre.Text = "0-4";
-            this.radioButton1ZeroQuatre.UseVisualStyleBackColor = true;
-            // 
-            // radioButton2CincVuit
-            // 
-            this.radioButton2CincVuit.AutoSize = true;
-            this.radioButton2CincVuit.Location = new System.Drawing.Point(52, 19);
-            this.radioButton2CincVuit.Name = "radioButton2CincVuit";
-            this.radioButton2CincVuit.Size = new System.Drawing.Size(40, 17);
-            this.radioButton2CincVuit.TabIndex = 1;
-            this.radioButton2CincVuit.TabStop = true;
-            this.radioButton2CincVuit.Text = "5-8";
-            this.radioButton2CincVuit.UseVisualStyleBackColor = true;
+            groupBox1Resultat.Controls.Add(radioButton3NouDeu);
+            groupBox1Resultat.Controls.Add(radioButton2CincVuit);
+            groupBox1Resultat.Controls.Add(radioButton1ZeroQuatre);
+            groupBox1Resultat.Location = new Point(28, 30);
+            groupBox1Resultat.Margin = new Padding(6, 7, 6, 7);
+            groupBox1Resultat.Name = "groupBox1Resultat";
+            groupBox1Resultat.Padding = new Padding(6, 7, 6, 7);
+            groupBox1Resultat.Size = new Size(507, 113);
+            groupBox1Resultat.TabIndex = 0;
+            groupBox1Resultat.TabStop = false;
+            groupBox1Resultat.Text = "Resultat:";
             // 
             // radioButton3NouDeu
             // 
-            this.radioButton3NouDeu.AutoSize = true;
-            this.radioButton3NouDeu.Location = new System.Drawing.Point(98, 19);
-            this.radioButton3NouDeu.Name = "radioButton3NouDeu";
-            this.radioButton3NouDeu.Size = new System.Drawing.Size(46, 17);
-            this.radioButton3NouDeu.TabIndex = 2;
-            this.radioButton3NouDeu.TabStop = true;
-            this.radioButton3NouDeu.Text = "9-10";
-            this.radioButton3NouDeu.UseVisualStyleBackColor = true;
+            radioButton3NouDeu.AutoSize = true;
+            radioButton3NouDeu.Location = new Point(212, 47);
+            radioButton3NouDeu.Margin = new Padding(6, 7, 6, 7);
+            radioButton3NouDeu.Name = "radioButton3NouDeu";
+            radioButton3NouDeu.Size = new Size(94, 36);
+            radioButton3NouDeu.TabIndex = 2;
+            radioButton3NouDeu.TabStop = true;
+            radioButton3NouDeu.Text = "9-10";
+            radioButton3NouDeu.UseVisualStyleBackColor = true;
+            // 
+            // radioButton2CincVuit
+            // 
+            radioButton2CincVuit.AutoSize = true;
+            radioButton2CincVuit.Location = new Point(113, 47);
+            radioButton2CincVuit.Margin = new Padding(6, 7, 6, 7);
+            radioButton2CincVuit.Name = "radioButton2CincVuit";
+            radioButton2CincVuit.Size = new Size(81, 36);
+            radioButton2CincVuit.TabIndex = 1;
+            radioButton2CincVuit.TabStop = true;
+            radioButton2CincVuit.Text = "5-8";
+            radioButton2CincVuit.UseVisualStyleBackColor = true;
+            // 
+            // radioButton1ZeroQuatre
+            // 
+            radioButton1ZeroQuatre.AutoSize = true;
+            radioButton1ZeroQuatre.Location = new Point(13, 47);
+            radioButton1ZeroQuatre.Margin = new Padding(6, 7, 6, 7);
+            radioButton1ZeroQuatre.Name = "radioButton1ZeroQuatre";
+            radioButton1ZeroQuatre.Size = new Size(81, 36);
+            radioButton1ZeroQuatre.TabIndex = 0;
+            radioButton1ZeroQuatre.TabStop = true;
+            radioButton1ZeroQuatre.Text = "0-4";
+            radioButton1ZeroQuatre.UseVisualStyleBackColor = true;
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(13, 71);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(122, 13);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Escollir vehicle assignat:";
+            label1.AutoSize = true;
+            label1.Location = new Point(28, 175);
+            label1.Margin = new Padding(6, 0, 6, 0);
+            label1.Name = "label1";
+            label1.Size = new Size(267, 32);
+            label1.TabIndex = 1;
+            label1.Text = "Escollir vehicle assignat:";
             // 
             // openFileDialog1
             // 
-            this.openFileDialog1.FileName = "openFileDialog1";
+            openFileDialog1.FileName = "openFileDialog1";
             // 
             // groupBox2ImatgeVehicle
             // 
-            this.groupBox2ImatgeVehicle.Location = new System.Drawing.Point(12, 95);
-            this.groupBox2ImatgeVehicle.Name = "groupBox2ImatgeVehicle";
-            this.groupBox2ImatgeVehicle.Size = new System.Drawing.Size(235, 100);
-            this.groupBox2ImatgeVehicle.TabIndex = 2;
-            this.groupBox2ImatgeVehicle.TabStop = false;
-            this.groupBox2ImatgeVehicle.Text = "Imatge Seleccionada:";
+            groupBox2ImatgeVehicle.Location = new Point(26, 234);
+            groupBox2ImatgeVehicle.Margin = new Padding(6, 7, 6, 7);
+            groupBox2ImatgeVehicle.Name = "groupBox2ImatgeVehicle";
+            groupBox2ImatgeVehicle.Padding = new Padding(6, 7, 6, 7);
+            groupBox2ImatgeVehicle.Size = new Size(509, 246);
+            groupBox2ImatgeVehicle.TabIndex = 2;
+            groupBox2ImatgeVehicle.TabStop = false;
+            groupBox2ImatgeVehicle.Text = "Imatge Seleccionada:";
             // 
             // button2Enrere
             // 
-            this.button2Enrere.Location = new System.Drawing.Point(13, 201);
-            this.button2Enrere.Name = "button2Enrere";
-            this.button2Enrere.Size = new System.Drawing.Size(75, 23);
-            this.button2Enrere.TabIndex = 3;
-            this.button2Enrere.Text = "Enrere";
-            this.button2Enrere.UseVisualStyleBackColor = true;
+            button2Enrere.Location = new Point(28, 495);
+            button2Enrere.Margin = new Padding(6, 7, 6, 7);
+            button2Enrere.Name = "button2Enrere";
+            button2Enrere.Size = new Size(162, 57);
+            button2Enrere.TabIndex = 3;
+            button2Enrere.Text = "Enrere";
+            button2Enrere.UseVisualStyleBackColor = true;
             // 
             // button3ConfirmarCanvis
             // 
-            this.button3ConfirmarCanvis.Location = new System.Drawing.Point(172, 201);
-            this.button3ConfirmarCanvis.Name = "button3ConfirmarCanvis";
-            this.button3ConfirmarCanvis.Size = new System.Drawing.Size(75, 23);
-            this.button3ConfirmarCanvis.TabIndex = 4;
-            this.button3ConfirmarCanvis.Text = "Confirmar canvis";
-            this.button3ConfirmarCanvis.UseVisualStyleBackColor = true;
+            button3ConfirmarCanvis.Location = new Point(373, 495);
+            button3ConfirmarCanvis.Margin = new Padding(6, 7, 6, 7);
+            button3ConfirmarCanvis.Name = "button3ConfirmarCanvis";
+            button3ConfirmarCanvis.Size = new Size(162, 57);
+            button3ConfirmarCanvis.TabIndex = 4;
+            button3ConfirmarCanvis.Text = "Confirmar canvis";
+            button3ConfirmarCanvis.UseVisualStyleBackColor = true;
             // 
             // button1SeleccionarImatge
             // 
-            this.button1SeleccionarImatge.Location = new System.Drawing.Point(163, 66);
-            this.button1SeleccionarImatge.Name = "button1SeleccionarImatge";
-            this.button1SeleccionarImatge.Size = new System.Drawing.Size(84, 23);
-            this.button1SeleccionarImatge.TabIndex = 5;
-            this.button1SeleccionarImatge.Text = "Seleccionar...";
-            this.button1SeleccionarImatge.UseVisualStyleBackColor = true;
+            button1SeleccionarImatge.Location = new Point(353, 162);
+            button1SeleccionarImatge.Margin = new Padding(6, 7, 6, 7);
+            button1SeleccionarImatge.Name = "button1SeleccionarImatge";
+            button1SeleccionarImatge.Size = new Size(182, 57);
+            button1SeleccionarImatge.TabIndex = 5;
+            button1SeleccionarImatge.Text = "Seleccionar...";
+            button1SeleccionarImatge.UseVisualStyleBackColor = true;
             // 
             // Formulari_14
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(259, 236);
-            this.Controls.Add(this.button1SeleccionarImatge);
-            this.Controls.Add(this.button3ConfirmarCanvis);
-            this.Controls.Add(this.button2Enrere);
-            this.Controls.Add(this.groupBox2ImatgeVehicle);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.groupBox1Resultat);
-            this.Name = "Formulari_14";
-            this.Text = "Formulari 14";
-            this.groupBox1Resultat.ResumeLayout(false);
-            this.groupBox1Resultat.PerformLayout();
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new SizeF(13F, 32F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(574, 581);
+            Controls.Add(button1SeleccionarImatge);
+            Controls.Add(button3ConfirmarCanvis);
+            Controls.Add(button2Enrere);
+            Controls.Add(groupBox2ImatgeVehicle);
+            Controls.Add(label1);
+            Controls.Add(groupBox1Resultat);
+            Margin = new Padding(6, 7, 6, 7);
+            Name = "Formulari_14";
+            Text = "Formulari 14";
+            groupBox1Resultat.ResumeLayout(false);
+            groupBox1Resultat.PerformLayout();
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
