@@ -1,6 +1,6 @@
 ﻿namespace Formulari_08
 {
-    partial class Form1
+    partial class Form8
     {
         /// <summary>
         /// Variable del diseñador necesaria.
@@ -52,7 +52,7 @@
             button2ConfImagPunt.Text = "Configurar imatges / puntuació";
             button2ConfImagPunt.UseVisualStyleBackColor = true;
             // 
-            // Form1
+            // Form8
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -60,7 +60,7 @@
             Controls.Add(button2ConfImagPunt);
             Controls.Add(button1ConfigPreg);
             Margin = new Padding(4, 3, 4, 3);
-            Name = "Form1";
+            Name = "Form8";
             Text = "Formulari_08";
             ResumeLayout(false);
         }

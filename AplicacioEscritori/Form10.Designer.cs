@@ -1,4 +1,4 @@
-﻿namespace AplicacioEscritori
+namespace AplicacioEscritori
 {
     partial class Form10
     {
@@ -138,14 +138,14 @@
             this.labelCreando.TabIndex = 10;
             this.labelCreando.Text = "Creado x preguntas";
             // 
-            // Form1
+            // Form10
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(309, 244);
             this.Controls.Add(this.groupBoxFrom);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Name = "Form10";
+            this.Text = "Form10";
           
             this.groupBoxFrom.ResumeLayout(false);
             this.groupBoxFrom.PerformLayout();

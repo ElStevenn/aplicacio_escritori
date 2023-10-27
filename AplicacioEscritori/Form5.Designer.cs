@@ -164,7 +164,7 @@
             this.button_generar.Text = "Generar elemento";
             this.button_generar.UseVisualStyleBackColor = true;
             // 
-            // Form1
+            // Form5
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -179,8 +179,8 @@
             this.Controls.Add(this.comboBox_selecciona);
             this.Controls.Add(this.textBox_selecciona);
             this.Controls.Add(this.textBox_from5);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Name = "Form5";
+            this.Text = "Form5";
             this.groupBox_RadioButtons.ResumeLayout(false);
             this.groupBox_RadioButtons.PerformLayout();
             this.ResumeLayout(false);

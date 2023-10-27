@@ -1,6 +1,6 @@
 ﻿namespace Forumario3ByPau
 {
-    partial class Form1
+    partial class Form3
     {
         /// <summary>
         ///  Required designer variable.
@@ -143,7 +143,7 @@
             button2.Text = "Siguiente";
             button2.UseVisualStyleBackColor = true;
             // 
-            // Form1
+            // Form3
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -159,8 +159,8 @@
             Controls.Add(textBox3);
             Controls.Add(textBox2);
             Controls.Add(textBox1);
-            Name = "Form1";
-            Text = "Form1";
+            Name = "Form3";
+            Text = "Form3";
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
