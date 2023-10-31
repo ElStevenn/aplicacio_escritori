@@ -30,6 +30,11 @@ C:\Users\alex\Source\Repos\aplicacio_escritori\AppEscritori\obj\Debug\net6.0-win
 C:\Users\alex\Source\Repos\aplicacio_escritori\AppEscritori\obj\Debug\net6.0-windows\AppEscritori.pdb
 C:\Users\alex\Source\Repos\aplicacio_escritori\AppEscritori\obj\Debug\net6.0-windows\AppEscritori.genruntimeconfig.cache
 C:\Users\alex\Source\Repos\aplicacio_escritori\AppEscritori\obj\Debug\net6.0-windows\ref\AppEscritori.dll
+<<<<<<< HEAD
 C:\Users\alex\source\repos\aplicacio_escritori\AppEscritori\obj\Debug\net6.0-windows\AppEscritori.Login.resources
 C:\Users\alex\source\repos\aplicacio_escritori\AppEscritori\obj\Debug\net6.0-windows\AppEscritori.Camps.resources
 C:\Users\alex\source\repos\aplicacio_escritori\AppEscritori\obj\Debug\net6.0-windows\AppEscritori.Menu.resources
+=======
+E:\App_Escritorio_Polistecnics\aplicacio_escritori\AppEscritori\obj\Debug\net6.0-windows\AppEscritori.Login.resources
+E:\App_Escritorio_Polistecnics\aplicacio_escritori\AppEscritori\obj\Debug\net6.0-windows\AppEscritori.Menu.resources
+>>>>>>> Formulario 3 creado
