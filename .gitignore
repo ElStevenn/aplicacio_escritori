@@ -2,3 +2,4 @@
 /.vs/
 /AppEscritori/Program.cs
 /AppEscritori/bin/Debug/*
+/AppEscritori/obj/
