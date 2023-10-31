@@ -1,0 +1,16 @@
+E:\App_Escritorio_Polistecnics\aplicacio_escritori\AppEscritori\bin\Debug\net6.0-windows\AppEscritori.exe
+E:\App_Escritorio_Polistecnics\aplicacio_escritori\AppEscritori\bin\Debug\net6.0-windows\AppEscritori.deps.json
+E:\App_Escritorio_Polistecnics\aplicacio_escritori\AppEscritori\bin\Debug\net6.0-windows\AppEscritori.runtimeconfig.json
+E:\App_Escritorio_Polistecnics\aplicacio_escritori\AppEscritori\bin\Debug\net6.0-windows\AppEscritori.dll
+E:\App_Escritorio_Polistecnics\aplicacio_escritori\AppEscritori\bin\Debug\net6.0-windows\AppEscritori.pdb
+E:\App_Escritorio_Polistecnics\aplicacio_escritori\AppEscritori\obj\Debug\net6.0-windows\AppEscritori.Form1.resources
+E:\App_Escritorio_Polistecnics\aplicacio_escritori\AppEscritori\obj\Debug\net6.0-windows\AppEscritori.csproj.GenerateResource.cache
+E:\App_Escritorio_Polistecnics\aplicacio_escritori\AppEscritori\obj\Debug\net6.0-windows\AppEscritori.GeneratedMSBuildEditorConfig.editorconfig
+E:\App_Escritorio_Polistecnics\aplicacio_escritori\AppEscritori\obj\Debug\net6.0-windows\AppEscritori.AssemblyInfoInputs.cache
+E:\App_Escritorio_Polistecnics\aplicacio_escritori\AppEscritori\obj\Debug\net6.0-windows\AppEscritori.AssemblyInfo.cs
+E:\App_Escritorio_Polistecnics\aplicacio_escritori\AppEscritori\obj\Debug\net6.0-windows\AppEscritori.csproj.CoreCompileInputs.cache
+E:\App_Escritorio_Polistecnics\aplicacio_escritori\AppEscritori\obj\Debug\net6.0-windows\AppEscritori.dll
+E:\App_Escritorio_Polistecnics\aplicacio_escritori\AppEscritori\obj\Debug\net6.0-windows\refint\AppEscritori.dll
+E:\App_Escritorio_Polistecnics\aplicacio_escritori\AppEscritori\obj\Debug\net6.0-windows\AppEscritori.pdb
+E:\App_Escritorio_Polistecnics\aplicacio_escritori\AppEscritori\obj\Debug\net6.0-windows\AppEscritori.genruntimeconfig.cache
+E:\App_Escritorio_Polistecnics\aplicacio_escritori\AppEscritori\obj\Debug\net6.0-windows\ref\AppEscritori.dll
