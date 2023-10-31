@@ -1,23 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "E:\\App_Escritorio_Polistecnics\\aplicacio_escritori\\AppEscritori\\AppEscritori.csproj": {}
+    "C:\\Users\\alex\\source\\repos\\aplicacio_escritori\\AppEscritori\\AppEscritori.csproj": {}
   },
   "projects": {
-    "E:\\App_Escritorio_Polistecnics\\aplicacio_escritori\\AppEscritori\\AppEscritori.csproj": {
+    "C:\\Users\\alex\\source\\repos\\aplicacio_escritori\\AppEscritori\\AppEscritori.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\App_Escritorio_Polistecnics\\aplicacio_escritori\\AppEscritori\\AppEscritori.csproj",
+        "projectUniqueName": "C:\\Users\\alex\\source\\repos\\aplicacio_escritori\\AppEscritori\\AppEscritori.csproj",
         "projectName": "AppEscritori",
-        "projectPath": "E:\\App_Escritorio_Polistecnics\\aplicacio_escritori\\AppEscritori\\AppEscritori.csproj",
-        "packagesPath": "C:\\Users\\cep\\.nuget\\packages\\",
-        "outputPath": "E:\\App_Escritorio_Polistecnics\\aplicacio_escritori\\AppEscritori\\obj\\",
+        "projectPath": "C:\\Users\\alex\\source\\repos\\aplicacio_escritori\\AppEscritori\\AppEscritori.csproj",
+        "packagesPath": "C:\\Users\\alex\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\alex\\Source\\Repos\\aplicacio_escritori\\AppEscritori\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\cep\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\alex\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -61,7 +58,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     }
