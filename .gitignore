@@ -1,2 +1,3 @@
 # Creo que es este fichero el que tenemos que ignorar
 /.vs/
+/AppEscritori/Program.cs
