@@ -45,7 +45,7 @@
             labelCreando.Location = new Point(217, 30);
             labelCreando.Margin = new Padding(4, 0, 4, 0);
             labelCreando.Name = "labelCreando";
-            labelCreando.Size = new Size(110, 15);
+            labelCreando.Size = new Size(109, 15);
             labelCreando.TabIndex = 19;
             labelCreando.Text = "Creado x preguntas";
             // 
@@ -140,6 +140,7 @@
             Controls.Add(textBoxIncorr2);
             Controls.Add(labelIncorrecta);
             Controls.Add(textBoxIncorr1);
+            FormBorderStyle = FormBorderStyle.FixedSingle;
             Margin = new Padding(4, 3, 4, 3);
             Name = "AñadirPregunta";
             Text = "Form10";

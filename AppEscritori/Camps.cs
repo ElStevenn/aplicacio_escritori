@@ -16,5 +16,13 @@ namespace AppEscritori
         {
             InitializeComponent();
         }
+
+        private void button2Siguiente_Click(object sender, EventArgs e)
+        {
+            CampsFinal  campsFinal = new CampsFinal();
+            campsFinal.Show();
+            this.Hide();
+        }
+
     }
 }

@@ -39,8 +39,8 @@
             pictureBox1 = new PictureBox();
             textBox4 = new TextBox();
             label4 = new Label();
-            button1 = new Button();
-            button2 = new Button();
+            buttonAtras = new Button();
+            buttonSiguiente = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
@@ -126,31 +126,32 @@
             label4.TabIndex = 11;
             label4.Text = "Descripción elemento";
             // 
-            // button1
+            // buttonAtras
             // 
-            button1.Location = new Point(12, 312);
-            button1.Name = "button1";
-            button1.Size = new Size(133, 23);
-            button1.TabIndex = 12;
-            button1.Text = "Atrás";
-            button1.UseVisualStyleBackColor = true;
+            buttonAtras.Location = new Point(12, 312);
+            buttonAtras.Name = "buttonAtras";
+            buttonAtras.Size = new Size(133, 23);
+            buttonAtras.TabIndex = 12;
+            buttonAtras.Text = "Atrás";
+            buttonAtras.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // buttonSiguiente
             // 
-            button2.Location = new Point(431, 312);
-            button2.Name = "button2";
-            button2.Size = new Size(133, 23);
-            button2.TabIndex = 13;
-            button2.Text = "Siguiente";
-            button2.UseVisualStyleBackColor = true;
+            buttonSiguiente.Location = new Point(431, 312);
+            buttonSiguiente.Name = "buttonSiguiente";
+            buttonSiguiente.Size = new Size(133, 23);
+            buttonSiguiente.TabIndex = 13;
+            buttonSiguiente.Text = "Siguiente";
+            buttonSiguiente.UseVisualStyleBackColor = true;
+            buttonSiguiente.Click += buttonSiguiente_Click;
             // 
             // CampsMain
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(576, 345);
-            Controls.Add(button2);
-            Controls.Add(button1);
+            Controls.Add(buttonSiguiente);
+            Controls.Add(buttonAtras);
             Controls.Add(label4);
             Controls.Add(textBox4);
             Controls.Add(pictureBox1);
@@ -179,7 +180,7 @@
         private PictureBox pictureBox1;
         private TextBox textBox4;
         private Label label4;
-        private Button button1;
-        private Button button2;
+        private Button buttonAtras;
+        private Button buttonSiguiente;
     }
 }

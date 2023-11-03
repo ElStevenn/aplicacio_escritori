@@ -12,9 +12,30 @@ namespace AppEscritori
 {
     public partial class Menu : Form
     {
+        Login login;
         public Menu()
         {
             InitializeComponent();
+        }
+        public Menu(Login login)
+        {
+            InitializeComponent();
+            this.login = login;
+        }
+
+        private void buttonCrearElemento_Click(object sender, EventArgs e)
+        {
+            CampsMain campsMain = new CampsMain();
+            campsMain.Show();
+            this.Hide();
+
+        }
+
+        private void salirToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            login.Show();
+            
         }
     }
 }

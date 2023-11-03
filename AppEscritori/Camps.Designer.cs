@@ -46,7 +46,7 @@
             textBox16Longitud = new TextBox();
             textBox17Pes = new TextBox();
             button1Enrere = new Button();
-            button2Enrere = new Button();
+            button2Siguiente = new Button();
             SuspendLayout();
             // 
             // textBox1Autonomia
@@ -212,22 +212,23 @@
             button1Enrere.Text = "Enrere";
             button1Enrere.UseVisualStyleBackColor = true;
             // 
-            // button2Enrere
+            // button2Siguiente
             // 
-            button2Enrere.Location = new Point(363, 337);
-            button2Enrere.Margin = new Padding(4, 3, 4, 3);
-            button2Enrere.Name = "button2Enrere";
-            button2Enrere.Size = new Size(88, 27);
-            button2Enrere.TabIndex = 22;
-            button2Enrere.Text = "Següent";
-            button2Enrere.UseVisualStyleBackColor = true;
+            button2Siguiente.Location = new Point(363, 337);
+            button2Siguiente.Margin = new Padding(4, 3, 4, 3);
+            button2Siguiente.Name = "button2Siguiente";
+            button2Siguiente.Size = new Size(88, 27);
+            button2Siguiente.TabIndex = 22;
+            button2Siguiente.Text = "Siguiente";
+            button2Siguiente.UseVisualStyleBackColor = true;
+            button2Siguiente.Click += button2Siguiente_Click;
             // 
             // Camps
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(464, 372);
-            Controls.Add(button2Enrere);
+            Controls.Add(button2Siguiente);
             Controls.Add(button1Enrere);
             Controls.Add(textBox17Pes);
             Controls.Add(textBox16Longitud);
@@ -273,6 +274,6 @@
         private TextBox textBox16Longitud;
         private TextBox textBox17Pes;
         private Button button1Enrere;
-        private Button button2Enrere;
+        private Button button2Siguiente;
     }
 }

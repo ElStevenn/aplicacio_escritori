@@ -47,6 +47,7 @@
             buttonCrearElemento.TabIndex = 0;
             buttonCrearElemento.Text = "Crear Elemento";
             buttonCrearElemento.UseVisualStyleBackColor = true;
+            buttonCrearElemento.Click += buttonCrearElemento_Click;
             // 
             // buttonModElemento
             // 
@@ -93,6 +94,7 @@
             salirToolStripMenuItem.Name = "salirToolStripMenuItem";
             salirToolStripMenuItem.Size = new Size(106, 20);
             salirToolStripMenuItem.Text = "Cambiar usuario";
+            salirToolStripMenuItem.Click += salirToolStripMenuItem_Click;
             // 
             // labelHolaUsuari
             // 

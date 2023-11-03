@@ -16,5 +16,14 @@ namespace AppEscritori
         {
             InitializeComponent();
         }
+
+        private void button_generar_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Elemento guardado con éxito.");
+            Menu menu = new Menu();
+            menu.Show();
+            this.Hide();
+
+        }
     }
 }

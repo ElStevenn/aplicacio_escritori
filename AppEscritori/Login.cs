@@ -16,5 +16,13 @@ namespace AppEscritori
         {
             InitializeComponent();
         }
+
+        private void button_login_Click(object sender, EventArgs e)
+        {
+            Menu menu = new Menu(this);
+            menu.Show();
+            this.Hide();
+
+        }
     }
 }

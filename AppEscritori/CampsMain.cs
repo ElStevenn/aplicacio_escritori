@@ -12,6 +12,7 @@ namespace AppEscritori
 {
     public partial class CampsMain : Form
     {
+
         public CampsMain()
         {
             InitializeComponent();
@@ -26,5 +27,13 @@ namespace AppEscritori
         {
 
         }
+
+        private void buttonSiguiente_Click(object sender, EventArgs e)
+        {
+            Camps camps = new Camps();
+            camps.Show();
+            this.Hide();
+        }
+
     }
 }

@@ -167,6 +167,7 @@
             button_generar.TabIndex = 9;
             button_generar.Text = "Confirmar";
             button_generar.UseVisualStyleBackColor = true;
+            button_generar.Click += button_generar_Click;
             // 
             // CampsFinal
             // 
