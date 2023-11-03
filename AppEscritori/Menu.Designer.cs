@@ -28,111 +28,115 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Menu));
-            this.buttonCrearElemento = new System.Windows.Forms.Button();
-            this.buttonModElemento = new System.Windows.Forms.Button();
-            this.buttonEliminarElemento = new System.Windows.Forms.Button();
-            this.buttonConfJuego = new System.Windows.Forms.Button();
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.salirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.labelUsuari = new System.Windows.Forms.Label();
-            this.menuStrip1.SuspendLayout();
-            this.SuspendLayout();
+            buttonCrearElemento = new Button();
+            buttonModElemento = new Button();
+            buttonEliminarElemento = new Button();
+            buttonConfJuego = new Button();
+            menuStrip1 = new MenuStrip();
+            salirToolStripMenuItem = new ToolStripMenuItem();
+            labelHolaUsuari = new Label();
+            menuStrip1.SuspendLayout();
+            SuspendLayout();
             // 
             // buttonCrearElemento
             // 
-            this.buttonCrearElemento.Location = new System.Drawing.Point(92, 75);
-            this.buttonCrearElemento.Name = "buttonCrearElemento";
-            this.buttonCrearElemento.Size = new System.Drawing.Size(209, 31);
-            this.buttonCrearElemento.TabIndex = 0;
-            this.buttonCrearElemento.Text = "Crear Elemento";
-            this.buttonCrearElemento.UseVisualStyleBackColor = true;
+            buttonCrearElemento.Location = new Point(107, 71);
+            buttonCrearElemento.Margin = new Padding(4, 3, 4, 3);
+            buttonCrearElemento.Name = "buttonCrearElemento";
+            buttonCrearElemento.Size = new Size(244, 36);
+            buttonCrearElemento.TabIndex = 0;
+            buttonCrearElemento.Text = "Crear Elemento";
+            buttonCrearElemento.UseVisualStyleBackColor = true;
             // 
             // buttonModElemento
             // 
-            this.buttonModElemento.Location = new System.Drawing.Point(92, 112);
-            this.buttonModElemento.Name = "buttonModElemento";
-            this.buttonModElemento.Size = new System.Drawing.Size(209, 31);
-            this.buttonModElemento.TabIndex = 1;
-            this.buttonModElemento.Text = "Modificar Elemento";
-            this.buttonModElemento.UseVisualStyleBackColor = true;
+            buttonModElemento.Location = new Point(107, 113);
+            buttonModElemento.Margin = new Padding(4, 3, 4, 3);
+            buttonModElemento.Name = "buttonModElemento";
+            buttonModElemento.Size = new Size(244, 36);
+            buttonModElemento.TabIndex = 1;
+            buttonModElemento.Text = "Modificar Elemento";
+            buttonModElemento.UseVisualStyleBackColor = true;
             // 
             // buttonEliminarElemento
             // 
-            this.buttonEliminarElemento.Location = new System.Drawing.Point(92, 149);
-            this.buttonEliminarElemento.Name = "buttonEliminarElemento";
-            this.buttonEliminarElemento.Size = new System.Drawing.Size(209, 31);
-            this.buttonEliminarElemento.TabIndex = 2;
-            this.buttonEliminarElemento.Text = "Eliminar Elemento";
-            this.buttonEliminarElemento.UseVisualStyleBackColor = true;
+            buttonEliminarElemento.Location = new Point(107, 156);
+            buttonEliminarElemento.Margin = new Padding(4, 3, 4, 3);
+            buttonEliminarElemento.Name = "buttonEliminarElemento";
+            buttonEliminarElemento.Size = new Size(244, 36);
+            buttonEliminarElemento.TabIndex = 2;
+            buttonEliminarElemento.Text = "Eliminar Elemento";
+            buttonEliminarElemento.UseVisualStyleBackColor = true;
             // 
             // buttonConfJuego
             // 
-            this.buttonConfJuego.Location = new System.Drawing.Point(92, 186);
-            this.buttonConfJuego.Name = "buttonConfJuego";
-            this.buttonConfJuego.Size = new System.Drawing.Size(209, 31);
-            this.buttonConfJuego.TabIndex = 3;
-            this.buttonConfJuego.Text = "Configuración Juego 2D";
-            this.buttonConfJuego.UseVisualStyleBackColor = true;
+            buttonConfJuego.Location = new Point(107, 199);
+            buttonConfJuego.Margin = new Padding(4, 3, 4, 3);
+            buttonConfJuego.Name = "buttonConfJuego";
+            buttonConfJuego.Size = new Size(244, 36);
+            buttonConfJuego.TabIndex = 3;
+            buttonConfJuego.Text = "Configuración Juego 2D";
+            buttonConfJuego.UseVisualStyleBackColor = true;
             // 
             // menuStrip1
             // 
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.salirToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(399, 24);
-            this.menuStrip1.TabIndex = 4;
-            this.menuStrip1.Text = "menuStrip1";
+            menuStrip1.Items.AddRange(new ToolStripItem[] { salirToolStripMenuItem });
+            menuStrip1.Location = new Point(0, 0);
+            menuStrip1.Name = "menuStrip1";
+            menuStrip1.Padding = new Padding(7, 2, 0, 2);
+            menuStrip1.Size = new Size(467, 24);
+            menuStrip1.TabIndex = 4;
+            menuStrip1.Text = "menuStrip1";
             // 
             // salirToolStripMenuItem
             // 
-            this.salirToolStripMenuItem.Name = "salirToolStripMenuItem";
-            this.salirToolStripMenuItem.Size = new System.Drawing.Size(106, 20);
-            this.salirToolStripMenuItem.Text = "Cambiar usuario";
+            salirToolStripMenuItem.Name = "salirToolStripMenuItem";
+            salirToolStripMenuItem.Size = new Size(106, 20);
+            salirToolStripMenuItem.Text = "Cambiar usuario";
             // 
-            // labelUsuari
+            // labelHolaUsuari
             // 
-            this.labelUsuari.AutoSize = true;
-            this.labelUsuari.Location = new System.Drawing.Point(160, 41);
-            this.labelUsuari.Name = "labelUsuari";
-            this.labelUsuari.Size = new System.Drawing.Size(66, 13);
-            this.labelUsuari.TabIndex = 5;
-            this.labelUsuari.Text = "Hola (usuari)";
+            labelHolaUsuari.Font = new Font("Segoe UI", 15F, FontStyle.Regular, GraphicsUnit.Point);
+            labelHolaUsuari.Location = new Point(161, 17);
+            labelHolaUsuari.Margin = new Padding(4, 0, 4, 0);
+            labelHolaUsuari.Name = "labelHolaUsuari";
+            labelHolaUsuari.Size = new Size(130, 42);
+            labelHolaUsuari.TabIndex = 5;
+            labelHolaUsuari.Text = "Hola (usuari)";
+            labelHolaUsuari.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // Menu
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(399, 246);
-            this.Controls.Add(this.labelUsuari);
-            this.Controls.Add(this.buttonConfJuego);
-            this.Controls.Add(this.buttonEliminarElemento);
-            this.Controls.Add(this.buttonModElemento);
-            this.Controls.Add(this.buttonCrearElemento);
-            this.Controls.Add(this.menuStrip1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.HelpButton = true;
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.MainMenuStrip = this.menuStrip1;
-            this.MaximizeBox = false;
-            this.Name = "Menu";
-            this.Text = "Menu";
-            this.menuStrip1.ResumeLayout(false);
-            this.menuStrip1.PerformLayout();
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(467, 251);
+            Controls.Add(labelHolaUsuari);
+            Controls.Add(buttonConfJuego);
+            Controls.Add(buttonEliminarElemento);
+            Controls.Add(buttonModElemento);
+            Controls.Add(buttonCrearElemento);
+            Controls.Add(menuStrip1);
+            FormBorderStyle = FormBorderStyle.FixedSingle;
+            HelpButton = true;
+            MainMenuStrip = menuStrip1;
+            Margin = new Padding(4, 3, 4, 3);
+            MaximizeBox = false;
+            Name = "Menu";
+            Text = "Menu";
+            menuStrip1.ResumeLayout(false);
+            menuStrip1.PerformLayout();
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
 
-        private System.Windows.Forms.Button buttonCrearElemento;
-        private System.Windows.Forms.Button buttonModElemento;
-        private System.Windows.Forms.Button buttonEliminarElemento;
-        private System.Windows.Forms.Button buttonConfJuego;
-        private System.Windows.Forms.MenuStrip menuStrip1;
-        private System.Windows.Forms.Label labelUsuari;
-        private System.Windows.Forms.ToolStripMenuItem salirToolStripMenuItem;
+        private Button buttonCrearElemento;
+        private Button buttonModElemento;
+        private Button buttonEliminarElemento;
+        private Button buttonConfJuego;
+        private MenuStrip menuStrip1;
+        private Label labelHolaUsuari;
+        private ToolStripMenuItem salirToolStripMenuItem;
     }
 }

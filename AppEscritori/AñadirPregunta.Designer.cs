@@ -28,143 +28,136 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBoxPregunta = new System.Windows.Forms.TextBox();
-            this.textBoxCorrecta = new System.Windows.Forms.TextBox();
-            this.labelIncorrecta = new System.Windows.Forms.Label();
-            this.textBoxIncorr1 = new System.Windows.Forms.TextBox();
-            this.textBoxIncorr2 = new System.Windows.Forms.TextBox();
-            this.textBoxIncorr3 = new System.Windows.Forms.TextBox();
-            this.buttonAtras = new System.Windows.Forms.Button();
-            this.buttonAnadir = new System.Windows.Forms.Button();
-            this.groupBoxFrom = new System.Windows.Forms.GroupBox();
-            this.labelCreando = new System.Windows.Forms.Label();
-            this.groupBoxFrom.SuspendLayout();
-            this.SuspendLayout();
-            // 
-            // textBoxPregunta
-            // 
-            this.textBoxPregunta.Location = new System.Drawing.Point(6, 17);
-            this.textBoxPregunta.Name = "textBoxPregunta";
-            this.textBoxPregunta.Size = new System.Drawing.Size(170, 20);
-            this.textBoxPregunta.TabIndex = 0;
-            this.textBoxPregunta.Text = "Pregunta";
-            this.textBoxPregunta.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // textBoxCorrecta
-            // 
-            this.textBoxCorrecta.Location = new System.Drawing.Point(6, 43);
-            this.textBoxCorrecta.Name = "textBoxCorrecta";
-            this.textBoxCorrecta.Size = new System.Drawing.Size(170, 20);
-            this.textBoxCorrecta.TabIndex = 1;
-            this.textBoxCorrecta.Text = "Respuesta correcta";
-            this.textBoxCorrecta.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // labelIncorrecta
-            // 
-            this.labelIncorrecta.AutoSize = true;
-            this.labelIncorrecta.Location = new System.Drawing.Point(3, 75);
-            this.labelIncorrecta.Name = "labelIncorrecta";
-            this.labelIncorrecta.Size = new System.Drawing.Size(146, 13);
-            this.labelIncorrecta.TabIndex = 4;
-            this.labelIncorrecta.Text = "Añadir respuestas incorrectas";
-
-            // 
-            // textBoxIncorr1
-            // 
-            this.textBoxIncorr1.Location = new System.Drawing.Point(6, 100);
-            this.textBoxIncorr1.Name = "textBoxIncorr1";
-            this.textBoxIncorr1.Size = new System.Drawing.Size(170, 20);
-            this.textBoxIncorr1.TabIndex = 5;
-            this.textBoxIncorr1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // textBoxIncorr2
-            // 
-            this.textBoxIncorr2.Location = new System.Drawing.Point(6, 126);
-            this.textBoxIncorr2.Name = "textBoxIncorr2";
-            this.textBoxIncorr2.Size = new System.Drawing.Size(170, 20);
-            this.textBoxIncorr2.TabIndex = 6;
-            this.textBoxIncorr2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // textBoxIncorr3
-            // 
-            this.textBoxIncorr3.Location = new System.Drawing.Point(6, 152);
-            this.textBoxIncorr3.Name = "textBoxIncorr3";
-            this.textBoxIncorr3.Size = new System.Drawing.Size(170, 20);
-            this.textBoxIncorr3.TabIndex = 7;
-            this.textBoxIncorr3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // buttonAtras
-            // 
-            this.buttonAtras.Location = new System.Drawing.Point(6, 188);
-            this.buttonAtras.Name = "buttonAtras";
-            this.buttonAtras.Size = new System.Drawing.Size(98, 23);
-            this.buttonAtras.TabIndex = 8;
-            this.buttonAtras.Text = "Atrás";
-            this.buttonAtras.UseVisualStyleBackColor = true;
-            // 
-            // buttonAnadir
-            // 
-            this.buttonAnadir.Location = new System.Drawing.Point(182, 188);
-            this.buttonAnadir.Name = "buttonAnadir";
-            this.buttonAnadir.Size = new System.Drawing.Size(98, 23);
-            this.buttonAnadir.TabIndex = 9;
-            this.buttonAnadir.Text = "Añadir";
-            this.buttonAnadir.UseVisualStyleBackColor = true;
-            // 
-            // groupBoxFrom
-            // 
-            this.groupBoxFrom.Controls.Add(this.labelCreando);
-            this.groupBoxFrom.Controls.Add(this.textBoxCorrecta);
-            this.groupBoxFrom.Controls.Add(this.buttonAnadir);
-            this.groupBoxFrom.Controls.Add(this.textBoxPregunta);
-            this.groupBoxFrom.Controls.Add(this.buttonAtras);
-            this.groupBoxFrom.Controls.Add(this.textBoxIncorr3);
-            this.groupBoxFrom.Controls.Add(this.textBoxIncorr2);
-            this.groupBoxFrom.Controls.Add(this.labelIncorrecta);
-            this.groupBoxFrom.Controls.Add(this.textBoxIncorr1);
-            this.groupBoxFrom.Location = new System.Drawing.Point(12, 12);
-            this.groupBoxFrom.Name = "groupBoxFrom";
-            this.groupBoxFrom.Size = new System.Drawing.Size(286, 219);
-            this.groupBoxFrom.TabIndex = 10;
-            this.groupBoxFrom.TabStop = false;
-            this.groupBoxFrom.Text = "FormPreguntas";
+            labelCreando = new Label();
+            textBoxCorrecta = new TextBox();
+            buttonAnadir = new Button();
+            textBoxPregunta = new TextBox();
+            buttonAtras = new Button();
+            textBoxIncorr3 = new TextBox();
+            textBoxIncorr2 = new TextBox();
+            labelIncorrecta = new Label();
+            textBoxIncorr1 = new TextBox();
+            SuspendLayout();
             // 
             // labelCreando
             // 
-            this.labelCreando.AutoSize = true;
-            this.labelCreando.Location = new System.Drawing.Point(181, 33);
-            this.labelCreando.Name = "labelCreando";
-            this.labelCreando.Size = new System.Drawing.Size(99, 13);
-            this.labelCreando.TabIndex = 10;
-            this.labelCreando.Text = "Creado x preguntas";
+            labelCreando.AutoSize = true;
+            labelCreando.Location = new Point(217, 30);
+            labelCreando.Margin = new Padding(4, 0, 4, 0);
+            labelCreando.Name = "labelCreando";
+            labelCreando.Size = new Size(110, 15);
+            labelCreando.TabIndex = 19;
+            labelCreando.Text = "Creado x preguntas";
             // 
-            // Form10
+            // textBoxCorrecta
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(309, 244);
-            this.Controls.Add(this.groupBoxFrom);
-            this.Name = "Form10";
-            this.Text = "Form10";
-
-            this.groupBoxFrom.ResumeLayout(false);
-            this.groupBoxFrom.PerformLayout();
-            this.ResumeLayout(false);
-
+            textBoxCorrecta.Location = new Point(13, 42);
+            textBoxCorrecta.Margin = new Padding(4, 3, 4, 3);
+            textBoxCorrecta.Name = "textBoxCorrecta";
+            textBoxCorrecta.Size = new Size(198, 23);
+            textBoxCorrecta.TabIndex = 12;
+            textBoxCorrecta.Text = "Respuesta correcta";
+            textBoxCorrecta.TextAlign = HorizontalAlignment.Center;
+            // 
+            // buttonAnadir
+            // 
+            buttonAnadir.Location = new Point(217, 196);
+            buttonAnadir.Margin = new Padding(4, 3, 4, 3);
+            buttonAnadir.Name = "buttonAnadir";
+            buttonAnadir.Size = new Size(114, 27);
+            buttonAnadir.TabIndex = 18;
+            buttonAnadir.Text = "Añadir";
+            buttonAnadir.UseVisualStyleBackColor = true;
+            // 
+            // textBoxPregunta
+            // 
+            textBoxPregunta.Location = new Point(13, 12);
+            textBoxPregunta.Margin = new Padding(4, 3, 4, 3);
+            textBoxPregunta.Name = "textBoxPregunta";
+            textBoxPregunta.Size = new Size(198, 23);
+            textBoxPregunta.TabIndex = 11;
+            textBoxPregunta.Text = "Pregunta";
+            textBoxPregunta.TextAlign = HorizontalAlignment.Center;
+            // 
+            // buttonAtras
+            // 
+            buttonAtras.Location = new Point(13, 196);
+            buttonAtras.Margin = new Padding(4, 3, 4, 3);
+            buttonAtras.Name = "buttonAtras";
+            buttonAtras.Size = new Size(114, 27);
+            buttonAtras.TabIndex = 17;
+            buttonAtras.Text = "Atrás";
+            buttonAtras.UseVisualStyleBackColor = true;
+            // 
+            // textBoxIncorr3
+            // 
+            textBoxIncorr3.Location = new Point(13, 167);
+            textBoxIncorr3.Margin = new Padding(4, 3, 4, 3);
+            textBoxIncorr3.Name = "textBoxIncorr3";
+            textBoxIncorr3.Size = new Size(198, 23);
+            textBoxIncorr3.TabIndex = 16;
+            textBoxIncorr3.TextAlign = HorizontalAlignment.Center;
+            // 
+            // textBoxIncorr2
+            // 
+            textBoxIncorr2.Location = new Point(13, 137);
+            textBoxIncorr2.Margin = new Padding(4, 3, 4, 3);
+            textBoxIncorr2.Name = "textBoxIncorr2";
+            textBoxIncorr2.Size = new Size(198, 23);
+            textBoxIncorr2.TabIndex = 15;
+            textBoxIncorr2.TextAlign = HorizontalAlignment.Center;
+            // 
+            // labelIncorrecta
+            // 
+            labelIncorrecta.AutoSize = true;
+            labelIncorrecta.Location = new Point(10, 79);
+            labelIncorrecta.Margin = new Padding(4, 0, 4, 0);
+            labelIncorrecta.Name = "labelIncorrecta";
+            labelIncorrecta.Size = new Size(161, 15);
+            labelIncorrecta.TabIndex = 13;
+            labelIncorrecta.Text = "Añadir respuestas incorrectas";
+            // 
+            // textBoxIncorr1
+            // 
+            textBoxIncorr1.Location = new Point(13, 107);
+            textBoxIncorr1.Margin = new Padding(4, 3, 4, 3);
+            textBoxIncorr1.Name = "textBoxIncorr1";
+            textBoxIncorr1.Size = new Size(198, 23);
+            textBoxIncorr1.TabIndex = 14;
+            textBoxIncorr1.TextAlign = HorizontalAlignment.Center;
+            // 
+            // AñadirPregunta
+            // 
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(337, 230);
+            Controls.Add(labelCreando);
+            Controls.Add(textBoxCorrecta);
+            Controls.Add(buttonAnadir);
+            Controls.Add(textBoxPregunta);
+            Controls.Add(buttonAtras);
+            Controls.Add(textBoxIncorr3);
+            Controls.Add(textBoxIncorr2);
+            Controls.Add(labelIncorrecta);
+            Controls.Add(textBoxIncorr1);
+            Margin = new Padding(4, 3, 4, 3);
+            Name = "AñadirPregunta";
+            Text = "Form10";
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBoxPregunta;
-        private System.Windows.Forms.TextBox textBoxCorrecta;
-        private System.Windows.Forms.Label labelIncorrecta;
-        private System.Windows.Forms.TextBox textBoxIncorr1;
-        private System.Windows.Forms.TextBox textBoxIncorr2;
-        private System.Windows.Forms.TextBox textBoxIncorr3;
-        private System.Windows.Forms.Button buttonAtras;
-        private System.Windows.Forms.Button buttonAnadir;
-        private System.Windows.Forms.GroupBox groupBoxFrom;
-        private System.Windows.Forms.Label labelCreando;
+        private Label labelCreando;
+        private TextBox textBoxCorrecta;
+        private Button buttonAnadir;
+        private TextBox textBoxPregunta;
+        private Button buttonAtras;
+        private TextBox textBoxIncorr3;
+        private TextBox textBoxIncorr2;
+        private Label labelIncorrecta;
+        private TextBox textBoxIncorr1;
     }
 }
 

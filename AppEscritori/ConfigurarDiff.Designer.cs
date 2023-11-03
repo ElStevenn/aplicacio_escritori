@@ -28,91 +28,87 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBoxformulario13 = new System.Windows.Forms.TextBox();
-            this.button_facil = new System.Windows.Forms.Button();
-            this.button_normal = new System.Windows.Forms.Button();
-            this.button_dificil = new System.Windows.Forms.Button();
-            this.button_atras13 = new System.Windows.Forms.Button();
-            this.textBox_dificultad = new System.Windows.Forms.TextBox();
-            this.SuspendLayout();
+            buttonNormal = new Button();
+            button_atras13 = new Button();
+            labelCreando = new Label();
+            buttonFacil = new Button();
+            buttonDificil = new Button();
+            SuspendLayout();
             // 
-            // textBoxformulario13
+            // buttonNormal
             // 
-            this.textBoxformulario13.Location = new System.Drawing.Point(13, 13);
-            this.textBoxformulario13.Name = "textBoxformulario13";
-            this.textBoxformulario13.Size = new System.Drawing.Size(295, 31);
-            this.textBoxformulario13.TabIndex = 0;
-            this.textBoxformulario13.Text = "formulario 13";
-            // 
-            // button_facil
-            // 
-            this.button_facil.Location = new System.Drawing.Point(218, 122);
-            this.button_facil.Name = "button_facil";
-            this.button_facil.Size = new System.Drawing.Size(295, 90);
-            this.button_facil.TabIndex = 1;
-            this.button_facil.Text = "Fácil";
-            this.button_facil.UseVisualStyleBackColor = true;
-            // 
-            // button_normal
-            // 
-            this.button_normal.Location = new System.Drawing.Point(218, 232);
-            this.button_normal.Name = "button_normal";
-            this.button_normal.Size = new System.Drawing.Size(295, 82);
-            this.button_normal.TabIndex = 2;
-            this.button_normal.Text = "Normal";
-            this.button_normal.UseVisualStyleBackColor = true;
-            // 
-            // button_dificil
-            // 
-            this.button_dificil.Location = new System.Drawing.Point(218, 334);
-            this.button_dificil.Name = "button_dificil";
-            this.button_dificil.Size = new System.Drawing.Size(295, 92);
-            this.button_dificil.TabIndex = 3;
-            this.button_dificil.Text = "Difícil";
-            this.button_dificil.UseVisualStyleBackColor = true;
+            buttonNormal.Location = new Point(48, 97);
+            buttonNormal.Margin = new Padding(2);
+            buttonNormal.Name = "buttonNormal";
+            buttonNormal.Size = new Size(172, 49);
+            buttonNormal.TabIndex = 2;
+            buttonNormal.Text = "Normal";
+            buttonNormal.UseVisualStyleBackColor = true;
             // 
             // button_atras13
             // 
-            this.button_atras13.Location = new System.Drawing.Point(12, 424);
-            this.button_atras13.Name = "button_atras13";
-            this.button_atras13.Size = new System.Drawing.Size(200, 54);
-            this.button_atras13.TabIndex = 4;
-            this.button_atras13.Text = "Atrás";
-            this.button_atras13.UseVisualStyleBackColor = true;
+            button_atras13.Location = new Point(73, 203);
+            button_atras13.Margin = new Padding(2);
+            button_atras13.Name = "button_atras13";
+            button_atras13.Size = new Size(117, 32);
+            button_atras13.TabIndex = 4;
+            button_atras13.Text = "Atrás";
+            button_atras13.UseVisualStyleBackColor = true;
             // 
-            // textBox_dificultad
+            // labelCreando
             // 
-            this.textBox_dificultad.Location = new System.Drawing.Point(203, 68);
-            this.textBox_dificultad.Name = "textBox_dificultad";
-            this.textBox_dificultad.Size = new System.Drawing.Size(329, 31);
-            this.textBox_dificultad.TabIndex = 5;
-            this.textBox_dificultad.Text = "Que dificultad quieres configurar";
+            labelCreando.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            labelCreando.Location = new Point(9, 9);
+            labelCreando.Margin = new Padding(4, 0, 4, 0);
+            labelCreando.Name = "labelCreando";
+            labelCreando.Size = new Size(260, 45);
+            labelCreando.TabIndex = 20;
+            labelCreando.Text = "Selecciona la dificultad a configurar";
+            labelCreando.TextAlign = ContentAlignment.MiddleCenter;
             // 
-            // Form13
+            // buttonFacil
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(862, 521);
-            this.Controls.Add(this.textBox_dificultad);
-            this.Controls.Add(this.button_atras13);
-            this.Controls.Add(this.button_dificil);
-            this.Controls.Add(this.button_normal);
-            this.Controls.Add(this.button_facil);
-            this.Controls.Add(this.textBoxformulario13);
-            this.Name = "Form13";
-            this.Text = "Form13";
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            buttonFacil.Location = new Point(48, 44);
+            buttonFacil.Margin = new Padding(2);
+            buttonFacil.Name = "buttonFacil";
+            buttonFacil.Size = new Size(172, 49);
+            buttonFacil.TabIndex = 21;
+            buttonFacil.Text = "Fácil";
+            buttonFacil.UseVisualStyleBackColor = true;
+            // 
+            // buttonDificil
+            // 
+            buttonDificil.Location = new Point(48, 150);
+            buttonDificil.Margin = new Padding(2);
+            buttonDificil.Name = "buttonDificil";
+            buttonDificil.Size = new Size(172, 49);
+            buttonDificil.TabIndex = 22;
+            buttonDificil.Text = "Difícil";
+            buttonDificil.UseVisualStyleBackColor = true;
+            // 
+            // ConfigurarDiff
+            // 
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(269, 243);
+            Controls.Add(buttonDificil);
+            Controls.Add(buttonFacil);
+            Controls.Add(labelCreando);
+            Controls.Add(button_atras13);
+            Controls.Add(buttonNormal);
+            Margin = new Padding(2);
+            Name = "ConfigurarDiff";
+            Text = "Form13";
+            ResumeLayout(false);
         }
 
         #endregion
-
-        private System.Windows.Forms.TextBox textBoxformulario13;
-        private System.Windows.Forms.Button button_facil;
-        private System.Windows.Forms.Button button_normal;
-        private System.Windows.Forms.Button button_dificil;
-        private System.Windows.Forms.Button button_atras13;
-        private System.Windows.Forms.TextBox textBox_dificultad;
+        private Button button_facil;
+        private Button buttonNormal;
+        private Button button_dificil;
+        private Button button_atras13;
+        private Label labelCreando;
+        private Button buttonFacil;
+        private Button buttonDificil;
     }
 }

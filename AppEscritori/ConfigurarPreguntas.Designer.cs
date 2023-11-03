@@ -28,70 +28,74 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.buttonAnadir = new System.Windows.Forms.Button();
-            this.buttonModificar = new System.Windows.Forms.Button();
-            this.buttonEliminar = new System.Windows.Forms.Button();
-            this.buttonAtras = new System.Windows.Forms.Button();
-            this.SuspendLayout();
+            buttonAnadir = new Button();
+            buttonModificar = new Button();
+            buttonEliminar = new Button();
+            buttonAtrasConfPreg = new Button();
+            SuspendLayout();
             // 
             // buttonAnadir
             // 
-            this.buttonAnadir.Location = new System.Drawing.Point(77, 33);
-            this.buttonAnadir.Name = "buttonAnadir";
-            this.buttonAnadir.Size = new System.Drawing.Size(137, 25);
-            this.buttonAnadir.TabIndex = 0;
-            this.buttonAnadir.Text = "Añadir";
-            this.buttonAnadir.UseVisualStyleBackColor = true;
+            buttonAnadir.Location = new Point(13, 12);
+            buttonAnadir.Margin = new Padding(4, 3, 4, 3);
+            buttonAnadir.Name = "buttonAnadir";
+            buttonAnadir.Size = new Size(160, 29);
+            buttonAnadir.TabIndex = 0;
+            buttonAnadir.Text = "AñadirPreg";
+            buttonAnadir.UseVisualStyleBackColor = true;
             // 
             // buttonModificar
             // 
-            this.buttonModificar.Location = new System.Drawing.Point(77, 64);
-            this.buttonModificar.Name = "buttonModificar";
-            this.buttonModificar.Size = new System.Drawing.Size(137, 25);
-            this.buttonModificar.TabIndex = 1;
-            this.buttonModificar.Text = "Modificar";
-            this.buttonModificar.UseVisualStyleBackColor = true;
+            buttonModificar.Location = new Point(13, 48);
+            buttonModificar.Margin = new Padding(4, 3, 4, 3);
+            buttonModificar.Name = "buttonModificar";
+            buttonModificar.Size = new Size(160, 29);
+            buttonModificar.TabIndex = 1;
+            buttonModificar.Text = "ModificarPreg";
+            buttonModificar.UseVisualStyleBackColor = true;
             // 
             // buttonEliminar
             // 
-            this.buttonEliminar.Location = new System.Drawing.Point(77, 95);
-            this.buttonEliminar.Name = "buttonEliminar";
-            this.buttonEliminar.Size = new System.Drawing.Size(137, 25);
-            this.buttonEliminar.TabIndex = 2;
-            this.buttonEliminar.Text = "Eliminar";
-            this.buttonEliminar.UseVisualStyleBackColor = true;
+            buttonEliminar.Location = new Point(13, 84);
+            buttonEliminar.Margin = new Padding(4, 3, 4, 3);
+            buttonEliminar.Name = "buttonEliminar";
+            buttonEliminar.Size = new Size(160, 29);
+            buttonEliminar.TabIndex = 2;
+            buttonEliminar.Text = "EliminarPreg";
+            buttonEliminar.UseVisualStyleBackColor = true;
             // 
-            // buttonAtras
+            // buttonAtrasConfPreg
             // 
-            this.buttonAtras.Location = new System.Drawing.Point(12, 143);
-            this.buttonAtras.Name = "buttonAtras";
-            this.buttonAtras.Size = new System.Drawing.Size(69, 25);
-            this.buttonAtras.TabIndex = 3;
-            this.buttonAtras.Text = "Atrás";
-            this.buttonAtras.UseVisualStyleBackColor = true;
+            buttonAtrasConfPreg.Location = new Point(52, 119);
+            buttonAtrasConfPreg.Margin = new Padding(4, 3, 4, 3);
+            buttonAtrasConfPreg.Name = "buttonAtrasConfPreg";
+            buttonAtrasConfPreg.Size = new Size(80, 29);
+            buttonAtrasConfPreg.TabIndex = 3;
+            buttonAtrasConfPreg.Text = "Atrás";
+            buttonAtrasConfPreg.UseVisualStyleBackColor = true;
             // 
             // ConfigurarPreguntas
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(294, 180);
-            this.Controls.Add(this.buttonAtras);
-            this.Controls.Add(this.buttonEliminar);
-            this.Controls.Add(this.buttonModificar);
-            this.Controls.Add(this.buttonAnadir);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.MaximizeBox = false;
-            this.Name = "ConfigurarPreguntas";
-            this.Text = "Configuración Preguntas";
-            this.ResumeLayout(false);
-
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(187, 155);
+            Controls.Add(buttonAtrasConfPreg);
+            Controls.Add(buttonEliminar);
+            Controls.Add(buttonModificar);
+            Controls.Add(buttonAnadir);
+            FormBorderStyle = FormBorderStyle.FixedSingle;
+            Margin = new Padding(4, 3, 4, 3);
+            MaximizeBox = false;
+            Name = "ConfigurarPreguntas";
+            Text = "Configuración Preguntas";
+            ResumeLayout(false);
         }
 
         #endregion
 
-        private System.Windows.Forms.Button buttonAnadir;
-        private System.Windows.Forms.Button buttonModificar;
-        private System.Windows.Forms.Button buttonEliminar;
-        private System.Windows.Forms.Button buttonAtras;
+        private Button buttonAnadir;
+        private Button buttonModificar;
+        private Button buttonEliminar;
+        private Button buttonAtrasConfPreg;
     }
 }

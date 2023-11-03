@@ -28,45 +28,52 @@
         /// </summary>ss
         private void InitializeComponent()
         {
-            textBox_nombre = new TextBox();
-            textBox_contra = new TextBox();
+            textBoxNombre = new TextBox();
+            textBoxContra = new TextBox();
             button_login = new Button();
             SuspendLayout();
             // 
-            // textBox_nombre
+            // textBoxNombre
             // 
-            textBox_nombre.Location = new Point(278, 96);
-            textBox_nombre.Name = "textBox_nombre";
-            textBox_nombre.Size = new Size(200, 39);
-            textBox_nombre.TabIndex = 0;
-            textBox_nombre.Text = "nom";
+            textBoxNombre.Location = new Point(70, 33);
+            textBoxNombre.Margin = new Padding(2, 1, 2, 1);
+            textBoxNombre.Name = "textBoxNombre";
+            textBoxNombre.Size = new Size(178, 23);
+            textBoxNombre.TabIndex = 0;
+            textBoxNombre.Text = "nom";
+            textBoxNombre.TextAlign = HorizontalAlignment.Center;
             // 
-            // textBox_contra
+            // textBoxContra
             // 
-            textBox_contra.Location = new Point(278, 202);
-            textBox_contra.Name = "textBox_contra";
-            textBox_contra.Size = new Size(200, 39);
-            textBox_contra.TabIndex = 1;
-            textBox_contra.Text = "contrasenya";
+            textBoxContra.Location = new Point(70, 77);
+            textBoxContra.Margin = new Padding(2, 1, 2, 1);
+            textBoxContra.Name = "textBoxContra";
+            textBoxContra.Size = new Size(178, 23);
+            textBoxContra.TabIndex = 1;
+            textBoxContra.Text = "contrasenya";
+            textBoxContra.TextAlign = HorizontalAlignment.Center;
             // 
             // button_login
             // 
-            button_login.Location = new Point(290, 290);
+            button_login.Location = new Point(100, 113);
+            button_login.Margin = new Padding(2, 1, 2, 1);
             button_login.Name = "button_login";
-            button_login.Size = new Size(150, 46);
+            button_login.Size = new Size(110, 23);
             button_login.TabIndex = 2;
             button_login.Text = "login";
             button_login.UseVisualStyleBackColor = true;
             // 
-            // Form1
+            // Login
             // 
-            AutoScaleDimensions = new SizeF(13F, 32F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(315, 173);
             Controls.Add(button_login);
-            Controls.Add(textBox_contra);
-            Controls.Add(textBox_nombre);
-            Name = "Form1";
+            Controls.Add(textBoxContra);
+            Controls.Add(textBoxNombre);
+            FormBorderStyle = FormBorderStyle.FixedSingle;
+            Margin = new Padding(2, 1, 2, 1);
+            Name = "Login";
             Text = "Form1";
             ResumeLayout(false);
             PerformLayout();
@@ -74,8 +81,8 @@
 
         #endregion
 
-        private TextBox textBox_nombre;
-        private TextBox textBox_contra;
+        private TextBox textBoxNombre;
+        private TextBox textBoxContra;
         private Button button_login;
     }
 }
