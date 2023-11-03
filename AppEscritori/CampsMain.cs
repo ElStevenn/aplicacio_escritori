@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace AppEscritori
 {
-    public partial class Formulario3 : Form
+    public partial class CampsMain : Form
     {
-        public Formulario3()
+        public CampsMain()
         {
             InitializeComponent();
         }
