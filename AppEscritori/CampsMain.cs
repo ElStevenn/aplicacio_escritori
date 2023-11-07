@@ -12,21 +12,17 @@ namespace AppEscritori
 {
     public partial class CampsMain : Form
     {
-
+        Menu menu;
         public CampsMain()
         {
             InitializeComponent();
         }
-
-        private void label1_Click(object sender, EventArgs e)
+        public CampsMain(Menu menu)
         {
-
+            InitializeComponent();
+            this.menu = menu;
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void buttonSiguiente_Click(object sender, EventArgs e)
         {
@@ -35,5 +31,11 @@ namespace AppEscritori
             this.Hide();
         }
 
+        private void buttonAtras_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            this.menu.Show();
+
+        }
     }
 }

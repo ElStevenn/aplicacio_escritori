@@ -74,7 +74,6 @@
             label1.TabIndex = 6;
             label1.Text = "Nombre del Elemento";
             label1.TextAlign = ContentAlignment.MiddleLeft;
-            label1.Click += label1_Click;
             // 
             // label2
             // 
@@ -107,7 +106,6 @@
             pictureBox1.Size = new Size(552, 125);
             pictureBox1.TabIndex = 9;
             pictureBox1.TabStop = false;
-            pictureBox1.Click += pictureBox1_Click;
             // 
             // textBox4
             // 
@@ -134,6 +132,7 @@
             buttonAtras.TabIndex = 12;
             buttonAtras.Text = "Atrás";
             buttonAtras.UseVisualStyleBackColor = true;
+            buttonAtras.Click += buttonAtras_Click;
             // 
             // buttonSiguiente
             // 

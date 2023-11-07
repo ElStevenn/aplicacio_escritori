@@ -209,7 +209,7 @@
             button1Enrere.Name = "button1Enrere";
             button1Enrere.Size = new Size(88, 27);
             button1Enrere.TabIndex = 21;
-            button1Enrere.Text = "Enrere";
+            button1Enrere.Text = "Atrás";
             button1Enrere.UseVisualStyleBackColor = true;
             // 
             // button2Siguiente

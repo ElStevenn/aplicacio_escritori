@@ -25,17 +25,16 @@ namespace AppEscritori
 
         private void buttonCrearElemento_Click(object sender, EventArgs e)
         {
-            CampsMain campsMain = new CampsMain();
+            CampsMain campsMain = new CampsMain(this);
             campsMain.Show();
             this.Hide();
 
         }
 
-        private void salirToolStripMenuItem_Click(object sender, EventArgs e)
+        private void cambiarUsuarioToolStripMenuItem_Click(object sender, EventArgs e)
         {
             this.Close();
-            login.Show();
-            
+            this.login.Show();
         }
     }
 }

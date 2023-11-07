@@ -33,7 +33,7 @@
             buttonEliminarElemento = new Button();
             buttonConfJuego = new Button();
             menuStrip1 = new MenuStrip();
-            salirToolStripMenuItem = new ToolStripMenuItem();
+            cambiarUsuarioToolStripMenuItem = new ToolStripMenuItem();
             labelHolaUsuari = new Label();
             menuStrip1.SuspendLayout();
             SuspendLayout();
@@ -81,7 +81,7 @@
             // 
             // menuStrip1
             // 
-            menuStrip1.Items.AddRange(new ToolStripItem[] { salirToolStripMenuItem });
+            menuStrip1.Items.AddRange(new ToolStripItem[] { cambiarUsuarioToolStripMenuItem });
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
             menuStrip1.Padding = new Padding(7, 2, 0, 2);
@@ -89,12 +89,12 @@
             menuStrip1.TabIndex = 4;
             menuStrip1.Text = "menuStrip1";
             // 
-            // salirToolStripMenuItem
+            // cambiarUsuarioToolStripMenuItem
             // 
-            salirToolStripMenuItem.Name = "salirToolStripMenuItem";
-            salirToolStripMenuItem.Size = new Size(106, 20);
-            salirToolStripMenuItem.Text = "Cambiar usuario";
-            salirToolStripMenuItem.Click += salirToolStripMenuItem_Click;
+            cambiarUsuarioToolStripMenuItem.Name = "cambiarUsuarioToolStripMenuItem";
+            cambiarUsuarioToolStripMenuItem.Size = new Size(106, 20);
+            cambiarUsuarioToolStripMenuItem.Text = "Cambiar usuario";
+            cambiarUsuarioToolStripMenuItem.Click += cambiarUsuarioToolStripMenuItem_Click;
             // 
             // labelHolaUsuari
             // 
@@ -139,6 +139,6 @@
         private Button buttonConfJuego;
         private MenuStrip menuStrip1;
         private Label labelHolaUsuari;
-        private ToolStripMenuItem salirToolStripMenuItem;
+        private ToolStripMenuItem cambiarUsuarioToolStripMenuItem;
     }
 }
