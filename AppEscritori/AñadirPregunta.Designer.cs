@@ -42,10 +42,11 @@
             // labelCreando
             // 
             labelCreando.AutoSize = true;
-            labelCreando.Location = new Point(217, 30);
+            labelCreando.Font = new Font("Segoe UI", 13F, FontStyle.Regular, GraphicsUnit.Point);
+            labelCreando.Location = new Point(375, 24);
             labelCreando.Margin = new Padding(4, 0, 4, 0);
             labelCreando.Name = "labelCreando";
-            labelCreando.Size = new Size(109, 15);
+            labelCreando.Size = new Size(167, 25);
             labelCreando.TabIndex = 19;
             labelCreando.Text = "Creado x preguntas";
             // 
@@ -54,14 +55,14 @@
             textBoxCorrecta.Location = new Point(13, 42);
             textBoxCorrecta.Margin = new Padding(4, 3, 4, 3);
             textBoxCorrecta.Name = "textBoxCorrecta";
-            textBoxCorrecta.Size = new Size(198, 23);
+            textBoxCorrecta.Size = new Size(354, 23);
             textBoxCorrecta.TabIndex = 12;
             textBoxCorrecta.Text = "Respuesta correcta";
             textBoxCorrecta.TextAlign = HorizontalAlignment.Center;
             // 
             // buttonAnadir
             // 
-            buttonAnadir.Location = new Point(217, 196);
+            buttonAnadir.Location = new Point(430, 196);
             buttonAnadir.Margin = new Padding(4, 3, 4, 3);
             buttonAnadir.Name = "buttonAnadir";
             buttonAnadir.Size = new Size(114, 27);
@@ -74,7 +75,7 @@
             textBoxPregunta.Location = new Point(13, 12);
             textBoxPregunta.Margin = new Padding(4, 3, 4, 3);
             textBoxPregunta.Name = "textBoxPregunta";
-            textBoxPregunta.Size = new Size(198, 23);
+            textBoxPregunta.Size = new Size(354, 23);
             textBoxPregunta.TabIndex = 11;
             textBoxPregunta.Text = "Pregunta";
             textBoxPregunta.TextAlign = HorizontalAlignment.Center;
@@ -130,7 +131,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(337, 230);
+            ClientSize = new Size(557, 233);
             Controls.Add(labelCreando);
             Controls.Add(textBoxCorrecta);
             Controls.Add(buttonAnadir);
