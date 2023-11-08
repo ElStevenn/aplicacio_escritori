@@ -68,6 +68,7 @@
             buttonEliminarElemento.TabIndex = 2;
             buttonEliminarElemento.Text = "Eliminar Elemento";
             buttonEliminarElemento.UseVisualStyleBackColor = true;
+            buttonEliminarElemento.Click += buttonEliminarElemento_Click;
             // 
             // buttonConfJuego
             // 
@@ -78,6 +79,7 @@
             buttonConfJuego.TabIndex = 3;
             buttonConfJuego.Text = "Configuración Juego 2D";
             buttonConfJuego.UseVisualStyleBackColor = true;
+            buttonConfJuego.Click += buttonConfJuego_Click;
             // 
             // menuStrip1
             // 

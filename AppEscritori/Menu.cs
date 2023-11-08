@@ -36,5 +36,19 @@ namespace AppEscritori
             this.Close();
             this.login.Show();
         }
+
+        private void buttonConfJuego_Click(object sender, EventArgs e)
+        {
+            ConfJuego ConfJuego = new ConfJuego(this);
+            ConfJuego.Show();
+            this.Hide();
+        }
+
+        private void buttonEliminarElemento_Click(object sender, EventArgs e)
+        {
+            EliminarElemento eliminarElemento = new EliminarElemento(this);
+            eliminarElemento.Show();
+            this.Hide();
+        }
     }
 }

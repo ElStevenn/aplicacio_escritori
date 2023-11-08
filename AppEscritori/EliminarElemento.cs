@@ -12,9 +12,15 @@ namespace AppEscritori
 {
     public partial class EliminarElemento : Form
     {
+        Menu menu;
         public EliminarElemento()
         {
             InitializeComponent();
+        }
+        public EliminarElemento(Menu menu)
+        {
+            InitializeComponent();
+            this.menu = menu;
         }
     }
 }

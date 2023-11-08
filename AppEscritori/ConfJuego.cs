@@ -10,11 +10,18 @@ using System.Windows.Forms;
 
 namespace AppEscritori
 {
+
     public partial class ConfJuego : Form
     {
+        Menu menu;
         public ConfJuego()
         {
             InitializeComponent();
+        }
+        public ConfJuego(Menu menu)
+        {
+            InitializeComponent();
+            this.menu = menu;
         }
     }
 }
