@@ -42,6 +42,7 @@
             button1ConfigPreg.TabIndex = 0;
             button1ConfigPreg.Text = "Configurar preguntes";
             button1ConfigPreg.UseVisualStyleBackColor = true;
+            button1ConfigPreg.Click += button1ConfigPreg_Click;
             // 
             // button2ConfImagPunt
             // 
@@ -62,6 +63,7 @@
             buttonAtrasConfPreg.TabIndex = 4;
             buttonAtrasConfPreg.Text = "Atrás";
             buttonAtrasConfPreg.UseVisualStyleBackColor = true;
+            buttonAtrasConfPreg.Click += buttonAtrasConfPreg_Click;
             // 
             // ConfJuego
             // 

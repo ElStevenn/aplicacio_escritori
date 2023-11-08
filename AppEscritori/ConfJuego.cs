@@ -23,5 +23,18 @@ namespace AppEscritori
             InitializeComponent();
             this.menu = menu;
         }
+
+        private void button1ConfigPreg_Click(object sender, EventArgs e)
+        {
+            ConfigurarPreguntas configpreguntas = new ConfigurarPreguntas(this);
+            configpreguntas.Show();
+            this.Hide();
+        }
+
+        private void buttonAtrasConfPreg_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            this.menu.Show();
+        }
     }
 }
