@@ -30,6 +30,7 @@
         {
             button1ConfigPreg = new Button();
             button2ConfImagPunt = new Button();
+            buttonAtrasConfPreg = new Button();
             SuspendLayout();
             // 
             // button1ConfigPreg
@@ -52,15 +53,26 @@
             button2ConfImagPunt.Text = "Configurar imatges / puntuació";
             button2ConfImagPunt.UseVisualStyleBackColor = true;
             // 
-            // Form8
+            // buttonAtrasConfPreg
+            // 
+            buttonAtrasConfPreg.Location = new Point(84, 81);
+            buttonAtrasConfPreg.Margin = new Padding(4, 3, 4, 3);
+            buttonAtrasConfPreg.Name = "buttonAtrasConfPreg";
+            buttonAtrasConfPreg.Size = new Size(80, 29);
+            buttonAtrasConfPreg.TabIndex = 4;
+            buttonAtrasConfPreg.Text = "Atrás";
+            buttonAtrasConfPreg.UseVisualStyleBackColor = true;
+            // 
+            // ConfJuego
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(254, 87);
+            ClientSize = new Size(254, 118);
+            Controls.Add(buttonAtrasConfPreg);
             Controls.Add(button2ConfImagPunt);
             Controls.Add(button1ConfigPreg);
             Margin = new Padding(4, 3, 4, 3);
-            Name = "Form8";
+            Name = "ConfJuego";
             Text = "Formulari_08";
             ResumeLayout(false);
         }
@@ -69,5 +81,6 @@
 
         private Button button1ConfigPreg;
         private Button button2ConfImagPunt;
+        private Button buttonAtrasConfPreg;
     }
 }
