@@ -77,7 +77,7 @@
             buttonConfJuego.Name = "buttonConfJuego";
             buttonConfJuego.Size = new Size(244, 36);
             buttonConfJuego.TabIndex = 3;
-            buttonConfJuego.Text = "Configuración Juego 2D";
+            buttonConfJuego.Text = "Configuracion Juego 2D";
             buttonConfJuego.UseVisualStyleBackColor = true;
             buttonConfJuego.Click += buttonConfJuego_Click;
             // 
