@@ -1,28 +1,50 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup />
   <ItemGroup>
-<<<<<<< HEAD
+    <Compile Update="AñadirPregunta.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Camps.cs">
       <SubType>Form</SubType>
     </Compile>
-=======
->>>>>>> Formulario 3 creado
     <Compile Update="CampsFinal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="CampsMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="ConfigurarDiff.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="ConfigurarPreguntas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="ConfImgPunt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="ConfJuego.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="EliminarElemento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="EliminarPregunta.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
-<<<<<<< HEAD
-=======
-    <Compile Update="Formulario3.cs">
-      <SubType>Form</SubType>
-    </Compile>
->>>>>>> Formulario 3 creado
     <Compile Update="Login.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="ModificarElemento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="ModificarPregunta.cs">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>
