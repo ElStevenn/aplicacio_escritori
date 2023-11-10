@@ -12,9 +12,15 @@ namespace AppEscritori
 {
     public partial class ModificarPregunta : Form
     {
+        ConfigurarPreguntas confpreguntas;
         public ModificarPregunta()
         {
             InitializeComponent();
+        }
+        public ModificarPregunta(ConfigurarPreguntas confpreguntas)
+        {
+            InitializeComponent();
+            this.confpreguntas = confpreguntas;
         }
     }
 }

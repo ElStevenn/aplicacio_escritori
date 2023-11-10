@@ -12,9 +12,15 @@ namespace AppEscritori
 {
     public partial class EliminarPregunta : Form
     {
+        ConfigurarPreguntas confpreguntas;
         public EliminarPregunta()
         {
             InitializeComponent();
+        }
+        public EliminarPregunta(ConfigurarPreguntas confpreguntas)
+        {
+            InitializeComponent();
+            this.confpreguntas = confpreguntas;
         }
 
         private void label1_Click(object sender, EventArgs e)

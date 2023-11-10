@@ -43,6 +43,7 @@
             buttonAnadir.TabIndex = 0;
             buttonAnadir.Text = "AñadirPreg";
             buttonAnadir.UseVisualStyleBackColor = true;
+            buttonAnadir.Click += buttonAnadir_Click;
             // 
             // buttonModificar
             // 
@@ -53,6 +54,7 @@
             buttonModificar.TabIndex = 1;
             buttonModificar.Text = "ModificarPreg";
             buttonModificar.UseVisualStyleBackColor = true;
+            buttonModificar.Click += buttonModificar_Click;
             // 
             // buttonEliminar
             // 
@@ -63,6 +65,7 @@
             buttonEliminar.TabIndex = 2;
             buttonEliminar.Text = "EliminarPreg";
             buttonEliminar.UseVisualStyleBackColor = true;
+            buttonEliminar.Click += buttonEliminar_Click;
             // 
             // buttonAtrasConfPreg
             // 
