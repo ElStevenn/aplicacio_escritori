@@ -16,12 +16,18 @@ namespace AppEscritori
         public AñadirPregunta()
         {
             InitializeComponent();
-            
+
         }
         public AñadirPregunta(ConfigurarPreguntas confpreguntas)
         {
             InitializeComponent();
             this.confpreguntas = confpreguntas;
+        }
+
+        private void buttonAtras_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            this.confpreguntas.Show();
         }
     }
 }

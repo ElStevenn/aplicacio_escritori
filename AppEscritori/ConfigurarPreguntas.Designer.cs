@@ -76,6 +76,7 @@
             buttonAtrasConfPreg.TabIndex = 3;
             buttonAtrasConfPreg.Text = "Atrás";
             buttonAtrasConfPreg.UseVisualStyleBackColor = true;
+            buttonAtrasConfPreg.Click += buttonAtrasConfPreg_Click;
             // 
             // ConfigurarPreguntas
             // 

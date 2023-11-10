@@ -89,6 +89,7 @@
             buttonAtras.TabIndex = 17;
             buttonAtras.Text = "Atrás";
             buttonAtras.UseVisualStyleBackColor = true;
+            buttonAtras.Click += buttonAtras_Click;
             // 
             // textBoxIncorr3
             // 

@@ -27,5 +27,11 @@ namespace AppEscritori
         {
 
         }
+
+        private void button1Enrere_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            this.confpreguntas.Show();
+        }
     }
 }

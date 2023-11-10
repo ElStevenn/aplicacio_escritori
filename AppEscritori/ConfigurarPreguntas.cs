@@ -18,7 +18,7 @@ namespace AppEscritori
         {
             InitializeComponent();
         }
-        public ConfigurarPreguntas(ConfJuego configpreguntes)
+        public ConfigurarPreguntas(ConfJuego confjuego)
         {
             InitializeComponent();
             this.confjuego = confjuego;
@@ -43,6 +43,12 @@ namespace AppEscritori
             EliminarPregunta eliminarPreg = new EliminarPregunta(this);
             eliminarPreg.Show();
             this.Hide();
+        }
+
+        private void buttonAtrasConfPreg_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            this.confjuego.Show();
         }
     }
 }

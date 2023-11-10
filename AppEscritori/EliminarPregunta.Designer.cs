@@ -75,8 +75,9 @@
             button1Enrere.Name = "button1Enrere";
             button1Enrere.Size = new Size(88, 27);
             button1Enrere.TabIndex = 3;
-            button1Enrere.Text = "Enrere";
+            button1Enrere.Text = "Atrás";
             button1Enrere.UseVisualStyleBackColor = true;
+            button1Enrere.Click += button1Enrere_Click;
             // 
             // button2Eliminar
             // 

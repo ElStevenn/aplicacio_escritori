@@ -28,139 +28,139 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.comboBoxPreguntas = new System.Windows.Forms.ComboBox();
-            this.textBoxRespCorrecta = new System.Windows.Forms.TextBox();
-            this.labelModRespIncorrecta = new System.Windows.Forms.Label();
-            this.textBoxRespInc1 = new System.Windows.Forms.TextBox();
-            this.textBoxRespInc2 = new System.Windows.Forms.TextBox();
-            this.textBoxRespInc3 = new System.Windows.Forms.TextBox();
-            this.buttonAtras = new System.Windows.Forms.Button();
-            this.buttonModificar = new System.Windows.Forms.Button();
-            this.labelRespCorrecta = new System.Windows.Forms.Label();
-            this.SuspendLayout();
+            comboBoxPreguntas = new ComboBox();
+            textBoxRespCorrecta = new TextBox();
+            labelModRespIncorrecta = new Label();
+            textBoxRespInc1 = new TextBox();
+            textBoxRespInc2 = new TextBox();
+            textBoxRespInc3 = new TextBox();
+            buttonAtras = new Button();
+            buttonModificar = new Button();
+            labelRespCorrecta = new Label();
+            SuspendLayout();
             // 
             // comboBoxPreguntas
             // 
-            this.comboBoxPreguntas.FormattingEnabled = true;
-            this.comboBoxPreguntas.Items.AddRange(new object[] {
-            "Pregunta 1",
-            "Pregunta 2",
-            "Pregunta 3",
-            "Pregunta 4",
-            "Pregunta 5",
-            "Pregunta 6",
-            "Pregunta 7",
-            "Pregunta 8",
-            "Pregunta 9",
-            "Pregunta 10"});
-            this.comboBoxPreguntas.Location = new System.Drawing.Point(12, 12);
-            this.comboBoxPreguntas.Name = "comboBoxPreguntas";
-            this.comboBoxPreguntas.Size = new System.Drawing.Size(396, 21);
-            this.comboBoxPreguntas.TabIndex = 0;
-            this.comboBoxPreguntas.Text = "(Pregunta)";
+            comboBoxPreguntas.FormattingEnabled = true;
+            comboBoxPreguntas.Items.AddRange(new object[] { "Pregunta 1", "Pregunta 2", "Pregunta 3", "Pregunta 4", "Pregunta 5", "Pregunta 6", "Pregunta 7", "Pregunta 8", "Pregunta 9", "Pregunta 10" });
+            comboBoxPreguntas.Location = new Point(14, 14);
+            comboBoxPreguntas.Margin = new Padding(4, 3, 4, 3);
+            comboBoxPreguntas.Name = "comboBoxPreguntas";
+            comboBoxPreguntas.Size = new Size(461, 23);
+            comboBoxPreguntas.TabIndex = 0;
+            comboBoxPreguntas.Text = "(Pregunta)";
             // 
             // textBoxRespCorrecta
             // 
-            this.textBoxRespCorrecta.Location = new System.Drawing.Point(12, 58);
-            this.textBoxRespCorrecta.Name = "textBoxRespCorrecta";
-            this.textBoxRespCorrecta.Size = new System.Drawing.Size(291, 20);
-            this.textBoxRespCorrecta.TabIndex = 1;
-            this.textBoxRespCorrecta.Text = "Respuesta Correcta";
+            textBoxRespCorrecta.Location = new Point(14, 67);
+            textBoxRespCorrecta.Margin = new Padding(4, 3, 4, 3);
+            textBoxRespCorrecta.Name = "textBoxRespCorrecta";
+            textBoxRespCorrecta.Size = new Size(339, 23);
+            textBoxRespCorrecta.TabIndex = 1;
+            textBoxRespCorrecta.Text = "Respuesta Correcta";
             // 
             // labelModRespIncorrecta
             // 
-            this.labelModRespIncorrecta.AutoSize = true;
-            this.labelModRespIncorrecta.Location = new System.Drawing.Point(9, 92);
-            this.labelModRespIncorrecta.Name = "labelModRespIncorrecta";
-            this.labelModRespIncorrecta.Size = new System.Drawing.Size(172, 13);
-            this.labelModRespIncorrecta.TabIndex = 2;
-            this.labelModRespIncorrecta.Text = "Modifica las respuestas incorrectas";
-            this.labelModRespIncorrecta.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            labelModRespIncorrecta.AutoSize = true;
+            labelModRespIncorrecta.Location = new Point(10, 106);
+            labelModRespIncorrecta.Margin = new Padding(4, 0, 4, 0);
+            labelModRespIncorrecta.Name = "labelModRespIncorrecta";
+            labelModRespIncorrecta.Size = new Size(190, 15);
+            labelModRespIncorrecta.TabIndex = 2;
+            labelModRespIncorrecta.Text = "Modifica las respuestas incorrectas";
+            labelModRespIncorrecta.TextAlign = ContentAlignment.MiddleLeft;
             // 
             // textBoxRespInc1
             // 
-            this.textBoxRespInc1.Location = new System.Drawing.Point(12, 108);
-            this.textBoxRespInc1.Name = "textBoxRespInc1";
-            this.textBoxRespInc1.Size = new System.Drawing.Size(291, 20);
-            this.textBoxRespInc1.TabIndex = 3;
-            this.textBoxRespInc1.Text = "Respuesta Incorrecta";
+            textBoxRespInc1.Location = new Point(14, 125);
+            textBoxRespInc1.Margin = new Padding(4, 3, 4, 3);
+            textBoxRespInc1.Name = "textBoxRespInc1";
+            textBoxRespInc1.Size = new Size(339, 23);
+            textBoxRespInc1.TabIndex = 3;
+            textBoxRespInc1.Text = "Respuesta Incorrecta";
             // 
             // textBoxRespInc2
             // 
-            this.textBoxRespInc2.Location = new System.Drawing.Point(12, 134);
-            this.textBoxRespInc2.Name = "textBoxRespInc2";
-            this.textBoxRespInc2.Size = new System.Drawing.Size(291, 20);
-            this.textBoxRespInc2.TabIndex = 4;
-            this.textBoxRespInc2.Text = "Respuesta Incorrecta";
+            textBoxRespInc2.Location = new Point(14, 155);
+            textBoxRespInc2.Margin = new Padding(4, 3, 4, 3);
+            textBoxRespInc2.Name = "textBoxRespInc2";
+            textBoxRespInc2.Size = new Size(339, 23);
+            textBoxRespInc2.TabIndex = 4;
+            textBoxRespInc2.Text = "Respuesta Incorrecta";
             // 
             // textBoxRespInc3
             // 
-            this.textBoxRespInc3.Location = new System.Drawing.Point(12, 160);
-            this.textBoxRespInc3.Name = "textBoxRespInc3";
-            this.textBoxRespInc3.Size = new System.Drawing.Size(291, 20);
-            this.textBoxRespInc3.TabIndex = 5;
-            this.textBoxRespInc3.Text = "Respuesta Incorrecta";
+            textBoxRespInc3.Location = new Point(14, 185);
+            textBoxRespInc3.Margin = new Padding(4, 3, 4, 3);
+            textBoxRespInc3.Name = "textBoxRespInc3";
+            textBoxRespInc3.Size = new Size(339, 23);
+            textBoxRespInc3.TabIndex = 5;
+            textBoxRespInc3.Text = "Respuesta Incorrecta";
             // 
             // buttonAtras
             // 
-            this.buttonAtras.Location = new System.Drawing.Point(12, 196);
-            this.buttonAtras.Name = "buttonAtras";
-            this.buttonAtras.Size = new System.Drawing.Size(75, 23);
-            this.buttonAtras.TabIndex = 6;
-            this.buttonAtras.Text = "Atrás";
-            this.buttonAtras.UseVisualStyleBackColor = true;
+            buttonAtras.Location = new Point(14, 226);
+            buttonAtras.Margin = new Padding(4, 3, 4, 3);
+            buttonAtras.Name = "buttonAtras";
+            buttonAtras.Size = new Size(88, 27);
+            buttonAtras.TabIndex = 6;
+            buttonAtras.Text = "Atrás";
+            buttonAtras.UseVisualStyleBackColor = true;
+            buttonAtras.Click += buttonAtras_Click;
             // 
             // buttonModificar
             // 
-            this.buttonModificar.Location = new System.Drawing.Point(333, 196);
-            this.buttonModificar.Name = "buttonModificar";
-            this.buttonModificar.Size = new System.Drawing.Size(75, 23);
-            this.buttonModificar.TabIndex = 7;
-            this.buttonModificar.Text = "Modificar";
-            this.buttonModificar.UseVisualStyleBackColor = true;
+            buttonModificar.Location = new Point(388, 226);
+            buttonModificar.Margin = new Padding(4, 3, 4, 3);
+            buttonModificar.Name = "buttonModificar";
+            buttonModificar.Size = new Size(88, 27);
+            buttonModificar.TabIndex = 7;
+            buttonModificar.Text = "Modificar";
+            buttonModificar.UseVisualStyleBackColor = true;
             // 
             // labelRespCorrecta
             // 
-            this.labelRespCorrecta.AutoSize = true;
-            this.labelRespCorrecta.Location = new System.Drawing.Point(9, 42);
-            this.labelRespCorrecta.Name = "labelRespCorrecta";
-            this.labelRespCorrecta.Size = new System.Drawing.Size(154, 13);
-            this.labelRespCorrecta.TabIndex = 8;
-            this.labelRespCorrecta.Text = "Introduce la respuesta correcta";
+            labelRespCorrecta.AutoSize = true;
+            labelRespCorrecta.Location = new Point(10, 48);
+            labelRespCorrecta.Margin = new Padding(4, 0, 4, 0);
+            labelRespCorrecta.Name = "labelRespCorrecta";
+            labelRespCorrecta.Size = new Size(169, 15);
+            labelRespCorrecta.TabIndex = 8;
+            labelRespCorrecta.Text = "Introduce la respuesta correcta";
             // 
             // ModificarPregunta
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(416, 228);
-            this.Controls.Add(this.labelRespCorrecta);
-            this.Controls.Add(this.buttonModificar);
-            this.Controls.Add(this.buttonAtras);
-            this.Controls.Add(this.textBoxRespInc3);
-            this.Controls.Add(this.textBoxRespInc2);
-            this.Controls.Add(this.textBoxRespInc1);
-            this.Controls.Add(this.labelModRespIncorrecta);
-            this.Controls.Add(this.textBoxRespCorrecta);
-            this.Controls.Add(this.comboBoxPreguntas);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.MaximizeBox = false;
-            this.Name = "ModificarPregunta";
-            this.Text = "Modificar Pregunta";
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(485, 263);
+            Controls.Add(labelRespCorrecta);
+            Controls.Add(buttonModificar);
+            Controls.Add(buttonAtras);
+            Controls.Add(textBoxRespInc3);
+            Controls.Add(textBoxRespInc2);
+            Controls.Add(textBoxRespInc1);
+            Controls.Add(labelModRespIncorrecta);
+            Controls.Add(textBoxRespCorrecta);
+            Controls.Add(comboBoxPreguntas);
+            FormBorderStyle = FormBorderStyle.FixedSingle;
+            Margin = new Padding(4, 3, 4, 3);
+            MaximizeBox = false;
+            Name = "ModificarPregunta";
+            Text = "Modificar Pregunta";
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
 
-        private System.Windows.Forms.ComboBox comboBoxPreguntas;
-        private System.Windows.Forms.TextBox textBoxRespCorrecta;
-        private System.Windows.Forms.Label labelModRespIncorrecta;
-        private System.Windows.Forms.TextBox textBoxRespInc1;
-        private System.Windows.Forms.TextBox textBoxRespInc2;
-        private System.Windows.Forms.TextBox textBoxRespInc3;
-        private System.Windows.Forms.Button buttonAtras;
-        private System.Windows.Forms.Button buttonModificar;
-        private System.Windows.Forms.Label labelRespCorrecta;
+        private ComboBox comboBoxPreguntas;
+        private TextBox textBoxRespCorrecta;
+        private Label labelModRespIncorrecta;
+        private TextBox textBoxRespInc1;
+        private TextBox textBoxRespInc2;
+        private TextBox textBoxRespInc3;
+        private Button buttonAtras;
+        private Button buttonModificar;
+        private Label labelRespCorrecta;
     }
 }
