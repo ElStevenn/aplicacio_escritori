@@ -36,5 +36,12 @@ namespace AppEscritori
             this.Close();
             this.menu.Show();
         }
+
+        private void button2ConfImagPunt_Click(object sender, EventArgs e)
+        {
+            ConfigurarDiff confdiff = new ConfigurarDiff(this);
+            confdiff.Show();
+            this.Hide();
+        }
     }
 }

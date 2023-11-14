@@ -53,6 +53,7 @@
             button2ConfImagPunt.TabIndex = 1;
             button2ConfImagPunt.Text = "Configurar imatges / puntuació";
             button2ConfImagPunt.UseVisualStyleBackColor = true;
+            button2ConfImagPunt.Click += button2ConfImagPunt_Click;
             // 
             // buttonAtrasConfPreg
             // 

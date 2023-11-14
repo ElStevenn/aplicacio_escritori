@@ -12,9 +12,21 @@ namespace AppEscritori
 {
     public partial class ConfigurarDiff : Form
     {
+        ConfJuego confjuego;
         public ConfigurarDiff()
         {
             InitializeComponent();
+        }
+        public ConfigurarDiff(ConfJuego confjuego)
+        {
+            InitializeComponent();
+            this.confjuego = confjuego;
+        }
+
+        private void button_atras13_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            this.confjuego.Show();
         }
     }
 }

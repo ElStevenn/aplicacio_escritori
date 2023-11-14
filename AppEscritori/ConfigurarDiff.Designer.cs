@@ -54,6 +54,7 @@
             button_atras13.TabIndex = 4;
             button_atras13.Text = "Atrás";
             button_atras13.UseVisualStyleBackColor = true;
+            button_atras13.Click += button_atras13_Click;
             // 
             // labelCreando
             // 
