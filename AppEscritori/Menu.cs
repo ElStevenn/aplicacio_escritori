@@ -50,5 +50,13 @@ namespace AppEscritori
             eliminarElemento.Show();
             this.Hide();
         }
+
+        private void buttonModElemento_Click(object sender, EventArgs e)
+        {
+            // redireccionar a modigicar_elemento
+            ModificarElemento menu = new ModificarElemento();
+            menu.Show();
+            this.Hide();
+        }
     }
 }

@@ -26,7 +26,7 @@ namespace AppEscritori
 
         private void buttonModificar_Click(object sender, EventArgs e)
         {
-            ModificarElemento menu = new ModificarElemento();
+            Camps menu = new Camps();
             menu.Show();
             this.Hide();
         }
