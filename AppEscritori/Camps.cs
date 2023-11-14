@@ -24,5 +24,11 @@ namespace AppEscritori
             this.Hide();
         }
 
+        private void button1Enrere_Click(object sender, EventArgs e)
+        {
+            CampsMain campsMain = new CampsMain();
+            campsMain.Show();
+            this.Hide();
+        }
     }
 }

@@ -58,6 +58,7 @@
             buttonModElemento.TabIndex = 1;
             buttonModElemento.Text = "Modificar Elemento";
             buttonModElemento.UseVisualStyleBackColor = true;
+            buttonModElemento.Click += buttonModElemento_Click;
             // 
             // buttonEliminarElemento
             // 
