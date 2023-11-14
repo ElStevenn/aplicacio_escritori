@@ -25,5 +25,14 @@ namespace AppEscritori
             this.Hide();
 
         }
+
+        private void button_atras_Click(object sender, EventArgs e)
+        {
+            // Para volver atràs
+            CampsMain campsMain = new CampsMain();
+            campsMain.Show();
+            this.Hide();
+
+        }
     }
 }

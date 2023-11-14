@@ -157,6 +157,7 @@
             button_atras.TabIndex = 8;
             button_atras.Text = "Atrás";
             button_atras.UseVisualStyleBackColor = true;
+            button_atras.Click += button_atras_Click;
             // 
             // button_generar
             // 
