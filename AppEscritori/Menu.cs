@@ -54,9 +54,10 @@ namespace AppEscritori
         private void buttonModElemento_Click(object sender, EventArgs e)
         {
             // redireccionar a modigicar_elemento
-            CampsMain menu = new CampsMain();
+            ModificarElemento menu = new ModificarElemento();
             menu.Show();
             this.Hide();
+
         }
     }
 }
