@@ -33,8 +33,9 @@ namespace AppEscritori
 
         private void buttonAtras_Click(object sender, EventArgs e)
         {
-            this.Close();
-            this.menu.Show();
+            Menu menu = new Menu();
+            menu.Show();
+            this.Hide();
 
         }
     }

@@ -211,6 +211,7 @@
             button1Enrere.TabIndex = 21;
             button1Enrere.Text = "Atrás";
             button1Enrere.UseVisualStyleBackColor = true;
+            button1Enrere.Click += button1Enrere_Click;
             // 
             // button2Siguiente
             // 
