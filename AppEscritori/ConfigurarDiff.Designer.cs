@@ -44,6 +44,7 @@
             buttonNormal.TabIndex = 2;
             buttonNormal.Text = "Normal";
             buttonNormal.UseVisualStyleBackColor = true;
+            buttonNormal.Click += buttonNormal_Click;
             // 
             // button_atras13
             // 
@@ -76,6 +77,7 @@
             buttonFacil.TabIndex = 21;
             buttonFacil.Text = "Fácil";
             buttonFacil.UseVisualStyleBackColor = true;
+            buttonFacil.Click += buttonFacil_Click;
             // 
             // buttonDificil
             // 
@@ -86,6 +88,7 @@
             buttonDificil.TabIndex = 22;
             buttonDificil.Text = "Difícil";
             buttonDificil.UseVisualStyleBackColor = true;
+            buttonDificil.Click += buttonDificil_Click;
             // 
             // ConfigurarDiff
             // 

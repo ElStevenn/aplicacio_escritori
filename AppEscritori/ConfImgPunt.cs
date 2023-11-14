@@ -12,9 +12,22 @@ namespace AppEscritori
 {
     public partial class ConfImgPunt : Form
     {
+        ConfigurarDiff configurarDiff;
         public ConfImgPunt()
         {
             InitializeComponent();
+        }
+        public ConfImgPunt(ConfigurarDiff configurarDiff)
+        {
+            InitializeComponent();
+            this.configurarDiff = configurarDiff;
+        }
+
+        private void button2Enrere_Click(object sender, EventArgs e)
+        {
+
+            this.Close();
+            this.configurarDiff.Show();
         }
     }
 }

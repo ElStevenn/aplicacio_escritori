@@ -26,7 +26,28 @@ namespace AppEscritori
         private void button_atras13_Click(object sender, EventArgs e)
         {
             this.Close();
-            this.confjuego .Show();
+            this.confjuego.Show();
+        }
+
+        private void buttonFacil_Click(object sender, EventArgs e)
+        {
+            ConfImgPunt configimgpunt = new ConfImgPunt(this);
+            configimgpunt.Show();
+            this.Hide();
+        }
+
+        private void buttonNormal_Click(object sender, EventArgs e)
+        {
+            ConfImgPunt configimgpunt = new ConfImgPunt(this);
+            configimgpunt.Show();
+            this.Hide();
+        }
+
+        private void buttonDificil_Click(object sender, EventArgs e)
+        {
+            ConfImgPunt configimgpunt = new ConfImgPunt(this);
+            configimgpunt.Show();
+            this.Hide();
         }
     }
 }
