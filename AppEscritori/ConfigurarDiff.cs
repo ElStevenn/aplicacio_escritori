@@ -26,7 +26,7 @@ namespace AppEscritori
         private void button_atras13_Click(object sender, EventArgs e)
         {
             this.Close();
-            this.confjuego.Show();
+            this.confjuego .Show();
         }
     }
 }
