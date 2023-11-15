@@ -32,9 +32,6 @@
     <Compile Update="EliminarPregunta.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Form1.cs">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Update="Login.cs">
       <SubType>Form</SubType>
     </Compile>

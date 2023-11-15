@@ -59,5 +59,10 @@ namespace AppEscritori
             this.Hide();
 
         }
+
+        private void labelHolaUsuari_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

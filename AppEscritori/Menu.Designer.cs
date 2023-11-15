@@ -32,10 +32,7 @@
             buttonModElemento = new Button();
             buttonEliminarElemento = new Button();
             buttonConfJuego = new Button();
-            menuStrip1 = new MenuStrip();
-            cambiarUsuarioToolStripMenuItem = new ToolStripMenuItem();
             labelHolaUsuari = new Label();
-            menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
             // buttonCrearElemento
@@ -82,33 +79,17 @@
             buttonConfJuego.UseVisualStyleBackColor = true;
             buttonConfJuego.Click += buttonConfJuego_Click;
             // 
-            // menuStrip1
-            // 
-            menuStrip1.Items.AddRange(new ToolStripItem[] { cambiarUsuarioToolStripMenuItem });
-            menuStrip1.Location = new Point(0, 0);
-            menuStrip1.Name = "menuStrip1";
-            menuStrip1.Padding = new Padding(7, 2, 0, 2);
-            menuStrip1.Size = new Size(467, 24);
-            menuStrip1.TabIndex = 4;
-            menuStrip1.Text = "menuStrip1";
-            // 
-            // cambiarUsuarioToolStripMenuItem
-            // 
-            cambiarUsuarioToolStripMenuItem.Name = "cambiarUsuarioToolStripMenuItem";
-            cambiarUsuarioToolStripMenuItem.Size = new Size(106, 20);
-            cambiarUsuarioToolStripMenuItem.Text = "Cambiar usuario";
-            cambiarUsuarioToolStripMenuItem.Click += cambiarUsuarioToolStripMenuItem_Click;
-            // 
             // labelHolaUsuari
             // 
             labelHolaUsuari.Font = new Font("Segoe UI", 15F, FontStyle.Regular, GraphicsUnit.Point);
-            labelHolaUsuari.Location = new Point(161, 17);
+            labelHolaUsuari.Location = new Point(107, 24);
             labelHolaUsuari.Margin = new Padding(4, 0, 4, 0);
             labelHolaUsuari.Name = "labelHolaUsuari";
-            labelHolaUsuari.Size = new Size(130, 42);
+            labelHolaUsuari.Size = new Size(228, 42);
             labelHolaUsuari.TabIndex = 5;
-            labelHolaUsuari.Text = "Hola (usuari)";
+            labelHolaUsuari.Text = "Panell Administratiu";
             labelHolaUsuari.TextAlign = ContentAlignment.MiddleCenter;
+            labelHolaUsuari.Click += labelHolaUsuari_Click;
             // 
             // Menu
             // 
@@ -120,18 +101,13 @@
             Controls.Add(buttonEliminarElemento);
             Controls.Add(buttonModElemento);
             Controls.Add(buttonCrearElemento);
-            Controls.Add(menuStrip1);
             FormBorderStyle = FormBorderStyle.FixedSingle;
             HelpButton = true;
-            MainMenuStrip = menuStrip1;
             Margin = new Padding(4, 3, 4, 3);
             MaximizeBox = false;
             Name = "Menu";
             Text = "Menu";
-            menuStrip1.ResumeLayout(false);
-            menuStrip1.PerformLayout();
             ResumeLayout(false);
-            PerformLayout();
         }
 
         #endregion
@@ -140,8 +116,6 @@
         private Button buttonModElemento;
         private Button buttonEliminarElemento;
         private Button buttonConfJuego;
-        private MenuStrip menuStrip1;
         private Label labelHolaUsuari;
-        private ToolStripMenuItem cambiarUsuarioToolStripMenuItem;
     }
 }
