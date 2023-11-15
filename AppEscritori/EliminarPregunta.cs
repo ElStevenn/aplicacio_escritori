@@ -33,5 +33,10 @@ namespace AppEscritori
             this.Close();
             this.confpreguntas.Show();
         }
+
+        private void EliminarPregunta_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

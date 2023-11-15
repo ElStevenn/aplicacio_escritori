@@ -142,6 +142,7 @@
             Margin = new Padding(4, 3, 4, 3);
             Name = "EliminarPregunta";
             Text = "Formulari 12";
+            Load += EliminarPregunta_Load;
             ResumeLayout(false);
             PerformLayout();
         }
