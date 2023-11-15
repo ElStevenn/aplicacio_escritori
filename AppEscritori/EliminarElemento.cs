@@ -22,5 +22,12 @@ namespace AppEscritori
             InitializeComponent();
             this.menu = menu;
         }
+
+        private void buttonAtras_Click(object sender, EventArgs e)
+        {
+            Menu menu = new Menu();
+            menu.Show();
+            this.Hide();
+        }
     }
 }
