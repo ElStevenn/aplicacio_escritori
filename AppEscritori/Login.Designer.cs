@@ -66,9 +66,10 @@
             textBoxContra.Location = new Point(70, 77);
             textBoxContra.Margin = new Padding(2, 1, 2, 1);
             textBoxContra.Name = "textBoxContra";
+            textBoxContra.PasswordChar = '*';
+            textBoxContra.PlaceholderText = "*";
             textBoxContra.Size = new Size(178, 23);
             textBoxContra.TabIndex = 1;
-            textBoxContra.Text = "contrasenya";
             textBoxContra.TextAlign = HorizontalAlignment.Center;
             // 
             // button_login
