@@ -29,5 +29,16 @@ namespace AppEscritori
             this.Close();
             this.confpreguntas.Show();
         }
+
+        private void labelIncorrecta_Click(object sender, EventArgs e)
+        {
+
+        }
+
+
+        private void AñadirPregunta_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

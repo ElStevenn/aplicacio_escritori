@@ -38,11 +38,12 @@
             textBoxIncorr1 = new TextBox();
             label1 = new Label();
             label2 = new Label();
+            label3 = new Label();
             SuspendLayout();
             // 
             // textBoxCorrecta
             // 
-            textBoxCorrecta.Location = new Point(161, 42);
+            textBoxCorrecta.Location = new Point(161, 90);
             textBoxCorrecta.Margin = new Padding(4, 3, 4, 3);
             textBoxCorrecta.Name = "textBoxCorrecta";
             textBoxCorrecta.Size = new Size(354, 23);
@@ -51,7 +52,7 @@
             // 
             // buttonAnadir
             // 
-            buttonAnadir.Location = new Point(430, 196);
+            buttonAnadir.Location = new Point(428, 241);
             buttonAnadir.Margin = new Padding(4, 3, 4, 3);
             buttonAnadir.Name = "buttonAnadir";
             buttonAnadir.Size = new Size(114, 27);
@@ -61,7 +62,7 @@
             // 
             // textBoxPregunta
             // 
-            textBoxPregunta.Location = new Point(161, 15);
+            textBoxPregunta.Location = new Point(161, 56);
             textBoxPregunta.Margin = new Padding(4, 3, 4, 3);
             textBoxPregunta.Name = "textBoxPregunta";
             textBoxPregunta.Size = new Size(354, 23);
@@ -70,7 +71,7 @@
             // 
             // buttonAtras
             // 
-            buttonAtras.Location = new Point(13, 196);
+            buttonAtras.Location = new Point(13, 241);
             buttonAtras.Margin = new Padding(4, 3, 4, 3);
             buttonAtras.Name = "buttonAtras";
             buttonAtras.Size = new Size(114, 27);
@@ -81,7 +82,7 @@
             // 
             // textBoxIncorr3
             // 
-            textBoxIncorr3.Location = new Point(13, 167);
+            textBoxIncorr3.Location = new Point(13, 201);
             textBoxIncorr3.Margin = new Padding(4, 3, 4, 3);
             textBoxIncorr3.Name = "textBoxIncorr3";
             textBoxIncorr3.Size = new Size(502, 23);
@@ -90,7 +91,7 @@
             // 
             // textBoxIncorr2
             // 
-            textBoxIncorr2.Location = new Point(13, 137);
+            textBoxIncorr2.Location = new Point(13, 172);
             textBoxIncorr2.Margin = new Padding(4, 3, 4, 3);
             textBoxIncorr2.Name = "textBoxIncorr2";
             textBoxIncorr2.Size = new Size(502, 23);
@@ -101,16 +102,17 @@
             // 
             labelIncorrecta.AutoSize = true;
             labelIncorrecta.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            labelIncorrecta.Location = new Point(13, 83);
+            labelIncorrecta.Location = new Point(13, 119);
             labelIncorrecta.Margin = new Padding(4, 0, 4, 0);
             labelIncorrecta.Name = "labelIncorrecta";
-            labelIncorrecta.Size = new Size(168, 21);
+            labelIncorrecta.Size = new Size(189, 21);
             labelIncorrecta.TabIndex = 13;
-            labelIncorrecta.Text = "Respuestas incorrectas";
+            labelIncorrecta.Text = "Respuestostes incorrectes";
+            labelIncorrecta.Click += labelIncorrecta_Click;
             // 
             // textBoxIncorr1
             // 
-            textBoxIncorr1.Location = new Point(13, 107);
+            textBoxIncorr1.Location = new Point(13, 143);
             textBoxIncorr1.Margin = new Padding(4, 3, 4, 3);
             textBoxIncorr1.Name = "textBoxIncorr1";
             textBoxIncorr1.Size = new Size(502, 23);
@@ -121,7 +123,7 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label1.Location = new Point(13, 15);
+            label1.Location = new Point(12, 56);
             label1.Name = "label1";
             label1.Size = new Size(73, 21);
             label1.TabIndex = 19;
@@ -131,17 +133,30 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label2.Location = new Point(13, 44);
+            label2.Location = new Point(13, 88);
             label2.Name = "label2";
             label2.Size = new Size(141, 21);
             label2.TabIndex = 19;
             label2.Text = "Respuesta correcta";
             // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            label3.ForeColor = Color.Firebrick;
+            label3.Location = new Point(194, 15);
+            label3.Name = "label3";
+            label3.Size = new Size(149, 21);
+            label3.TabIndex = 20;
+            label3.Text = "Hi ha X preguntes ";
+            label3.Click += label3_Click;
+            // 
             // AñadirPregunta
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(557, 233);
+            ClientSize = new Size(555, 280);
+            Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(label1);
             Controls.Add(textBoxCorrecta);
@@ -156,6 +171,7 @@
             Margin = new Padding(4, 3, 4, 3);
             Name = "AñadirPregunta";
             Text = "Form10";
+            Load += AñadirPregunta_Load;
             ResumeLayout(false);
             PerformLayout();
         }
@@ -171,6 +187,7 @@
         private TextBox textBoxIncorr1;
         private Label label1;
         private Label label2;
+        private Label label3;
     }
 }
 
