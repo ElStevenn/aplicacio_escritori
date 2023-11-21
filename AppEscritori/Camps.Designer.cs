@@ -73,6 +73,7 @@
             textBox1Autonomia.Name = "textBox1Autonomia";
             textBox1Autonomia.Size = new Size(180, 23);
             textBox1Autonomia.TabIndex = 0;
+            textBox1Autonomia.TextChanged += textBox1Autonomia_TextChanged;
             // 
             // textBox2CapacitatDiposit
             // 

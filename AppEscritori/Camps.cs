@@ -30,5 +30,10 @@ namespace AppEscritori
             campsMain.Show();
             this.Hide();
         }
+
+        private void textBox1Autonomia_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

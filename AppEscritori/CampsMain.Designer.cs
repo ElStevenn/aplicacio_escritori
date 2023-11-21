@@ -70,9 +70,9 @@
             label1.AutoSize = true;
             label1.Location = new Point(41, 9);
             label1.Name = "label1";
-            label1.Size = new Size(123, 15);
+            label1.Size = new Size(99, 15);
             label1.TabIndex = 6;
-            label1.Text = "Nombre del Elemento";
+            label1.Text = "Nom del element";
             label1.TextAlign = ContentAlignment.MiddleLeft;
             // 
             // label2
@@ -80,18 +80,18 @@
             label2.AutoSize = true;
             label2.Location = new Point(225, 9);
             label2.Name = "label2";
-            label2.Size = new Size(123, 15);
+            label2.Size = new Size(110, 15);
             label2.TabIndex = 7;
-            label2.Text = "Numero de Inventario";
+            label2.Text = "Numero d'inventari";
             // 
             // label3
             // 
             label3.AutoSize = true;
             label3.Location = new Point(442, 9);
             label3.Name = "label3";
-            label3.Size = new Size(77, 15);
+            label3.Size = new Size(85, 15);
             label3.TabIndex = 8;
-            label3.Text = "Año creación";
+            label3.Text = "Any de creació";
             // 
             // imageList1
             // 
@@ -120,9 +120,9 @@
             label4.AutoSize = true;
             label4.Location = new Point(12, 188);
             label4.Name = "label4";
-            label4.Size = new Size(122, 15);
+            label4.Size = new Size(127, 15);
             label4.TabIndex = 11;
-            label4.Text = "Descripción elemento";
+            label4.Text = "Descripció del element";
             // 
             // buttonAtras
             // 
@@ -130,7 +130,7 @@
             buttonAtras.Name = "buttonAtras";
             buttonAtras.Size = new Size(133, 23);
             buttonAtras.TabIndex = 12;
-            buttonAtras.Text = "Atrás";
+            buttonAtras.Text = "Enrrere";
             buttonAtras.UseVisualStyleBackColor = true;
             buttonAtras.Click += buttonAtras_Click;
             // 
@@ -140,7 +140,7 @@
             buttonSiguiente.Name = "buttonSiguiente";
             buttonSiguiente.Size = new Size(133, 23);
             buttonSiguiente.TabIndex = 13;
-            buttonSiguiente.Text = "Siguiente";
+            buttonSiguiente.Text = "Següent";
             buttonSiguiente.UseVisualStyleBackColor = true;
             buttonSiguiente.Click += buttonSiguiente_Click;
             // 

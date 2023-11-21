@@ -26,7 +26,7 @@ namespace AppEscritori
 
         private void buttonSiguiente_Click(object sender, EventArgs e)
         {
-            Camps camps = new ();
+            Camps camps = new();
             camps.Show();
             this.Hide();
         }
