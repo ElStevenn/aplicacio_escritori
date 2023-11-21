@@ -105,9 +105,9 @@
             labelIncorrecta.Location = new Point(13, 119);
             labelIncorrecta.Margin = new Padding(4, 0, 4, 0);
             labelIncorrecta.Name = "labelIncorrecta";
-            labelIncorrecta.Size = new Size(189, 21);
+            labelIncorrecta.Size = new Size(160, 21);
             labelIncorrecta.TabIndex = 13;
-            labelIncorrecta.Text = "Respuestostes incorrectes";
+            labelIncorrecta.Text = "Respostes incorrectes";
             labelIncorrecta.Click += labelIncorrecta_Click;
             // 
             // textBoxIncorr1
