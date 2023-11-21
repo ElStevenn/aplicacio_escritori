@@ -149,7 +149,6 @@
             label3.Size = new Size(149, 21);
             label3.TabIndex = 20;
             label3.Text = "Hi ha X preguntes ";
-            label3.Click += label3_Click;
             // 
             // AñadirPregunta
             // 
