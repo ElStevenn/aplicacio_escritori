@@ -40,5 +40,15 @@ namespace AppEscritori
         {
 
         }
+
+        private void textBoxPregunta_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonAnadir_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

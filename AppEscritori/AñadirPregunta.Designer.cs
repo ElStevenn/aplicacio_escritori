@@ -59,6 +59,7 @@
             buttonAnadir.TabIndex = 18;
             buttonAnadir.Text = "Añadir";
             buttonAnadir.UseVisualStyleBackColor = true;
+            buttonAnadir.Click += buttonAnadir_Click;
             // 
             // textBoxPregunta
             // 
@@ -68,6 +69,7 @@
             textBoxPregunta.Size = new Size(354, 23);
             textBoxPregunta.TabIndex = 11;
             textBoxPregunta.TextAlign = HorizontalAlignment.Center;
+            textBoxPregunta.TextChanged += textBoxPregunta_TextChanged;
             // 
             // buttonAtras
             // 
