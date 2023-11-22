@@ -58,7 +58,6 @@
             textBoxRespCorrecta.Name = "textBoxRespCorrecta";
             textBoxRespCorrecta.Size = new Size(339, 23);
             textBoxRespCorrecta.TabIndex = 1;
-            textBoxRespCorrecta.Text = "Respuesta Correcta";
             // 
             // labelModRespIncorrecta
             // 
