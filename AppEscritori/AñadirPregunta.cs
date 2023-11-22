@@ -50,5 +50,10 @@ namespace AppEscritori
         {
 
         }
+
+        private void textBoxIncorr1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

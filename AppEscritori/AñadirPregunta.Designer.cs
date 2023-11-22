@@ -120,6 +120,7 @@
             textBoxIncorr1.Size = new Size(502, 23);
             textBoxIncorr1.TabIndex = 14;
             textBoxIncorr1.TextAlign = HorizontalAlignment.Center;
+            textBoxIncorr1.TextChanged += textBoxIncorr1_TextChanged;
             // 
             // label1
             // 
