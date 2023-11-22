@@ -70,9 +70,9 @@
             label1.AutoSize = true;
             label1.Location = new Point(41, 9);
             label1.Name = "label1";
-            label1.Size = new Size(99, 15);
+            label1.Size = new Size(80, 15);
             label1.TabIndex = 6;
-            label1.Text = "Nom del element";
+            label1.Text = "Nom Element";
             label1.TextAlign = ContentAlignment.MiddleLeft;
             // 
             // label2

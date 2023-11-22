@@ -49,5 +49,10 @@ namespace AppEscritori
             configimgpunt.Show();
             this.Hide();
         }
+
+        private void labelCreando_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

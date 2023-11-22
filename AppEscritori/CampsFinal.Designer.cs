@@ -50,7 +50,7 @@
             textBox_selecciona.Name = "textBox_selecciona";
             textBox_selecciona.Size = new Size(246, 23);
             textBox_selecciona.TabIndex = 1;
-            textBox_selecciona.Text = "Selecciona el elemento más proximo";
+            textBox_selecciona.Text = "Selecciona el element més próxim";
             // 
             // comboBox_selecciona
             // 
@@ -104,7 +104,7 @@
             radioButtoncatala.Size = new Size(56, 19);
             radioButtoncatala.TabIndex = 1;
             radioButtoncatala.TabStop = true;
-            radioButtoncatala.Text = "catala";
+            radioButtoncatala.Text = "català";
             radioButtoncatala.UseVisualStyleBackColor = true;
             // 
             // radioButton_castellano
@@ -155,7 +155,7 @@
             button_atras.Name = "button_atras";
             button_atras.Size = new Size(87, 26);
             button_atras.TabIndex = 8;
-            button_atras.Text = "Atrás";
+            button_atras.Text = "Enerere";
             button_atras.UseVisualStyleBackColor = true;
             button_atras.Click += button_atras_Click;
             // 
@@ -186,7 +186,7 @@
             Controls.Add(textBox_selecciona);
             Margin = new Padding(2);
             Name = "CampsFinal";
-            Text = "Form5";
+            Text = "Camps finals";
             groupBox_RadioButtons.ResumeLayout(false);
             groupBox_RadioButtons.PerformLayout();
             ResumeLayout(false);

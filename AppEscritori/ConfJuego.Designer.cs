@@ -76,7 +76,7 @@
             Controls.Add(button1ConfigPreg);
             Margin = new Padding(4, 3, 4, 3);
             Name = "ConfJuego";
-            Text = "Formulari_08";
+            Text = "Configuración del videojuego";
             ResumeLayout(false);
         }
 

@@ -36,45 +36,45 @@
             // 
             // buttonAnadir
             // 
-            buttonAnadir.Location = new Point(13, 12);
+            buttonAnadir.Location = new Point(32, 12);
             buttonAnadir.Margin = new Padding(4, 3, 4, 3);
             buttonAnadir.Name = "buttonAnadir";
             buttonAnadir.Size = new Size(160, 29);
             buttonAnadir.TabIndex = 0;
-            buttonAnadir.Text = "AñadirPreg";
+            buttonAnadir.Text = "Anyadir Pregunta";
             buttonAnadir.UseVisualStyleBackColor = true;
             buttonAnadir.Click += buttonAnadir_Click;
             // 
             // buttonModificar
             // 
-            buttonModificar.Location = new Point(13, 48);
+            buttonModificar.Location = new Point(32, 47);
             buttonModificar.Margin = new Padding(4, 3, 4, 3);
             buttonModificar.Name = "buttonModificar";
             buttonModificar.Size = new Size(160, 29);
             buttonModificar.TabIndex = 1;
-            buttonModificar.Text = "ModificarPreg";
+            buttonModificar.Text = "Modificar Pregunta";
             buttonModificar.UseVisualStyleBackColor = true;
             buttonModificar.Click += buttonModificar_Click;
             // 
             // buttonEliminar
             // 
-            buttonEliminar.Location = new Point(13, 84);
+            buttonEliminar.Location = new Point(32, 92);
             buttonEliminar.Margin = new Padding(4, 3, 4, 3);
             buttonEliminar.Name = "buttonEliminar";
             buttonEliminar.Size = new Size(160, 29);
             buttonEliminar.TabIndex = 2;
-            buttonEliminar.Text = "EliminarPreg";
+            buttonEliminar.Text = "Eliminar Pregunta";
             buttonEliminar.UseVisualStyleBackColor = true;
             buttonEliminar.Click += buttonEliminar_Click;
             // 
             // buttonAtrasConfPreg
             // 
-            buttonAtrasConfPreg.Location = new Point(52, 119);
+            buttonAtrasConfPreg.Location = new Point(61, 127);
             buttonAtrasConfPreg.Margin = new Padding(4, 3, 4, 3);
             buttonAtrasConfPreg.Name = "buttonAtrasConfPreg";
             buttonAtrasConfPreg.Size = new Size(80, 29);
             buttonAtrasConfPreg.TabIndex = 3;
-            buttonAtrasConfPreg.Text = "Atrás";
+            buttonAtrasConfPreg.Text = "Enrere";
             buttonAtrasConfPreg.UseVisualStyleBackColor = true;
             buttonAtrasConfPreg.Click += buttonAtrasConfPreg_Click;
             // 
@@ -82,7 +82,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(187, 155);
+            ClientSize = new Size(219, 168);
             Controls.Add(buttonAtrasConfPreg);
             Controls.Add(buttonEliminar);
             Controls.Add(buttonModificar);

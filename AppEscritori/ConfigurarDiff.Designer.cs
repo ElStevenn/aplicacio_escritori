@@ -38,6 +38,7 @@
             // buttonNormal
             // 
             buttonNormal.BackColor = Color.Yellow;
+            buttonNormal.Cursor = Cursors.Hand;
             buttonNormal.FlatStyle = FlatStyle.Popup;
             buttonNormal.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             buttonNormal.Location = new Point(48, 97);
@@ -56,24 +57,27 @@
             button_atras13.Name = "button_atras13";
             button_atras13.Size = new Size(117, 32);
             button_atras13.TabIndex = 4;
-            button_atras13.Text = "Enrrere";
+            button_atras13.Text = "Enrere";
             button_atras13.UseVisualStyleBackColor = true;
             button_atras13.Click += button_atras13_Click;
             // 
             // labelCreando
             // 
-            labelCreando.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            labelCreando.Location = new Point(9, 9);
+            labelCreando.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
+            labelCreando.ForeColor = Color.FromArgb(192, 64, 20);
+            labelCreando.Location = new Point(13, -3);
             labelCreando.Margin = new Padding(4, 0, 4, 0);
             labelCreando.Name = "labelCreando";
             labelCreando.Size = new Size(260, 45);
             labelCreando.TabIndex = 20;
-            labelCreando.Text = "Selecciona la dificultad a configurar";
+            labelCreando.Text = "Selecciona la dificultat";
             labelCreando.TextAlign = ContentAlignment.MiddleCenter;
+            labelCreando.Click += labelCreando_Click;
             // 
             // buttonFacil
             // 
             buttonFacil.BackColor = Color.FromArgb(0, 192, 0);
+            buttonFacil.Cursor = Cursors.Hand;
             buttonFacil.FlatStyle = FlatStyle.Popup;
             buttonFacil.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             buttonFacil.Location = new Point(48, 44);
@@ -88,6 +92,7 @@
             // buttonDificil
             // 
             buttonDificil.BackColor = Color.FromArgb(192, 0, 0);
+            buttonDificil.Cursor = Cursors.Hand;
             buttonDificil.FlatStyle = FlatStyle.Popup;
             buttonDificil.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             buttonDificil.Location = new Point(48, 150);
