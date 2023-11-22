@@ -37,13 +37,14 @@
             buttonAtras = new Button();
             buttonModificar = new Button();
             labelRespCorrecta = new Label();
+            label1 = new Label();
             SuspendLayout();
             // 
             // comboBoxPreguntas
             // 
             comboBoxPreguntas.FormattingEnabled = true;
             comboBoxPreguntas.Items.AddRange(new object[] { "Pregunta 1", "Pregunta 2", "Pregunta 3", "Pregunta 4", "Pregunta 5", "Pregunta 6", "Pregunta 7", "Pregunta 8", "Pregunta 9", "Pregunta 10" });
-            comboBoxPreguntas.Location = new Point(14, 14);
+            comboBoxPreguntas.Location = new Point(14, 27);
             comboBoxPreguntas.Margin = new Padding(4, 3, 4, 3);
             comboBoxPreguntas.Name = "comboBoxPreguntas";
             comboBoxPreguntas.Size = new Size(461, 23);
@@ -52,7 +53,7 @@
             // 
             // textBoxRespCorrecta
             // 
-            textBoxRespCorrecta.Location = new Point(14, 67);
+            textBoxRespCorrecta.Location = new Point(14, 80);
             textBoxRespCorrecta.Margin = new Padding(4, 3, 4, 3);
             textBoxRespCorrecta.Name = "textBoxRespCorrecta";
             textBoxRespCorrecta.Size = new Size(339, 23);
@@ -62,7 +63,7 @@
             // labelModRespIncorrecta
             // 
             labelModRespIncorrecta.AutoSize = true;
-            labelModRespIncorrecta.Location = new Point(10, 106);
+            labelModRespIncorrecta.Location = new Point(14, 120);
             labelModRespIncorrecta.Margin = new Padding(4, 0, 4, 0);
             labelModRespIncorrecta.Name = "labelModRespIncorrecta";
             labelModRespIncorrecta.Size = new Size(190, 15);
@@ -72,7 +73,7 @@
             // 
             // textBoxRespInc1
             // 
-            textBoxRespInc1.Location = new Point(14, 125);
+            textBoxRespInc1.Location = new Point(14, 138);
             textBoxRespInc1.Margin = new Padding(4, 3, 4, 3);
             textBoxRespInc1.Name = "textBoxRespInc1";
             textBoxRespInc1.Size = new Size(339, 23);
@@ -81,7 +82,7 @@
             // 
             // textBoxRespInc2
             // 
-            textBoxRespInc2.Location = new Point(14, 155);
+            textBoxRespInc2.Location = new Point(14, 168);
             textBoxRespInc2.Margin = new Padding(4, 3, 4, 3);
             textBoxRespInc2.Name = "textBoxRespInc2";
             textBoxRespInc2.Size = new Size(339, 23);
@@ -90,7 +91,7 @@
             // 
             // textBoxRespInc3
             // 
-            textBoxRespInc3.Location = new Point(14, 185);
+            textBoxRespInc3.Location = new Point(14, 197);
             textBoxRespInc3.Margin = new Padding(4, 3, 4, 3);
             textBoxRespInc3.Name = "textBoxRespInc3";
             textBoxRespInc3.Size = new Size(339, 23);
@@ -99,7 +100,7 @@
             // 
             // buttonAtras
             // 
-            buttonAtras.Location = new Point(14, 226);
+            buttonAtras.Location = new Point(14, 246);
             buttonAtras.Margin = new Padding(4, 3, 4, 3);
             buttonAtras.Name = "buttonAtras";
             buttonAtras.Size = new Size(88, 27);
@@ -110,7 +111,7 @@
             // 
             // buttonModificar
             // 
-            buttonModificar.Location = new Point(388, 226);
+            buttonModificar.Location = new Point(401, 246);
             buttonModificar.Margin = new Padding(4, 3, 4, 3);
             buttonModificar.Name = "buttonModificar";
             buttonModificar.Size = new Size(88, 27);
@@ -121,18 +122,29 @@
             // labelRespCorrecta
             // 
             labelRespCorrecta.AutoSize = true;
-            labelRespCorrecta.Location = new Point(10, 48);
+            labelRespCorrecta.Location = new Point(10, 61);
             labelRespCorrecta.Margin = new Padding(4, 0, 4, 0);
             labelRespCorrecta.Name = "labelRespCorrecta";
             labelRespCorrecta.Size = new Size(169, 15);
             labelRespCorrecta.TabIndex = 8;
             labelRespCorrecta.Text = "Introduce la respuesta correcta";
             // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(14, 9);
+            label1.Margin = new Padding(4, 0, 4, 0);
+            label1.Name = "label1";
+            label1.Size = new Size(55, 15);
+            label1.TabIndex = 9;
+            label1.Text = "Pregunta";
+            // 
             // ModificarPregunta
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(485, 263);
+            ClientSize = new Size(514, 286);
+            Controls.Add(label1);
             Controls.Add(labelRespCorrecta);
             Controls.Add(buttonModificar);
             Controls.Add(buttonAtras);
@@ -162,5 +174,6 @@
         private Button buttonAtras;
         private Button buttonModificar;
         private Label labelRespCorrecta;
+        private Label label1;
     }
 }
