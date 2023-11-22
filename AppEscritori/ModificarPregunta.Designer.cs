@@ -78,7 +78,6 @@
             textBoxRespInc1.Name = "textBoxRespInc1";
             textBoxRespInc1.Size = new Size(339, 23);
             textBoxRespInc1.TabIndex = 3;
-            textBoxRespInc1.Text = "Respuesta Incorrecta";
             // 
             // textBoxRespInc2
             // 
@@ -87,7 +86,6 @@
             textBoxRespInc2.Name = "textBoxRespInc2";
             textBoxRespInc2.Size = new Size(339, 23);
             textBoxRespInc2.TabIndex = 4;
-            textBoxRespInc2.Text = "Respuesta Incorrecta";
             // 
             // textBoxRespInc3
             // 
@@ -96,7 +94,6 @@
             textBoxRespInc3.Name = "textBoxRespInc3";
             textBoxRespInc3.Size = new Size(339, 23);
             textBoxRespInc3.TabIndex = 5;
-            textBoxRespInc3.Text = "Respuesta Incorrecta";
             // 
             // buttonAtras
             // 
