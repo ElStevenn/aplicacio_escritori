@@ -172,7 +172,7 @@
             FormBorderStyle = FormBorderStyle.FixedSingle;
             Margin = new Padding(4, 3, 4, 3);
             Name = "AñadirPregunta";
-            Text = "Form10";
+            Text = "Agregar preguntes";
             Load += AñadirPregunta_Load;
             ResumeLayout(false);
             PerformLayout();

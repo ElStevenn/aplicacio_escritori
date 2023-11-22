@@ -19,6 +19,10 @@ namespace AppEscritori
 
         private void button2Siguiente_Click(object sender, EventArgs e)
         {
+            // Aquí a parte de ir ala siguiente parte, habrá que manejar errores y recojer todos los datos de los imputs
+
+
+
             CampsFinal campsFinal = new CampsFinal();
             campsFinal.Show();
             this.Hide();

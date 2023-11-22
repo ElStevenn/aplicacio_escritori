@@ -210,7 +210,7 @@
             button1Enrere.Name = "button1Enrere";
             button1Enrere.Size = new Size(88, 27);
             button1Enrere.TabIndex = 21;
-            button1Enrere.Text = "Atrás";
+            button1Enrere.Text = "Enrere";
             button1Enrere.UseVisualStyleBackColor = true;
             button1Enrere.Click += button1Enrere_Click;
             // 
@@ -221,7 +221,7 @@
             button2Siguiente.Name = "button2Siguiente";
             button2Siguiente.Size = new Size(88, 27);
             button2Siguiente.TabIndex = 22;
-            button2Siguiente.Text = "Siguiente";
+            button2Siguiente.Text = "Següent";
             button2Siguiente.UseVisualStyleBackColor = true;
             button2Siguiente.Click += button2Siguiente_Click;
             // 
@@ -421,7 +421,7 @@
             Controls.Add(textBox1Autonomia);
             Margin = new Padding(2);
             Name = "Camps";
-            Text = "Formulari_04";
+            Text = "Establir els camps";
             ResumeLayout(false);
             PerformLayout();
         }

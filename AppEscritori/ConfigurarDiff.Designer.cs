@@ -37,13 +37,16 @@
             // 
             // buttonNormal
             // 
+            buttonNormal.BackColor = Color.Yellow;
+            buttonNormal.FlatStyle = FlatStyle.Popup;
+            buttonNormal.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             buttonNormal.Location = new Point(48, 97);
             buttonNormal.Margin = new Padding(2);
             buttonNormal.Name = "buttonNormal";
             buttonNormal.Size = new Size(172, 49);
             buttonNormal.TabIndex = 2;
             buttonNormal.Text = "Normal";
-            buttonNormal.UseVisualStyleBackColor = true;
+            buttonNormal.UseVisualStyleBackColor = false;
             buttonNormal.Click += buttonNormal_Click;
             // 
             // button_atras13
@@ -53,7 +56,7 @@
             button_atras13.Name = "button_atras13";
             button_atras13.Size = new Size(117, 32);
             button_atras13.TabIndex = 4;
-            button_atras13.Text = "Atrás";
+            button_atras13.Text = "Enrrere";
             button_atras13.UseVisualStyleBackColor = true;
             button_atras13.Click += button_atras13_Click;
             // 
@@ -70,24 +73,30 @@
             // 
             // buttonFacil
             // 
+            buttonFacil.BackColor = Color.FromArgb(0, 192, 0);
+            buttonFacil.FlatStyle = FlatStyle.Popup;
+            buttonFacil.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             buttonFacil.Location = new Point(48, 44);
             buttonFacil.Margin = new Padding(2);
             buttonFacil.Name = "buttonFacil";
             buttonFacil.Size = new Size(172, 49);
             buttonFacil.TabIndex = 21;
-            buttonFacil.Text = "Fácil";
-            buttonFacil.UseVisualStyleBackColor = true;
+            buttonFacil.Text = "Fàcil";
+            buttonFacil.UseVisualStyleBackColor = false;
             buttonFacil.Click += buttonFacil_Click;
             // 
             // buttonDificil
             // 
+            buttonDificil.BackColor = Color.FromArgb(192, 0, 0);
+            buttonDificil.FlatStyle = FlatStyle.Popup;
+            buttonDificil.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             buttonDificil.Location = new Point(48, 150);
             buttonDificil.Margin = new Padding(2);
             buttonDificil.Name = "buttonDificil";
             buttonDificil.Size = new Size(172, 49);
             buttonDificil.TabIndex = 22;
             buttonDificil.Text = "Difícil";
-            buttonDificil.UseVisualStyleBackColor = true;
+            buttonDificil.UseVisualStyleBackColor = false;
             buttonDificil.Click += buttonDificil_Click;
             // 
             // ConfigurarDiff
@@ -102,7 +111,7 @@
             Controls.Add(buttonNormal);
             Margin = new Padding(2);
             Name = "ConfigurarDiff";
-            Text = "Form13";
+            Text = "Configura dificultat";
             ResumeLayout(false);
         }
 
