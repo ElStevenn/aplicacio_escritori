@@ -28,27 +28,35 @@
         /// </summary>
         private void InitializeComponent()
         {
-            textBoxCorrecta = new TextBox();
+            textBoxRespuesaA = new TextBox();
             buttonAnadir = new Button();
             textBoxPregunta = new TextBox();
             buttonAtras = new Button();
-            textBoxIncorr3 = new TextBox();
-            textBoxIncorr2 = new TextBox();
-            labelIncorrecta = new Label();
-            textBoxIncorr1 = new TextBox();
-            label1 = new Label();
-            label2 = new Label();
-            label3 = new Label();
+            textBoxRespuesaD = new TextBox();
+            textBoxRespuesaC = new TextBox();
+            textBoxRespuesaB = new TextBox();
+            Preguntas = new Label();
+            NumPreguntes = new Label();
+            Respuestas = new Label();
+            label4 = new Label();
+            label5 = new Label();
+            label6 = new Label();
+            label7 = new Label();
+            RespuestaCorrectaA = new RadioButton();
+            RespuestaCorrectaB = new RadioButton();
+            RespuestaCorrectaC = new RadioButton();
+            RespuestaCorrecta = new Label();
+            RespuestaCorrectaD = new RadioButton();
             SuspendLayout();
             // 
-            // textBoxCorrecta
+            // textBoxRespuesaA
             // 
-            textBoxCorrecta.Location = new Point(161, 90);
-            textBoxCorrecta.Margin = new Padding(4, 3, 4, 3);
-            textBoxCorrecta.Name = "textBoxCorrecta";
-            textBoxCorrecta.Size = new Size(354, 23);
-            textBoxCorrecta.TabIndex = 12;
-            textBoxCorrecta.TextAlign = HorizontalAlignment.Center;
+            textBoxRespuesaA.Location = new Point(30, 92);
+            textBoxRespuesaA.Margin = new Padding(4, 3, 4, 3);
+            textBoxRespuesaA.Name = "textBoxRespuesaA";
+            textBoxRespuesaA.Size = new Size(512, 23);
+            textBoxRespuesaA.TabIndex = 12;
+            textBoxRespuesaA.TextAlign = HorizontalAlignment.Center;
             // 
             // buttonAnadir
             // 
@@ -63,10 +71,10 @@
             // 
             // textBoxPregunta
             // 
-            textBoxPregunta.Location = new Point(161, 56);
+            textBoxPregunta.Location = new Point(83, 33);
             textBoxPregunta.Margin = new Padding(4, 3, 4, 3);
             textBoxPregunta.Name = "textBoxPregunta";
-            textBoxPregunta.Size = new Size(354, 23);
+            textBoxPregunta.Size = new Size(459, 23);
             textBoxPregunta.TabIndex = 11;
             textBoxPregunta.TextAlign = HorizontalAlignment.Center;
             textBoxPregunta.TextChanged += textBoxPregunta_TextChanged;
@@ -82,93 +90,186 @@
             buttonAtras.UseVisualStyleBackColor = true;
             buttonAtras.Click += buttonAtras_Click;
             // 
-            // textBoxIncorr3
+            // textBoxRespuesaD
             // 
-            textBoxIncorr3.Location = new Point(13, 201);
-            textBoxIncorr3.Margin = new Padding(4, 3, 4, 3);
-            textBoxIncorr3.Name = "textBoxIncorr3";
-            textBoxIncorr3.Size = new Size(502, 23);
-            textBoxIncorr3.TabIndex = 16;
-            textBoxIncorr3.TextAlign = HorizontalAlignment.Center;
+            textBoxRespuesaD.Location = new Point(31, 179);
+            textBoxRespuesaD.Margin = new Padding(4, 3, 4, 3);
+            textBoxRespuesaD.Name = "textBoxRespuesaD";
+            textBoxRespuesaD.Size = new Size(511, 23);
+            textBoxRespuesaD.TabIndex = 16;
+            textBoxRespuesaD.TextAlign = HorizontalAlignment.Center;
             // 
-            // textBoxIncorr2
+            // textBoxRespuesaC
             // 
-            textBoxIncorr2.Location = new Point(13, 172);
-            textBoxIncorr2.Margin = new Padding(4, 3, 4, 3);
-            textBoxIncorr2.Name = "textBoxIncorr2";
-            textBoxIncorr2.Size = new Size(502, 23);
-            textBoxIncorr2.TabIndex = 15;
-            textBoxIncorr2.TextAlign = HorizontalAlignment.Center;
+            textBoxRespuesaC.Location = new Point(31, 150);
+            textBoxRespuesaC.Margin = new Padding(4, 3, 4, 3);
+            textBoxRespuesaC.Name = "textBoxRespuesaC";
+            textBoxRespuesaC.Size = new Size(511, 23);
+            textBoxRespuesaC.TabIndex = 15;
+            textBoxRespuesaC.TextAlign = HorizontalAlignment.Center;
             // 
-            // labelIncorrecta
+            // textBoxRespuesaB
             // 
-            labelIncorrecta.AutoSize = true;
-            labelIncorrecta.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            labelIncorrecta.Location = new Point(13, 119);
-            labelIncorrecta.Margin = new Padding(4, 0, 4, 0);
-            labelIncorrecta.Name = "labelIncorrecta";
-            labelIncorrecta.Size = new Size(160, 21);
-            labelIncorrecta.TabIndex = 13;
-            labelIncorrecta.Text = "Respostes incorrectes";
-            labelIncorrecta.Click += labelIncorrecta_Click;
+            textBoxRespuesaB.Location = new Point(30, 121);
+            textBoxRespuesaB.Margin = new Padding(4, 3, 4, 3);
+            textBoxRespuesaB.Name = "textBoxRespuesaB";
+            textBoxRespuesaB.Size = new Size(512, 23);
+            textBoxRespuesaB.TabIndex = 14;
+            textBoxRespuesaB.TextAlign = HorizontalAlignment.Center;
+            textBoxRespuesaB.TextChanged += textBoxIncorr1_TextChanged;
             // 
-            // textBoxIncorr1
+            // Preguntas
             // 
-            textBoxIncorr1.Location = new Point(13, 143);
-            textBoxIncorr1.Margin = new Padding(4, 3, 4, 3);
-            textBoxIncorr1.Name = "textBoxIncorr1";
-            textBoxIncorr1.Size = new Size(502, 23);
-            textBoxIncorr1.TabIndex = 14;
-            textBoxIncorr1.TextAlign = HorizontalAlignment.Center;
-            textBoxIncorr1.TextChanged += textBoxIncorr1_TextChanged;
+            Preguntas.AutoSize = true;
+            Preguntas.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            Preguntas.Location = new Point(3, 33);
+            Preguntas.Name = "Preguntas";
+            Preguntas.Size = new Size(73, 21);
+            Preguntas.TabIndex = 19;
+            Preguntas.Text = "Pregunta";
+            Preguntas.Click += label1_Click;
             // 
-            // label1
+            // NumPreguntes
             // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label1.Location = new Point(12, 56);
-            label1.Name = "label1";
-            label1.Size = new Size(73, 21);
-            label1.TabIndex = 19;
-            label1.Text = "Pregunta";
+            NumPreguntes.AutoSize = true;
+            NumPreguntes.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            NumPreguntes.ForeColor = Color.Firebrick;
+            NumPreguntes.Location = new Point(193, 9);
+            NumPreguntes.Name = "NumPreguntes";
+            NumPreguntes.Size = new Size(149, 21);
+            NumPreguntes.TabIndex = 20;
+            NumPreguntes.Text = "Hi ha X preguntes ";
             // 
-            // label2
+            // Respuestas
             // 
-            label2.AutoSize = true;
-            label2.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label2.Location = new Point(13, 88);
-            label2.Name = "label2";
-            label2.Size = new Size(141, 21);
-            label2.TabIndex = 19;
-            label2.Text = "Respuesta correcta";
+            Respuestas.AutoSize = true;
+            Respuestas.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            Respuestas.Location = new Point(3, 68);
+            Respuestas.Name = "Respuestas";
+            Respuestas.Size = new Size(88, 21);
+            Respuestas.TabIndex = 21;
+            Respuestas.Text = "Respuestas";
             // 
-            // label3
+            // label4
             // 
-            label3.AutoSize = true;
-            label3.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            label3.ForeColor = Color.Firebrick;
-            label3.Location = new Point(194, 15);
-            label3.Name = "label3";
-            label3.Size = new Size(149, 21);
-            label3.TabIndex = 20;
-            label3.Text = "Hi ha X preguntes ";
+            label4.AutoSize = true;
+            label4.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            label4.Location = new Point(3, 94);
+            label4.Name = "label4";
+            label4.Size = new Size(20, 21);
+            label4.TabIndex = 22;
+            label4.Text = "A";
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            label5.Location = new Point(4, 123);
+            label5.Name = "label5";
+            label5.Size = new Size(19, 21);
+            label5.TabIndex = 23;
+            label5.Text = "B";
+            // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            label6.Location = new Point(4, 152);
+            label6.Name = "label6";
+            label6.Size = new Size(20, 21);
+            label6.TabIndex = 24;
+            label6.Text = "C";
+            // 
+            // label7
+            // 
+            label7.AutoSize = true;
+            label7.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            label7.Location = new Point(3, 181);
+            label7.Name = "label7";
+            label7.Size = new Size(21, 21);
+            label7.TabIndex = 25;
+            label7.Text = "D";
+            label7.Click += label7_Click;
+            // 
+            // RespuestaCorrectaA
+            // 
+            RespuestaCorrectaA.AutoSize = true;
+            RespuestaCorrectaA.Location = new Point(151, 211);
+            RespuestaCorrectaA.Name = "RespuestaCorrectaA";
+            RespuestaCorrectaA.Size = new Size(33, 19);
+            RespuestaCorrectaA.TabIndex = 26;
+            RespuestaCorrectaA.TabStop = true;
+            RespuestaCorrectaA.Text = "A";
+            RespuestaCorrectaA.UseVisualStyleBackColor = true;
+            // 
+            // RespuestaCorrectaB
+            // 
+            RespuestaCorrectaB.AutoSize = true;
+            RespuestaCorrectaB.Location = new Point(193, 211);
+            RespuestaCorrectaB.Name = "RespuestaCorrectaB";
+            RespuestaCorrectaB.Size = new Size(32, 19);
+            RespuestaCorrectaB.TabIndex = 27;
+            RespuestaCorrectaB.TabStop = true;
+            RespuestaCorrectaB.Text = "B";
+            RespuestaCorrectaB.UseVisualStyleBackColor = true;
+            // 
+            // RespuestaCorrectaC
+            // 
+            RespuestaCorrectaC.AutoSize = true;
+            RespuestaCorrectaC.Location = new Point(231, 211);
+            RespuestaCorrectaC.Name = "RespuestaCorrectaC";
+            RespuestaCorrectaC.Size = new Size(33, 19);
+            RespuestaCorrectaC.TabIndex = 28;
+            RespuestaCorrectaC.TabStop = true;
+            RespuestaCorrectaC.Text = "C";
+            RespuestaCorrectaC.UseVisualStyleBackColor = true;
+            // 
+            // RespuestaCorrecta
+            // 
+            RespuestaCorrecta.AutoSize = true;
+            RespuestaCorrecta.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            RespuestaCorrecta.Location = new Point(4, 208);
+            RespuestaCorrecta.Name = "RespuestaCorrecta";
+            RespuestaCorrecta.Size = new Size(141, 21);
+            RespuestaCorrecta.TabIndex = 30;
+            RespuestaCorrecta.Text = "Respuesta correcta";
+            // 
+            // RespuestaCorrectaD
+            // 
+            RespuestaCorrectaD.AutoSize = true;
+            RespuestaCorrectaD.Location = new Point(270, 211);
+            RespuestaCorrectaD.Name = "RespuestaCorrectaD";
+            RespuestaCorrectaD.Size = new Size(33, 19);
+            RespuestaCorrectaD.TabIndex = 29;
+            RespuestaCorrectaD.TabStop = true;
+            RespuestaCorrectaD.Text = "D";
+            RespuestaCorrectaD.UseVisualStyleBackColor = true;
+            RespuestaCorrectaD.CheckedChanged += radioButton4_CheckedChanged;
             // 
             // AñadirPregunta
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(555, 280);
-            Controls.Add(label3);
-            Controls.Add(label2);
-            Controls.Add(label1);
-            Controls.Add(textBoxCorrecta);
+            Controls.Add(RespuestaCorrecta);
+            Controls.Add(RespuestaCorrectaD);
+            Controls.Add(RespuestaCorrectaC);
+            Controls.Add(RespuestaCorrectaB);
+            Controls.Add(RespuestaCorrectaA);
+            Controls.Add(label7);
+            Controls.Add(label6);
+            Controls.Add(label5);
+            Controls.Add(label4);
+            Controls.Add(Respuestas);
+            Controls.Add(NumPreguntes);
+            Controls.Add(Preguntas);
+            Controls.Add(textBoxRespuesaA);
             Controls.Add(buttonAnadir);
             Controls.Add(textBoxPregunta);
             Controls.Add(buttonAtras);
-            Controls.Add(textBoxIncorr3);
-            Controls.Add(textBoxIncorr2);
-            Controls.Add(labelIncorrecta);
-            Controls.Add(textBoxIncorr1);
+            Controls.Add(textBoxRespuesaD);
+            Controls.Add(textBoxRespuesaC);
+            Controls.Add(textBoxRespuesaB);
             FormBorderStyle = FormBorderStyle.FixedSingle;
             Margin = new Padding(4, 3, 4, 3);
             Name = "AñadirPregunta";
@@ -179,17 +280,25 @@
         }
 
         #endregion
-        private TextBox textBoxCorrecta;
+        private TextBox textBoxRespuesaA;
         private Button buttonAnadir;
         private TextBox textBoxPregunta;
         private Button buttonAtras;
-        private TextBox textBoxIncorr3;
-        private TextBox textBoxIncorr2;
-        private Label labelIncorrecta;
-        private TextBox textBoxIncorr1;
-        private Label label1;
-        private Label label2;
-        private Label label3;
+        private TextBox textBoxRespuesaD;
+        private TextBox textBoxRespuesaC;
+        private TextBox textBoxRespuesaB;
+        private Label Preguntas;
+        private Label NumPreguntes;
+        private Label Respuestas;
+        private Label label4;
+        private Label label5;
+        private Label label6;
+        private Label label7;
+        private RadioButton RespuestaCorrectaA;
+        private RadioButton RespuestaCorrectaB;
+        private RadioButton RespuestaCorrectaC;
+        private Label RespuestaCorrecta;
+        private RadioButton RespuestaCorrectaD;
     }
 }
 
