@@ -67,7 +67,9 @@ namespace AppEscritori
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            ManejarIdioma menu = new ManejarIdioma();
+            menu.Show();
+            this.Hide();
         }
     }
 }
