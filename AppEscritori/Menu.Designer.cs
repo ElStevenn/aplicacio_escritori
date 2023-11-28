@@ -33,6 +33,7 @@
             buttonEliminarElemento = new Button();
             buttonConfJuego = new Button();
             labelHolaUsuari = new Label();
+            button1 = new Button();
             SuspendLayout();
             // 
             // buttonCrearElemento
@@ -91,11 +92,23 @@
             labelHolaUsuari.TextAlign = ContentAlignment.MiddleCenter;
             labelHolaUsuari.Click += labelHolaUsuari_Click;
             // 
+            // button1
+            // 
+            button1.Location = new Point(385, 12);
+            button1.Margin = new Padding(4, 3, 4, 3);
+            button1.Name = "button1";
+            button1.Size = new Size(69, 41);
+            button1.TabIndex = 6;
+            button1.Text = "Cambiar idioma";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
+            // 
             // Menu
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(467, 251);
+            Controls.Add(button1);
             Controls.Add(labelHolaUsuari);
             Controls.Add(buttonConfJuego);
             Controls.Add(buttonEliminarElemento);
@@ -117,5 +130,6 @@
         private Button buttonEliminarElemento;
         private Button buttonConfJuego;
         private Label labelHolaUsuari;
+        private Button button1;
     }
 }

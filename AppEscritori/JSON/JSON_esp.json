@@ -46,7 +46,7 @@
         "lab_techo_maximo_de_voltaje": "Techo máximo de voltaje"
     },
     "menu_camps_final":{
-        
+
     },
     "menu_modificar_elemento": {
         "titulo":"Eliminar elemento",
@@ -93,6 +93,10 @@
         "facil":"Facil",
         "normal":"Normal",
         "dificil":"Difícil"
+    },
+    "menu_idiom": {
+        "titulo": "cambiar el idioma de la aplicación"
+        
     }
 
 }

@@ -121,7 +121,7 @@
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 12.75F, FontStyle.Bold, GraphicsUnit.Point);
             label1.ForeColor = Color.FromArgb(192, 0, 0);
-            label1.Location = new Point(55, 23);
+            label1.Location = new Point(73, 23);
             label1.Margin = new Padding(4, 0, 4, 0);
             label1.Name = "label1";
             label1.Size = new Size(250, 23);
@@ -167,7 +167,7 @@
             Controls.Add(label1RespostesIncorrectes);
             Margin = new Padding(4, 3, 4, 3);
             Name = "EliminarPregunta";
-            Text = "Formulari 12";
+            Text = "Eliminar preguntes";
             Load += EliminarPregunta_Load;
             ResumeLayout(false);
             PerformLayout();
