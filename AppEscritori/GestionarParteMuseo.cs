@@ -9,30 +9,35 @@ namespace AppEscritori
 {
     internal class GestionarParteMuseo
     {
-        public class gestor_museo
+        public class Gestor_museo
         {
             // Campos main
-            string nombreElemento { get; set; }
-            string numeroInventario {  get; set; }  
-            string anoCreacion  { get; set; }
-            string descripcion_elemento { get; set; }
+            string nombreElemento { get; set; } = string.Empty;
+            string numeroInventario {  get; set; } = string.Empty;
+            string anoCreacion  { get; set; } = string.Empty;
+            string descripcion_elemento { get; set; } = string.Empty;
 
             // Campos Principales
-            string autonomia { get; set; }
-            string capacitat_diposit { get; set; }
-            string clicle { get; set; }
-            string cilidrada { get; set; }
-            string elemento { get; set; }
-            string potencia { get; set; }
-            string quilometros_h { get; set; }
-            string peso { get; set; }
-            string velocidad { get; set; }
-            string velocidad_maxima { get; set; }
-            string fuente_energia { get; set; }
-            string fuente_ingreso { get; set; }
-            string forma_ingreso { get; set; }
-            string lugar_fabricacion { get; set; }
-            string longitud { get; set; }
+            string autonomia { get; set; } = string.Empty;
+            string capacitat_diposit { get; set; } = string.Empty;
+            string clicle { get; set; } = string.Empty;
+            string cilidrada { get; set; } = string.Empty;
+            string elemento { get; set; } = string.Empty;
+            string potencia { get; set; } = string.Empty;
+            string quilometros_h { get; set; } = string.Empty;
+            string peso { get; set; } = string.Empty;
+            string velocidad { get; set; } = string.Empty;
+            string velocidad_maxima { get; set; } = string.Empty;
+            string fuente_energia { get; set; } = string.Empty;
+            string fuente_ingreso { get; set; } = string.Empty;
+            string forma_ingreso { get; set; } = string.Empty;
+            string lugar_fabricacion { get; set; } = string.Empty;
+            string longitud { get; set; } = string.Empty;
+
+            public Gestor_museo()
+            {
+
+            }
 
             public void introducir_campos_main(string nombreElemento, string numeroInventario, string anoCreacion, string descripcion_elemento)
             {

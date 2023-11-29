@@ -8,8 +8,12 @@ namespace AppEscritori
         [STAThread]
         static void Main()
         {
+            // Declaración de la parte de gestionar museo
+            GestionarParteMuseo gestor_museo = new GestionarParteMuseo();
+
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
+
             ApplicationConfiguration.Initialize();
             Application.Run(new Login());
         }
