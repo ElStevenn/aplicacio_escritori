@@ -30,45 +30,12 @@ namespace AppEscritori
             this.confpreguntas.Show();
         }
 
-        private void labelIncorrecta_Click(object sender, EventArgs e)
-        {
-
-        }
-
-
-        private void AñadirPregunta_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBoxPregunta_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void buttonAnadir_Click(object sender, EventArgs e)
         {
+            string respuesta1 = respuestaA.Text;
 
-        }
-
-        private void textBoxIncorr1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label7_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void radioButton4_CheckedChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
+            string respuesta2 = respuestaB.Text;
+            string respuesta3 = respuestaC.Text;
         }
     }
 }

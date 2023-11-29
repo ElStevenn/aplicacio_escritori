@@ -28,13 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
-            textBoxRespuesaA = new TextBox();
+            respuestaA = new TextBox();
             buttonAnadir = new Button();
             textBoxPregunta = new TextBox();
             buttonAtras = new Button();
-            textBoxRespuesaD = new TextBox();
-            textBoxRespuesaC = new TextBox();
-            textBoxRespuesaB = new TextBox();
+            RespuesaD = new TextBox();
+            RespuesaC = new TextBox();
+            RespuesaB = new TextBox();
             Preguntas = new Label();
             NumPreguntes = new Label();
             Respuestas = new Label();
@@ -49,14 +49,14 @@
             RespuestaCorrectaD = new RadioButton();
             SuspendLayout();
             // 
-            // textBoxRespuesaA
+            // respuestaA
             // 
-            textBoxRespuesaA.Location = new Point(30, 92);
-            textBoxRespuesaA.Margin = new Padding(4, 3, 4, 3);
-            textBoxRespuesaA.Name = "textBoxRespuesaA";
-            textBoxRespuesaA.Size = new Size(512, 23);
-            textBoxRespuesaA.TabIndex = 12;
-            textBoxRespuesaA.TextAlign = HorizontalAlignment.Center;
+            respuestaA.Location = new Point(30, 92);
+            respuestaA.Margin = new Padding(4, 3, 4, 3);
+            respuestaA.Name = "respuestaA";
+            respuestaA.Size = new Size(512, 23);
+            respuestaA.TabIndex = 12;
+            respuestaA.TextAlign = HorizontalAlignment.Center;
             // 
             // buttonAnadir
             // 
@@ -77,7 +77,6 @@
             textBoxPregunta.Size = new Size(459, 23);
             textBoxPregunta.TabIndex = 11;
             textBoxPregunta.TextAlign = HorizontalAlignment.Center;
-            textBoxPregunta.TextChanged += textBoxPregunta_TextChanged;
             // 
             // buttonAtras
             // 
@@ -90,33 +89,32 @@
             buttonAtras.UseVisualStyleBackColor = true;
             buttonAtras.Click += buttonAtras_Click;
             // 
-            // textBoxRespuesaD
+            // RespuesaD
             // 
-            textBoxRespuesaD.Location = new Point(31, 179);
-            textBoxRespuesaD.Margin = new Padding(4, 3, 4, 3);
-            textBoxRespuesaD.Name = "textBoxRespuesaD";
-            textBoxRespuesaD.Size = new Size(511, 23);
-            textBoxRespuesaD.TabIndex = 16;
-            textBoxRespuesaD.TextAlign = HorizontalAlignment.Center;
+            RespuesaD.Location = new Point(31, 179);
+            RespuesaD.Margin = new Padding(4, 3, 4, 3);
+            RespuesaD.Name = "RespuesaD";
+            RespuesaD.Size = new Size(511, 23);
+            RespuesaD.TabIndex = 16;
+            RespuesaD.TextAlign = HorizontalAlignment.Center;
             // 
-            // textBoxRespuesaC
+            // RespuesaC
             // 
-            textBoxRespuesaC.Location = new Point(31, 150);
-            textBoxRespuesaC.Margin = new Padding(4, 3, 4, 3);
-            textBoxRespuesaC.Name = "textBoxRespuesaC";
-            textBoxRespuesaC.Size = new Size(511, 23);
-            textBoxRespuesaC.TabIndex = 15;
-            textBoxRespuesaC.TextAlign = HorizontalAlignment.Center;
+            RespuesaC.Location = new Point(31, 150);
+            RespuesaC.Margin = new Padding(4, 3, 4, 3);
+            RespuesaC.Name = "RespuesaC";
+            RespuesaC.Size = new Size(511, 23);
+            RespuesaC.TabIndex = 15;
+            RespuesaC.TextAlign = HorizontalAlignment.Center;
             // 
-            // textBoxRespuesaB
+            // RespuesaB
             // 
-            textBoxRespuesaB.Location = new Point(30, 121);
-            textBoxRespuesaB.Margin = new Padding(4, 3, 4, 3);
-            textBoxRespuesaB.Name = "textBoxRespuesaB";
-            textBoxRespuesaB.Size = new Size(512, 23);
-            textBoxRespuesaB.TabIndex = 14;
-            textBoxRespuesaB.TextAlign = HorizontalAlignment.Center;
-            textBoxRespuesaB.TextChanged += textBoxIncorr1_TextChanged;
+            RespuesaB.Location = new Point(30, 121);
+            RespuesaB.Margin = new Padding(4, 3, 4, 3);
+            RespuesaB.Name = "RespuesaB";
+            RespuesaB.Size = new Size(512, 23);
+            RespuesaB.TabIndex = 14;
+            RespuesaB.TextAlign = HorizontalAlignment.Center;
             // 
             // Preguntas
             // 
@@ -127,7 +125,6 @@
             Preguntas.Size = new Size(73, 21);
             Preguntas.TabIndex = 19;
             Preguntas.Text = "Pregunta";
-            Preguntas.Click += label1_Click;
             // 
             // NumPreguntes
             // 
@@ -189,7 +186,6 @@
             label7.Size = new Size(21, 21);
             label7.TabIndex = 25;
             label7.Text = "D";
-            label7.Click += label7_Click;
             // 
             // RespuestaCorrectaA
             // 
@@ -244,7 +240,6 @@
             RespuestaCorrectaD.TabStop = true;
             RespuestaCorrectaD.Text = "D";
             RespuestaCorrectaD.UseVisualStyleBackColor = true;
-            RespuestaCorrectaD.CheckedChanged += radioButton4_CheckedChanged;
             // 
             // AñadirPregunta
             // 
@@ -263,30 +258,29 @@
             Controls.Add(Respuestas);
             Controls.Add(NumPreguntes);
             Controls.Add(Preguntas);
-            Controls.Add(textBoxRespuesaA);
+            Controls.Add(respuestaA);
             Controls.Add(buttonAnadir);
             Controls.Add(textBoxPregunta);
             Controls.Add(buttonAtras);
-            Controls.Add(textBoxRespuesaD);
-            Controls.Add(textBoxRespuesaC);
-            Controls.Add(textBoxRespuesaB);
+            Controls.Add(RespuesaD);
+            Controls.Add(RespuesaC);
+            Controls.Add(RespuesaB);
             FormBorderStyle = FormBorderStyle.FixedSingle;
             Margin = new Padding(4, 3, 4, 3);
             Name = "AñadirPregunta";
             Text = "Agregar preguntes";
-            Load += AñadirPregunta_Load;
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
-        private TextBox textBoxRespuesaA;
+        private TextBox respuestaA;
         private Button buttonAnadir;
         private TextBox textBoxPregunta;
         private Button buttonAtras;
-        private TextBox textBoxRespuesaD;
-        private TextBox textBoxRespuesaC;
-        private TextBox textBoxRespuesaB;
+        private TextBox RespuesaD;
+        private TextBox RespuesaC;
+        private TextBox RespuesaB;
         private Label Preguntas;
         private Label NumPreguntes;
         private Label Respuestas;
