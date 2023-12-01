@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Text.Json.Nodes;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -12,6 +13,7 @@ namespace AppEscritori
 {
     public partial class AñadirPregunta : Form
     {
+        List<Question> questions;
         ConfigurarPreguntas confpreguntas;
         public AñadirPregunta()
         {
@@ -32,10 +34,16 @@ namespace AppEscritori
 
         private void buttonAnadir_Click(object sender, EventArgs e)
         {
-            string respuesta1 = respuestaA.Text;
+            string respuestaAS = respuestaA.Text;
+            string respuestaBS = respuestaB.Text;
+            string respuestaCS = respuestaC.Text;
+            string respuestaDS = respuestaD.Text;
+        }
 
-            string respuesta2 = respuestaB.Text;
-            string respuesta3 = respuestaC.Text;
+        private void AñadirPregunta_Load(object sender, EventArgs e)
+        {
+             
+
         }
     }
 }

@@ -32,9 +32,9 @@
             buttonAnadir = new Button();
             textBoxPregunta = new TextBox();
             buttonAtras = new Button();
-            RespuesaD = new TextBox();
-            RespuesaC = new TextBox();
-            RespuesaB = new TextBox();
+            respuestaD = new TextBox();
+            respuestaC = new TextBox();
+            respuestaB = new TextBox();
             Preguntas = new Label();
             NumPreguntes = new Label();
             Respuestas = new Label();
@@ -89,32 +89,32 @@
             buttonAtras.UseVisualStyleBackColor = true;
             buttonAtras.Click += buttonAtras_Click;
             // 
-            // RespuesaD
+            // respuestaD
             // 
-            RespuesaD.Location = new Point(31, 179);
-            RespuesaD.Margin = new Padding(4, 3, 4, 3);
-            RespuesaD.Name = "RespuesaD";
-            RespuesaD.Size = new Size(511, 23);
-            RespuesaD.TabIndex = 16;
-            RespuesaD.TextAlign = HorizontalAlignment.Center;
+            respuestaD.Location = new Point(31, 179);
+            respuestaD.Margin = new Padding(4, 3, 4, 3);
+            respuestaD.Name = "respuestaD";
+            respuestaD.Size = new Size(511, 23);
+            respuestaD.TabIndex = 16;
+            respuestaD.TextAlign = HorizontalAlignment.Center;
             // 
-            // RespuesaC
+            // respuestaC
             // 
-            RespuesaC.Location = new Point(31, 150);
-            RespuesaC.Margin = new Padding(4, 3, 4, 3);
-            RespuesaC.Name = "RespuesaC";
-            RespuesaC.Size = new Size(511, 23);
-            RespuesaC.TabIndex = 15;
-            RespuesaC.TextAlign = HorizontalAlignment.Center;
+            respuestaC.Location = new Point(31, 150);
+            respuestaC.Margin = new Padding(4, 3, 4, 3);
+            respuestaC.Name = "respuestaC";
+            respuestaC.Size = new Size(511, 23);
+            respuestaC.TabIndex = 15;
+            respuestaC.TextAlign = HorizontalAlignment.Center;
             // 
-            // RespuesaB
+            // respuestaB
             // 
-            RespuesaB.Location = new Point(30, 121);
-            RespuesaB.Margin = new Padding(4, 3, 4, 3);
-            RespuesaB.Name = "RespuesaB";
-            RespuesaB.Size = new Size(512, 23);
-            RespuesaB.TabIndex = 14;
-            RespuesaB.TextAlign = HorizontalAlignment.Center;
+            respuestaB.Location = new Point(30, 121);
+            respuestaB.Margin = new Padding(4, 3, 4, 3);
+            respuestaB.Name = "respuestaB";
+            respuestaB.Size = new Size(512, 23);
+            respuestaB.TabIndex = 14;
+            respuestaB.TextAlign = HorizontalAlignment.Center;
             // 
             // Preguntas
             // 
@@ -262,13 +262,14 @@
             Controls.Add(buttonAnadir);
             Controls.Add(textBoxPregunta);
             Controls.Add(buttonAtras);
-            Controls.Add(RespuesaD);
-            Controls.Add(RespuesaC);
-            Controls.Add(RespuesaB);
+            Controls.Add(respuestaD);
+            Controls.Add(respuestaC);
+            Controls.Add(respuestaB);
             FormBorderStyle = FormBorderStyle.FixedSingle;
             Margin = new Padding(4, 3, 4, 3);
             Name = "AñadirPregunta";
             Text = "Agregar preguntes";
+            Load += AñadirPregunta_Load;
             ResumeLayout(false);
             PerformLayout();
         }
@@ -278,9 +279,9 @@
         private Button buttonAnadir;
         private TextBox textBoxPregunta;
         private Button buttonAtras;
-        private TextBox RespuesaD;
-        private TextBox RespuesaC;
-        private TextBox RespuesaB;
+        private TextBox respuestaD;
+        private TextBox respuestaC;
+        private TextBox respuestaB;
         private Label Preguntas;
         private Label NumPreguntes;
         private Label Respuestas;
