@@ -15,10 +15,10 @@ namespace AppEscritori
     {
         private readonly Gestor_museo gestorMuseo;
 
-        public Camps(Gestor_museo gestor_museo)
+        public Camps()
         {
             InitializeComponent();
-            this.gestorMuseo = gestor_museo; // Almacenamiento de la referencia para su uso posterior
+         
         }
 
 
@@ -53,7 +53,7 @@ namespace AppEscritori
             }
             else
             {
-                CampsFinal campsFinal = new CampsFinal(this.gestorMuseo);
+                CampsFinal campsFinal = new CampsFinal();
                 campsFinal.Show();
                 this.Hide();
             }
@@ -61,7 +61,7 @@ namespace AppEscritori
 
         private void button1Enrere_Click(object sender, EventArgs e)
         {
-            CampsMain campsMain = new CampsMain(this.gestorMuseo);
+            CampsMain campsMain = new CampsMain();
             campsMain.Show();
             this.Hide();
         }

@@ -18,8 +18,6 @@ namespace AppEscritori
         public Menu()
         {
             InitializeComponent();
-            GestionarParteMuseo gestionarParte = new GestionarParteMuseo();
-            gestorMuseo = gestionarParte.gestorMuseo; // Si esto es un campo público
         }
 
         public Menu(Login login) : this()
@@ -29,7 +27,7 @@ namespace AppEscritori
 
         private void buttonCrearElemento_Click(object sender, EventArgs e)
         {
-            CampsMain campsMain = new CampsMain(GestionarParteMuseo.Gestor_museo.Instance);
+            CampsMain campsMain = new CampsMain();
             campsMain.Show();
             this.Hide();
         }

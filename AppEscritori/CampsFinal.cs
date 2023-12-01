@@ -13,7 +13,7 @@ namespace AppEscritori
 {
     public partial class CampsFinal : Form
     {
-        public CampsFinal(GestionarParteMuseo gestor_museo)
+        public CampsFinal()
         {
             InitializeComponent();
         }

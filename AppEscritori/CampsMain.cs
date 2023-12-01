@@ -9,14 +9,11 @@ namespace AppEscritori
     {
         private readonly GestionarParteMuseo.Gestor_museo gestionadorMuseo;
 
-        public CampsMain() : this(GestionarParteMuseo.Gestor_museo.Instance)
-        {
-        }
 
-        public CampsMain(GestionarParteMuseo.Gestor_museo gestorMuseo)
+
+        public CampsMain()
         {
             InitializeComponent();
-            this.gestionadorMuseo = gestorMuseo;
             ponerCampos();
         }
 
@@ -45,7 +42,7 @@ namespace AppEscritori
 
                 // Pasar a la pantalla de Main
 
-                CampsMain campsMain = new CampsMain(gestionadorMuseo);
+                CampsMain campsMain = new CampsMain();
                 campsMain.Show();
             }
         }
