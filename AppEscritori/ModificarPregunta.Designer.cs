@@ -29,18 +29,17 @@
         private void InitializeComponent()
         {
             Idioma = new Label();
-            comboBox1 = new ComboBox();
-            RespuestaCorrecta = new Label();
+            labelRespuestaCorrecta = new Label();
             RespuestaCorrectaD = new RadioButton();
             RespuestaCorrectaC = new RadioButton();
             RespuestaCorrectaB = new RadioButton();
             RespuestaCorrectaA = new RadioButton();
-            label7 = new Label();
-            label6 = new Label();
-            label5 = new Label();
-            label4 = new Label();
-            Respuestas = new Label();
-            NumPreguntes = new Label();
+            labelD = new Label();
+            labelC = new Label();
+            labelB = new Label();
+            labelA = new Label();
+            labelRespuestas = new Label();
+            labelXPreguntas = new Label();
             respuestaA = new TextBox();
             buttonModificar = new Button();
             buttonAtras = new Button();
@@ -48,9 +47,10 @@
             respuestaC = new TextBox();
             respuestaB = new TextBox();
             textBoxPregunta = new TextBox();
-            Preguntas = new Label();
-            label1 = new Label();
-            comboBox2 = new ComboBox();
+            labelPregunta = new Label();
+            labelSeleccionarPregunta = new Label();
+            comboBoxQuestions = new ComboBox();
+            comboBoxIdiomas = new ComboBox();
             SuspendLayout();
             // 
             // Idioma
@@ -63,23 +63,15 @@
             Idioma.TabIndex = 53;
             Idioma.Text = "Idioma";
             // 
-            // comboBox1
+            // labelRespuestaCorrecta
             // 
-            comboBox1.FormattingEnabled = true;
-            comboBox1.Location = new Point(86, 12);
-            comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(121, 23);
-            comboBox1.TabIndex = 52;
-            // 
-            // RespuestaCorrecta
-            // 
-            RespuestaCorrecta.AutoSize = true;
-            RespuestaCorrecta.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            RespuestaCorrecta.Location = new Point(7, 237);
-            RespuestaCorrecta.Name = "RespuestaCorrecta";
-            RespuestaCorrecta.Size = new Size(141, 21);
-            RespuestaCorrecta.TabIndex = 51;
-            RespuestaCorrecta.Text = "Respuesta correcta";
+            labelRespuestaCorrecta.AutoSize = true;
+            labelRespuestaCorrecta.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            labelRespuestaCorrecta.Location = new Point(7, 237);
+            labelRespuestaCorrecta.Name = "labelRespuestaCorrecta";
+            labelRespuestaCorrecta.Size = new Size(141, 21);
+            labelRespuestaCorrecta.TabIndex = 51;
+            labelRespuestaCorrecta.Text = "Respuesta correcta";
             // 
             // RespuestaCorrectaD
             // 
@@ -125,66 +117,66 @@
             RespuestaCorrectaA.Text = "A";
             RespuestaCorrectaA.UseVisualStyleBackColor = true;
             // 
-            // label7
+            // labelD
             // 
-            label7.AutoSize = true;
-            label7.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label7.Location = new Point(6, 210);
-            label7.Name = "label7";
-            label7.Size = new Size(21, 21);
-            label7.TabIndex = 46;
-            label7.Text = "D";
+            labelD.AutoSize = true;
+            labelD.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            labelD.Location = new Point(6, 210);
+            labelD.Name = "labelD";
+            labelD.Size = new Size(21, 21);
+            labelD.TabIndex = 46;
+            labelD.Text = "D";
             // 
-            // label6
+            // labelC
             // 
-            label6.AutoSize = true;
-            label6.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label6.Location = new Point(7, 181);
-            label6.Name = "label6";
-            label6.Size = new Size(20, 21);
-            label6.TabIndex = 45;
-            label6.Text = "C";
+            labelC.AutoSize = true;
+            labelC.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            labelC.Location = new Point(7, 181);
+            labelC.Name = "labelC";
+            labelC.Size = new Size(20, 21);
+            labelC.TabIndex = 45;
+            labelC.Text = "C";
             // 
-            // label5
+            // labelB
             // 
-            label5.AutoSize = true;
-            label5.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label5.Location = new Point(7, 152);
-            label5.Name = "label5";
-            label5.Size = new Size(19, 21);
-            label5.TabIndex = 44;
-            label5.Text = "B";
+            labelB.AutoSize = true;
+            labelB.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            labelB.Location = new Point(7, 152);
+            labelB.Name = "labelB";
+            labelB.Size = new Size(19, 21);
+            labelB.TabIndex = 44;
+            labelB.Text = "B";
             // 
-            // label4
+            // labelA
             // 
-            label4.AutoSize = true;
-            label4.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label4.Location = new Point(6, 123);
-            label4.Name = "label4";
-            label4.Size = new Size(20, 21);
-            label4.TabIndex = 43;
-            label4.Text = "A";
+            labelA.AutoSize = true;
+            labelA.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            labelA.Location = new Point(6, 123);
+            labelA.Name = "labelA";
+            labelA.Size = new Size(20, 21);
+            labelA.TabIndex = 43;
+            labelA.Text = "A";
             // 
-            // Respuestas
+            // labelRespuestas
             // 
-            Respuestas.AutoSize = true;
-            Respuestas.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            Respuestas.Location = new Point(6, 97);
-            Respuestas.Name = "Respuestas";
-            Respuestas.Size = new Size(88, 21);
-            Respuestas.TabIndex = 42;
-            Respuestas.Text = "Respuestas";
+            labelRespuestas.AutoSize = true;
+            labelRespuestas.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            labelRespuestas.Location = new Point(6, 97);
+            labelRespuestas.Name = "labelRespuestas";
+            labelRespuestas.Size = new Size(88, 21);
+            labelRespuestas.TabIndex = 42;
+            labelRespuestas.Text = "Respuestas";
             // 
-            // NumPreguntes
+            // labelXPreguntas
             // 
-            NumPreguntes.AutoSize = true;
-            NumPreguntes.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            NumPreguntes.ForeColor = Color.Firebrick;
-            NumPreguntes.Location = new Point(396, 234);
-            NumPreguntes.Name = "NumPreguntes";
-            NumPreguntes.Size = new Size(149, 21);
-            NumPreguntes.TabIndex = 41;
-            NumPreguntes.Text = "Hi ha X preguntes ";
+            labelXPreguntas.AutoSize = true;
+            labelXPreguntas.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            labelXPreguntas.ForeColor = Color.Firebrick;
+            labelXPreguntas.Location = new Point(396, 234);
+            labelXPreguntas.Name = "labelXPreguntas";
+            labelXPreguntas.Size = new Size(135, 21);
+            labelXPreguntas.TabIndex = 41;
+            labelXPreguntas.Text = "Hay X preguntas";
             // 
             // respuestaA
             // 
@@ -251,55 +243,68 @@
             textBoxPregunta.TabIndex = 33;
             textBoxPregunta.TextAlign = HorizontalAlignment.Center;
             // 
-            // Preguntas
+            // labelPregunta
             // 
-            Preguntas.AutoSize = true;
-            Preguntas.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            Preguntas.Location = new Point(6, 69);
-            Preguntas.Name = "Preguntas";
-            Preguntas.Size = new Size(73, 21);
-            Preguntas.TabIndex = 40;
-            Preguntas.Text = "Pregunta";
+            labelPregunta.AutoSize = true;
+            labelPregunta.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            labelPregunta.Location = new Point(6, 69);
+            labelPregunta.Name = "labelPregunta";
+            labelPregunta.Size = new Size(73, 21);
+            labelPregunta.TabIndex = 40;
+            labelPregunta.Text = "Pregunta";
             // 
-            // label1
+            // labelSeleccionarPregunta
             // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label1.Location = new Point(6, 39);
-            label1.Name = "label1";
-            label1.Size = new Size(156, 21);
-            label1.TabIndex = 54;
-            label1.Text = "Seleccionar pregunta";
+            labelSeleccionarPregunta.AutoSize = true;
+            labelSeleccionarPregunta.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            labelSeleccionarPregunta.Location = new Point(6, 39);
+            labelSeleccionarPregunta.Name = "labelSeleccionarPregunta";
+            labelSeleccionarPregunta.Size = new Size(156, 21);
+            labelSeleccionarPregunta.TabIndex = 54;
+            labelSeleccionarPregunta.Text = "Seleccionar pregunta";
             // 
-            // comboBox2
+            // comboBoxQuestions
             // 
-            comboBox2.FormattingEnabled = true;
-            comboBox2.Location = new Point(168, 41);
-            comboBox2.Name = "comboBox2";
-            comboBox2.Size = new Size(377, 23);
-            comboBox2.TabIndex = 55;
+            comboBoxQuestions.DropDownStyle = ComboBoxStyle.DropDownList;
+            comboBoxQuestions.FormattingEnabled = true;
+            comboBoxQuestions.Location = new Point(168, 41);
+            comboBoxQuestions.Name = "comboBoxQuestions";
+            comboBoxQuestions.Size = new Size(377, 23);
+            comboBoxQuestions.TabIndex = 55;
+            comboBoxQuestions.SelectedIndexChanged += comboBoxQuestions_SelectedIndexChanged;
+            // 
+            // comboBoxIdiomas
+            // 
+            comboBoxIdiomas.DropDownStyle = ComboBoxStyle.DropDownList;
+            comboBoxIdiomas.FormattingEnabled = true;
+            comboBoxIdiomas.Items.AddRange(new object[] { "Castellano", "Catalán", "Inglés" });
+            comboBoxIdiomas.Location = new Point(71, 12);
+            comboBoxIdiomas.Name = "comboBoxIdiomas";
+            comboBoxIdiomas.Size = new Size(121, 23);
+            comboBoxIdiomas.TabIndex = 56;
+            comboBoxIdiomas.SelectedIndexChanged += comboBoxIdiomas_SelectedIndexChanged;
             // 
             // ModificarPregunta
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(550, 295);
-            Controls.Add(comboBox2);
-            Controls.Add(label1);
+            Controls.Add(comboBoxIdiomas);
+            Controls.Add(comboBoxQuestions);
+            Controls.Add(labelSeleccionarPregunta);
             Controls.Add(Idioma);
-            Controls.Add(comboBox1);
-            Controls.Add(RespuestaCorrecta);
+            Controls.Add(labelRespuestaCorrecta);
             Controls.Add(RespuestaCorrectaD);
             Controls.Add(RespuestaCorrectaC);
             Controls.Add(RespuestaCorrectaB);
             Controls.Add(RespuestaCorrectaA);
-            Controls.Add(label7);
-            Controls.Add(label6);
-            Controls.Add(label5);
-            Controls.Add(label4);
-            Controls.Add(Respuestas);
-            Controls.Add(NumPreguntes);
-            Controls.Add(Preguntas);
+            Controls.Add(labelD);
+            Controls.Add(labelC);
+            Controls.Add(labelB);
+            Controls.Add(labelA);
+            Controls.Add(labelRespuestas);
+            Controls.Add(labelXPreguntas);
+            Controls.Add(labelPregunta);
             Controls.Add(respuestaA);
             Controls.Add(buttonModificar);
             Controls.Add(textBoxPregunta);
@@ -319,18 +324,17 @@
         #endregion
 
         private Label Idioma;
-        private ComboBox comboBox1;
-        private Label RespuestaCorrecta;
+        private Label labelRespuestaCorrecta;
         private RadioButton RespuestaCorrectaD;
         private RadioButton RespuestaCorrectaC;
         private RadioButton RespuestaCorrectaB;
         private RadioButton RespuestaCorrectaA;
-        private Label label7;
-        private Label label6;
-        private Label label5;
-        private Label label4;
-        private Label Respuestas;
-        private Label NumPreguntes;
+        private Label labelD;
+        private Label labelC;
+        private Label labelB;
+        private Label labelA;
+        private Label labelRespuestas;
+        private Label labelXPreguntas;
         private TextBox respuestaA;
         private Button buttonModificar;
         private Button buttonAtras;
@@ -338,8 +342,9 @@
         private TextBox respuestaC;
         private TextBox respuestaB;
         private TextBox textBoxPregunta;
-        private Label Preguntas;
-        private Label label1;
-        private ComboBox comboBox2;
+        private Label labelPregunta;
+        private Label labelSeleccionarPregunta;
+        private ComboBox comboBoxQuestions;
+        private ComboBox comboBoxIdiomas;
     }
 }

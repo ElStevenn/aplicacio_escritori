@@ -36,7 +36,7 @@
             // 
             // buttonAnadir
             // 
-            buttonAnadir.Location = new Point(32, 12);
+            buttonAnadir.Location = new Point(31, 13);
             buttonAnadir.Margin = new Padding(4, 3, 4, 3);
             buttonAnadir.Name = "buttonAnadir";
             buttonAnadir.Size = new Size(160, 29);
@@ -47,7 +47,7 @@
             // 
             // buttonModificar
             // 
-            buttonModificar.Location = new Point(32, 47);
+            buttonModificar.Location = new Point(31, 48);
             buttonModificar.Margin = new Padding(4, 3, 4, 3);
             buttonModificar.Name = "buttonModificar";
             buttonModificar.Size = new Size(160, 29);
@@ -58,7 +58,7 @@
             // 
             // buttonEliminar
             // 
-            buttonEliminar.Location = new Point(32, 92);
+            buttonEliminar.Location = new Point(31, 83);
             buttonEliminar.Margin = new Padding(4, 3, 4, 3);
             buttonEliminar.Name = "buttonEliminar";
             buttonEliminar.Size = new Size(160, 29);
@@ -69,7 +69,7 @@
             // 
             // buttonAtrasConfPreg
             // 
-            buttonAtrasConfPreg.Location = new Point(61, 127);
+            buttonAtrasConfPreg.Location = new Point(68, 118);
             buttonAtrasConfPreg.Margin = new Padding(4, 3, 4, 3);
             buttonAtrasConfPreg.Name = "buttonAtrasConfPreg";
             buttonAtrasConfPreg.Size = new Size(80, 29);

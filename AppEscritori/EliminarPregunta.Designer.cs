@@ -31,7 +31,6 @@
             button1Enrere = new Button();
             button2Eliminar = new Button();
             Idioma = new Label();
-            comboBox1 = new ComboBox();
             RespuestaCorrecta = new Label();
             RespuestaCorrectaD = new RadioButton();
             RespuestaCorrectaC = new RadioButton();
@@ -42,15 +41,16 @@
             label5 = new Label();
             label4 = new Label();
             Respuestas = new Label();
-            NumPreguntes = new Label();
+            labelXPreguntas = new Label();
             Preguntas = new Label();
             respuestaA = new TextBox();
             textBoxPregunta = new TextBox();
             respuestaD = new TextBox();
             respuestaC = new TextBox();
             respuestaB = new TextBox();
-            comboBox2 = new ComboBox();
+            comboBoxQuestions = new ComboBox();
             label1 = new Label();
+            comboBoxIdiomas = new ComboBox();
             SuspendLayout();
             // 
             // button1Enrere
@@ -84,14 +84,6 @@
             Idioma.TabIndex = 55;
             Idioma.Text = "Idioma";
             // 
-            // comboBox1
-            // 
-            comboBox1.FormattingEnabled = true;
-            comboBox1.Location = new Point(85, 6);
-            comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(121, 23);
-            comboBox1.TabIndex = 54;
-            // 
             // RespuestaCorrecta
             // 
             RespuestaCorrecta.AutoSize = true;
@@ -105,6 +97,7 @@
             // RespuestaCorrectaD
             // 
             RespuestaCorrectaD.AutoSize = true;
+            RespuestaCorrectaD.Enabled = false;
             RespuestaCorrectaD.Location = new Point(272, 232);
             RespuestaCorrectaD.Name = "RespuestaCorrectaD";
             RespuestaCorrectaD.Size = new Size(33, 19);
@@ -116,6 +109,7 @@
             // RespuestaCorrectaC
             // 
             RespuestaCorrectaC.AutoSize = true;
+            RespuestaCorrectaC.Enabled = false;
             RespuestaCorrectaC.Location = new Point(233, 232);
             RespuestaCorrectaC.Name = "RespuestaCorrectaC";
             RespuestaCorrectaC.Size = new Size(33, 19);
@@ -127,6 +121,7 @@
             // RespuestaCorrectaB
             // 
             RespuestaCorrectaB.AutoSize = true;
+            RespuestaCorrectaB.Enabled = false;
             RespuestaCorrectaB.Location = new Point(195, 232);
             RespuestaCorrectaB.Name = "RespuestaCorrectaB";
             RespuestaCorrectaB.Size = new Size(32, 19);
@@ -138,6 +133,7 @@
             // RespuestaCorrectaA
             // 
             RespuestaCorrectaA.AutoSize = true;
+            RespuestaCorrectaA.Enabled = false;
             RespuestaCorrectaA.Location = new Point(153, 232);
             RespuestaCorrectaA.Name = "RespuestaCorrectaA";
             RespuestaCorrectaA.Size = new Size(33, 19);
@@ -196,16 +192,16 @@
             Respuestas.TabIndex = 63;
             Respuestas.Text = "Respuestas";
             // 
-            // NumPreguntes
+            // labelXPreguntas
             // 
-            NumPreguntes.AutoSize = true;
-            NumPreguntes.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            NumPreguntes.ForeColor = Color.Firebrick;
-            NumPreguntes.Location = new Point(398, 226);
-            NumPreguntes.Name = "NumPreguntes";
-            NumPreguntes.Size = new Size(149, 21);
-            NumPreguntes.TabIndex = 62;
-            NumPreguntes.Text = "Hi ha X preguntes ";
+            labelXPreguntas.AutoSize = true;
+            labelXPreguntas.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            labelXPreguntas.ForeColor = Color.Firebrick;
+            labelXPreguntas.Location = new Point(398, 226);
+            labelXPreguntas.Name = "labelXPreguntas";
+            labelXPreguntas.Size = new Size(135, 21);
+            labelXPreguntas.TabIndex = 62;
+            labelXPreguntas.Text = "Hay X preguntas";
             // 
             // Preguntas
             // 
@@ -222,6 +218,7 @@
             respuestaA.Location = new Point(32, 113);
             respuestaA.Margin = new Padding(4, 3, 4, 3);
             respuestaA.Name = "respuestaA";
+            respuestaA.ReadOnly = true;
             respuestaA.Size = new Size(512, 23);
             respuestaA.TabIndex = 57;
             respuestaA.TextAlign = HorizontalAlignment.Center;
@@ -231,6 +228,7 @@
             textBoxPregunta.Location = new Point(85, 63);
             textBoxPregunta.Margin = new Padding(4, 3, 4, 3);
             textBoxPregunta.Name = "textBoxPregunta";
+            textBoxPregunta.ReadOnly = true;
             textBoxPregunta.Size = new Size(459, 23);
             textBoxPregunta.TabIndex = 56;
             textBoxPregunta.TextAlign = HorizontalAlignment.Center;
@@ -240,6 +238,7 @@
             respuestaD.Location = new Point(33, 200);
             respuestaD.Margin = new Padding(4, 3, 4, 3);
             respuestaD.Name = "respuestaD";
+            respuestaD.ReadOnly = true;
             respuestaD.Size = new Size(511, 23);
             respuestaD.TabIndex = 60;
             respuestaD.TextAlign = HorizontalAlignment.Center;
@@ -249,6 +248,7 @@
             respuestaC.Location = new Point(33, 171);
             respuestaC.Margin = new Padding(4, 3, 4, 3);
             respuestaC.Name = "respuestaC";
+            respuestaC.ReadOnly = true;
             respuestaC.Size = new Size(511, 23);
             respuestaC.TabIndex = 59;
             respuestaC.TextAlign = HorizontalAlignment.Center;
@@ -258,17 +258,20 @@
             respuestaB.Location = new Point(32, 142);
             respuestaB.Margin = new Padding(4, 3, 4, 3);
             respuestaB.Name = "respuestaB";
+            respuestaB.ReadOnly = true;
             respuestaB.Size = new Size(512, 23);
             respuestaB.TabIndex = 58;
             respuestaB.TextAlign = HorizontalAlignment.Center;
             // 
-            // comboBox2
+            // comboBoxQuestions
             // 
-            comboBox2.FormattingEnabled = true;
-            comboBox2.Location = new Point(167, 34);
-            comboBox2.Name = "comboBox2";
-            comboBox2.Size = new Size(377, 23);
-            comboBox2.TabIndex = 74;
+            comboBoxQuestions.DropDownStyle = ComboBoxStyle.DropDownList;
+            comboBoxQuestions.FormattingEnabled = true;
+            comboBoxQuestions.Location = new Point(167, 34);
+            comboBoxQuestions.Name = "comboBoxQuestions";
+            comboBoxQuestions.Size = new Size(377, 23);
+            comboBoxQuestions.TabIndex = 74;
+            comboBoxQuestions.SelectedIndexChanged += comboBoxQuestions_SelectedIndexChanged;
             // 
             // label1
             // 
@@ -280,12 +283,24 @@
             label1.TabIndex = 73;
             label1.Text = "Seleccionar pregunta";
             // 
+            // comboBoxIdiomas
+            // 
+            comboBoxIdiomas.DropDownStyle = ComboBoxStyle.DropDownList;
+            comboBoxIdiomas.FormattingEnabled = true;
+            comboBoxIdiomas.Items.AddRange(new object[] { "Castellano", "Catalán", "Inglés" });
+            comboBoxIdiomas.Location = new Point(70, 8);
+            comboBoxIdiomas.Name = "comboBoxIdiomas";
+            comboBoxIdiomas.Size = new Size(121, 23);
+            comboBoxIdiomas.TabIndex = 75;
+            comboBoxIdiomas.SelectedIndexChanged += comboBoxIdiomas_SelectedIndexChanged;
+            // 
             // EliminarPregunta
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(551, 287);
-            Controls.Add(comboBox2);
+            Controls.Add(comboBoxIdiomas);
+            Controls.Add(comboBoxQuestions);
             Controls.Add(label1);
             Controls.Add(RespuestaCorrecta);
             Controls.Add(RespuestaCorrectaD);
@@ -297,7 +312,7 @@
             Controls.Add(label5);
             Controls.Add(label4);
             Controls.Add(Respuestas);
-            Controls.Add(NumPreguntes);
+            Controls.Add(labelXPreguntas);
             Controls.Add(Preguntas);
             Controls.Add(respuestaA);
             Controls.Add(textBoxPregunta);
@@ -305,13 +320,11 @@
             Controls.Add(respuestaC);
             Controls.Add(respuestaB);
             Controls.Add(Idioma);
-            Controls.Add(comboBox1);
             Controls.Add(button2Eliminar);
             Controls.Add(button1Enrere);
             Margin = new Padding(4, 3, 4, 3);
             Name = "EliminarPregunta";
             Text = "Eliminar preguntes";
-            Load += EliminarPregunta_Load;
             ResumeLayout(false);
             PerformLayout();
         }
@@ -320,7 +333,6 @@
         private Button button1Enrere;
         private Button button2Eliminar;
         private Label Idioma;
-        private ComboBox comboBox1;
         private Label RespuestaCorrecta;
         private RadioButton RespuestaCorrectaD;
         private RadioButton RespuestaCorrectaC;
@@ -331,14 +343,15 @@
         private Label label5;
         private Label label4;
         private Label Respuestas;
-        private Label NumPreguntes;
+        private Label labelXPreguntas;
         private Label Preguntas;
         private TextBox respuestaA;
         private TextBox textBoxPregunta;
         private TextBox respuestaD;
         private TextBox respuestaC;
         private TextBox respuestaB;
-        private ComboBox comboBox2;
+        private ComboBox comboBoxQuestions;
         private Label label1;
+        private ComboBox comboBoxIdiomas;
     }
 }

@@ -47,7 +47,7 @@
             RespuestaCorrectaC = new RadioButton();
             RespuestaCorrecta = new Label();
             RespuestaCorrectaD = new RadioButton();
-            comboBox1 = new ComboBox();
+            comboBoxIdiomas = new ComboBox();
             Idioma = new Label();
             SuspendLayout();
             // 
@@ -243,13 +243,15 @@
             RespuestaCorrectaD.Text = "D";
             RespuestaCorrectaD.UseVisualStyleBackColor = true;
             // 
-            // comboBox1
+            // comboBoxIdiomas
             // 
-            comboBox1.FormattingEnabled = true;
-            comboBox1.Location = new Point(87, 16);
-            comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(121, 23);
-            comboBox1.TabIndex = 31;
+            comboBoxIdiomas.DropDownStyle = ComboBoxStyle.DropDownList;
+            comboBoxIdiomas.FormattingEnabled = true;
+            comboBoxIdiomas.Items.AddRange(new object[] { "Castellano", "Catalán", "Inglés" });
+            comboBoxIdiomas.Location = new Point(87, 16);
+            comboBoxIdiomas.Name = "comboBoxIdiomas";
+            comboBoxIdiomas.Size = new Size(121, 23);
+            comboBoxIdiomas.TabIndex = 31;
             // 
             // Idioma
             // 
@@ -267,7 +269,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(555, 283);
             Controls.Add(Idioma);
-            Controls.Add(comboBox1);
+            Controls.Add(comboBoxIdiomas);
             Controls.Add(RespuestaCorrecta);
             Controls.Add(RespuestaCorrectaD);
             Controls.Add(RespuestaCorrectaC);
@@ -316,7 +318,7 @@
         private RadioButton RespuestaCorrectaC;
         private Label RespuestaCorrecta;
         private RadioButton RespuestaCorrectaD;
-        private ComboBox comboBox1;
+        private ComboBox comboBoxIdiomas;
         private Label Idioma;
     }
 }
