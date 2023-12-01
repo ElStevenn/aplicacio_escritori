@@ -29,41 +29,41 @@
         private void InitializeComponent()
         {
             components = new System.ComponentModel.Container();
-            textBox1 = new TextBox();
-            textBox2 = new TextBox();
-            textBox3 = new TextBox();
+            Nom_element = new TextBox();
+            Numero_inventari = new TextBox();
+            any_creacio = new TextBox();
             label1 = new Label();
             label2 = new Label();
             label3 = new Label();
             imageList1 = new ImageList(components);
             pictureBox1 = new PictureBox();
-            textBox4 = new TextBox();
+            descripcio_element = new TextBox();
             label4 = new Label();
             buttonAtras = new Button();
             buttonSiguiente = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
-            // textBox1
+            // Nom_element
             // 
-            textBox1.Location = new Point(12, 28);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(177, 23);
-            textBox1.TabIndex = 3;
+            Nom_element.Location = new Point(12, 28);
+            Nom_element.Name = "Nom_element";
+            Nom_element.Size = new Size(177, 23);
+            Nom_element.TabIndex = 3;
             // 
-            // textBox2
+            // Numero_inventari
             // 
-            textBox2.Location = new Point(195, 28);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(186, 23);
-            textBox2.TabIndex = 4;
+            Numero_inventari.Location = new Point(195, 28);
+            Numero_inventari.Name = "Numero_inventari";
+            Numero_inventari.Size = new Size(186, 23);
+            Numero_inventari.TabIndex = 4;
             // 
-            // textBox3
+            // any_creacio
             // 
-            textBox3.Location = new Point(387, 28);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(177, 23);
-            textBox3.TabIndex = 5;
+            any_creacio.Location = new Point(387, 28);
+            any_creacio.Name = "any_creacio";
+            any_creacio.Size = new Size(177, 23);
+            any_creacio.TabIndex = 5;
             // 
             // label1
             // 
@@ -107,13 +107,13 @@
             pictureBox1.TabIndex = 9;
             pictureBox1.TabStop = false;
             // 
-            // textBox4
+            // descripcio_element
             // 
-            textBox4.Location = new Point(12, 206);
-            textBox4.Multiline = true;
-            textBox4.Name = "textBox4";
-            textBox4.Size = new Size(552, 100);
-            textBox4.TabIndex = 10;
+            descripcio_element.Location = new Point(12, 206);
+            descripcio_element.Multiline = true;
+            descripcio_element.Name = "descripcio_element";
+            descripcio_element.Size = new Size(552, 100);
+            descripcio_element.TabIndex = 10;
             // 
             // label4
             // 
@@ -152,16 +152,16 @@
             Controls.Add(buttonSiguiente);
             Controls.Add(buttonAtras);
             Controls.Add(label4);
-            Controls.Add(textBox4);
+            Controls.Add(descripcio_element);
             Controls.Add(pictureBox1);
             Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(label1);
-            Controls.Add(textBox3);
-            Controls.Add(textBox2);
-            Controls.Add(textBox1);
+            Controls.Add(any_creacio);
+            Controls.Add(Numero_inventari);
+            Controls.Add(Nom_element);
             Name = "CampsMain";
-            Text = "Form3";
+            Text = "Campos Principales";
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
@@ -169,15 +169,15 @@
 
         #endregion
 
-        private TextBox textBox1;
-        private TextBox textBox2;
-        private TextBox textBox3;
+        private TextBox Nom_element;
+        private TextBox Numero_inventari;
+        private TextBox any_creacio;
         private Label label1;
         private Label label2;
         private Label label3;
         private ImageList imageList1;
         private PictureBox pictureBox1;
-        private TextBox textBox4;
+        private TextBox descripcio_element;
         private Label label4;
         private Button buttonAtras;
         private Button buttonSiguiente;

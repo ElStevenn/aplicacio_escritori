@@ -28,23 +28,23 @@
         /// </summary>
         private void InitializeComponent()
         {
-            textBox1Autonomia = new TextBox();
-            textBox2CapacitatDiposit = new TextBox();
-            textBox4Cilindrada = new TextBox();
-            textBox3Cicle = new TextBox();
-            textBox5Element = new TextBox();
-            textBox6Envergadura = new TextBox();
-            textBox7Potencia = new TextBox();
-            textBox8KmFets = new TextBox();
-            textBox9SostreVol = new TextBox();
-            textBox10VelocitatNormal = new TextBox();
-            textBox11VelocitatMaxima = new TextBox();
-            textBox12FontEnergia = new TextBox();
-            textBox13FontIngres = new TextBox();
-            textBox14FormaIngres = new TextBox();
-            textBox15LlocFabricacio = new TextBox();
-            textBox16Longitud = new TextBox();
-            textBox17Pes = new TextBox();
+            Autonomia = new TextBox();
+            capacitatDiposit = new TextBox();
+            Cilindrada_c = new TextBox();
+            clicle_cam = new TextBox();
+            Element = new TextBox();
+            Envergadura_c = new TextBox();
+            Potencia_c = new TextBox();
+            quilometres_fets = new TextBox();
+            sostre_maxim = new TextBox();
+            velocitat = new TextBox();
+            velocitat_maxima = new TextBox();
+            font_energia = new TextBox();
+            font_ingres = new TextBox();
+            forma_ingres = new TextBox();
+            lloc_fabricacio = new TextBox();
+            longitud_c = new TextBox();
+            pes = new TextBox();
             button1Enrere = new Button();
             button2Siguiente = new Button();
             label1 = new Label();
@@ -66,142 +66,142 @@
             label17 = new Label();
             SuspendLayout();
             // 
-            // textBox1Autonomia
+            // Autonomia
             // 
-            textBox1Autonomia.Location = new Point(13, 23);
-            textBox1Autonomia.Margin = new Padding(2);
-            textBox1Autonomia.Name = "textBox1Autonomia";
-            textBox1Autonomia.Size = new Size(180, 23);
-            textBox1Autonomia.TabIndex = 0;
-            textBox1Autonomia.TextChanged += textBox1Autonomia_TextChanged;
+            Autonomia.Location = new Point(13, 23);
+            Autonomia.Margin = new Padding(2);
+            Autonomia.Name = "Autonomia";
+            Autonomia.Size = new Size(180, 23);
+            Autonomia.TabIndex = 0;
+            Autonomia.TextChanged += textBox1Autonomia_TextChanged;
             // 
-            // textBox2CapacitatDiposit
+            // capacitatDiposit
             // 
-            textBox2CapacitatDiposit.Location = new Point(13, 64);
-            textBox2CapacitatDiposit.Margin = new Padding(2);
-            textBox2CapacitatDiposit.Name = "textBox2CapacitatDiposit";
-            textBox2CapacitatDiposit.Size = new Size(180, 23);
-            textBox2CapacitatDiposit.TabIndex = 1;
+            capacitatDiposit.Location = new Point(13, 64);
+            capacitatDiposit.Margin = new Padding(2);
+            capacitatDiposit.Name = "capacitatDiposit";
+            capacitatDiposit.Size = new Size(180, 23);
+            capacitatDiposit.TabIndex = 1;
             // 
-            // textBox4Cilindrada
+            // Cilindrada_c
             // 
-            textBox4Cilindrada.Location = new Point(12, 149);
-            textBox4Cilindrada.Margin = new Padding(2);
-            textBox4Cilindrada.Name = "textBox4Cilindrada";
-            textBox4Cilindrada.Size = new Size(180, 23);
-            textBox4Cilindrada.TabIndex = 2;
+            Cilindrada_c.Location = new Point(12, 149);
+            Cilindrada_c.Margin = new Padding(2);
+            Cilindrada_c.Name = "Cilindrada_c";
+            Cilindrada_c.Size = new Size(180, 23);
+            Cilindrada_c.TabIndex = 2;
             // 
-            // textBox3Cicle
+            // clicle_cam
             // 
-            textBox3Cicle.Location = new Point(13, 105);
-            textBox3Cicle.Margin = new Padding(2);
-            textBox3Cicle.Name = "textBox3Cicle";
-            textBox3Cicle.Size = new Size(180, 23);
-            textBox3Cicle.TabIndex = 3;
+            clicle_cam.Location = new Point(13, 105);
+            clicle_cam.Margin = new Padding(2);
+            clicle_cam.Name = "clicle_cam";
+            clicle_cam.Size = new Size(180, 23);
+            clicle_cam.TabIndex = 3;
             // 
-            // textBox5Element
+            // Element
             // 
-            textBox5Element.Location = new Point(13, 196);
-            textBox5Element.Margin = new Padding(4, 3, 4, 3);
-            textBox5Element.Name = "textBox5Element";
-            textBox5Element.Size = new Size(180, 23);
-            textBox5Element.TabIndex = 8;
+            Element.Location = new Point(13, 196);
+            Element.Margin = new Padding(4, 3, 4, 3);
+            Element.Name = "Element";
+            Element.Size = new Size(180, 23);
+            Element.TabIndex = 8;
             // 
-            // textBox6Envergadura
+            // Envergadura_c
             // 
-            textBox6Envergadura.Location = new Point(13, 239);
-            textBox6Envergadura.Margin = new Padding(4, 3, 4, 3);
-            textBox6Envergadura.Name = "textBox6Envergadura";
-            textBox6Envergadura.Size = new Size(180, 23);
-            textBox6Envergadura.TabIndex = 9;
+            Envergadura_c.Location = new Point(13, 239);
+            Envergadura_c.Margin = new Padding(4, 3, 4, 3);
+            Envergadura_c.Name = "Envergadura_c";
+            Envergadura_c.Size = new Size(180, 23);
+            Envergadura_c.TabIndex = 9;
             // 
-            // textBox7Potencia
+            // Potencia_c
             // 
-            textBox7Potencia.Location = new Point(13, 283);
-            textBox7Potencia.Margin = new Padding(4, 3, 4, 3);
-            textBox7Potencia.Name = "textBox7Potencia";
-            textBox7Potencia.Size = new Size(180, 23);
-            textBox7Potencia.TabIndex = 10;
+            Potencia_c.Location = new Point(13, 283);
+            Potencia_c.Margin = new Padding(4, 3, 4, 3);
+            Potencia_c.Name = "Potencia_c";
+            Potencia_c.Size = new Size(180, 23);
+            Potencia_c.TabIndex = 10;
             // 
-            // textBox8KmFets
+            // quilometres_fets
             // 
-            textBox8KmFets.Location = new Point(13, 327);
-            textBox8KmFets.Margin = new Padding(4, 3, 4, 3);
-            textBox8KmFets.Name = "textBox8KmFets";
-            textBox8KmFets.Size = new Size(180, 23);
-            textBox8KmFets.TabIndex = 11;
+            quilometres_fets.Location = new Point(13, 327);
+            quilometres_fets.Margin = new Padding(4, 3, 4, 3);
+            quilometres_fets.Name = "quilometres_fets";
+            quilometres_fets.Size = new Size(180, 23);
+            quilometres_fets.TabIndex = 11;
             // 
-            // textBox9SostreVol
+            // sostre_maxim
             // 
-            textBox9SostreVol.Location = new Point(13, 371);
-            textBox9SostreVol.Margin = new Padding(4, 3, 4, 3);
-            textBox9SostreVol.Name = "textBox9SostreVol";
-            textBox9SostreVol.Size = new Size(180, 23);
-            textBox9SostreVol.TabIndex = 12;
+            sostre_maxim.Location = new Point(13, 371);
+            sostre_maxim.Margin = new Padding(4, 3, 4, 3);
+            sostre_maxim.Name = "sostre_maxim";
+            sostre_maxim.Size = new Size(180, 23);
+            sostre_maxim.TabIndex = 12;
             // 
-            // textBox10VelocitatNormal
+            // velocitat
             // 
-            textBox10VelocitatNormal.Location = new Point(271, 63);
-            textBox10VelocitatNormal.Margin = new Padding(4, 3, 4, 3);
-            textBox10VelocitatNormal.Name = "textBox10VelocitatNormal";
-            textBox10VelocitatNormal.Size = new Size(180, 23);
-            textBox10VelocitatNormal.TabIndex = 13;
+            velocitat.Location = new Point(271, 63);
+            velocitat.Margin = new Padding(4, 3, 4, 3);
+            velocitat.Name = "velocitat";
+            velocitat.Size = new Size(180, 23);
+            velocitat.TabIndex = 13;
             // 
-            // textBox11VelocitatMaxima
+            // velocitat_maxima
             // 
-            textBox11VelocitatMaxima.Location = new Point(271, 105);
-            textBox11VelocitatMaxima.Margin = new Padding(4, 3, 4, 3);
-            textBox11VelocitatMaxima.Name = "textBox11VelocitatMaxima";
-            textBox11VelocitatMaxima.Size = new Size(180, 23);
-            textBox11VelocitatMaxima.TabIndex = 14;
+            velocitat_maxima.Location = new Point(271, 105);
+            velocitat_maxima.Margin = new Padding(4, 3, 4, 3);
+            velocitat_maxima.Name = "velocitat_maxima";
+            velocitat_maxima.Size = new Size(180, 23);
+            velocitat_maxima.TabIndex = 14;
             // 
-            // textBox12FontEnergia
+            // font_energia
             // 
-            textBox12FontEnergia.Location = new Point(271, 149);
-            textBox12FontEnergia.Margin = new Padding(4, 3, 4, 3);
-            textBox12FontEnergia.Name = "textBox12FontEnergia";
-            textBox12FontEnergia.Size = new Size(180, 23);
-            textBox12FontEnergia.TabIndex = 15;
+            font_energia.Location = new Point(271, 149);
+            font_energia.Margin = new Padding(4, 3, 4, 3);
+            font_energia.Name = "font_energia";
+            font_energia.Size = new Size(180, 23);
+            font_energia.TabIndex = 15;
             // 
-            // textBox13FontIngres
+            // font_ingres
             // 
-            textBox13FontIngres.Location = new Point(271, 194);
-            textBox13FontIngres.Margin = new Padding(4, 3, 4, 3);
-            textBox13FontIngres.Name = "textBox13FontIngres";
-            textBox13FontIngres.Size = new Size(180, 23);
-            textBox13FontIngres.TabIndex = 16;
+            font_ingres.Location = new Point(271, 194);
+            font_ingres.Margin = new Padding(4, 3, 4, 3);
+            font_ingres.Name = "font_ingres";
+            font_ingres.Size = new Size(180, 23);
+            font_ingres.TabIndex = 16;
             // 
-            // textBox14FormaIngres
+            // forma_ingres
             // 
-            textBox14FormaIngres.Location = new Point(271, 239);
-            textBox14FormaIngres.Margin = new Padding(4, 3, 4, 3);
-            textBox14FormaIngres.Name = "textBox14FormaIngres";
-            textBox14FormaIngres.Size = new Size(180, 23);
-            textBox14FormaIngres.TabIndex = 17;
+            forma_ingres.Location = new Point(271, 239);
+            forma_ingres.Margin = new Padding(4, 3, 4, 3);
+            forma_ingres.Name = "forma_ingres";
+            forma_ingres.Size = new Size(180, 23);
+            forma_ingres.TabIndex = 17;
             // 
-            // textBox15LlocFabricacio
+            // lloc_fabricacio
             // 
-            textBox15LlocFabricacio.Location = new Point(271, 283);
-            textBox15LlocFabricacio.Margin = new Padding(4, 3, 4, 3);
-            textBox15LlocFabricacio.Name = "textBox15LlocFabricacio";
-            textBox15LlocFabricacio.Size = new Size(180, 23);
-            textBox15LlocFabricacio.TabIndex = 18;
+            lloc_fabricacio.Location = new Point(271, 283);
+            lloc_fabricacio.Margin = new Padding(4, 3, 4, 3);
+            lloc_fabricacio.Name = "lloc_fabricacio";
+            lloc_fabricacio.Size = new Size(180, 23);
+            lloc_fabricacio.TabIndex = 18;
             // 
-            // textBox16Longitud
+            // longitud_c
             // 
-            textBox16Longitud.Location = new Point(271, 327);
-            textBox16Longitud.Margin = new Padding(4, 3, 4, 3);
-            textBox16Longitud.Name = "textBox16Longitud";
-            textBox16Longitud.Size = new Size(180, 23);
-            textBox16Longitud.TabIndex = 19;
+            longitud_c.Location = new Point(271, 327);
+            longitud_c.Margin = new Padding(4, 3, 4, 3);
+            longitud_c.Name = "longitud_c";
+            longitud_c.Size = new Size(180, 23);
+            longitud_c.TabIndex = 19;
             // 
-            // textBox17Pes
+            // pes
             // 
-            textBox17Pes.Location = new Point(271, 23);
-            textBox17Pes.Margin = new Padding(4, 3, 4, 3);
-            textBox17Pes.Name = "textBox17Pes";
-            textBox17Pes.Size = new Size(180, 23);
-            textBox17Pes.TabIndex = 20;
+            pes.Location = new Point(271, 23);
+            pes.Margin = new Padding(4, 3, 4, 3);
+            pes.Name = "pes";
+            pes.Size = new Size(180, 23);
+            pes.TabIndex = 20;
             // 
             // button1Enrere
             // 
@@ -402,23 +402,23 @@
             Controls.Add(label1);
             Controls.Add(button2Siguiente);
             Controls.Add(button1Enrere);
-            Controls.Add(textBox17Pes);
-            Controls.Add(textBox16Longitud);
-            Controls.Add(textBox15LlocFabricacio);
-            Controls.Add(textBox14FormaIngres);
-            Controls.Add(textBox13FontIngres);
-            Controls.Add(textBox12FontEnergia);
-            Controls.Add(textBox11VelocitatMaxima);
-            Controls.Add(textBox10VelocitatNormal);
-            Controls.Add(textBox9SostreVol);
-            Controls.Add(textBox8KmFets);
-            Controls.Add(textBox7Potencia);
-            Controls.Add(textBox6Envergadura);
-            Controls.Add(textBox5Element);
-            Controls.Add(textBox3Cicle);
-            Controls.Add(textBox4Cilindrada);
-            Controls.Add(textBox2CapacitatDiposit);
-            Controls.Add(textBox1Autonomia);
+            Controls.Add(pes);
+            Controls.Add(longitud_c);
+            Controls.Add(lloc_fabricacio);
+            Controls.Add(forma_ingres);
+            Controls.Add(font_ingres);
+            Controls.Add(font_energia);
+            Controls.Add(velocitat_maxima);
+            Controls.Add(velocitat);
+            Controls.Add(sostre_maxim);
+            Controls.Add(quilometres_fets);
+            Controls.Add(Potencia_c);
+            Controls.Add(Envergadura_c);
+            Controls.Add(Element);
+            Controls.Add(clicle_cam);
+            Controls.Add(Cilindrada_c);
+            Controls.Add(capacitatDiposit);
+            Controls.Add(Autonomia);
             Margin = new Padding(2);
             Name = "Camps";
             Text = "Establir els camps";
@@ -428,23 +428,23 @@
 
         #endregion
 
-        private TextBox textBox1Autonomia;
-        private TextBox textBox2CapacitatDiposit;
-        private TextBox textBox4Cilindrada;
-        private TextBox textBox3Cicle;
-        private TextBox textBox5Element;
-        private TextBox textBox6Envergadura;
-        private TextBox textBox7Potencia;
-        private TextBox textBox8KmFets;
-        private TextBox textBox9SostreVol;
-        private TextBox textBox10VelocitatNormal;
-        private TextBox textBox11VelocitatMaxima;
-        private TextBox textBox12FontEnergia;
-        private TextBox textBox13FontIngres;
-        private TextBox textBox14FormaIngres;
-        private TextBox textBox15LlocFabricacio;
-        private TextBox textBox16Longitud;
-        private TextBox textBox17Pes;
+        private TextBox Autonomia;
+        private TextBox capacitatDiposit;
+        private TextBox Cilindrada_c;
+        private TextBox clicle_cam;
+        private TextBox Element;
+        private TextBox Envergadura_c;
+        private TextBox Potencia_c;
+        private TextBox quilometres_fets;
+        private TextBox sostre_maxim;
+        private TextBox velocitat;
+        private TextBox velocitat_maxima;
+        private TextBox font_energia;
+        private TextBox font_ingres;
+        private TextBox forma_ingres;
+        private TextBox lloc_fabricacio;
+        private TextBox longitud_c;
+        private TextBox pes;
         private Button button1Enrere;
         private Button button2Siguiente;
         private Label label1;

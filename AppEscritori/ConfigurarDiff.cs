@@ -45,6 +45,7 @@ namespace AppEscritori
 
         private void buttonDificil_Click(object sender, EventArgs e)
         {
+            // Ir para atrás
             ConfImgPunt configimgpunt = new ConfImgPunt(this);
             configimgpunt.Show();
             this.Hide();

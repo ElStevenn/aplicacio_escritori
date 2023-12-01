@@ -32,10 +32,7 @@ namespace AppEscritori
 
         private void buttonAnadir_Click(object sender, EventArgs e)
         {
-            string respuesta1 = respuestaA.Text;
-
-            string respuesta2 = respuestaB.Text;
-            string respuesta3 = respuestaC.Text;
+            // hacer esto 
         }
     }
 }
