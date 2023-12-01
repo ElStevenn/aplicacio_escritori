@@ -12,26 +12,26 @@ namespace AppEscritori
 {
     public partial class Menu : Form
     {
-        Login login;
-        // Inicializo aquí el museo
-        GestionarParteMuseo Gestor_museo = new GestionarParteMuseo();
+        private readonly Login login;
+        private readonly GestionarParteMuseo.Gestor_museo gestorMuseo;
 
         public Menu()
         {
             InitializeComponent();
+            GestionarParteMuseo gestionarParte = new GestionarParteMuseo();
+            gestorMuseo = gestionarParte.gestorMuseo; // Si esto es un campo público
         }
-        public Menu(Login login)
+
+        public Menu(Login login) : this()
         {
-            InitializeComponent();
             this.login = login;
         }
 
         private void buttonCrearElemento_Click(object sender, EventArgs e)
         {
-            CampsMain campsMain = new CampsMain(Gestor_museo);
+            CampsMain campsMain = new CampsMain(gestorMuseo);
             campsMain.Show();
             this.Hide();
-
         }
 
         private void cambiarUsuarioToolStripMenuItem_Click(object sender, EventArgs e)
