@@ -29,7 +29,7 @@ namespace AppEscritori
 
         private void buttonCrearElemento_Click(object sender, EventArgs e)
         {
-            CampsMain campsMain = new CampsMain(gestorMuseo);
+            CampsMain campsMain = new CampsMain(GestionarParteMuseo.Gestor_museo.Instance);
             campsMain.Show();
             this.Hide();
         }

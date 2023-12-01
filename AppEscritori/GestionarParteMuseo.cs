@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Xml.Linq;
 
+
 namespace AppEscritori
 {
     internal class GestionarParteMuseo
@@ -36,8 +37,8 @@ namespace AppEscritori
 
             // Pongo aquí la intancia para poder moverlo entre archivos
             private static Gestor_museo instance = null;
-
             private Gestor_museo() { }
+
             public static Gestor_museo Instance
             {
                 get
@@ -85,7 +86,7 @@ namespace AppEscritori
             
 
         }
-        
+      
     }
 
 }

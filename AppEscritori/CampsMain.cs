@@ -7,9 +7,13 @@ namespace AppEscritori
 {
     public partial class CampsMain : Form
     {
-        private readonly Gestor_museo gestionadorMuseo;
+        private readonly GestionarParteMuseo.Gestor_museo gestionadorMuseo;
 
-        public CampsMain(Gestor_museo gestorMuseo)
+        public CampsMain() : this(GestionarParteMuseo.Gestor_museo.Instance)
+        {
+        }
+
+        public CampsMain(GestionarParteMuseo.Gestor_museo gestorMuseo)
         {
             InitializeComponent();
             this.gestionadorMuseo = gestorMuseo;
@@ -18,7 +22,7 @@ namespace AppEscritori
 
         private void ponerCampos()
         {
-            descripcio_element.Text = "hola hola hola"; // Asigna el texto al TextBox
+            descripcio_element.Text = "hola hola hola";
         }
 
         private void buttonSiguiente_Click(object sender, EventArgs e)
@@ -40,9 +44,9 @@ namespace AppEscritori
                 gestionadorMuseo.actualizar_campos_main(nombreElemento, numeroInventario, anoCreacion, descripcion_elemento);
 
                 // Pasar a la pantalla de Main
-                Camps camps = new Camps(gestionadorMuseo); // Asumiendo que Camps espera un Gestor_museo como parámetro
-                camps.Show();
-                this.Hide();
+
+                CampsMain campsMain = new CampsMain(gestionadorMuseo);
+                campsMain.Show();
             }
         }
 
