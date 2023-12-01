@@ -13,6 +13,9 @@ namespace AppEscritori
     public partial class Menu : Form
     {
         Login login;
+        // Inicializo aquí el museo
+        GestionarParteMuseo Gestor_museo = new GestionarParteMuseo();
+
         public Menu()
         {
             InitializeComponent();
@@ -25,7 +28,7 @@ namespace AppEscritori
 
         private void buttonCrearElemento_Click(object sender, EventArgs e)
         {
-            CampsMain campsMain = new CampsMain(this);
+            CampsMain campsMain = new CampsMain(Gestor_museo);
             campsMain.Show();
             this.Hide();
 

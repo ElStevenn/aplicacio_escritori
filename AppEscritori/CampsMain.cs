@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using AppEscritori;
 using static AppEscritori.GestionarParteMuseo;
@@ -14,27 +7,19 @@ namespace AppEscritori
 {
     public partial class CampsMain : Form
     {
-        Menu menu;
-        Gestor_museo Gestor_museo;
+        private readonly Gestor_museo gestionadorMuseo;
 
-
-        public CampsMain()
-        {
-            // Esto si lo quito me da error!
-  
-
-        }
-
-        public CampsMain(Menu menu)
+        public CampsMain(Gestor_museo gestorMuseo)
         {
             InitializeComponent();
-            this.menu = menu;
-        }
-        public void ponerCampos()
-        {
-            descripcio_element.Text = "hola hola hola";
+            this.gestionadorMuseo = gestorMuseo;
+            ponerCampos();
         }
 
+        private void ponerCampos()
+        {
+            descripcio_element.Text = "hola hola hola"; // Asigna el texto al TextBox
+        }
 
         private void buttonSiguiente_Click(object sender, EventArgs e)
         {
@@ -43,35 +28,29 @@ namespace AppEscritori
             string anoCreacion = any_creacio.Text;
             string descripcion_elemento = descripcio_element.Text;
 
-
-
-
             // Validación de campos vacíos
-            if (string.IsNullOrEmpty(nombreElemento) || string.IsNullOrEmpty(numeroInventario) || string.IsNullOrEmpty(anoCreacion) || string.IsNullOrEmpty(descripcion_elemento))
+            if (string.IsNullOrEmpty(nombreElemento) || string.IsNullOrEmpty(numeroInventario) ||
+                string.IsNullOrEmpty(anoCreacion) || string.IsNullOrEmpty(descripcion_elemento))
             {
                 MessageBox.Show("Debes de rellenar todos los campos con valores correctos", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return;
             }
             else
             {
-                // Actualizo los campos y los almazeno en la classe
-                Gestor_museo.actualizar_campos_main(nombreElemento, numeroInventario, anoCreacion, descripcion_elemento);
+                // Actualiza los campos y los almacena en la clase
+                gestionadorMuseo.actualizar_campos_main(nombreElemento, numeroInventario, anoCreacion, descripcion_elemento);
 
-                // Passar a la pantalla de Main
-                Camps camps = new Camps();
+                // Pasar a la pantalla de Main
+                Camps camps = new Camps(gestionadorMuseo); // Asumiendo que Camps espera un Gestor_museo como parámetro
                 camps.Show();
                 this.Hide();
             }
-
-
         }
 
         private void buttonAtras_Click(object sender, EventArgs e)
         {
-            Menu menu = new Menu();
+            Menu menu = new Menu(); // Asumiendo que tienes un formulario llamado Menu
             menu.Show();
             this.Hide();
-
         }
     }
 }

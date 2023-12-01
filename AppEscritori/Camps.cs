@@ -7,17 +7,21 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static AppEscritori.GestionarParteMuseo;
 
 namespace AppEscritori
 {
     public partial class Camps : Form
     {
-        public Camps()
+        private readonly Gestor_museo gestorMuseo;
+
+        public Camps(Gestor_museo gestor_museo)
         {
             InitializeComponent();
+            this.gestorMuseo = gestor_museo; // Almacenamiento de la referencia para su uso posterior
         }
-        
-            
+
+
 
         private void button2Siguiente_Click(object sender, EventArgs e)
         {
@@ -49,7 +53,7 @@ namespace AppEscritori
             }
             else
             {
-                CampsFinal campsFinal = new CampsFinal();
+                CampsFinal campsFinal = new CampsFinal(this.gestorMuseo);
                 campsFinal.Show();
                 this.Hide();
             }
@@ -57,7 +61,7 @@ namespace AppEscritori
 
         private void button1Enrere_Click(object sender, EventArgs e)
         {
-            CampsMain campsMain = new CampsMain();
+            CampsMain campsMain = new CampsMain(this.gestorMuseo);
             campsMain.Show();
             this.Hide();
         }

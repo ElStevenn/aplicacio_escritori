@@ -34,7 +34,7 @@ namespace AppEscritori
             string lugar_fabricacion { get; set; } = string.Empty;
             string longitud { get; set; } = string.Empty;
 
-            // Pongo aquí la intancia
+            // Pongo aquí la intancia para poder moverlo entre archivos
             private static Gestor_museo instance = null;
 
             private Gestor_museo() { }

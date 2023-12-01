@@ -7,12 +7,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static AppEscritori.GestionarParteMuseo;
 
 namespace AppEscritori
 {
     public partial class CampsFinal : Form
     {
-        public CampsFinal()
+        public CampsFinal(GestionarParteMuseo gestor_museo)
         {
             InitializeComponent();
         }
