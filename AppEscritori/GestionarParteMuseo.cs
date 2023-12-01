@@ -34,12 +34,24 @@ namespace AppEscritori
             string lugar_fabricacion { get; set; } = string.Empty;
             string longitud { get; set; } = string.Empty;
 
-            public Gestor_museo()
-            {
+            // Pongo aquí la intancia
+            private static Gestor_museo instance = null;
 
+            private Gestor_museo() { }
+            public static Gestor_museo Instance
+            {
+                get
+                {
+                    if (instance == null)
+                    {
+                        instance = new Gestor_museo();
+                    }
+                    return instance;
+                }
             }
 
-            public void introducir_campos_main(string nombreElemento, string numeroInventario, string anoCreacion, string descripcion_elemento)
+
+            public void actualizar_campos_main(string nombreElemento, string numeroInventario, string anoCreacion, string descripcion_elemento)
             {
                 this.nombreElemento = nombreElemento;
                 this.numeroInventario = numeroInventario;
@@ -47,7 +59,7 @@ namespace AppEscritori
                 this.descripcion_elemento = descripcion_elemento;
             }
 
-            public void introducir_caracteristicas(string autonomia, string capacitat_diposit, string clicle, string cilidrada,
+            public void actualizar_caracteristicas(string autonomia, string capacitat_diposit, string clicle, string cilidrada,
                                            string elemento, string potencia, string quilometros_h, string peso,
                                            string velocidad, string velocidad_maxima, string fuente_energia,
                                            string fuente_ingreso, string forma_ingreso, string lugar_fabricacion,
@@ -70,8 +82,10 @@ namespace AppEscritori
                 this.longitud = longitud;
             }
 
+            
 
         }
+        
     }
 
 }

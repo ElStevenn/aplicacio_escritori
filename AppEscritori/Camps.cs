@@ -16,16 +16,43 @@ namespace AppEscritori
         {
             InitializeComponent();
         }
+        
+            
 
         private void button2Siguiente_Click(object sender, EventArgs e)
         {
-            // Aquí a parte de ir ala siguiente parte, habrá que manejar errores y recojer todos los datos de los imputs
+            // Obtener cada uno de los valores
+            string autonomia = Autonomia.Text;
+            string capacitat_diposit = capacitatDiposit.Text;
+            string clicle = clicle_cam.Text;
+            string cilidrada = Cilindrada_c.Text;
+            string elemento = Element.Text;
+            string potencia = Potencia_c.Text;
+            string quilometros_hechos = quilometres_fets.Text;
+            string techo_maximo = sostre_maxim.Text;
+            string peso = pes.Text;
+            string velocidad = velocitat.Text;
+            string velocidad_maxima = velocitat_maxima.Text;
+            string fuente_energia = font_energia.Text;
+            string fuente_ingreso = font_ingres.Text;
+            string forma_ingreso = forma_ingres.Text;
+            string lugar_fabricacion = lloc_fabricacio.Text;
+            string longitud = longitud_c.Text;
 
-
-
-            CampsFinal campsFinal = new CampsFinal();
-            campsFinal.Show();
-            this.Hide();
+            if (string.IsNullOrEmpty(autonomia) || string.IsNullOrEmpty(capacitat_diposit) || string.IsNullOrEmpty(clicle) || string.IsNullOrEmpty(cilidrada) ||
+                string.IsNullOrEmpty(elemento) || string.IsNullOrEmpty(potencia) || string.IsNullOrEmpty(quilometros_hechos) || string.IsNullOrEmpty(techo_maximo) ||
+                string.IsNullOrEmpty(peso) || string.IsNullOrEmpty(velocidad) || string.IsNullOrEmpty(velocidad_maxima) || string.IsNullOrEmpty(fuente_energia) ||
+                string.IsNullOrEmpty(fuente_ingreso) || string.IsNullOrEmpty(forma_ingreso) || string.IsNullOrEmpty(lugar_fabricacion) || string.IsNullOrEmpty(longitud))
+            {
+                MessageBox.Show("Todos los campos deben estar completos", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return; // No continuar con la ejecución si hay campos vacíos
+            }
+            else
+            {
+                CampsFinal campsFinal = new CampsFinal();
+                campsFinal.Show();
+                this.Hide();
+            }
         }
 
         private void button1Enrere_Click(object sender, EventArgs e)
