@@ -47,11 +47,13 @@
             RespuestaCorrectaC = new RadioButton();
             RespuestaCorrecta = new Label();
             RespuestaCorrectaD = new RadioButton();
+            comboBox1 = new ComboBox();
+            Idioma = new Label();
             SuspendLayout();
             // 
             // respuestaA
             // 
-            respuestaA.Location = new Point(30, 92);
+            respuestaA.Location = new Point(34, 104);
             respuestaA.Margin = new Padding(4, 3, 4, 3);
             respuestaA.Name = "respuestaA";
             respuestaA.Size = new Size(512, 23);
@@ -60,7 +62,7 @@
             // 
             // buttonAnadir
             // 
-            buttonAnadir.Location = new Point(428, 241);
+            buttonAnadir.Location = new Point(428, 244);
             buttonAnadir.Margin = new Padding(4, 3, 4, 3);
             buttonAnadir.Name = "buttonAnadir";
             buttonAnadir.Size = new Size(114, 27);
@@ -71,7 +73,7 @@
             // 
             // textBoxPregunta
             // 
-            textBoxPregunta.Location = new Point(83, 33);
+            textBoxPregunta.Location = new Point(87, 45);
             textBoxPregunta.Margin = new Padding(4, 3, 4, 3);
             textBoxPregunta.Name = "textBoxPregunta";
             textBoxPregunta.Size = new Size(459, 23);
@@ -80,7 +82,7 @@
             // 
             // buttonAtras
             // 
-            buttonAtras.Location = new Point(13, 241);
+            buttonAtras.Location = new Point(13, 244);
             buttonAtras.Margin = new Padding(4, 3, 4, 3);
             buttonAtras.Name = "buttonAtras";
             buttonAtras.Size = new Size(114, 27);
@@ -91,7 +93,7 @@
             // 
             // respuestaD
             // 
-            respuestaD.Location = new Point(31, 179);
+            respuestaD.Location = new Point(35, 191);
             respuestaD.Margin = new Padding(4, 3, 4, 3);
             respuestaD.Name = "respuestaD";
             respuestaD.Size = new Size(511, 23);
@@ -100,7 +102,7 @@
             // 
             // respuestaC
             // 
-            respuestaC.Location = new Point(31, 150);
+            respuestaC.Location = new Point(35, 162);
             respuestaC.Margin = new Padding(4, 3, 4, 3);
             respuestaC.Name = "respuestaC";
             respuestaC.Size = new Size(511, 23);
@@ -109,7 +111,7 @@
             // 
             // respuestaB
             // 
-            respuestaB.Location = new Point(30, 121);
+            respuestaB.Location = new Point(34, 133);
             respuestaB.Margin = new Padding(4, 3, 4, 3);
             respuestaB.Name = "respuestaB";
             respuestaB.Size = new Size(512, 23);
@@ -120,7 +122,7 @@
             // 
             Preguntas.AutoSize = true;
             Preguntas.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            Preguntas.Location = new Point(3, 33);
+            Preguntas.Location = new Point(7, 45);
             Preguntas.Name = "Preguntas";
             Preguntas.Size = new Size(73, 21);
             Preguntas.TabIndex = 19;
@@ -131,7 +133,7 @@
             NumPreguntes.AutoSize = true;
             NumPreguntes.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             NumPreguntes.ForeColor = Color.Firebrick;
-            NumPreguntes.Location = new Point(193, 9);
+            NumPreguntes.Location = new Point(397, 220);
             NumPreguntes.Name = "NumPreguntes";
             NumPreguntes.Size = new Size(149, 21);
             NumPreguntes.TabIndex = 20;
@@ -141,7 +143,7 @@
             // 
             Respuestas.AutoSize = true;
             Respuestas.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            Respuestas.Location = new Point(3, 68);
+            Respuestas.Location = new Point(7, 80);
             Respuestas.Name = "Respuestas";
             Respuestas.Size = new Size(88, 21);
             Respuestas.TabIndex = 21;
@@ -151,7 +153,7 @@
             // 
             label4.AutoSize = true;
             label4.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label4.Location = new Point(3, 94);
+            label4.Location = new Point(7, 106);
             label4.Name = "label4";
             label4.Size = new Size(20, 21);
             label4.TabIndex = 22;
@@ -161,7 +163,7 @@
             // 
             label5.AutoSize = true;
             label5.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label5.Location = new Point(4, 123);
+            label5.Location = new Point(8, 135);
             label5.Name = "label5";
             label5.Size = new Size(19, 21);
             label5.TabIndex = 23;
@@ -171,7 +173,7 @@
             // 
             label6.AutoSize = true;
             label6.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label6.Location = new Point(4, 152);
+            label6.Location = new Point(8, 164);
             label6.Name = "label6";
             label6.Size = new Size(20, 21);
             label6.TabIndex = 24;
@@ -181,7 +183,7 @@
             // 
             label7.AutoSize = true;
             label7.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label7.Location = new Point(3, 181);
+            label7.Location = new Point(7, 193);
             label7.Name = "label7";
             label7.Size = new Size(21, 21);
             label7.TabIndex = 25;
@@ -190,7 +192,7 @@
             // RespuestaCorrectaA
             // 
             RespuestaCorrectaA.AutoSize = true;
-            RespuestaCorrectaA.Location = new Point(151, 211);
+            RespuestaCorrectaA.Location = new Point(155, 223);
             RespuestaCorrectaA.Name = "RespuestaCorrectaA";
             RespuestaCorrectaA.Size = new Size(33, 19);
             RespuestaCorrectaA.TabIndex = 26;
@@ -201,7 +203,7 @@
             // RespuestaCorrectaB
             // 
             RespuestaCorrectaB.AutoSize = true;
-            RespuestaCorrectaB.Location = new Point(193, 211);
+            RespuestaCorrectaB.Location = new Point(197, 223);
             RespuestaCorrectaB.Name = "RespuestaCorrectaB";
             RespuestaCorrectaB.Size = new Size(32, 19);
             RespuestaCorrectaB.TabIndex = 27;
@@ -212,7 +214,7 @@
             // RespuestaCorrectaC
             // 
             RespuestaCorrectaC.AutoSize = true;
-            RespuestaCorrectaC.Location = new Point(231, 211);
+            RespuestaCorrectaC.Location = new Point(235, 223);
             RespuestaCorrectaC.Name = "RespuestaCorrectaC";
             RespuestaCorrectaC.Size = new Size(33, 19);
             RespuestaCorrectaC.TabIndex = 28;
@@ -224,7 +226,7 @@
             // 
             RespuestaCorrecta.AutoSize = true;
             RespuestaCorrecta.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            RespuestaCorrecta.Location = new Point(4, 208);
+            RespuestaCorrecta.Location = new Point(8, 220);
             RespuestaCorrecta.Name = "RespuestaCorrecta";
             RespuestaCorrecta.Size = new Size(141, 21);
             RespuestaCorrecta.TabIndex = 30;
@@ -233,7 +235,7 @@
             // RespuestaCorrectaD
             // 
             RespuestaCorrectaD.AutoSize = true;
-            RespuestaCorrectaD.Location = new Point(270, 211);
+            RespuestaCorrectaD.Location = new Point(274, 223);
             RespuestaCorrectaD.Name = "RespuestaCorrectaD";
             RespuestaCorrectaD.Size = new Size(33, 19);
             RespuestaCorrectaD.TabIndex = 29;
@@ -241,11 +243,31 @@
             RespuestaCorrectaD.Text = "D";
             RespuestaCorrectaD.UseVisualStyleBackColor = true;
             // 
+            // comboBox1
+            // 
+            comboBox1.FormattingEnabled = true;
+            comboBox1.Location = new Point(87, 16);
+            comboBox1.Name = "comboBox1";
+            comboBox1.Size = new Size(121, 23);
+            comboBox1.TabIndex = 31;
+            // 
+            // Idioma
+            // 
+            Idioma.AutoSize = true;
+            Idioma.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            Idioma.Location = new Point(8, 18);
+            Idioma.Name = "Idioma";
+            Idioma.Size = new Size(58, 21);
+            Idioma.TabIndex = 32;
+            Idioma.Text = "Idioma";
+            // 
             // AñadirPregunta
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(555, 280);
+            ClientSize = new Size(555, 283);
+            Controls.Add(Idioma);
+            Controls.Add(comboBox1);
             Controls.Add(RespuestaCorrecta);
             Controls.Add(RespuestaCorrectaD);
             Controls.Add(RespuestaCorrectaC);
@@ -294,6 +316,8 @@
         private RadioButton RespuestaCorrectaC;
         private Label RespuestaCorrecta;
         private RadioButton RespuestaCorrectaD;
+        private ComboBox comboBox1;
+        private Label Idioma;
     }
 }
 
