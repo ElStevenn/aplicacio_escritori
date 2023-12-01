@@ -42,7 +42,6 @@ namespace AppEscritori
 
         private void AñadirPregunta_Load(object sender, EventArgs e)
         {
-             
 
         }
     }
