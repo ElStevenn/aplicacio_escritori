@@ -1,13 +1,13 @@
 [
   {
-    "question": "Pregunta2JESSON",
+    "question": "Pregunta2JES",
     "options": [
-      "A1ES",
-      "B",
-      "C",
-      "D"
+      "pacoa",
+      "Ba",
+      "Ca",
+      "Da"
     ],
-    "correctOption": "B"
+    "correctOption": "D"
   },
   {
     "question": "Pregunta3JSON",
@@ -36,6 +36,16 @@
       "Bsd",
       "C1q2",
       "Dd"
+    ],
+    "correctOption": "C"
+  },
+  {
+    "question": "añadirejemplo",
+    "options": [
+      "a",
+      "b",
+      "c",
+      "d"
     ],
     "correctOption": "C"
   }

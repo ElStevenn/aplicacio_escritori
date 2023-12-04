@@ -36,7 +36,7 @@
             respuestaC = new TextBox();
             respuestaB = new TextBox();
             Preguntas = new Label();
-            NumPreguntes = new Label();
+            labelXPreguntas = new Label();
             Respuestas = new Label();
             label4 = new Label();
             label5 = new Label();
@@ -49,6 +49,8 @@
             RespuestaCorrectaD = new RadioButton();
             comboBoxIdiomas = new ComboBox();
             Idioma = new Label();
+            groupBoxButtonsCO = new GroupBox();
+            groupBoxButtonsCO.SuspendLayout();
             SuspendLayout();
             // 
             // respuestaA
@@ -128,16 +130,16 @@
             Preguntas.TabIndex = 19;
             Preguntas.Text = "Pregunta";
             // 
-            // NumPreguntes
+            // labelXPreguntas
             // 
-            NumPreguntes.AutoSize = true;
-            NumPreguntes.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            NumPreguntes.ForeColor = Color.Firebrick;
-            NumPreguntes.Location = new Point(397, 220);
-            NumPreguntes.Name = "NumPreguntes";
-            NumPreguntes.Size = new Size(149, 21);
-            NumPreguntes.TabIndex = 20;
-            NumPreguntes.Text = "Hi ha X preguntes ";
+            labelXPreguntas.AutoSize = true;
+            labelXPreguntas.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            labelXPreguntas.ForeColor = Color.Firebrick;
+            labelXPreguntas.Location = new Point(397, 220);
+            labelXPreguntas.Name = "labelXPreguntas";
+            labelXPreguntas.Size = new Size(135, 21);
+            labelXPreguntas.TabIndex = 20;
+            labelXPreguntas.Text = "Hay X preguntas";
             // 
             // Respuestas
             // 
@@ -192,7 +194,7 @@
             // RespuestaCorrectaA
             // 
             RespuestaCorrectaA.AutoSize = true;
-            RespuestaCorrectaA.Location = new Point(155, 223);
+            RespuestaCorrectaA.Location = new Point(0, 5);
             RespuestaCorrectaA.Name = "RespuestaCorrectaA";
             RespuestaCorrectaA.Size = new Size(33, 19);
             RespuestaCorrectaA.TabIndex = 26;
@@ -203,7 +205,7 @@
             // RespuestaCorrectaB
             // 
             RespuestaCorrectaB.AutoSize = true;
-            RespuestaCorrectaB.Location = new Point(197, 223);
+            RespuestaCorrectaB.Location = new Point(42, 5);
             RespuestaCorrectaB.Name = "RespuestaCorrectaB";
             RespuestaCorrectaB.Size = new Size(32, 19);
             RespuestaCorrectaB.TabIndex = 27;
@@ -214,7 +216,7 @@
             // RespuestaCorrectaC
             // 
             RespuestaCorrectaC.AutoSize = true;
-            RespuestaCorrectaC.Location = new Point(235, 223);
+            RespuestaCorrectaC.Location = new Point(80, 5);
             RespuestaCorrectaC.Name = "RespuestaCorrectaC";
             RespuestaCorrectaC.Size = new Size(33, 19);
             RespuestaCorrectaC.TabIndex = 28;
@@ -235,7 +237,7 @@
             // RespuestaCorrectaD
             // 
             RespuestaCorrectaD.AutoSize = true;
-            RespuestaCorrectaD.Location = new Point(274, 223);
+            RespuestaCorrectaD.Location = new Point(119, 5);
             RespuestaCorrectaD.Name = "RespuestaCorrectaD";
             RespuestaCorrectaD.Size = new Size(33, 19);
             RespuestaCorrectaD.TabIndex = 29;
@@ -252,6 +254,7 @@
             comboBoxIdiomas.Name = "comboBoxIdiomas";
             comboBoxIdiomas.Size = new Size(121, 23);
             comboBoxIdiomas.TabIndex = 31;
+            comboBoxIdiomas.SelectedIndexChanged += comboBoxIdiomas_SelectedIndexChanged;
             // 
             // Idioma
             // 
@@ -263,24 +266,33 @@
             Idioma.TabIndex = 32;
             Idioma.Text = "Idioma";
             // 
+            // groupBoxButtonsCO
+            // 
+            groupBoxButtonsCO.Controls.Add(RespuestaCorrectaC);
+            groupBoxButtonsCO.Controls.Add(RespuestaCorrectaA);
+            groupBoxButtonsCO.Controls.Add(RespuestaCorrectaB);
+            groupBoxButtonsCO.Controls.Add(RespuestaCorrectaD);
+            groupBoxButtonsCO.Location = new Point(155, 220);
+            groupBoxButtonsCO.Name = "groupBoxButtonsCO";
+            groupBoxButtonsCO.Size = new Size(154, 30);
+            groupBoxButtonsCO.TabIndex = 33;
+            groupBoxButtonsCO.TabStop = false;
+            // 
             // AñadirPregunta
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(555, 283);
+            Controls.Add(groupBoxButtonsCO);
             Controls.Add(Idioma);
             Controls.Add(comboBoxIdiomas);
             Controls.Add(RespuestaCorrecta);
-            Controls.Add(RespuestaCorrectaD);
-            Controls.Add(RespuestaCorrectaC);
-            Controls.Add(RespuestaCorrectaB);
-            Controls.Add(RespuestaCorrectaA);
             Controls.Add(label7);
             Controls.Add(label6);
             Controls.Add(label5);
             Controls.Add(label4);
             Controls.Add(Respuestas);
-            Controls.Add(NumPreguntes);
+            Controls.Add(labelXPreguntas);
             Controls.Add(Preguntas);
             Controls.Add(respuestaA);
             Controls.Add(buttonAnadir);
@@ -293,7 +305,8 @@
             Margin = new Padding(4, 3, 4, 3);
             Name = "AñadirPregunta";
             Text = "Agregar preguntes";
-            Load += AñadirPregunta_Load;
+            groupBoxButtonsCO.ResumeLayout(false);
+            groupBoxButtonsCO.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -307,7 +320,7 @@
         private TextBox respuestaC;
         private TextBox respuestaB;
         private Label Preguntas;
-        private Label NumPreguntes;
+        private Label labelXPreguntas;
         private Label Respuestas;
         private Label label4;
         private Label label5;
@@ -320,6 +333,7 @@
         private RadioButton RespuestaCorrectaD;
         private ComboBox comboBoxIdiomas;
         private Label Idioma;
+        private GroupBox groupBoxButtonsCO;
     }
 }
 

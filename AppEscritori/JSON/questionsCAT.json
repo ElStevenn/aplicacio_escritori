@@ -58,5 +58,15 @@
       "DAAAA"
     ],
     "correctOption": "D"
+  },
+  {
+    "question": "gkes",
+    "options": [
+      "af",
+      "fas",
+      "fa",
+      "asf"
+    ],
+    "correctOption": "D"
   }
 ]
