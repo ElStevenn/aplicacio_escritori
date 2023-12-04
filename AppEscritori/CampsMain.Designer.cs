@@ -36,12 +36,14 @@
             label2 = new Label();
             label3 = new Label();
             imageList1 = new ImageList(components);
-            pictureBox1 = new PictureBox();
+            imagen_elemento = new PictureBox();
             descripcio_element = new TextBox();
             label4 = new Label();
             buttonAtras = new Button();
             buttonSiguiente = new Button();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            abrir_archivo = new OpenFileDialog();
+            button1 = new Button();
+            ((System.ComponentModel.ISupportInitialize)imagen_elemento).BeginInit();
             SuspendLayout();
             // 
             // Nom_element
@@ -99,13 +101,13 @@
             imageList1.ImageSize = new Size(16, 16);
             imageList1.TransparentColor = Color.Transparent;
             // 
-            // pictureBox1
+            // imagen_elemento
             // 
-            pictureBox1.Location = new Point(12, 57);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(552, 125);
-            pictureBox1.TabIndex = 9;
-            pictureBox1.TabStop = false;
+            imagen_elemento.Location = new Point(12, 57);
+            imagen_elemento.Name = "imagen_elemento";
+            imagen_elemento.Size = new Size(191, 125);
+            imagen_elemento.TabIndex = 9;
+            imagen_elemento.TabStop = false;
             // 
             // descripcio_element
             // 
@@ -144,16 +146,32 @@
             buttonSiguiente.UseVisualStyleBackColor = true;
             buttonSiguiente.Click += buttonSiguiente_Click;
             // 
+            // abrir_archivo
+            // 
+            abrir_archivo.FileName = "openFileDialog1";
+            abrir_archivo.InitialDirectory = "c:\\\\";
+            // 
+            // button1
+            // 
+            button1.Location = new Point(209, 76);
+            button1.Name = "button1";
+            button1.Size = new Size(147, 23);
+            button1.TabIndex = 14;
+            button1.Text = "Seleccionar Imagen";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
+            // 
             // CampsMain
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(576, 345);
+            Controls.Add(button1);
             Controls.Add(buttonSiguiente);
             Controls.Add(buttonAtras);
             Controls.Add(label4);
             Controls.Add(descripcio_element);
-            Controls.Add(pictureBox1);
+            Controls.Add(imagen_elemento);
             Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(label1);
@@ -162,7 +180,7 @@
             Controls.Add(Nom_element);
             Name = "CampsMain";
             Text = "Campos Principales";
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)imagen_elemento).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -176,10 +194,12 @@
         private Label label2;
         private Label label3;
         private ImageList imageList1;
-        private PictureBox pictureBox1;
+        private PictureBox imagen_elemento;
         private TextBox descripcio_element;
         private Label label4;
         private Button buttonAtras;
         private Button buttonSiguiente;
+        private OpenFileDialog abrir_archivo;
+        private Button button1;
     }
 }
