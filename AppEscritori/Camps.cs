@@ -66,7 +66,7 @@ namespace AppEscritori
 
         private void button1Enrere_Click(object sender, EventArgs e)
         {
-            CampsMain campsMain = new CampsMain();
+            CampsMain campsMain = new CampsMain(gestionadorMuseo);
             campsMain.Show();
             this.Hide();
         }

@@ -18,8 +18,8 @@ namespace AppEscritori
         public CampsMain(Gestor_museo gestor_Museo)
         {
             InitializeComponent();
+            this.gestionadorMuseo = gestor_Museo;
             ponerCampos();
-            this.gestionadorMuseo = GestionarParteMuseo.Gestor_museo.Instance;
         }
 
 
@@ -33,6 +33,7 @@ namespace AppEscritori
                 any_creacio.Text = gestionadorMuseo.anoCreacion ?? "";
                 Numero_inventari.Text = gestionadorMuseo.numeroInventario ?? "";
             }
+
         }
 
         private void buttonSiguiente_Click(object sender, EventArgs e)
