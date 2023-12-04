@@ -1,52 +1,42 @@
 [
-    {
-        "question":"Pregunta1JSONES",
-        "options":[
-            "AES",
-            "BES",
-            "C",
-            "D"
-        ],
-        "correctOption": "A"
-    },
-    {
-        "question":"Pregunta2JESSON",
-        "options":[
-            "A1ES",
-            "B",
-            "C",
-            "D"
-        ],
-        "correctOption": "B"
-    },
-    {
-        "question":"Pregunta3JSON",
-        "options":[
-            "A",
-            "B",
-            "C",
-            "D"
-        ],
-        "correctOption": "C"
-    },
-    {
-        "question":"Pregunta4JSON",
-        "options":[
-            "A",
-            "B",
-            "C",
-            "D"
-        ],
-        "correctOption": "D"
-    },
-    {
-        "question":"Pregunta5JSON",
-        "options":[
-            "A",
-            "B",
-            "C",
-            "D"
-        ],
-        "correctOption": "A"
-    }
+  {
+    "question": "Pregunta2JESSON",
+    "options": [
+      "A1ES",
+      "B",
+      "C",
+      "D"
+    ],
+    "correctOption": "B"
+  },
+  {
+    "question": "Pregunta3JSON",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correctOption": "C"
+  },
+  {
+    "question": "Pregunta4JSONasd",
+    "options": [
+      "Aasd",
+      "Bsd",
+      "Casd",
+      "D"
+    ],
+    "correctOption": "C"
+  },
+  {
+    "question": "cambioModificarJSONES",
+    "options": [
+      "Acambio",
+      "Bsd",
+      "C1q2",
+      "Dd"
+    ],
+    "correctOption": "C"
+  }
 ]

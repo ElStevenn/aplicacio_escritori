@@ -1,44 +1,34 @@
 [
-    {
-        "question":"Pregunta1JSONEN",
-        "options":[
-            "AEN",
-            "B",
-            "C",
-            "D"
-        ],
-        "correctOption": "A"
-    },
-    {
-        "question":"Pregunta2JSON",
-        "options":[
-            "AEN1",
-            "B",
-            "C",
-            "D"
-        ],
-        "correctOption": "B"
-    },
-    {
-        "question":"Pregunta3JSON",
-        "options":[
-            "A",
-            "B",
-            "C",
-            "D"
-        ],
-        "correctOption": "C"
-    },
-    {
-        "question":"Pregunta4JSON",
-        "options":[
-            "A",
-            "B",
-            "C",
-            "D"
-        ],
-        "correctOption": "D"
-    },
+  {
+    "question": "Pregunta1JSONEN",
+    "options": [
+      "AEN",
+      "B",
+      "C",
+      "D"
+    ],
+    "correctOption": "A"
+  },
+  {
+    "question": "Pregunta2JSON",
+    "options": [
+      "AEN1",
+      "B",
+      "C",
+      "D"
+    ],
+    "correctOption": "B"
+  },
+  {
+    "question": "Pregunta3JSON",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correctOption": "C"
+  },
   {
     "question": "Pregunta5JSON",
     "options": [

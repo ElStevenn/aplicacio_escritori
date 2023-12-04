@@ -73,6 +73,7 @@
             button2Eliminar.TabIndex = 4;
             button2Eliminar.Text = "Eliminar";
             button2Eliminar.UseVisualStyleBackColor = true;
+            button2Eliminar.Click += button2Eliminar_Click;
             // 
             // Idioma
             // 

@@ -25,16 +25,12 @@ namespace AppEscritori
             this.confpreguntas = confpreguntas;
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void button1Enrere_Click(object sender, EventArgs e)
         {
             this.Close();
             this.confpreguntas.Show();
-        }             
+        }
 
         private void comboBoxIdiomas_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -75,14 +71,15 @@ namespace AppEscritori
 
             if (questionShown != null)
             {
-                string[] options = questionShown.options;
-                string correctOption = questionShown.correctOption;
-
                 textBoxPregunta.Text = questionShown.question;
+
+                string[] options = questionShown.options;
                 respuestaA.Text = options[0];
                 respuestaB.Text = options[1];
                 respuestaC.Text = options[2];
                 respuestaD.Text = options[3];
+
+                string correctOption = questionShown.correctOption;
 
                 switch (correctOption)
                 {
@@ -100,9 +97,40 @@ namespace AppEscritori
                         break;
                 }
             }
-            else
+        }
+
+        private void button2Eliminar_Click(object sender, EventArgs e)
+        {
+            String language = comboBoxIdiomas.SelectedItem.ToString();
+            Question questionShown = comboBoxQuestions.SelectedItem as Question;
+            if (questionShown != null)
             {
-                // Manejar el caso cuando no hay ningún elemento seleccionado.
+                questions.Remove(questionShown);
+
+                saveQuestionsJSON(language);
+                loadQuestionsJSON(language);
+                labelXPreguntas.Text = "Hay " + questions.Count() + " preguntas";
+            }
+        }
+
+        private void saveQuestionsJSON(string language)
+        {
+            string basePath = AppDomain.CurrentDomain.BaseDirectory;
+
+            switch (language)
+            {
+                case "Castellano":
+                    JArray arrayquestionsES = (JArray)JToken.FromObject(questions);
+                    File.WriteAllText(Path.Combine(basePath, @"..\..\..\JSON\questionsES.json"), arrayquestionsES.ToString());
+                    break;
+                case "Catalán":
+                    JArray arrayquestionsCAT = (JArray)JToken.FromObject(questions);
+                    File.WriteAllText(Path.Combine(basePath, @"..\..\..\JSON\questionsCAT.json"), arrayquestionsCAT.ToString());
+                    break;
+                case "Inglés":
+                    JArray arrayquestionsEN = (JArray)JToken.FromObject(questions);
+                    File.WriteAllText(Path.Combine(basePath, @"..\..\..\JSON\questionsEN.json"), arrayquestionsEN.ToString());
+                    break;
             }
         }
     }

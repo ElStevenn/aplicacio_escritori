@@ -18,5 +18,7 @@ namespace AppEscritori
             this.options = options;
             this.correctOption = correctOption;
         }
+
+        public Question() { }
     }
 }

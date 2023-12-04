@@ -51,6 +51,8 @@
             labelSeleccionarPregunta = new Label();
             comboBoxQuestions = new ComboBox();
             comboBoxIdiomas = new ComboBox();
+            groupBoxButtonsCO = new GroupBox();
+            groupBoxButtonsCO.SuspendLayout();
             SuspendLayout();
             // 
             // Idioma
@@ -76,7 +78,7 @@
             // RespuestaCorrectaD
             // 
             RespuestaCorrectaD.AutoSize = true;
-            RespuestaCorrectaD.Location = new Point(273, 240);
+            RespuestaCorrectaD.Location = new Point(115, 0);
             RespuestaCorrectaD.Name = "RespuestaCorrectaD";
             RespuestaCorrectaD.Size = new Size(33, 19);
             RespuestaCorrectaD.TabIndex = 50;
@@ -87,7 +89,7 @@
             // RespuestaCorrectaC
             // 
             RespuestaCorrectaC.AutoSize = true;
-            RespuestaCorrectaC.Location = new Point(234, 240);
+            RespuestaCorrectaC.Location = new Point(76, 0);
             RespuestaCorrectaC.Name = "RespuestaCorrectaC";
             RespuestaCorrectaC.Size = new Size(33, 19);
             RespuestaCorrectaC.TabIndex = 49;
@@ -98,7 +100,7 @@
             // RespuestaCorrectaB
             // 
             RespuestaCorrectaB.AutoSize = true;
-            RespuestaCorrectaB.Location = new Point(196, 240);
+            RespuestaCorrectaB.Location = new Point(38, 0);
             RespuestaCorrectaB.Name = "RespuestaCorrectaB";
             RespuestaCorrectaB.Size = new Size(32, 19);
             RespuestaCorrectaB.TabIndex = 48;
@@ -109,7 +111,7 @@
             // RespuestaCorrectaA
             // 
             RespuestaCorrectaA.AutoSize = true;
-            RespuestaCorrectaA.Location = new Point(154, 240);
+            RespuestaCorrectaA.Location = new Point(-1, 0);
             RespuestaCorrectaA.Name = "RespuestaCorrectaA";
             RespuestaCorrectaA.Size = new Size(33, 19);
             RespuestaCorrectaA.TabIndex = 47;
@@ -196,6 +198,7 @@
             buttonModificar.TabIndex = 39;
             buttonModificar.Text = "Modificar";
             buttonModificar.UseVisualStyleBackColor = true;
+            buttonModificar.Click += buttonModificar_Click;
             // 
             // buttonAtras
             // 
@@ -206,6 +209,7 @@
             buttonAtras.TabIndex = 38;
             buttonAtras.Text = "Atrás";
             buttonAtras.UseVisualStyleBackColor = true;
+            buttonAtras.Click += buttonAtras_Click;
             // 
             // respuestaD
             // 
@@ -284,20 +288,29 @@
             comboBoxIdiomas.TabIndex = 56;
             comboBoxIdiomas.SelectedIndexChanged += comboBoxIdiomas_SelectedIndexChanged;
             // 
+            // groupBoxButtonsCO
+            // 
+            groupBoxButtonsCO.Controls.Add(RespuestaCorrectaD);
+            groupBoxButtonsCO.Controls.Add(RespuestaCorrectaC);
+            groupBoxButtonsCO.Controls.Add(RespuestaCorrectaB);
+            groupBoxButtonsCO.Controls.Add(RespuestaCorrectaA);
+            groupBoxButtonsCO.Location = new Point(154, 237);
+            groupBoxButtonsCO.Name = "groupBoxButtonsCO";
+            groupBoxButtonsCO.Size = new Size(158, 23);
+            groupBoxButtonsCO.TabIndex = 57;
+            groupBoxButtonsCO.TabStop = false;
+            // 
             // ModificarPregunta
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(550, 295);
+            Controls.Add(groupBoxButtonsCO);
             Controls.Add(comboBoxIdiomas);
             Controls.Add(comboBoxQuestions);
             Controls.Add(labelSeleccionarPregunta);
             Controls.Add(Idioma);
             Controls.Add(labelRespuestaCorrecta);
-            Controls.Add(RespuestaCorrectaD);
-            Controls.Add(RespuestaCorrectaC);
-            Controls.Add(RespuestaCorrectaB);
-            Controls.Add(RespuestaCorrectaA);
             Controls.Add(labelD);
             Controls.Add(labelC);
             Controls.Add(labelB);
@@ -317,6 +330,8 @@
             MaximizeBox = false;
             Name = "ModificarPregunta";
             Text = "Modificar Pregunta";
+            groupBoxButtonsCO.ResumeLayout(false);
+            groupBoxButtonsCO.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -346,5 +361,6 @@
         private Label labelSeleccionarPregunta;
         private ComboBox comboBoxQuestions;
         private ComboBox comboBoxIdiomas;
+        private GroupBox groupBoxButtonsCO;
     }
 }

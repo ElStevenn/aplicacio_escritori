@@ -1,44 +1,44 @@
 [
-    {
-        "question":"Pregunta1JSONCAT",
-        "options":[
-            "ACAT",
-            "B",
-            "C",
-            "D"
-        ],
-        "correctOption": "A"
-    },
-    {
-        "question":"Pregunta2JSON",
-        "options":[
-            "A1",
-            "B",
-            "C",
-            "D"
-        ],
-        "correctOption": "B"
-    },
-    {
-        "question":"Pregunta3JSON",
-        "options":[
-            "A",
-            "B",
-            "C",
-            "D"
-        ],
-        "correctOption": "C"
-    },
-    {
-        "question":"Pregunta4JSON",
-        "options":[
-            "A",
-            "B",
-            "C",
-            "D"
-        ],
-        "correctOption": "D"
-    },
+  {
+    "question": "Pregunta1JSONCAT",
+    "options": [
+      "ACAT",
+      "B",
+      "C",
+      "D"
+    ],
+    "correctOption": "A"
+  },
+  {
+    "question": "Pregunta2JSON",
+    "options": [
+      "A1",
+      "B",
+      "C",
+      "D"
+    ],
+    "correctOption": "B"
+  },
+  {
+    "question": "Pregunta3JSONqaew",
+    "options": [
+      "Aas",
+      "Ba",
+      "Cqw",
+      "Daw"
+    ],
+    "correctOption": "A"
+  },
+  {
+    "question": "Pregunta4JSON",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correctOption": "D"
+  },
   {
     "question": "Pregunta5JSON",
     "options": [
@@ -48,16 +48,6 @@
       "D"
     ],
     "correctOption": "A"
-  },
-  {
-    "question": "Pregunta6JSON",
-    "options": [
-      "AASD",
-      "BADS",
-      "CADS",
-      "D"
-    ],
-    "correctOption": "B"
   },
   {
     "question": "Pregunta7JSON",
