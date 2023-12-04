@@ -7,13 +7,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static AppEscritori.GestionarParteMuseo;
 
 namespace AppEscritori
 {
     public partial class Menu : Form
     {
         private readonly Login login;
-        private readonly GestionarParteMuseo.Gestor_museo gestorMuseo;
+        public GestionarParteMuseo.Gestor_museo gestorMuseo;
 
         public Menu()
         {
@@ -27,7 +28,8 @@ namespace AppEscritori
 
         private void buttonCrearElemento_Click(object sender, EventArgs e)
         {
-            CampsMain campsMain = new CampsMain();
+            Gestor_museo gestorMuseo = GestionarParteMuseo.Gestor_museo.Instance;
+            CampsMain campsMain = new CampsMain(gestorMuseo);
             campsMain.Show();
             this.Hide();
         }
@@ -71,6 +73,11 @@ namespace AppEscritori
             ManejarIdioma menu = new ManejarIdioma();
             menu.Show();
             this.Hide();
+        }
+
+        private void Menu_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

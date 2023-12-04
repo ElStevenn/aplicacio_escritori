@@ -120,6 +120,7 @@
             MaximizeBox = false;
             Name = "Menu";
             Text = "Menu";
+            Load += Menu_Load;
             ResumeLayout(false);
         }
 

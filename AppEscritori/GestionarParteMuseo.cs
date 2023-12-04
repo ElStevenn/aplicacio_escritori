@@ -8,15 +8,15 @@ using System.Xml.Linq;
 
 namespace AppEscritori
 {
-    internal class GestionarParteMuseo
+    public class GestionarParteMuseo
     {
         public class Gestor_museo
         {
             // Campos main
-            string nombreElemento { get; set; } = string.Empty;
-            string numeroInventario {  get; set; } = string.Empty;
-            string anoCreacion  { get; set; } = string.Empty;
-            string descripcion_elemento { get; set; } = string.Empty;
+            public string nombreElemento { get; set; } = string.Empty;
+            public string numeroInventario {  get; set; } = string.Empty;
+            public string anoCreacion  { get; set; } = string.Empty;
+            public string descripcion_elemento { get; set; } = string.Empty;
 
             // Campos Principales
             string autonomia { get; set; } = string.Empty;

@@ -1,0 +1,468 @@
+﻿namespace AppEscritori
+{
+    partial class Camps
+    {
+        /// <summary>
+        /// Variable del diseñador necesaria.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// Limpiar los recursos que se estén usando.
+        /// </summary>
+        /// <param name="disposing">true si los recursos administrados se deben desechar; false en caso contrario.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Código generado por el Diseñador de Windows Forms
+
+        /// <summary>
+        /// Método necesario para admitir el Diseñador. No se puede modificar
+        /// el contenido de este método con el editor de código.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            Autonomia = new TextBox();
+            capacitatDiposit = new TextBox();
+            Cilindrada_c = new TextBox();
+            clicle_cam = new TextBox();
+            Element = new TextBox();
+            Envergadura_c = new TextBox();
+            Potencia_c = new TextBox();
+            quilometres_fets = new TextBox();
+            sostre_maxim = new TextBox();
+            velocitat = new TextBox();
+            velocitat_maxima = new TextBox();
+            font_energia = new TextBox();
+            font_ingres = new TextBox();
+            forma_ingres = new TextBox();
+            lloc_fabricacio = new TextBox();
+            longitud_c = new TextBox();
+            pes = new TextBox();
+            button1Enrere = new Button();
+            button2Siguiente = new Button();
+            label1 = new Label();
+            label2 = new Label();
+            label3 = new Label();
+            label4 = new Label();
+            label5 = new Label();
+            label6 = new Label();
+            label7 = new Label();
+            label8 = new Label();
+            label9 = new Label();
+            label10 = new Label();
+            label11 = new Label();
+            label12 = new Label();
+            label13 = new Label();
+            label14 = new Label();
+            label15 = new Label();
+            label16 = new Label();
+            label17 = new Label();
+            SuspendLayout();
+            // 
+            // Autonomia
+            // 
+            Autonomia.Location = new Point(13, 23);
+            Autonomia.Margin = new Padding(2);
+            Autonomia.Name = "Autonomia";
+            Autonomia.Size = new Size(180, 23);
+            Autonomia.TabIndex = 0;
+            Autonomia.TextChanged += textBox1Autonomia_TextChanged;
+            // 
+            // capacitatDiposit
+            // 
+            capacitatDiposit.Location = new Point(13, 64);
+            capacitatDiposit.Margin = new Padding(2);
+            capacitatDiposit.Name = "capacitatDiposit";
+            capacitatDiposit.Size = new Size(180, 23);
+            capacitatDiposit.TabIndex = 1;
+            // 
+            // Cilindrada_c
+            // 
+            Cilindrada_c.Location = new Point(12, 149);
+            Cilindrada_c.Margin = new Padding(2);
+            Cilindrada_c.Name = "Cilindrada_c";
+            Cilindrada_c.Size = new Size(180, 23);
+            Cilindrada_c.TabIndex = 2;
+            // 
+            // clicle_cam
+            // 
+            clicle_cam.Location = new Point(13, 105);
+            clicle_cam.Margin = new Padding(2);
+            clicle_cam.Name = "clicle_cam";
+            clicle_cam.Size = new Size(180, 23);
+            clicle_cam.TabIndex = 3;
+            // 
+            // Element
+            // 
+            Element.Location = new Point(13, 196);
+            Element.Margin = new Padding(4, 3, 4, 3);
+            Element.Name = "Element";
+            Element.Size = new Size(180, 23);
+            Element.TabIndex = 8;
+            // 
+            // Envergadura_c
+            // 
+            Envergadura_c.Location = new Point(13, 239);
+            Envergadura_c.Margin = new Padding(4, 3, 4, 3);
+            Envergadura_c.Name = "Envergadura_c";
+            Envergadura_c.Size = new Size(180, 23);
+            Envergadura_c.TabIndex = 9;
+            // 
+            // Potencia_c
+            // 
+            Potencia_c.Location = new Point(13, 283);
+            Potencia_c.Margin = new Padding(4, 3, 4, 3);
+            Potencia_c.Name = "Potencia_c";
+            Potencia_c.Size = new Size(180, 23);
+            Potencia_c.TabIndex = 10;
+            // 
+            // quilometres_fets
+            // 
+            quilometres_fets.Location = new Point(13, 327);
+            quilometres_fets.Margin = new Padding(4, 3, 4, 3);
+            quilometres_fets.Name = "quilometres_fets";
+            quilometres_fets.Size = new Size(180, 23);
+            quilometres_fets.TabIndex = 11;
+            // 
+            // sostre_maxim
+            // 
+            sostre_maxim.Location = new Point(13, 371);
+            sostre_maxim.Margin = new Padding(4, 3, 4, 3);
+            sostre_maxim.Name = "sostre_maxim";
+            sostre_maxim.Size = new Size(180, 23);
+            sostre_maxim.TabIndex = 12;
+            // 
+            // velocitat
+            // 
+            velocitat.Location = new Point(271, 63);
+            velocitat.Margin = new Padding(4, 3, 4, 3);
+            velocitat.Name = "velocitat";
+            velocitat.Size = new Size(180, 23);
+            velocitat.TabIndex = 13;
+            // 
+            // velocitat_maxima
+            // 
+            velocitat_maxima.Location = new Point(271, 105);
+            velocitat_maxima.Margin = new Padding(4, 3, 4, 3);
+            velocitat_maxima.Name = "velocitat_maxima";
+            velocitat_maxima.Size = new Size(180, 23);
+            velocitat_maxima.TabIndex = 14;
+            // 
+            // font_energia
+            // 
+            font_energia.Location = new Point(271, 149);
+            font_energia.Margin = new Padding(4, 3, 4, 3);
+            font_energia.Name = "font_energia";
+            font_energia.Size = new Size(180, 23);
+            font_energia.TabIndex = 15;
+            // 
+            // font_ingres
+            // 
+            font_ingres.Location = new Point(271, 194);
+            font_ingres.Margin = new Padding(4, 3, 4, 3);
+            font_ingres.Name = "font_ingres";
+            font_ingres.Size = new Size(180, 23);
+            font_ingres.TabIndex = 16;
+            // 
+            // forma_ingres
+            // 
+            forma_ingres.Location = new Point(271, 239);
+            forma_ingres.Margin = new Padding(4, 3, 4, 3);
+            forma_ingres.Name = "forma_ingres";
+            forma_ingres.Size = new Size(180, 23);
+            forma_ingres.TabIndex = 17;
+            // 
+            // lloc_fabricacio
+            // 
+            lloc_fabricacio.Location = new Point(271, 283);
+            lloc_fabricacio.Margin = new Padding(4, 3, 4, 3);
+            lloc_fabricacio.Name = "lloc_fabricacio";
+            lloc_fabricacio.Size = new Size(180, 23);
+            lloc_fabricacio.TabIndex = 18;
+            // 
+            // longitud_c
+            // 
+            longitud_c.Location = new Point(271, 327);
+            longitud_c.Margin = new Padding(4, 3, 4, 3);
+            longitud_c.Name = "longitud_c";
+            longitud_c.Size = new Size(180, 23);
+            longitud_c.TabIndex = 19;
+            // 
+            // pes
+            // 
+            pes.Location = new Point(271, 23);
+            pes.Margin = new Padding(4, 3, 4, 3);
+            pes.Name = "pes";
+            pes.Size = new Size(180, 23);
+            pes.TabIndex = 20;
+            // 
+            // button1Enrere
+            // 
+            button1Enrere.Location = new Point(13, 415);
+            button1Enrere.Margin = new Padding(4, 3, 4, 3);
+            button1Enrere.Name = "button1Enrere";
+            button1Enrere.Size = new Size(88, 27);
+            button1Enrere.TabIndex = 21;
+            button1Enrere.Text = "Enrere";
+            button1Enrere.UseVisualStyleBackColor = true;
+            button1Enrere.Click += button1Enrere_Click;
+            // 
+            // button2Siguiente
+            // 
+            button2Siguiente.Location = new Point(387, 415);
+            button2Siguiente.Margin = new Padding(4, 3, 4, 3);
+            button2Siguiente.Name = "button2Siguiente";
+            button2Siguiente.Size = new Size(88, 27);
+            button2Siguiente.TabIndex = 22;
+            button2Siguiente.Text = "Següent";
+            button2Siguiente.UseVisualStyleBackColor = true;
+            button2Siguiente.Click += button2Siguiente_Click;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(13, 6);
+            label1.Name = "label1";
+            label1.Size = new Size(67, 15);
+            label1.TabIndex = 23;
+            label1.Text = "Autonomia";
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Location = new Point(12, 48);
+            label2.Name = "label2";
+            label2.Size = new Size(103, 15);
+            label2.TabIndex = 24;
+            label2.Text = "Capacitat dipoòsit";
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Location = new Point(13, 89);
+            label3.Name = "label3";
+            label3.Size = new Size(33, 15);
+            label3.TabIndex = 25;
+            label3.Text = "Cicle";
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Location = new Point(13, 134);
+            label4.Name = "label4";
+            label4.Size = new Size(61, 15);
+            label4.TabIndex = 26;
+            label4.Text = "Cilindrada";
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Location = new Point(13, 180);
+            label5.Name = "label5";
+            label5.Size = new Size(50, 15);
+            label5.TabIndex = 27;
+            label5.Text = "Element";
+            // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.Location = new Point(14, 224);
+            label6.Name = "label6";
+            label6.Size = new Size(73, 15);
+            label6.TabIndex = 28;
+            label6.Text = "Envergadura";
+            // 
+            // label7
+            // 
+            label7.AutoSize = true;
+            label7.Location = new Point(13, 268);
+            label7.Name = "label7";
+            label7.Size = new Size(53, 15);
+            label7.TabIndex = 29;
+            label7.Text = "Potència";
+            // 
+            // label8
+            // 
+            label8.AutoSize = true;
+            label8.Location = new Point(13, 312);
+            label8.Name = "label8";
+            label8.Size = new Size(94, 15);
+            label8.TabIndex = 30;
+            label8.Text = "Quilòmetres fets";
+            // 
+            // label9
+            // 
+            label9.AutoSize = true;
+            label9.Location = new Point(14, 356);
+            label9.Name = "label9";
+            label9.Size = new Size(118, 15);
+            label9.TabIndex = 31;
+            label9.Text = "Sostre màxim de volt";
+            // 
+            // label10
+            // 
+            label10.AutoSize = true;
+            label10.Location = new Point(271, 8);
+            label10.Name = "label10";
+            label10.Size = new Size(25, 15);
+            label10.TabIndex = 32;
+            label10.Text = "Pes";
+            // 
+            // label11
+            // 
+            label11.AutoSize = true;
+            label11.Location = new Point(270, 48);
+            label11.Name = "label11";
+            label11.Size = new Size(52, 15);
+            label11.TabIndex = 33;
+            label11.Text = "Velocitat";
+            // 
+            // label12
+            // 
+            label12.AutoSize = true;
+            label12.Location = new Point(271, 89);
+            label12.Name = "label12";
+            label12.Size = new Size(98, 15);
+            label12.TabIndex = 34;
+            label12.Text = "Velocitat màxima";
+            // 
+            // label13
+            // 
+            label13.AutoSize = true;
+            label13.Location = new Point(270, 134);
+            label13.Name = "label13";
+            label13.Size = new Size(83, 15);
+            label13.TabIndex = 35;
+            label13.Text = "Font d'energia";
+            // 
+            // label14
+            // 
+            label14.AutoSize = true;
+            label14.Location = new Point(270, 179);
+            label14.Name = "label14";
+            label14.Size = new Size(76, 15);
+            label14.TabIndex = 36;
+            label14.Text = "Font d'ingrés";
+            // 
+            // label15
+            // 
+            label15.AutoSize = true;
+            label15.Location = new Point(270, 224);
+            label15.Name = "label15";
+            label15.Size = new Size(86, 15);
+            label15.TabIndex = 37;
+            label15.Text = "Forma d'ingrés";
+            // 
+            // label16
+            // 
+            label16.AutoSize = true;
+            label16.Location = new Point(270, 268);
+            label16.Name = "label16";
+            label16.Size = new Size(100, 15);
+            label16.TabIndex = 38;
+            label16.Text = "Lloc de fabricació";
+            // 
+            // label17
+            // 
+            label17.AutoSize = true;
+            label17.Location = new Point(271, 309);
+            label17.Name = "label17";
+            label17.Size = new Size(55, 15);
+            label17.TabIndex = 39;
+            label17.Text = "Longitud";
+            // 
+            // Camps
+            // 
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(504, 454);
+            Controls.Add(label17);
+            Controls.Add(label16);
+            Controls.Add(label15);
+            Controls.Add(label14);
+            Controls.Add(label13);
+            Controls.Add(label12);
+            Controls.Add(label11);
+            Controls.Add(label10);
+            Controls.Add(label9);
+            Controls.Add(label8);
+            Controls.Add(label7);
+            Controls.Add(label6);
+            Controls.Add(label5);
+            Controls.Add(label4);
+            Controls.Add(label3);
+            Controls.Add(label2);
+            Controls.Add(label1);
+            Controls.Add(button2Siguiente);
+            Controls.Add(button1Enrere);
+            Controls.Add(pes);
+            Controls.Add(longitud_c);
+            Controls.Add(lloc_fabricacio);
+            Controls.Add(forma_ingres);
+            Controls.Add(font_ingres);
+            Controls.Add(font_energia);
+            Controls.Add(velocitat_maxima);
+            Controls.Add(velocitat);
+            Controls.Add(sostre_maxim);
+            Controls.Add(quilometres_fets);
+            Controls.Add(Potencia_c);
+            Controls.Add(Envergadura_c);
+            Controls.Add(Element);
+            Controls.Add(clicle_cam);
+            Controls.Add(Cilindrada_c);
+            Controls.Add(capacitatDiposit);
+            Controls.Add(Autonomia);
+            Margin = new Padding(2);
+            Name = "Camps";
+            Text = "Establir els camps";
+            ResumeLayout(false);
+            PerformLayout();
+        }
+
+        #endregion
+
+        private TextBox Autonomia;
+        private TextBox capacitatDiposit;
+        private TextBox Cilindrada_c;
+        private TextBox clicle_cam;
+        private TextBox Element;
+        private TextBox Envergadura_c;
+        private TextBox Potencia_c;
+        private TextBox quilometres_fets;
+        private TextBox sostre_maxim;
+        private TextBox velocitat;
+        private TextBox velocitat_maxima;
+        private TextBox font_energia;
+        private TextBox font_ingres;
+        private TextBox forma_ingres;
+        private TextBox lloc_fabricacio;
+        private TextBox longitud_c;
+        private TextBox pes;
+        private Button button1Enrere;
+        private Button button2Siguiente;
+        private Label label1;
+        private Label label2;
+        private Label label3;
+        private Label label4;
+        private Label label5;
+        private Label label6;
+        private Label label7;
+        private Label label8;
+        private Label label9;
+        private Label label10;
+        private Label label11;
+        private Label label12;
+        private Label label13;
+        private Label label14;
+        private Label label15;
+        private Label label16;
+        private Label label17;
+    }
+}

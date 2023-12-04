@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static AppEscritori.GestionarParteMuseo;
 
 namespace AppEscritori
 {
@@ -26,7 +27,8 @@ namespace AppEscritori
 
         private void buttonModificar_Click(object sender, EventArgs e)
         {
-            CampsMain menu = new CampsMain();
+            Gestor_museo gestorMuseo = GestionarParteMuseo.Gestor_museo.Instance; ;
+            CampsMain menu = new CampsMain(gestorMuseo);
             menu.Show();
             this.Hide();
         }

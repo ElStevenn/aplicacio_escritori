@@ -11,7 +11,7 @@ namespace AppEscritori
         public CampsMain()
         {
             InitializeComponent();
-            this.gestionadorMuseo = GestionarParteMuseo.Gestor_museo.Instance;
+            // this.gestionadorMuseo = GestionarParteMuseo.Gestor_museo.Instance;
             // Aquí gestionadorMuseo ya es accesible y puedes usarlo para manipular tus datos.
         }
 
@@ -20,8 +20,8 @@ namespace AppEscritori
             InitializeComponent();
             ponerCampos();
             this.gestionadorMuseo = GestionarParteMuseo.Gestor_museo.Instance;
-            // Aquí gestionadorMuseo ya es accesible y puedes usarlo para manipular tus datos.
         }
+
 
         private void ponerCampos()
         {
