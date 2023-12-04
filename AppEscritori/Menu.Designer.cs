@@ -88,7 +88,7 @@
             labelHolaUsuari.Name = "labelHolaUsuari";
             labelHolaUsuari.Size = new Size(228, 42);
             labelHolaUsuari.TabIndex = 5;
-            labelHolaUsuari.Text = "Panell Administratiu";
+            labelHolaUsuari.Text = "Panel Administrativo";
             labelHolaUsuari.TextAlign = ContentAlignment.MiddleCenter;
             labelHolaUsuari.Click += labelHolaUsuari_Click;
             // 
