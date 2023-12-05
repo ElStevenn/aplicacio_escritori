@@ -28,6 +28,7 @@ namespace AppEscritori
             public string envergadura {  get; set; } = string.Empty;
             public string potencia { get; set; } = string.Empty;
             public string quilometros_h { get; set; } = string.Empty;
+            public string techoMaximo { get; set; } = string.Empty;
             public string peso { get; set; } = string.Empty;
             public string velocidad { get; set; } = string.Empty;
             public string velocidad_maxima { get; set; } = string.Empty;
@@ -48,8 +49,8 @@ namespace AppEscritori
             public string eng_nombreElemento { get; set; } = string.Empty;
             public string eng_descripcionEelemento { get; set; } = string.Empty;
 
-
-
+            // FOTO
+            public string ruta_imagen {  get; set; } = string.Empty;
 
             // Pongo aquí la intancia para poder moverlo entre archivos
             private static Gestor_museo instance = null;
@@ -88,7 +89,7 @@ namespace AppEscritori
            
 
             public void actualizar_caracteristicas(string autonomia, string capacitat_diposit, string clicle, string cilidrada,
-                                           string elemento,string envergadura ,string potencia, string quilometros_h, string peso,
+                                           string elemento,string envergadura ,string potencia, string quilometros_h,string techoMaximo, string peso,
                                            string velocidad, string velocidad_maxima, string fuente_energia,
                                            string fuente_ingreso, string forma_ingreso, string lugar_fabricacion,
                                            string longitud)
@@ -101,6 +102,7 @@ namespace AppEscritori
                 this.envergadura = envergadura;
                 this.potencia = potencia;
                 this.quilometros_h = quilometros_h;
+                this.techoMaximo = techoMaximo;
                 this.peso = peso;
                 this.velocidad = velocidad;
                 this.velocidad_maxima = velocidad_maxima;
@@ -111,7 +113,10 @@ namespace AppEscritori
                 this.longitud = longitud;
             }
 
-            
+            public void actualizar_ruta_imagen(string ruta_imagen)
+            {
+                this.ruta_imagen = ruta_imagen;
+            }
 
 
 

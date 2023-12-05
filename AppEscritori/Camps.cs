@@ -46,6 +46,7 @@ namespace AppEscritori
                 forma_ingres.Text = gestionadorMuseo.forma_ingreso;
                 lloc_fabricacio.Text = gestionadorMuseo.lugar_fabricacion;
                 longitud_c.Text = gestionadorMuseo.longitud;
+                sostre_maxim.Text = gestionadorMuseo.techoMaximo;
             }
 
         }
@@ -59,6 +60,7 @@ namespace AppEscritori
             string clicle = cicle_cam.Text;
             string cilidrada = Cilindrada_c.Text;
             string elemento = Element.Text;
+            string envergadura = Envergadura_c.Text;
             string potencia = Potencia_c.Text;
             string quilometros_hechos = quilometres_fets.Text;
             string techo_maximo = sostre_maxim.Text;
@@ -71,7 +73,11 @@ namespace AppEscritori
             string lugar_fabricacion = lloc_fabricacio.Text;
             string longitud = longitud_c.Text;
 
-            
+            // Pongo los campos a la classe
+            gestionadorMuseo.actualizar_caracteristicas(autonomia, capacitat_diposit, clicle, cilidrada, elemento, envergadura, potencia,
+                quilometros_hechos, techo_maximo, peso, velocidad, velocidad_maxima, fuente_energia, fuente_ingreso, forma_ingreso, lugar_fabricacion, longitud);
+
+
             CampsFinal campsFinal = new CampsFinal(gestionadorMuseo);
             campsFinal.Show();
             this.Hide();
