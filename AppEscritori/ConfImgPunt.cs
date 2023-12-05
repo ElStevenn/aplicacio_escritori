@@ -44,5 +44,15 @@ namespace AppEscritori
                 pictureBox1.Image = Image.FromFile(filePath);
             }
         }
+
+        private void buttonBuscarRuta_Click(object sender, EventArgs e)
+        {
+            FolderBrowserDialog folder = new FolderBrowserDialog();
+            DialogResult result = folder.ShowDialog();
+            if (result.Equals(DialogResult.OK))
+            {
+                textBoxRuta.Text = folder.SelectedPath;
+            }
+        }
     }
 }
