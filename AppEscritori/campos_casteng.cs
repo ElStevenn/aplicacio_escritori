@@ -21,14 +21,17 @@ namespace AppEscritori
         {
             InitializeComponent();
             this.gestionadorMuseo = gestor_Museo;
-            //ponerCampos()
+            ponerCampos();
         }
 
         public void ponerCampos()
         {
             if (gestionadorMuseo != null)
             {
-                
+                descrp_eng.Text = gestionadorMuseo.eng_nombreElemento;
+                nombre_eng.Text = gestionadorMuseo.eng_nombreElemento;
+                nombre_esp.Text = gestionadorMuseo.es_nombreElemento;
+                descrp_esp.Text = gestionadorMuseo.es_descripcionElemento;
             }
         }
 

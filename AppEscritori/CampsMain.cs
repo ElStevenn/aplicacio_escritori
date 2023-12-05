@@ -50,6 +50,10 @@ namespace AppEscritori
             {
                 MessageBox.Show("Debes de rellenar todos los campos con valores correctos", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+            else if (string.IsNullOrEmpty(gestionadorMuseo.ruta_imagen))
+            {
+                MessageBox.Show("Debes de subir una imagen", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
             else
             {
 
@@ -89,7 +93,7 @@ namespace AppEscritori
 
                 // Ajusto el Picture box para que se muestre con las dimensiones que se desea
                 imagen_elemento.SizeMode = PictureBoxSizeMode.StretchImage;
-
+                gestionadorMuseo.actualizar_ruta_imagen(rutaDelFicheroSeleccionada);
             }
 
 

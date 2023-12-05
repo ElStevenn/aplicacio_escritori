@@ -26,6 +26,9 @@
     <Compile Update="ConfJuego.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="ConfPregunta.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="EliminarElemento.cs">
       <SubType>Form</SubType>
     </Compile>
