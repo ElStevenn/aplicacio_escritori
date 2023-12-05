@@ -26,7 +26,7 @@ namespace AppEscritori
 
         private void button1ConfigPreg_Click(object sender, EventArgs e)
         {
-            ConfigurarPreguntas configpreguntas = new ConfigurarPreguntas(this);
+            ConfPregunta configpreguntas = new ConfPregunta(this);
             configpreguntas.Show();
             this.Hide();
         }

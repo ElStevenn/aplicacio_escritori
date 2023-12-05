@@ -136,6 +136,7 @@ namespace AppEscritori
                 // Guarda y carga las preguntas
                 saveQuestionsJSON(language);
                 loadQuestionsJSON(language);
+                warning(language);
 
             }
         }
@@ -172,6 +173,23 @@ namespace AppEscritori
             }
             // Retorna una cadena vacía si no se encuentra ningún RadioButton seleccionado
             return string.Empty;
+        }
+
+        private void warning(string language)
+        {
+            switch (language)
+            {
+                case "Castellano":
+                    MessageBox.Show("Los cambios se han aplicado. Revisa las preguntas también en catalán e inglés.", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    break;
+                case "Catalán":
+                    MessageBox.Show("Los cambios se han aplicado. Revisa las preguntas también en castellano e inglés.", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    break;
+                case "Inglés":
+                    MessageBox.Show("Los cambios se han aplicado. Revisa las preguntas también en catalán y castellano.", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+
+                    break;
+            }
         }
     }
 }

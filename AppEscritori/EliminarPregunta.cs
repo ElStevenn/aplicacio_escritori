@@ -110,6 +110,7 @@ namespace AppEscritori
                 saveQuestionsJSON(language);
                 loadQuestionsJSON(language);
                 labelXPreguntas.Text = "Hay " + questions.Count() + " preguntas";
+                warning(language);
             }
         }
 
@@ -130,6 +131,22 @@ namespace AppEscritori
                 case "Inglés":
                     JArray arrayquestionsEN = (JArray)JToken.FromObject(questions);
                     File.WriteAllText(Path.Combine(basePath, @"..\..\..\JSON\questionsEN.json"), arrayquestionsEN.ToString());
+                    break;
+            }
+        }
+        private void warning(string language)
+        {
+            switch (language)
+            {
+                case "Castellano":
+                    MessageBox.Show("Los cambios se han aplicado. Revisa las preguntas también en catalán e inglés.", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    break;
+                case "Catalán":
+                    MessageBox.Show("Los cambios se han aplicado. Revisa las preguntas también en castellano e inglés.", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    break;
+                case "Inglés":
+                    MessageBox.Show("Los cambios se han aplicado. Revisa las preguntas también en catalán y castellano.", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+
                     break;
             }
         }
