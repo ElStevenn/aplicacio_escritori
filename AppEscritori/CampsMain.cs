@@ -56,15 +56,29 @@ namespace AppEscritori
             }
             else
             {
+                // Compruevo que el usuario haya colocado numeros en Año creación y numero inventario
+                int anoCreacionNumero;
+                int numeroInventarioNumero;
+                if (!int.TryParse(anoCreacion, out anoCreacionNumero) || !int.TryParse(numeroInventario, out numeroInventarioNumero))
+                {
+                    // Compruevo si el usuario ha introducido valor no numericos en los campos
+                    MessageBox.Show("Los campos \"Año creación\" y \"Descripcion elemento\" deben de ser numericos", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
+                }
+                else
+                {
+                    // Actualiza los campos y los almacena en la clase gestionadorMuseo.
+                    gestionadorMuseo.actualizar_campos_main(nombreElemento, numeroInventario, anoCreacion, descripcion_elemento);
 
-                // Actualiza los campos y los almacena en la clase gestionadorMuseo.
-                gestionadorMuseo.actualizar_campos_main(nombreElemento, numeroInventario, anoCreacion, descripcion_elemento);
+                    // Pasar a la pantalla de campos para ponerlo en catalán y en español
+                    campos_casteng campsengesp = new campos_casteng(gestionadorMuseo);
+                    campsengesp.Show();
+                    this.Hide();
+                }
+                    
 
-                // Pasar a la pantalla de campos para ponerlo en catalán y en español
-                campos_casteng campsengesp = new campos_casteng(gestionadorMuseo); 
-                campsengesp.Show();
-                this.Hide();
+                
+                
             }
         }
 

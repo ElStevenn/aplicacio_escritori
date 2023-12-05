@@ -65,6 +65,8 @@
             label16 = new Label();
             label17 = new Label();
             label18 = new Label();
+            ambit = new TextBox();
+            label19 = new Label();
             SuspendLayout();
             // 
             // Autonomia
@@ -383,17 +385,36 @@
             label18.AutoSize = true;
             label18.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
             label18.ForeColor = Color.Red;
-            label18.Location = new Point(183, 9);
+            label18.Location = new Point(133, 9);
             label18.Name = "label18";
-            label18.Size = new Size(78, 25);
+            label18.Size = new Size(166, 25);
             label18.TabIndex = 40;
-            label18.Text = "CAMPS";
+            label18.Text = "CARACTERÍSICAS";
+            // 
+            // ambit
+            // 
+            ambit.Location = new Point(273, 419);
+            ambit.Margin = new Padding(4, 3, 4, 3);
+            ambit.Name = "ambit";
+            ambit.Size = new Size(180, 23);
+            ambit.TabIndex = 41;
+            // 
+            // label19
+            // 
+            label19.AutoSize = true;
+            label19.Location = new Point(274, 404);
+            label19.Name = "label19";
+            label19.Size = new Size(47, 15);
+            label19.TabIndex = 42;
+            label19.Text = "Ámbito";
             // 
             // Camps
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(462, 499);
+            Controls.Add(label19);
+            Controls.Add(ambit);
             Controls.Add(label18);
             Controls.Add(label17);
             Controls.Add(label16);
@@ -477,5 +498,7 @@
         private Label label16;
         private Label label17;
         private Label label18;
+        private TextBox ambit;
+        private Label label19;
     }
 }

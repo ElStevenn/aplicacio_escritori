@@ -37,7 +37,7 @@ namespace AppEscritori
             public string forma_ingreso { get; set; } = string.Empty;
             public string lugar_fabricacion { get; set; } = string.Empty;
             public string longitud { get; set; } = string.Empty;
-
+            public string ambito { get; set; } = string.Empty;
 
 
             // PARTE EN ESPAÑOL Y INGLÉS
@@ -68,6 +68,8 @@ namespace AppEscritori
                 }
             }
 
+            // Elemento inicial | Se inicia en false pero el usuario lo puede cambiar a true
+            public bool elemento_incial {  get; set; } = false;
 
             public void actualizar_campos_main(string nombreElemento, string numeroInventario, string anoCreacion, string descripcion_elemento)
             {
@@ -92,7 +94,7 @@ namespace AppEscritori
                                            string elemento,string envergadura ,string potencia, string quilometros_h,string techoMaximo, string peso,
                                            string velocidad, string velocidad_maxima, string fuente_energia,
                                            string fuente_ingreso, string forma_ingreso, string lugar_fabricacion,
-                                           string longitud)
+                                           string longitud, string ambito)
             {
                 this.autonomia = autonomia;
                 this.capacitat_diposit = capacitat_diposit;
@@ -111,6 +113,7 @@ namespace AppEscritori
                 this.forma_ingreso = forma_ingreso;
                 this.lugar_fabricacion = lugar_fabricacion;
                 this.longitud = longitud;
+                this.ambito = ambito;
             }
 
             public void actualizar_ruta_imagen(string ruta_imagen)
@@ -118,7 +121,10 @@ namespace AppEscritori
                 this.ruta_imagen = ruta_imagen;
             }
 
-
+            public void actualizar_elemento_inicial(bool status)
+            {
+                this.elemento_incial = status;
+            }
 
         }
       

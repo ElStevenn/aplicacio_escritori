@@ -72,16 +72,17 @@ namespace AppEscritori
             string forma_ingreso = forma_ingres.Text;
             string lugar_fabricacion = lloc_fabricacio.Text;
             string longitud = longitud_c.Text;
+            string ambito = ambit.Text;
 
             // Pongo los campos a la classe
             gestionadorMuseo.actualizar_caracteristicas(autonomia, capacitat_diposit, clicle, cilidrada, elemento, envergadura, potencia,
-                quilometros_hechos, techo_maximo, peso, velocidad, velocidad_maxima, fuente_energia, fuente_ingreso, forma_ingreso, lugar_fabricacion, longitud);
+                quilometros_hechos, techo_maximo, peso, velocidad, velocidad_maxima, fuente_energia, fuente_ingreso, forma_ingreso, lugar_fabricacion, longitud, ambito);
 
 
             CampsFinal campsFinal = new CampsFinal(gestionadorMuseo);
             campsFinal.Show();
             this.Hide();
-            
+
         }
 
         private void button1Enrere_Click(object sender, EventArgs e)
@@ -91,5 +92,6 @@ namespace AppEscritori
             campsenges.Show();
             this.Hide();
         }
+
     }
 }
