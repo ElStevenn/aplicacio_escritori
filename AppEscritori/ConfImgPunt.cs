@@ -29,5 +29,30 @@ namespace AppEscritori
             this.Close();
             this.configurarDiff.Show();
         }
+
+        private void button1SeleccionarImatge_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog openFileDialog = new OpenFileDialog();
+            openFileDialog.Filter = "Archivos de imagen|*.jpg;*.jpeg;*.png;*.gif;*.bmp|Todos los archivos|*.*";
+
+            if (openFileDialog.ShowDialog() == DialogResult.OK)
+            {
+                // Obtiene la ruta del archivo seleccionado
+                string filePath = openFileDialog.FileName;
+
+                // Carga la imagen en el PictureBox
+                pictureBox1.Image = Image.FromFile(filePath);
+            }
+        }
+
+        private void buttonBuscarRuta_Click(object sender, EventArgs e)
+        {
+            FolderBrowserDialog folder = new FolderBrowserDialog();
+            DialogResult result = folder.ShowDialog();
+            if (result.Equals(DialogResult.OK))
+            {
+                textBoxRuta.Text = folder.SelectedPath;
+            }
+        }
     }
 }
