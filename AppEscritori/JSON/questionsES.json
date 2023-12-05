@@ -1,15 +1,5 @@
 [
   {
-    "question": "Pregunta2JES",
-    "options": [
-      "pacoa",
-      "Ba",
-      "Ca",
-      "Da"
-    ],
-    "correctOption": "D"
-  },
-  {
     "question": "Pregunta3JSON",
     "options": [
       "A",
