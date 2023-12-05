@@ -409,6 +409,7 @@ namespace AppEscritori
             showControls();
             comboBoxIdiomas.SelectedIndex = 0;
             loadQuestionsJSON();
+            labelXPreguntas.Text = "Hay " + questions.Count + " preguntas";
         }
     }
 }

@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             components = new System.ComponentModel.Container();
-            groupBox1Resultat = new GroupBox();
+            groupBoxResultat = new GroupBox();
             radioButton2 = new RadioButton();
             radioButton1 = new RadioButton();
             radioButton3NouDeu = new RadioButton();
@@ -46,25 +46,28 @@
             textBoxRuta = new TextBox();
             buttonBuscarRuta = new Button();
             labelRuta = new Label();
-            groupBox1Resultat.SuspendLayout();
+            comboBoxDifs = new ComboBox();
+            labelExplanation = new Label();
+            labelDif = new Label();
+            groupBoxResultat.SuspendLayout();
             groupBox2ImatgeVehicle.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)bindingSource1).BeginInit();
             SuspendLayout();
             // 
-            // groupBox1Resultat
+            // groupBoxResultat
             // 
-            groupBox1Resultat.Controls.Add(radioButton2);
-            groupBox1Resultat.Controls.Add(radioButton1);
-            groupBox1Resultat.Controls.Add(radioButton3NouDeu);
-            groupBox1Resultat.Controls.Add(radioButton2CincVuit);
-            groupBox1Resultat.Controls.Add(radioButton1ZeroQuatre);
-            groupBox1Resultat.Location = new Point(15, 14);
-            groupBox1Resultat.Name = "groupBox1Resultat";
-            groupBox1Resultat.Size = new Size(318, 53);
-            groupBox1Resultat.TabIndex = 0;
-            groupBox1Resultat.TabStop = false;
-            groupBox1Resultat.Text = "Resultat:";
+            groupBoxResultat.Controls.Add(radioButton2);
+            groupBoxResultat.Controls.Add(radioButton1);
+            groupBoxResultat.Controls.Add(radioButton3NouDeu);
+            groupBoxResultat.Controls.Add(radioButton2CincVuit);
+            groupBoxResultat.Controls.Add(radioButton1ZeroQuatre);
+            groupBoxResultat.Location = new Point(13, 54);
+            groupBoxResultat.Name = "groupBoxResultat";
+            groupBoxResultat.Size = new Size(318, 53);
+            groupBoxResultat.TabIndex = 0;
+            groupBoxResultat.TabStop = false;
+            groupBoxResultat.Text = "Resultat:";
             // 
             // radioButton2
             // 
@@ -124,7 +127,7 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(22, 141);
+            label1.Location = new Point(12, 168);
             label1.Name = "label1";
             label1.Size = new Size(133, 15);
             label1.TabIndex = 1;
@@ -137,7 +140,7 @@
             // groupBox2ImatgeVehicle
             // 
             groupBox2ImatgeVehicle.Controls.Add(pictureBox1);
-            groupBox2ImatgeVehicle.Location = new Point(15, 168);
+            groupBox2ImatgeVehicle.Location = new Point(13, 195);
             groupBox2ImatgeVehicle.Name = "groupBox2ImatgeVehicle";
             groupBox2ImatgeVehicle.Size = new Size(443, 212);
             groupBox2ImatgeVehicle.TabIndex = 2;
@@ -156,7 +159,7 @@
             // 
             // button2Enrere
             // 
-            button2Enrere.Location = new Point(16, 386);
+            button2Enrere.Location = new Point(14, 413);
             button2Enrere.Name = "button2Enrere";
             button2Enrere.Size = new Size(87, 27);
             button2Enrere.TabIndex = 3;
@@ -166,16 +169,17 @@
             // 
             // button3ConfirmarCanvis
             // 
-            button3ConfirmarCanvis.Location = new Point(383, 386);
+            button3ConfirmarCanvis.Location = new Point(381, 413);
             button3ConfirmarCanvis.Name = "button3ConfirmarCanvis";
             button3ConfirmarCanvis.Size = new Size(87, 27);
             button3ConfirmarCanvis.TabIndex = 4;
             button3ConfirmarCanvis.Text = "Confirmar canvis";
             button3ConfirmarCanvis.UseVisualStyleBackColor = true;
+            button3ConfirmarCanvis.Click += button3ConfirmarCanvis_Click;
             // 
             // button1SeleccionarImatge
             // 
-            button1SeleccionarImatge.Location = new Point(161, 135);
+            button1SeleccionarImatge.Location = new Point(151, 162);
             button1SeleccionarImatge.Name = "button1SeleccionarImatge";
             button1SeleccionarImatge.Size = new Size(98, 27);
             button1SeleccionarImatge.TabIndex = 5;
@@ -185,14 +189,14 @@
             // 
             // textBoxRuta
             // 
-            textBoxRuta.Location = new Point(22, 92);
+            textBoxRuta.Location = new Point(12, 132);
             textBoxRuta.Name = "textBoxRuta";
-            textBoxRuta.Size = new Size(301, 23);
+            textBoxRuta.Size = new Size(294, 23);
             textBoxRuta.TabIndex = 6;
             // 
             // buttonBuscarRuta
             // 
-            buttonBuscarRuta.Location = new Point(329, 92);
+            buttonBuscarRuta.Location = new Point(231, 106);
             buttonBuscarRuta.Name = "buttonBuscarRuta";
             buttonBuscarRuta.Size = new Size(75, 23);
             buttonBuscarRuta.TabIndex = 7;
@@ -203,17 +207,49 @@
             // labelRuta
             // 
             labelRuta.AutoSize = true;
-            labelRuta.Location = new Point(22, 70);
+            labelRuta.Location = new Point(12, 110);
             labelRuta.Name = "labelRuta";
             labelRuta.Size = new Size(213, 15);
             labelRuta.TabIndex = 8;
             labelRuta.Text = "Selecciona donde guardarás la imagen:";
             // 
+            // comboBoxDifs
+            // 
+            comboBoxDifs.DropDownStyle = ComboBoxStyle.DropDownList;
+            comboBoxDifs.FormattingEnabled = true;
+            comboBoxDifs.Items.AddRange(new object[] { "Fácil", "Normal", "Difícil" });
+            comboBoxDifs.Location = new Point(347, 84);
+            comboBoxDifs.Name = "comboBoxDifs";
+            comboBoxDifs.Size = new Size(121, 23);
+            comboBoxDifs.TabIndex = 9;
+            comboBoxDifs.SelectedIndexChanged += comboBoxDifs_SelectedIndexChanged;
+            // 
+            // labelExplanation
+            // 
+            labelExplanation.AutoSize = true;
+            labelExplanation.Location = new Point(13, 9);
+            labelExplanation.Name = "labelExplanation";
+            labelExplanation.Size = new Size(458, 30);
+            labelExplanation.TabIndex = 10;
+            labelExplanation.Text = "Selecciona la dificultad a la que quieres cambiar la foto, después el rango de pregunta\r\nal que quieres asignar y por último donde guardarás la imagen.";
+            // 
+            // labelDif
+            // 
+            labelDif.AutoSize = true;
+            labelDif.Location = new Point(347, 66);
+            labelDif.Name = "labelDif";
+            labelDif.Size = new Size(58, 15);
+            labelDif.TabIndex = 11;
+            labelDif.Text = "Dificultad";
+            // 
             // ConfImgPunt
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(514, 418);
+            ClientSize = new Size(514, 458);
+            Controls.Add(labelDif);
+            Controls.Add(labelExplanation);
+            Controls.Add(comboBoxDifs);
             Controls.Add(labelRuta);
             Controls.Add(buttonBuscarRuta);
             Controls.Add(textBoxRuta);
@@ -222,11 +258,12 @@
             Controls.Add(button2Enrere);
             Controls.Add(groupBox2ImatgeVehicle);
             Controls.Add(label1);
-            Controls.Add(groupBox1Resultat);
+            Controls.Add(groupBoxResultat);
+            FormBorderStyle = FormBorderStyle.FixedSingle;
             Name = "ConfImgPunt";
             Text = "Formulari 14";
-            groupBox1Resultat.ResumeLayout(false);
-            groupBox1Resultat.PerformLayout();
+            groupBoxResultat.ResumeLayout(false);
+            groupBoxResultat.PerformLayout();
             groupBox2ImatgeVehicle.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)bindingSource1).EndInit();
@@ -236,7 +273,7 @@
 
         #endregion
 
-        private GroupBox groupBox1Resultat;
+        private GroupBox groupBoxResultat;
         private RadioButton radioButton3NouDeu;
         private RadioButton radioButton2CincVuit;
         private RadioButton radioButton1ZeroQuatre;
@@ -253,5 +290,8 @@
         private TextBox textBoxRuta;
         private Button buttonBuscarRuta;
         private Label labelRuta;
+        private ComboBox comboBoxDifs;
+        private Label labelExplanation;
+        private Label labelDif;
     }
 }

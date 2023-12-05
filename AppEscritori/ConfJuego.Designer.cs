@@ -74,6 +74,7 @@
             Controls.Add(buttonAtrasConfPreg);
             Controls.Add(button2ConfImagPunt);
             Controls.Add(button1ConfigPreg);
+            FormBorderStyle = FormBorderStyle.FixedSingle;
             Margin = new Padding(4, 3, 4, 3);
             Name = "ConfJuego";
             Text = "Configuración del videojuego";
