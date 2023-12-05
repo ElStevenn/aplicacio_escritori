@@ -5,7 +5,7 @@
     <Compile Update="AñadirPregunta.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Camps.cs">
+    <Compile Update="campos_casteng.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="CampsFinal.cs">
@@ -32,7 +32,7 @@
     <Compile Update="EliminarPregunta.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Form2.cs">
+    <Compile Update="Camps.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Login.cs">

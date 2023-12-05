@@ -13,9 +13,15 @@ namespace AppEscritori
 {
     public partial class CampsFinal : Form
     {
+        public GestionarParteMuseo.Gestor_museo gestionadorMuseo;
         public CampsFinal()
         {
             InitializeComponent();
+        }
+        public CampsFinal(Gestor_museo gestor_Museo)
+        {
+            InitializeComponent();
+            this.gestionadorMuseo = gestor_Museo;
         }
 
         private void button_generar_Click(object sender, EventArgs e)

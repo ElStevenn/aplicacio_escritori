@@ -28,10 +28,10 @@ namespace AppEscritori
             // Le pongo los nombres a los campos (si es que existen)
             if (gestionadorMuseo != null)
             {
-                descripcio_element.Text = gestionadorMuseo.descripcion_elemento ?? "";
-                Nom_element.Text = gestionadorMuseo.nombreElemento ?? "";
-                any_creacio.Text = gestionadorMuseo.anoCreacion ?? "";
-                Numero_inventari.Text = gestionadorMuseo.numeroInventario ?? "";
+                descripcio_element.Text = gestionadorMuseo.descripcion_elemento;
+                Nom_element.Text = gestionadorMuseo.nombreElemento;
+                any_creacio.Text = gestionadorMuseo.anoCreacion;
+                Numero_inventari.Text = gestionadorMuseo.numeroInventario;
             }
 
         }
@@ -57,9 +57,9 @@ namespace AppEscritori
                 // Actualiza los campos y los almacena en la clase gestionadorMuseo.
                 gestionadorMuseo.actualizar_campos_main(nombreElemento, numeroInventario, anoCreacion, descripcion_elemento);
 
-                // Pasar a la pantalla de Camps.
-                Camps camps = new Camps(gestionadorMuseo); // Asegúrate de que Camps tenga un constructor que acepte Gestor_museo.
-                camps.Show();
+                // Pasar a la pantalla de campos para ponerlo en catalán y en español
+                campos_casteng campsengesp = new campos_casteng(gestionadorMuseo); 
+                campsengesp.Show();
                 this.Hide();
             }
         }

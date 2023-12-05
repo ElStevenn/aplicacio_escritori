@@ -12,18 +12,41 @@ using static AppEscritori.GestionarParteMuseo;
 namespace AppEscritori
 {
     public partial class Camps : Form
-
     {
         public GestionarParteMuseo.Gestor_museo gestionadorMuseo;
         public Camps()
         {
             InitializeComponent();
-         
+
         }
         public Camps(Gestor_museo gestor_Museo)
         {
-            InitializeComponent()
-;           this.gestionadorMuseo = GestionarParteMuseo.Gestor_museo.Instance;
+            InitializeComponent();
+            this.gestionadorMuseo = gestor_Museo;
+            ponerCampos();
+        }
+
+        public void ponerCampos()
+        {
+            if (gestionadorMuseo != null)
+            {
+                Autonomia.Text = gestionadorMuseo.autonomia;
+                capacitatDiposit.Text = gestionadorMuseo.capacitat_diposit;
+                cicle_cam.Text = gestionadorMuseo.cicle;
+                Cilindrada_c.Text = gestionadorMuseo.cilidrada;
+                Element.Text = gestionadorMuseo.elemento;
+                Envergadura_c.Text = gestionadorMuseo.envergadura;
+                Potencia_c.Text = gestionadorMuseo.potencia;
+                quilometres_fets.Text = gestionadorMuseo.quilometros_h;
+                pes.Text = gestionadorMuseo.peso;
+                velocitat.Text = gestionadorMuseo.velocidad;
+                velocitat_maxima.Text = gestionadorMuseo.velocidad_maxima;
+                font_energia.Text = gestionadorMuseo.fuente_energia;
+                font_ingres.Text = gestionadorMuseo.fuente_ingreso;
+                forma_ingres.Text = gestionadorMuseo.forma_ingreso;
+                lloc_fabricacio.Text = gestionadorMuseo.lugar_fabricacion;
+                longitud_c.Text = gestionadorMuseo.longitud;
+            }
 
         }
 
@@ -33,7 +56,7 @@ namespace AppEscritori
             // Obtener cada uno de los valores
             string autonomia = Autonomia.Text;
             string capacitat_diposit = capacitatDiposit.Text;
-            string clicle = clicle_cam.Text;
+            string clicle = cicle_cam.Text;
             string cilidrada = Cilindrada_c.Text;
             string elemento = Element.Text;
             string potencia = Potencia_c.Text;
@@ -48,32 +71,19 @@ namespace AppEscritori
             string lugar_fabricacion = lloc_fabricacio.Text;
             string longitud = longitud_c.Text;
 
-            if (string.IsNullOrEmpty(autonomia) || string.IsNullOrEmpty(capacitat_diposit) || string.IsNullOrEmpty(clicle) || string.IsNullOrEmpty(cilidrada) ||
-                string.IsNullOrEmpty(elemento) || string.IsNullOrEmpty(potencia) || string.IsNullOrEmpty(quilometros_hechos) || string.IsNullOrEmpty(techo_maximo) ||
-                string.IsNullOrEmpty(peso) || string.IsNullOrEmpty(velocidad) || string.IsNullOrEmpty(velocidad_maxima) || string.IsNullOrEmpty(fuente_energia) ||
-                string.IsNullOrEmpty(fuente_ingreso) || string.IsNullOrEmpty(forma_ingreso) || string.IsNullOrEmpty(lugar_fabricacion) || string.IsNullOrEmpty(longitud))
-            {
-                MessageBox.Show("Todos los campos deben estar completos", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return; // No continuar con la ejecución si hay campos vacíos
-            }
-            else
-            {
-                CampsFinal campsFinal = new CampsFinal();
-                campsFinal.Show();
-                this.Hide();
-            }
+            
+            CampsFinal campsFinal = new CampsFinal(gestionadorMuseo);
+            campsFinal.Show();
+            this.Hide();
+            
         }
 
         private void button1Enrere_Click(object sender, EventArgs e)
         {
-            CampsMain campsMain = new CampsMain(gestionadorMuseo);
-            campsMain.Show();
+            // Volver atrás
+            campos_casteng campsenges = new campos_casteng(gestionadorMuseo);
+            campsenges.Show();
             this.Hide();
-        }
-
-        private void textBox1Autonomia_TextChanged(object sender, EventArgs e)
-        {
-
         }
     }
 }

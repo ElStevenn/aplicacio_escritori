@@ -12,6 +12,7 @@ namespace AppEscritori
     {
         public class Gestor_museo
         {
+            // PARTE EN ESPAÑOL
             // Campos main
             public string nombreElemento { get; set; } = string.Empty;
             public string numeroInventario {  get; set; } = string.Empty;
@@ -19,21 +20,36 @@ namespace AppEscritori
             public string descripcion_elemento { get; set; } = string.Empty;
 
             // Campos Principales
-            string autonomia { get; set; } = string.Empty;
-            string capacitat_diposit { get; set; } = string.Empty;
-            string clicle { get; set; } = string.Empty;
-            string cilidrada { get; set; } = string.Empty;
-            string elemento { get; set; } = string.Empty;
-            string potencia { get; set; } = string.Empty;
-            string quilometros_h { get; set; } = string.Empty;
-            string peso { get; set; } = string.Empty;
-            string velocidad { get; set; } = string.Empty;
-            string velocidad_maxima { get; set; } = string.Empty;
-            string fuente_energia { get; set; } = string.Empty;
-            string fuente_ingreso { get; set; } = string.Empty;
-            string forma_ingreso { get; set; } = string.Empty;
-            string lugar_fabricacion { get; set; } = string.Empty;
-            string longitud { get; set; } = string.Empty;
+            public string autonomia { get; set; } = string.Empty;
+            public string capacitat_diposit { get; set; } = string.Empty;
+            public string cicle { get; set; } = string.Empty;
+            public string cilidrada { get; set; } = string.Empty;
+            public string elemento { get; set; } = string.Empty;
+            public string envergadura {  get; set; } = string.Empty;
+            public string potencia { get; set; } = string.Empty;
+            public string quilometros_h { get; set; } = string.Empty;
+            public string peso { get; set; } = string.Empty;
+            public string velocidad { get; set; } = string.Empty;
+            public string velocidad_maxima { get; set; } = string.Empty;
+            public string fuente_energia { get; set; } = string.Empty;
+            public string fuente_ingreso { get; set; } = string.Empty;
+            public string forma_ingreso { get; set; } = string.Empty;
+            public string lugar_fabricacion { get; set; } = string.Empty;
+            public string longitud { get; set; } = string.Empty;
+
+
+
+            // PARTE EN ESPAÑOL Y INGLÉS
+            // Campos main
+            public string es_nombreElemento { get; set; } = string.Empty;
+            public string es_descripcionElemento { get; set; } = string.Empty;
+
+
+            public string eng_nombreElemento { get; set; } = string.Empty;
+            public string eng_descripcionEelemento { get; set; } = string.Empty;
+
+
+
 
             // Pongo aquí la intancia para poder moverlo entre archivos
             private static Gestor_museo instance = null;
@@ -60,17 +76,29 @@ namespace AppEscritori
                 this.descripcion_elemento = descripcion_elemento;
             }
 
+       
+            
+            public void actualizar_campos_espeng(string es_nombreElemento, string es_descripcion, string eng_nombreElemento, string eng_descripcion)
+            {
+                this.es_nombreElemento = es_nombreElemento;
+                this.es_descripcionElemento = es_descripcion;
+                this.eng_nombreElemento = eng_nombreElemento;
+                this.eng_descripcionEelemento = eng_descripcion;
+            }
+           
+
             public void actualizar_caracteristicas(string autonomia, string capacitat_diposit, string clicle, string cilidrada,
-                                           string elemento, string potencia, string quilometros_h, string peso,
+                                           string elemento,string envergadura ,string potencia, string quilometros_h, string peso,
                                            string velocidad, string velocidad_maxima, string fuente_energia,
                                            string fuente_ingreso, string forma_ingreso, string lugar_fabricacion,
                                            string longitud)
             {
                 this.autonomia = autonomia;
                 this.capacitat_diposit = capacitat_diposit;
-                this.clicle = clicle;
+                this.cicle = cicle;
                 this.cilidrada = cilidrada;
                 this.elemento = elemento;
+                this.envergadura = envergadura;
                 this.potencia = potencia;
                 this.quilometros_h = quilometros_h;
                 this.peso = peso;
@@ -84,6 +112,8 @@ namespace AppEscritori
             }
 
             
+
+
 
         }
       
