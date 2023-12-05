@@ -454,6 +454,7 @@
             Controls.Add(Autonomia);
             Margin = new Padding(2);
             Name = "Camps";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Establir els camps";
             ResumeLayout(false);
             PerformLayout();

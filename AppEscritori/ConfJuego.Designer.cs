@@ -77,6 +77,7 @@
             FormBorderStyle = FormBorderStyle.FixedSingle;
             Margin = new Padding(4, 3, 4, 3);
             Name = "ConfJuego";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Configuración del videojuego";
             ResumeLayout(false);
         }

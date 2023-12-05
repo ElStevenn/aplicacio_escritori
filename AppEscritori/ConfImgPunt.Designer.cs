@@ -159,7 +159,7 @@
             // 
             // button2Enrere
             // 
-            button2Enrere.Location = new Point(14, 413);
+            button2Enrere.Location = new Point(11, 419);
             button2Enrere.Name = "button2Enrere";
             button2Enrere.Size = new Size(87, 27);
             button2Enrere.TabIndex = 3;
@@ -169,7 +169,7 @@
             // 
             // button3ConfirmarCanvis
             // 
-            button3ConfirmarCanvis.Location = new Point(381, 413);
+            button3ConfirmarCanvis.Location = new Point(378, 419);
             button3ConfirmarCanvis.Name = "button3ConfirmarCanvis";
             button3ConfirmarCanvis.Size = new Size(87, 27);
             button3ConfirmarCanvis.TabIndex = 4;
@@ -191,6 +191,7 @@
             // 
             textBoxRuta.Location = new Point(12, 132);
             textBoxRuta.Name = "textBoxRuta";
+            textBoxRuta.ReadOnly = true;
             textBoxRuta.Size = new Size(294, 23);
             textBoxRuta.TabIndex = 6;
             // 
@@ -246,7 +247,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(514, 458);
+            ClientSize = new Size(472, 458);
             Controls.Add(labelDif);
             Controls.Add(labelExplanation);
             Controls.Add(comboBoxDifs);
@@ -261,6 +262,7 @@
             Controls.Add(groupBoxResultat);
             FormBorderStyle = FormBorderStyle.FixedSingle;
             Name = "ConfImgPunt";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Formulari 14";
             groupBoxResultat.ResumeLayout(false);
             groupBoxResultat.PerformLayout();

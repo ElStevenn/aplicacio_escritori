@@ -179,6 +179,7 @@
             Controls.Add(Numero_inventari);
             Controls.Add(Nom_element);
             Name = "CampsMain";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Campos Principales";
             ((System.ComponentModel.ISupportInitialize)imagen_elemento).EndInit();
             ResumeLayout(false);

@@ -88,14 +88,14 @@ namespace AppEscritori
                 imagen.Save(rutaCompletaNuevaImagen);
 
                 // Puedes mostrar un mensaje o realizar otras acciones después de guardar la imagen
-                MessageBox.Show("Imagen guardada con éxito en: " + rutaCompletaNuevaImagen);
+                MessageBox.Show("Imagen guardada con éxito en: " + rutaCompletaNuevaImagen, "Mensaje", MessageBoxButtons.OK,MessageBoxIcon.Information);
 
 
             }
             catch (Exception ex)
             {
                 // Manejar cualquier excepción que pueda ocurrir al intentar guardar la imagen
-                MessageBox.Show("Error al guardar la imagen: " + ex.Message);
+                MessageBox.Show("Error al guardar la imagen: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -117,27 +117,27 @@ namespace AppEscritori
                     }
                     else
                     {
-                      MessageBox.Show("Selecciona una dificultad.");
+                        MessageBox.Show("Selecciona una dificultad.", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     }
 
                 }
                 else
                 {
-                    MessageBox.Show("Selecciona una ruta");
+                    MessageBox.Show("Selecciona una ruta", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
             }
             else
             {
-                MessageBox.Show("No hay ninguna imagen para guardar.");
+                MessageBox.Show("No hay ninguna imagen para guardar.", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
 
         private string changeImgName()
         {
-            string imgName= "";
+            string imgName = "";
             range = GetSelectedRadioButtonText();
 
-            switch(range) 
+            switch (range)
             {
                 case "0-4":
                     imgName = "assignedVehicle04";

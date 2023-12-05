@@ -329,6 +329,7 @@
             Margin = new Padding(4, 3, 4, 3);
             MaximizeBox = false;
             Name = "ModificarPregunta";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Modificar Pregunta";
             groupBoxButtonsCO.ResumeLayout(false);
             groupBoxButtonsCO.PerformLayout();

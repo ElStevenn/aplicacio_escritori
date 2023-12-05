@@ -119,6 +119,7 @@
             Margin = new Padding(4, 3, 4, 3);
             MaximizeBox = false;
             Name = "Menu";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Menu";
             Load += Menu_Load;
             ResumeLayout(false);

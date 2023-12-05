@@ -1,42 +1,102 @@
 [
   {
-    "question": "Pregunta3JSON",
-    "options": [
-      "A",
-      "B",
-      "C",
-      "D"
-    ],
+    "question": "¿A qué ámbito pertenece la motocicleta Ducati 175 TS?",
+    "options": ["Transporte de personas", "Motocicletas catalanas", "Vehículos eléctricos", "Bomberos"],
+    "correctOption": "D"
+  },
+  {
+    "question": "¿Dónde se fabricó el primer camión-bomba de agua para la extinción de incendios?",
+    "options": ["Estados Unidos", "Inglaterra", "Francia", "España"],
+    "correctOption": "B"
+  },
+  {
+    "question": "¿Cuántos litros puede almacenar un camión autobomba internacional?",
+    "options": ["3000 litros", "2500 litros", "4000 litros", "2200 litros"],
+    "correctOption": "A"
+  },
+  {
+    "question": "¿Dónde se fundó la fábrica Hispano Suiza, Automóviles S.A.?",
+    "options": ["Madrid", "París", "Barcelona", "Berna"],
     "correctOption": "C"
   },
   {
-    "question": "Pregunta4JSONasd",
-    "options": [
-      "Aasd",
-      "Bsd",
-      "Casd",
-      "D"
-    ],
+    "question": "¿Cuál es la velocidad máxima del automóvil Volkswagen 'Escarabajo'?",
+    "options": ["120 km/h", "80 km/h", "140 km/h", "100 km/h"],
+    "correctOption": "D"
+  },
+  {
+    "question": "¿Cuál es el nombre alternativo que se le da al Seat 1200 Sport?",
+    "options": ["Bocanegra", "Induclar", "Seat Patrón", "FIAT"],
+    "correctOption": "A"
+  },
+  {
+    "question": "¿A qué hace referencia el número 490 de la camioneta Chevrolet 490?",
+    "options": ["Velocidad máxima", "Número de fabricación", "Precio", "Potencia máxima"],
     "correctOption": "C"
   },
   {
-    "question": "cambioModificarJSONES",
-    "options": [
-      "Acambio",
-      "Bsd",
-      "C1q2",
-      "Dd"
-    ],
+    "question": "¿Cuál era la función principal de la Bicicleta Esbelta?",
+    "options": ["Transporte de personas", "Carreras", "Reparto de correos", "Militar"],
     "correctOption": "C"
   },
   {
-    "question": "añadirejemplo",
-    "options": [
-      "a",
-      "b",
-      "c",
-      "d"
-    ],
+    "question": "¿Cuántos asientos tiene el carruaje llamado Lira Catalana?",
+    "options": ["3", "2", "5", "4"],
+    "correctOption": "D"
+  },
+  {
+    "question": "¿Qué empresa absorbió a la marca catalana Sanglas?",
+    "options": ["Volkswagen", "Yamaha", "BMW", "Honda"],
+    "correctOption": "B"
+  },
+  {
+    "question": "¿A qué modelo pertenece el Triciclo Patria?",
+    "options": ["Modelo Mayor", "Modelo de carrera", "Modelo Menor", "Modelo Antiguo"],
     "correctOption": "C"
+  },
+  {
+    "question": "¿En qué país se creó la Motocicleta BULTACO MK2?",
+    "options": ["Estados Unidos", "Francia", "España", "Italia"],
+    "correctOption": "C"
+  },
+  {
+    "question": "¿Qué tipo de vehículo es el Vehículo Despertaferro?",
+    "options": ["Vehículo solar", "Vehículo de vela", "Vehículo con motor de gasolina", "Vehículo con motor de agua"],
+    "correctOption": "A"
+  },
+  {
+    "question": "¿Cuántas unidades anuales se querían hacer del Automóvil AFA?",
+    "options": ["1200 unidades", "3000 unidades", "500 unidades", "100 unidades"],
+    "correctOption": "D"
+  },
+  {
+    "question": "¿Cuántas ruedas tiene el Vehículo Eléctrico Mini-el?",
+    "options": ["4 ruedas", "3 ruedas", "6 ruedas", "8 ruedas"],
+    "correctOption": "A"
+  },
+  {
+    "question": "¿Con qué nombre se conoce a las dos personas que lograron volar con una máquina tripulada por primera vez?",
+    "options": ["Germans Gring", "Wright", "Germans Wright", "Leonardo y Paul"],
+    "correctOption": "C"
+  },
+  {
+    "question": "¿En qué ciudad intentó volar Joan Oliver por primera vez?",
+    "options": ["Barcelona", "Madrid", "Girona", "Valencia"],
+    "correctOption": "D"
+  },
+  {
+    "question": "¿Cuánto duró el vuelo de Lucien Mamet en febrero de 1910?",
+    "options": ["2 minutos y 20 segundos", "3 minutos", "1 minuto y 35 segundos", "4 minutos y 15 segundos"],
+    "correctOption": "A"
+  },
+  {
+    "question": "¿Cuál es el número total de motocicletas en la exposición?",
+    "options": ["50 motocicletas", "63 motocicletas", "67 motocicletas", "58 motocicletas"],
+    "correctOption": "C"
+  },
+  {
+    "question": "¿Cuál es el nombre de la exposición?",
+    "options": ["Vehículos Montesa", "Viva Montesa", "Motos Montesa", "Viva Montesa"],
+    "correctOption": "D"
   }
 ]

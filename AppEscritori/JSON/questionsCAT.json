@@ -1,71 +1,201 @@
 [
   {
-    "question": "Pregunta1JSONCAT",
+    "question": "La motocicleta Ducati 175 TS a que àmbit pertany?",
     "options": [
-      "ACAT",
-      "B",
-      "C",
-      "D"
+      "Transport de personas",
+      "Motocicletes catalanes",
+      "Vehicles electrics",
+      "Bombers"
     ],
-    "correctOption": "A"
+    "correctOption": "D"
   },
   {
-    "question": "Pregunta2JSON",
+    "question": "On va ser fabricar el primer carro-bomba d’aigua per l’extinció d’incendis?",
     "options": [
-      "A1",
-      "B",
-      "C",
-      "D"
+      "Estats Units",
+      "Anglaterra",
+      "França",
+      "Espanya"
     ],
     "correctOption": "B"
   },
   {
-    "question": "Pregunta3JSONqaew",
+    "question": "Cuants litres pot emmagazemar camió autobomba internacional?",
     "options": [
-      "Aas",
-      "Ba",
-      "Cqw",
-      "Daw"
+      "3000 litres",
+      "2500 litres",
+      "4000 litres",
+      "2200 litres"
     ],
     "correctOption": "A"
   },
   {
-    "question": "Pregunta4JSON",
+    "question": "On es va fundar la Hispano Suiza, fábrica de Automóviles S.A?",
     "options": [
-      "A",
-      "B",
-      "C",
-      "D"
+      "Madrid",
+      "Paris",
+      "Barcelona",
+      "Berna"
+    ],
+    "correctOption": "C"
+  },
+  {
+    "question": "Quina es la velocitat maxima del automóvil Volkswagen “Escarabat”?",
+    "options": [
+      "120 km/h",
+      "80 km/h",
+      "140 km/h",
+      "100 km/h"
     ],
     "correctOption": "D"
   },
   {
-    "question": "Pregunta5JSON",
+    "question": "Quin es el nom alternatiu que es dona al Seat 1200 Sport?",
     "options": [
-      "A",
-      "B",
-      "C",
-      "D"
+      "Bocanegra",
+      "Induclar",
+      "Seat Patró",
+      "FIAT"
     ],
     "correctOption": "A"
   },
   {
-    "question": "Pregunta7JSON",
+    "question": "A que fa referencia el numero 490 de la Camioneta Chevrolet 490?",
     "options": [
-      "AASD",
-      "BAD",
-      "CAAAA",
-      "DAAAA"
+      "Velocitat màxima",
+      "Num de fabricació",
+      "Preu",
+      "Potencia màxima"
+    ],
+    "correctOption": "C"
+  },
+  {
+    "question": "Quina era la funció principal de la Bicicleta Esbelta?",
+    "options": [
+      "Transport de persones",
+      "Carreres",
+      "Repartiment de correus",
+      "Militar"
+    ],
+    "correctOption": "C"
+  },
+  {
+    "question": "Quantes places te el carruatge anomenat Lira Catalana?",
+    "options": [
+      "3",
+      "2",
+      "5",
+      "4"
     ],
     "correctOption": "D"
   },
   {
-    "question": "gkes",
+    "question": "Quina empresa va absorbir a la marca catalana Sanglas?",
     "options": [
-      "af",
-      "fas",
-      "fa",
-      "asf"
+      "Volkswagen",
+      "Yamaha",
+      "BMW",
+      "Honda"
+    ],
+    "correctOption": "B"
+  },
+  {
+    "question": "A quin model pertany el Tricicle Patria?",
+    "options": [
+      "Model Major",
+      "Model de carrera",
+      "Model Minor",
+      "Model Antic"
+    ],
+    "correctOption": "C"
+  },
+  {
+    "question": "A quin país es va crear la Motocicleta BULTACO MK2",
+    "options": [
+      "Estats Units",
+      "França",
+      "Espanya",
+      "Italia"
+    ],
+    "correctOption": "C"
+  },
+  {
+    "question": "Quin tipus de vehicle es el Vehicle Despertaferro?",
+    "options": [
+      "Vehicle solar",
+      "Vehicle de vela",
+      "Vehicle amb motor de gasolina",
+      "Vehicle amb motor d’aigua"
+    ],
+    "correctOption": "A"
+  },
+  {
+    "question": "Quantes unitats anuals es volien fer del Automòbil AFA?",
+    "options": [
+      "1200 unitats",
+      "3000 unitats",
+      "500 unitats",
+      "100 unitats"
+    ],
+    "correctOption": "D"
+  },
+  {
+    "question": "Quantes rodes te el Vehicle Elèctric Mini-el?",
+    "options": [
+      "4 rodes",
+      "3 rodes",
+      "6 rodes",
+      "8 rodes"
+    ],
+    "correctOption": "A"
+  },
+  {
+    "question": "Amb quin nom es coneix a les dos persones que van aconseguir volar amb un aparell tripulat per primera vegada?",
+    "options": [
+      "Germans Gring",
+      "Wright",
+      "Germans Wright",
+      "Leonardo i Paul"
+    ],
+    "correctOption": "C"
+  },
+  {
+    "question": "En quina ciutat va intentar volar Joan Oliver per primera vegada?",
+    "options": [
+      "Barcelona",
+      "Madrid",
+      "Girona",
+      "Valencia"
+    ],
+    "correctOption": "D"
+  },
+  {
+    "question": "Quant va durar el vol de Lucien Mamet al febrer de 1910?",
+    "options": [
+      "2 minuts i 20 segons",
+      "3 minuts",
+      "1 minut i 35 segons",
+      "4 minuts i 15 segons"
+    ],
+    "correctOption": "A"
+  },
+  {
+    "question": "Quin es el numero total de motocicletes a l’exposició?",
+    "options": [
+      "50 motocicletes",
+      "63 motocicletes",
+      "67 motocicletes",
+      "58 motocicletes"
+    ],
+    "correctOption": "C"
+  },
+  {
+    "question": "Quin es el nom de l’exposició?",
+    "options": [
+      "Vehicles Montesa",
+      "Visca Montesa",
+      "Motos Montesa",
+      "Viva Montesa"
     ],
     "correctOption": "D"
   }

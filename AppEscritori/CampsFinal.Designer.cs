@@ -33,15 +33,15 @@
             titulo = new Label();
             label1 = new Label();
             groupBox1 = new GroupBox();
-            nomb_elem = new Label();
-            label2 = new Label();
-            imagen_elemento = new PictureBox();
-            numero_inventario = new Label();
-            label4 = new Label();
-            ano_creacion = new Label();
-            descripcion = new Label();
             panel1 = new Panel();
             label3 = new Label();
+            descripcion = new Label();
+            ano_creacion = new Label();
+            label4 = new Label();
+            numero_inventario = new Label();
+            label2 = new Label();
+            nomb_elem = new Label();
+            imagen_elemento = new PictureBox();
             label5 = new Label();
             label6 = new Label();
             label7 = new Label();
@@ -53,8 +53,8 @@
             label13 = new Label();
             label14 = new Label();
             groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)imagen_elemento).BeginInit();
             panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)imagen_elemento).BeginInit();
             SuspendLayout();
             // 
             // button_atras
@@ -82,11 +82,11 @@
             // titulo
             // 
             titulo.AutoSize = true;
-            titulo.Font = new Font("Britannic Bold", 17.25F, FontStyle.Regular, GraphicsUnit.Point);
+            titulo.Font = new Font("Microsoft Sans Serif", 17.25F, FontStyle.Regular, GraphicsUnit.Point);
             titulo.ForeColor = Color.Red;
             titulo.Location = new Point(156, 9);
             titulo.Name = "titulo";
-            titulo.Size = new Size(291, 26);
+            titulo.Size = new Size(351, 29);
             titulo.TabIndex = 10;
             titulo.Text = "RESULTADO DEL ELEMENTO";
             // 
@@ -119,81 +119,6 @@
             groupBox1.TabStop = false;
             groupBox1.Text = "Información principal del elemento";
             // 
-            // nomb_elem
-            // 
-            nomb_elem.AutoSize = true;
-            nomb_elem.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            nomb_elem.ForeColor = Color.Black;
-            nomb_elem.Location = new Point(8, 56);
-            nomb_elem.Name = "nomb_elem";
-            nomb_elem.RightToLeft = RightToLeft.No;
-            nomb_elem.Size = new Size(78, 15);
-            nomb_elem.TabIndex = 12;
-            nomb_elem.Text = "{nomb_elem}";
-            // 
-            // label2
-            // 
-            label2.AutoSize = true;
-            label2.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
-            label2.ForeColor = SystemColors.Highlight;
-            label2.Location = new Point(88, 29);
-            label2.Name = "label2";
-            label2.Size = new Size(127, 19);
-            label2.TabIndex = 13;
-            label2.Text = "Número inventario:";
-            // 
-            // imagen_elemento
-            // 
-            imagen_elemento.Location = new Point(361, 81);
-            imagen_elemento.Name = "imagen_elemento";
-            imagen_elemento.Size = new Size(191, 125);
-            imagen_elemento.TabIndex = 13;
-            imagen_elemento.TabStop = false;
-            // 
-            // numero_inventario
-            // 
-            numero_inventario.AutoSize = true;
-            numero_inventario.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            numero_inventario.ForeColor = Color.Black;
-            numero_inventario.Location = new Point(88, 56);
-            numero_inventario.Name = "numero_inventario";
-            numero_inventario.Size = new Size(115, 15);
-            numero_inventario.TabIndex = 14;
-            numero_inventario.Text = "{numero_inventario}";
-            // 
-            // label4
-            // 
-            label4.AutoSize = true;
-            label4.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
-            label4.ForeColor = SystemColors.Highlight;
-            label4.Location = new Point(218, 29);
-            label4.Name = "label4";
-            label4.Size = new Size(88, 19);
-            label4.TabIndex = 15;
-            label4.Text = "Año creación";
-            // 
-            // ano_creacion
-            // 
-            ano_creacion.AutoSize = true;
-            ano_creacion.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            ano_creacion.ForeColor = Color.Black;
-            ano_creacion.Location = new Point(218, 56);
-            ano_creacion.Name = "ano_creacion";
-            ano_creacion.Size = new Size(85, 15);
-            ano_creacion.TabIndex = 16;
-            ano_creacion.Text = "{ano_creacion}";
-            // 
-            // descripcion
-            // 
-            descripcion.AutoSize = true;
-            descripcion.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
-            descripcion.ForeColor = SystemColors.Highlight;
-            descripcion.Location = new Point(6, 82);
-            descripcion.Name = "descripcion";
-            descripcion.Size = new Size(82, 19);
-            descripcion.TabIndex = 17;
-            descripcion.Text = "Descripción:";
-            // 
             // panel1
             // 
             panel1.Controls.Add(label3);
@@ -212,6 +137,81 @@
             label3.Size = new Size(115, 15);
             label3.TabIndex = 18;
             label3.Text = "{numero_inventario}";
+            // 
+            // descripcion
+            // 
+            descripcion.AutoSize = true;
+            descripcion.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
+            descripcion.ForeColor = SystemColors.Highlight;
+            descripcion.Location = new Point(6, 82);
+            descripcion.Name = "descripcion";
+            descripcion.Size = new Size(82, 19);
+            descripcion.TabIndex = 17;
+            descripcion.Text = "Descripción:";
+            // 
+            // ano_creacion
+            // 
+            ano_creacion.AutoSize = true;
+            ano_creacion.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            ano_creacion.ForeColor = Color.Black;
+            ano_creacion.Location = new Point(218, 56);
+            ano_creacion.Name = "ano_creacion";
+            ano_creacion.Size = new Size(85, 15);
+            ano_creacion.TabIndex = 16;
+            ano_creacion.Text = "{ano_creacion}";
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
+            label4.ForeColor = SystemColors.Highlight;
+            label4.Location = new Point(218, 29);
+            label4.Name = "label4";
+            label4.Size = new Size(88, 19);
+            label4.TabIndex = 15;
+            label4.Text = "Año creación";
+            // 
+            // numero_inventario
+            // 
+            numero_inventario.AutoSize = true;
+            numero_inventario.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            numero_inventario.ForeColor = Color.Black;
+            numero_inventario.Location = new Point(88, 56);
+            numero_inventario.Name = "numero_inventario";
+            numero_inventario.Size = new Size(115, 15);
+            numero_inventario.TabIndex = 14;
+            numero_inventario.Text = "{numero_inventario}";
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
+            label2.ForeColor = SystemColors.Highlight;
+            label2.Location = new Point(88, 29);
+            label2.Name = "label2";
+            label2.Size = new Size(127, 19);
+            label2.TabIndex = 13;
+            label2.Text = "Número inventario:";
+            // 
+            // nomb_elem
+            // 
+            nomb_elem.AutoSize = true;
+            nomb_elem.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            nomb_elem.ForeColor = Color.Black;
+            nomb_elem.Location = new Point(8, 56);
+            nomb_elem.Name = "nomb_elem";
+            nomb_elem.RightToLeft = RightToLeft.No;
+            nomb_elem.Size = new Size(78, 15);
+            nomb_elem.TabIndex = 12;
+            nomb_elem.Text = "{nomb_elem}";
+            // 
+            // imagen_elemento
+            // 
+            imagen_elemento.Location = new Point(361, 81);
+            imagen_elemento.Name = "imagen_elemento";
+            imagen_elemento.Size = new Size(191, 125);
+            imagen_elemento.TabIndex = 13;
+            imagen_elemento.TabStop = false;
             // 
             // label5
             // 
@@ -345,12 +345,13 @@
             Controls.Add(button_atras);
             Margin = new Padding(2);
             Name = "CampsFinal";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Resultat";
             groupBox1.ResumeLayout(false);
             groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)imagen_elemento).EndInit();
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)imagen_elemento).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }

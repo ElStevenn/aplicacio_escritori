@@ -1,62 +1,102 @@
 [
   {
-    "question": "Pregunta1JSONENasdasd",
-    "options": [
-      "AEN",
-      "B",
-      "C",
-      "D"
-    ],
-    "correctOption": "A"
+    "question": "To which field does the Ducati 175 TS motorcycle belong?",
+    "options": ["Transport of people", "Catalan motorcycles", "Electric vehicles", "Firefighters"],
+    "correctOption": "D"
   },
   {
-    "question": "Pregunta2JSON",
-    "options": [
-      "AEN1",
-      "B",
-      "C",
-      "D"
-    ],
+    "question": "Where was the first water pump fire truck manufactured?",
+    "options": ["United States", "England", "France", "Spain"],
     "correctOption": "B"
   },
   {
-    "question": "Pregunta3JSON",
-    "options": [
-      "A",
-      "B",
-      "C",
-      "D"
-    ],
-    "correctOption": "C"
-  },
-  {
-    "question": "Pregunta5JSON",
-    "options": [
-      "A",
-      "B",
-      "C",
-      "D"
-    ],
+    "question": "How many liters can the international fire truck store?",
+    "options": ["3000 liters", "2500 liters", "4000 liters", "2200 liters"],
     "correctOption": "A"
   },
   {
-    "question": "Pregunta6JSON",
-    "options": [
-      "AA",
-      "BS",
-      "CDD",
-      "ASDASDASDD"
-    ],
+    "question": "Where was the Hispano Suiza, Automóviles S.A. factory founded?",
+    "options": ["Madrid", "Paris", "Barcelona", "Bern"],
+    "correctOption": "C"
+  },
+  {
+    "question": "What is the maximum speed of the Volkswagen 'Beetle' car?",
+    "options": ["120 km/h", "80 km/h", "140 km/h", "100 km/h"],
+    "correctOption": "D"
+  },
+  {
+    "question": "What is the alternative name given to the Seat 1200 Sport?",
+    "options": ["Black mouth", "Induclar", "Seat Pattern", "FIAT"],
     "correctOption": "A"
   },
   {
-    "question": "englihsadd",
-    "options": [
-      "a",
-      "a",
-      "d",
-      "c"
-    ],
+    "question": "What does the number 490 refer to in the Chevrolet 490 Van?",
+    "options": ["Maximum speed", "Production number", "Price", "Maximum power"],
     "correctOption": "C"
+  },
+  {
+    "question": "What was the main function of the Slender Bicycle?",
+    "options": ["Transport of people", "Racing", "Mail delivery", "Military"],
+    "correctOption": "C"
+  },
+  {
+    "question": "How many seats does the carriage called Lira Catalana have?",
+    "options": ["3", "2", "5", "4"],
+    "correctOption": "D"
+  },
+  {
+    "question": "Which company absorbed the Catalan brand Sanglas?",
+    "options": ["Volkswagen", "Yamaha", "BMW", "Honda"],
+    "correctOption": "B"
+  },
+  {
+    "question": "To which model does the Tricycle Patria belong?",
+    "options": ["Major Model", "Racing Model", "Minor Model", "Ancient Model"],
+    "correctOption": "C"
+  },
+  {
+    "question": "In which country was the BULTACO MK2 Motorcycle created?",
+    "options": ["United States", "France", "Spain", "Italy"],
+    "correctOption": "C"
+  },
+  {
+    "question": "What type of vehicle is the 'Despertaferro' Vehicle?",
+    "options": ["Solar Vehicle", "Sail Vehicle", "Gasoline Engine Vehicle", "Water Engine Vehicle"],
+    "correctOption": "A"
+  },
+  {
+    "question": "How many annual units were planned for the AFA Car?",
+    "options": ["1200 units", "3000 units", "500 units", "100 units"],
+    "correctOption": "D"
+  },
+  {
+    "question": "How many wheels does the Mini-el Electric Vehicle have?",
+    "options": ["4 wheels", "3 wheels", "6 wheels", "8 wheels"],
+    "correctOption": "A"
+  },
+  {
+    "question": "By what name are the two people who achieved flying with a manned aircraft for the first time known?",
+    "options": ["Brothers Gring", "Wright", "Brothers Wright", "Leonardo and Paul"],
+    "correctOption": "C"
+  },
+  {
+    "question": "In which city did Joan Oliver attempt to fly for the first time?",
+    "options": ["Barcelona", "Madrid", "Girona", "Valencia"],
+    "correctOption": "D"
+  },
+  {
+    "question": "How long did Lucien Mamet's flight last in February 1910?",
+    "options": ["2 minutes and 20 seconds", "3 minutes", "1 minute and 35 seconds", "4 minutes and 15 seconds"],
+    "correctOption": "A"
+  },
+  {
+    "question": "What is the total number of motorcycles at the exhibition?",
+    "options": ["50 motorcycles", "63 motorcycles", "67 motorcycles", "58 motorcycles"],
+    "correctOption": "C"
+  },
+  {
+    "question": "What is the name of the exhibition?",
+    "options": ["Montesa Vehicles", "Long live Montesa", "Montesa Motorcycles", "Viva Montesa"],
+    "correctOption": "D"
   }
 ]

@@ -108,7 +108,7 @@ namespace AppEscritori
 
         private bool checkBlank()
         {
-            if(textBoxPregunta.Text.Trim() == "" || respuestaA.Text.Trim() == ""
+            if (textBoxPregunta.Text.Trim() == "" || respuestaA.Text.Trim() == ""
                 || respuestaB.Text.Trim() == "" || respuestaC.Text.Trim() == ""
                 || respuestaD.Text.Trim() == "")
             {
@@ -121,11 +121,12 @@ namespace AppEscritori
                 MessageBox.Show("Selecciona una repuesta correcta.", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return false;
 
-            } else
+            }
+            else
             {
                 return true;
             }
-            
+
         }
 
         private void buttonMod()
@@ -245,7 +246,7 @@ namespace AppEscritori
         {
             foreach (Control control in groupBoxButtonsCO.Controls)
             {
-                if(control is RadioButton radioButton)
+                if (control is RadioButton radioButton)
                 {
                     radioButton.Checked = false;
                 }
@@ -351,9 +352,9 @@ namespace AppEscritori
         private void warning()
         {
             string language = comboBoxIdiomas.SelectedItem.ToString();
-           
-                switch (language)
-                {
+
+            switch (language)
+            {
                 case "Castellano":
                     MessageBox.Show("Los cambios se han aplicado. Revisa las preguntas también en catalán e inglés.", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     break;
@@ -363,7 +364,7 @@ namespace AppEscritori
                 case "Inglés":
                     MessageBox.Show("Los cambios se han aplicado. Revisa las preguntas también en catalán y castellano.", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     break;
-                }
+            }
         }
 
         private void comboBoxIdiomas_SelectedIndexChanged(object sender, EventArgs e)

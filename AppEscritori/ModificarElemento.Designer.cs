@@ -130,6 +130,7 @@
             Margin = new Padding(4, 3, 4, 3);
             MaximizeBox = false;
             Name = "ModificarElemento";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "ModificarElemento";
             ((System.ComponentModel.ISupportInitialize)pictureBoxElemento).EndInit();
             ResumeLayout(false);

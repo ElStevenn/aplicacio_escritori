@@ -325,6 +325,7 @@
             Controls.Add(button1Enrere);
             Margin = new Padding(4, 3, 4, 3);
             Name = "EliminarPregunta";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Eliminar preguntes";
             ResumeLayout(false);
             PerformLayout();

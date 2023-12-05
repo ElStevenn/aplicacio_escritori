@@ -111,7 +111,7 @@ namespace AppEscritori
 
             if (questionShown != null)
             {
-               
+
                 questionModified.question = textBoxPregunta.Text;
 
                 string[] optionsModified = new string[4];

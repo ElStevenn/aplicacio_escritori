@@ -366,6 +366,7 @@
             Margin = new Padding(4, 3, 4, 3);
             MaximizeBox = false;
             Name = "ConfPregunta";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Configurar Preguntas";
             Load += ConfPregunta_Load;
             groupBoxButtonsCO.ResumeLayout(false);

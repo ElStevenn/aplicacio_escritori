@@ -145,6 +145,7 @@
             Controls.Add(groupBoxElimElement);
             Margin = new Padding(4, 3, 4, 3);
             Name = "EliminarElemento";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Eliminar elemento";
             ((System.ComponentModel.ISupportInitialize)pictureBoxElement).EndInit();
             groupBoxElimElement.ResumeLayout(false);
