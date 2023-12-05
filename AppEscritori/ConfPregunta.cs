@@ -5,6 +5,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Reflection.Metadata.Ecma335;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -45,18 +46,21 @@ namespace AppEscritori
         {
             mode = Mode.Add;
             showControls();
+            loadQuestionsJSON();
         }
 
         private void modificarToolStripMenuItem_Click(object sender, EventArgs e)
         {
             mode = Mode.Mod;
             showControls();
+            loadQuestionsJSON();
         }
 
         private void eliminarToolStripMenuItem_Click(object sender, EventArgs e)
         {
             mode = Mode.Del;
             showControls();
+            loadQuestionsJSON();
         }
 
         private void buttonAccion_Click(object sender, EventArgs e)
@@ -77,36 +81,59 @@ namespace AppEscritori
 
         private void buttonAdd()
         {
-            String language = comboBoxIdiomas.SelectedItem.ToString();
-            Question questionAdded = new Question();
+            if (checkBlank())
+            {
+                Question questionAdded = new Question();
 
-            questionAdded.question = textBoxPregunta.Text;
+                questionAdded.question = textBoxPregunta.Text;
 
-            string[] optionsModified = new string[4];
-            optionsModified[0] = respuestaA.Text;
-            optionsModified[1] = respuestaB.Text;
-            optionsModified[2] = respuestaC.Text;
-            optionsModified[3] = respuestaD.Text;
+                string[] optionsModified = new string[4];
+                optionsModified[0] = respuestaA.Text;
+                optionsModified[1] = respuestaB.Text;
+                optionsModified[2] = respuestaC.Text;
+                optionsModified[3] = respuestaD.Text;
 
-            questionAdded.options = optionsModified;
+                questionAdded.options = optionsModified;
 
-            questionAdded.correctOption = GetSelectedRadioButtonText();
+                questionAdded.correctOption = GetSelectedRadioButtonText();
 
-            questions.Add(questionAdded);
+                questions.Add(questionAdded);
 
-            // Guarda y carga las preguntas
-            saveQuestionsJSON(language);
-            loadQuestionsJSON(language);
-            warning(language);
+                // Guarda y carga las preguntas
+                saveQuestionsJSON();
+                loadQuestionsJSON();
+                warning();
+            }
+        }
+
+        private bool checkBlank()
+        {
+            if(textBoxPregunta.Text.Trim() == "" || respuestaA.Text.Trim() == ""
+                || respuestaB.Text.Trim() == "" || respuestaC.Text.Trim() == ""
+                || respuestaD.Text.Trim() == "")
+            {
+                MessageBox.Show("Rellena todos los campos.", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return false;
+            }
+
+            if (!IsAnyRadioButtonSelected())
+            {
+                MessageBox.Show("Selecciona una repuesta correcta.", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return false;
+
+            } else
+            {
+                return true;
+            }
+            
         }
 
         private void buttonMod()
         {
-            String language = comboBoxIdiomas.SelectedItem.ToString();
             Question questionShown = comboBoxQuestions.SelectedItem as Question;
             Question questionModified = new Question();
 
-            if (questionShown != null)
+            if (questionShown != null && checkBlank())
             {
                 questionModified.question = textBoxPregunta.Text;
 
@@ -130,25 +157,24 @@ namespace AppEscritori
                 questions.Remove(questionShown);
 
                 // Guarda y carga las preguntas
-                saveQuestionsJSON(language);
-                loadQuestionsJSON(language);
-                warning(language);
+                saveQuestionsJSON();
+                loadQuestionsJSON();
+                warning();
 
             }
         }
 
         private void buttonDel()
         {
-            String language = comboBoxIdiomas.SelectedItem.ToString();
             Question questionShown = comboBoxQuestions.SelectedItem as Question;
             if (questionShown != null)
             {
                 questions.Remove(questionShown);
 
-                saveQuestionsJSON(language);
-                loadQuestionsJSON(language);
+                saveQuestionsJSON();
+                loadQuestionsJSON();
                 labelXPreguntas.Text = "Hay " + questions.Count() + " preguntas";
-                warning(language);
+                warning();
             }
         }
 
@@ -163,13 +189,20 @@ namespace AppEscritori
                     comboBoxIdiomas.Location = new System.Drawing.Point(76, 56);
                     comboBoxQuestions.Visible = false;
 
-                    textBoxPregunta.ReadOnly = true;
-                    respuestaA.ReadOnly = true;
-                    respuestaB.ReadOnly = true;
-                    respuestaC.ReadOnly = true;
-                    respuestaD.ReadOnly = true;
+                    textBoxPregunta.ReadOnly = false;
+                    textBoxPregunta.Text = "";
 
-                    enableButtons(groupBoxButtonsCO);
+                    respuestaA.ReadOnly = false;
+                    respuestaA.Text = "";
+                    respuestaB.ReadOnly = false;
+                    respuestaB.Text = "";
+                    respuestaC.ReadOnly = false;
+                    respuestaC.Text = "";
+                    respuestaD.ReadOnly = false;
+                    respuestaD.Text = "";
+
+                    clearButtonSelection();
+                    enableButtons();
 
                     buttonAccion.Text = "Añadir";
                     break;
@@ -179,13 +212,13 @@ namespace AppEscritori
                     comboBoxIdiomas.Location = new System.Drawing.Point(76, 29);
                     comboBoxQuestions.Visible = true;
 
-                    textBoxPregunta.ReadOnly = true;
-                    respuestaA.ReadOnly = true;
-                    respuestaB.ReadOnly = true;
-                    respuestaC.ReadOnly = true;
-                    respuestaD.ReadOnly = true;
+                    textBoxPregunta.ReadOnly = false;
+                    respuestaA.ReadOnly = false;
+                    respuestaB.ReadOnly = false;
+                    respuestaC.ReadOnly = false;
+                    respuestaD.ReadOnly = false;
 
-                    enableButtons(groupBoxButtonsCO);
+                    enableButtons();
 
                     buttonAccion.Text = "Modificar";
                     break;
@@ -201,15 +234,26 @@ namespace AppEscritori
                     respuestaC.ReadOnly = true;
                     respuestaD.ReadOnly = true;
 
-                    disableButtons(groupBoxButtonsCO);
+                    disableButtons();
 
                     buttonAccion.Text = "Eliminar";
                     break;
             }
         }
-        private void disableButtons(GroupBox groupBox)
+
+        private void clearButtonSelection()
         {
-            foreach (Control control in groupBox.Controls)
+            foreach (Control control in groupBoxButtonsCO.Controls)
+            {
+                if(control is RadioButton radioButton)
+                {
+                    radioButton.Checked = false;
+                }
+            }
+        }
+        private void disableButtons()
+        {
+            foreach (Control control in groupBoxButtonsCO.Controls)
             {
                 if (control is RadioButton radioButton)
                 {
@@ -217,9 +261,9 @@ namespace AppEscritori
                 }
             }
         }
-        private void enableButtons(GroupBox groupBox)
+        private void enableButtons()
         {
-            foreach (Control control in groupBox.Controls)
+            foreach (Control control in groupBoxButtonsCO.Controls)
             {
                 if (control is RadioButton radioButton)
                 {
@@ -240,8 +284,22 @@ namespace AppEscritori
             // Retorna una cadena vacía si no se encuentra ningún RadioButton seleccionado
             return string.Empty;
         }
-        private void loadQuestionsJSON(string language)
+
+        private bool IsAnyRadioButtonSelected()
         {
+            foreach (Control control in groupBoxButtonsCO.Controls)
+            {
+                if (control is RadioButton radioButton && radioButton.Checked)
+                {
+                    return true;
+                }
+            }
+            return false;
+        }
+        private void loadQuestionsJSON()
+        {
+            string language = comboBoxIdiomas.SelectedItem.ToString();
+
             string basePath = AppDomain.CurrentDomain.BaseDirectory;
 
             switch (language)
@@ -268,8 +326,10 @@ namespace AppEscritori
             }
         }
 
-        private void saveQuestionsJSON(string language)
+        private void saveQuestionsJSON()
         {
+
+            string language = comboBoxIdiomas.SelectedItem.ToString();
             string basePath = AppDomain.CurrentDomain.BaseDirectory;
 
             switch (language)
@@ -288,10 +348,12 @@ namespace AppEscritori
                     break;
             }
         }
-        private void warning(string language)
+        private void warning()
         {
-            switch (language)
-            {
+            string language = comboBoxIdiomas.SelectedItem.ToString();
+           
+                switch (language)
+                {
                 case "Castellano":
                     MessageBox.Show("Los cambios se han aplicado. Revisa las preguntas también en catalán e inglés.", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     break;
@@ -300,20 +362,13 @@ namespace AppEscritori
                     break;
                 case "Inglés":
                     MessageBox.Show("Los cambios se han aplicado. Revisa las preguntas también en catalán y castellano.", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-
                     break;
-            }
+                }
         }
 
         private void comboBoxIdiomas_SelectedIndexChanged(object sender, EventArgs e)
         {
-            String language = comboBoxIdiomas.SelectedItem as String;
-            textBoxPregunta.ReadOnly = false;
-            respuestaA.ReadOnly = false;
-            respuestaB.ReadOnly = false;
-            respuestaC.ReadOnly = false;
-            respuestaD.ReadOnly = false;
-
+            loadQuestionsJSON();
         }
         private void comboBoxQuestions_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -353,6 +408,7 @@ namespace AppEscritori
         {
             showControls();
             comboBoxIdiomas.SelectedIndex = 0;
+            loadQuestionsJSON();
         }
     }
 }

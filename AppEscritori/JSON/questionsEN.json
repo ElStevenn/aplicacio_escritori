@@ -48,5 +48,15 @@
       "ASDASDASDD"
     ],
     "correctOption": "A"
+  },
+  {
+    "question": "englihsadd",
+    "options": [
+      "a",
+      "a",
+      "d",
+      "c"
+    ],
+    "correctOption": "C"
   }
 ]
