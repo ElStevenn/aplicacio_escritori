@@ -15,7 +15,7 @@ namespace AppEscritori
         ConfJuego confJuego;
         int dificulty;
         string range;
-        string extension = "";
+        string extension = ".png";
         public ConfImgPunt()
         {
             InitializeComponent();
@@ -45,7 +45,6 @@ namespace AppEscritori
 
                 // Carga la imagen en el PictureBox
                 pictureBox1.Image = Image.FromFile(filePath);
-                extension = Path.GetExtension(filePath);
             }
         }
 
