@@ -84,7 +84,7 @@
             titulo.AutoSize = true;
             titulo.Font = new Font("Microsoft Sans Serif", 17.25F, FontStyle.Regular, GraphicsUnit.Point);
             titulo.ForeColor = Color.Red;
-            titulo.Location = new Point(156, 9);
+            titulo.Location = new Point(118, 9);
             titulo.Name = "titulo";
             titulo.Size = new Size(351, 29);
             titulo.TabIndex = 10;

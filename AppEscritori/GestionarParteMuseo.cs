@@ -12,6 +12,7 @@ namespace AppEscritori
     {
         public class Gestor_museo
         {
+            public string modo_gestor {  get; set; }
             // PARTE EN ESPAÑOL
             // Campos main
             public string nombreElemento { get; set; } = string.Empty;
@@ -54,7 +55,9 @@ namespace AppEscritori
 
             // Pongo aquí la intancia para poder moverlo entre archivos
             private static Gestor_museo instance = null;
-            private Gestor_museo() { }
+            private Gestor_museo(string modo) {
+                this.modo_gestor = modo;
+            }
 
             public static Gestor_museo Instance
             {
@@ -62,7 +65,7 @@ namespace AppEscritori
                 {
                     if (instance == null)
                     {
-                        instance = new Gestor_museo();
+                        instance = new Gestor_museo("crear");
                     }
                     return instance;
                 }

@@ -21,7 +21,8 @@
         "sostreMaximDeVol": 1,
         "speed": 1,
         "maxSpeed": 1,
-        "inicialElement": true
+        "inicialElement": true,
+        "year": 1993
     },
     {
         "numInventory": 3,
@@ -45,7 +46,8 @@
         "sostreMaximDeVol": 11,
         "speed": 1,
         "maxSpeed": 1,
-        "inicialElement": false
+        "inicialElement": false,
+        "year": 1993
 
     },
     {
@@ -70,7 +72,8 @@
         "sostreMaximDeVol": 1,
         "speed": 1,
         "maxSpeed": 1,
-        "inicialElement": true
+        "inicialElement": true,
+        "year": 1993
     },
     {
         "numInventory": 5,
@@ -94,7 +97,8 @@
         "sostreMaximDeVol": 1,
         "speed": 1,
         "maxSpeed": 1,
-        "inicialElement": true
+        "inicialElement": true,
+        "year": 1993
     },
     {
         "numInventory": 6,
@@ -118,7 +122,8 @@
         "sostreMaximDeVol": 1,
         "speed": 1,
         "maxSpeed": 1,
-        "inicialElement": true
+        "inicialElement": true,
+        "year": 1993
     },
     {
         "numInventory": 7,
@@ -142,7 +147,8 @@
         "sostreMaximDeVol": 1,
         "speed": 1,
         "maxSpeed": 1,
-        "inicialElement": true
+        "inicialElement": true,
+        "year": 1993
     },
     {
         "numInventory": 8,
@@ -166,6 +172,7 @@
         "sostreMaximDeVol": 1,
         "speed": 1,
         "maxSpeed": 1,
-        "inicialElement": true
+        "inicialElement": true,
+        "year": 1993
     }
 ]

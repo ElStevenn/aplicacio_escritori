@@ -26,16 +26,18 @@ namespace AppEscritori
         public int potency {  get; set; }
         public int kmsDone {  get; set; }
         public int sostreMaximDeVol { get; set; }
+        public string sourceIncome { get; set; }
         public int speed { get; set; }
         public int maxSpeed { get; set; }
         public bool inicialElement {  get; set; }
+        public int year { get; set; }
 
         public ElementoInventario()
         {
 
         }
 
-        public ElementoInventario(int numInventory, int field, string nameElement, string image, string description, int autonomy, int disposalCapacity, string cicle, int cilindrada, int wingspan, string energyfont, string fromIncome, string manufacturingPlace, int lenght, int weight, int potency, int kmsDone, int sostreMaximDeVol, int speed, int maxSpeed, bool inicialElement)
+        public ElementoInventario(int numInventory, int field, string nameElement, string image, string description, int autonomy, int disposalCapacity, string cicle, int cilindrada, int wingspan, string energyfont, string fromIncome, string sourceIncome, string manufacturingPlace, int lenght, int weight, int potency, int kmsDone, int sostreMaximDeVol, int speed, int maxSpeed, bool inicialElement, int year)
         {
             this.numInventory = numInventory;
             this.field = field;
@@ -49,6 +51,7 @@ namespace AppEscritori
             this.wingspan = wingspan;
             this.energyfont = energyfont;
             this.fromIncome = fromIncome;
+            this.sourceIncome = sourceIncome;
             this.manufacturingPlace = manufacturingPlace;
             this.lenght = lenght;
             this.weight = weight;
@@ -58,6 +61,7 @@ namespace AppEscritori
             this.speed = speed;
             this.maxSpeed = maxSpeed;
             this.inicialElement = inicialElement;
+            this.year = year;
         }
     }
 }

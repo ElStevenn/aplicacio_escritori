@@ -1,5 +1,6 @@
 [
   {
+    "id":"001",
     "numInventory": 2,
     "field": 1,
     "nameElement": "ejemplofield1.1",
@@ -20,7 +21,8 @@
     "sostreMaximDeVol": 1,
     "speed": 1,
     "maxSpeed": 1,
-    "inicialElement": true
+    "inicialElement": true,
+    "year":1999
   },
   {
     "numInventory": 3,
@@ -43,7 +45,8 @@
     "sostreMaximDeVol": 11,
     "speed": 1,
     "maxSpeed": 1,
-    "inicialElement": false
+    "inicialElement": false,
+    "year":2003
   },
   {
     "numInventory": 4,
@@ -66,7 +69,8 @@
     "sostreMaximDeVol": 1,
     "speed": 1,
     "maxSpeed": 1,
-    "inicialElement": true
+    "inicialElement": true,
+    "year": 2003
   },
   {
     "numInventory": 5,
@@ -89,7 +93,8 @@
     "sostreMaximDeVol": 1,
     "speed": 1,
     "maxSpeed": 1,
-    "inicialElement": true
+    "inicialElement": true,
+    "year": 2005
   },
   {
     "numInventory": 6,
@@ -112,7 +117,8 @@
     "sostreMaximDeVol": 1,
     "speed": 1,
     "maxSpeed": 1,
-    "inicialElement": true
+    "inicialElement": true,
+    "year": 1840
   },
   {
     "numInventory": 7,
@@ -135,7 +141,8 @@
     "sostreMaximDeVol": 1,
     "speed": 1,
     "maxSpeed": 1,
-    "inicialElement": true
+    "inicialElement": true,
+    "year": 2003
   },
   {
     "numInventory": 8,
@@ -158,29 +165,7 @@
     "sostreMaximDeVol": 1,
     "speed": 1,
     "maxSpeed": 1,
-    "inicialElement": true
-  },
-  {
-    "numInventory": 1,
-    "field": -1,
-    "nameElement": "sd",
-    "image": "C:\\Users\\cep\\Desktop\\download.png",
-    "description": "sdsd",
-    "autonomy": 1,
-    "disposalCapacity": -1,
-    "cicle": "",
-    "cilindrada": -1,
-    "wingspan": -1,
-    "energyfont": "",
-    "fromIncome": "",
-    "manufacturingPlace": "",
-    "lenght": -1,
-    "weight": 2,
-    "potency": -1,
-    "kmsDone": -1,
-    "sostreMaximDeVol": -1,
-    "speed": -1,
-    "maxSpeed": -1,
-    "inicialElement": false
+    "inicialElement": true,
+    "year": 1980
   }
 ]

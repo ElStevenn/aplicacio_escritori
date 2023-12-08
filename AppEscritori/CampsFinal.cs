@@ -15,7 +15,7 @@ namespace AppEscritori
     public partial class CampsFinal : Form
     {
         public GestionarParteMuseo.Gestor_museo gestionadorMuseo;
-        public string rutaArchivoJson_cat = @"..\..\..\JSON\museu_cat.json";
+        public string rutaArchivoJson_cat = @"..\..\..\JSON\elements_cat.json";
 
 
         public CampsFinal()
@@ -68,7 +68,8 @@ namespace AppEscritori
                 cilindrada = int.TryParse(gestionadorMuseo.cilidrada, out int cilindradaResult) ? cilindradaResult : -1,
                 wingspan = int.TryParse(gestionadorMuseo.envergadura, out int wingspanResult) ? wingspanResult : -1,
                 energyfont = gestionadorMuseo.fuente_energia ?? "",
-                fromIncome = gestionadorMuseo.fuente_ingreso ?? "",
+                sourceIncome = gestionadorMuseo.fuente_ingreso ?? "",
+                fromIncome = gestionadorMuseo.forma_ingreso ?? "",
                 manufacturingPlace = gestionadorMuseo.lugar_fabricacion ?? "",
                 lenght = int.TryParse(gestionadorMuseo.longitud, out int lenghtResult) ? lenghtResult : -1,
                 weight = int.TryParse(gestionadorMuseo.peso, out int weightResult) ? weightResult : -1,

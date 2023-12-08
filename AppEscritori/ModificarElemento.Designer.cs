@@ -28,63 +28,45 @@
         /// </summary>
         private void InitializeComponent()
         {
-            comboBoxSelecElemento = new ComboBox();
-            pictureBoxElemento = new PictureBox();
+            selecElemento = new ComboBox();
             labelNombreElemento = new Label();
-            labelNumInventario = new Label();
             buttonAtras = new Button();
             buttonModificar = new Button();
             labelSeleccionarElemento = new Label();
-            ((System.ComponentModel.ISupportInitialize)pictureBoxElemento).BeginInit();
+            label1 = new Label();
+            pictureBox1 = new PictureBox();
+            label2 = new Label();
+            labnumInventario = new Label();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
-            // comboBoxSelecElemento
+            // selecElemento
             // 
-            comboBoxSelecElemento.DropDownStyle = ComboBoxStyle.DropDownList;
-            comboBoxSelecElemento.FormattingEnabled = true;
-            comboBoxSelecElemento.Items.AddRange(new object[] { "a", "b", "c", "d", "e", "f", "g", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "a", "a", "a", "a", "a", "a", "a", "a", "a", "a", "s", "d", "d", "d", "d", "df", "f", "f", "f", "f", "f", "f" });
-            comboBoxSelecElemento.Location = new Point(14, 43);
-            comboBoxSelecElemento.Margin = new Padding(4, 3, 4, 3);
-            comboBoxSelecElemento.Name = "comboBoxSelecElemento";
-            comboBoxSelecElemento.Size = new Size(576, 23);
-            comboBoxSelecElemento.TabIndex = 0;
-            // 
-            // pictureBoxElemento
-            // 
-            pictureBoxElemento.BorderStyle = BorderStyle.FixedSingle;
-            pictureBoxElemento.Location = new Point(14, 81);
-            pictureBoxElemento.Margin = new Padding(4, 3, 4, 3);
-            pictureBoxElemento.Name = "pictureBoxElemento";
-            pictureBoxElemento.Size = new Size(243, 169);
-            pictureBoxElemento.SizeMode = PictureBoxSizeMode.CenterImage;
-            pictureBoxElemento.TabIndex = 1;
-            pictureBoxElemento.TabStop = false;
+            selecElemento.FlatStyle = FlatStyle.System;
+            selecElemento.FormattingEnabled = true;
+            selecElemento.ImeMode = ImeMode.On;
+            selecElemento.Items.AddRange(new object[] { "item1", "item2", "item4" });
+            selecElemento.Location = new Point(11, 88);
+            selecElemento.Margin = new Padding(4, 3, 4, 3);
+            selecElemento.Name = "selecElemento";
+            selecElemento.Size = new Size(243, 23);
+            selecElemento.TabIndex = 0;
+            selecElemento.SelectedIndexChanged += selecElemento_SelectedIndexChanged;
             // 
             // labelNombreElemento
             // 
             labelNombreElemento.AutoSize = true;
-            labelNombreElemento.Font = new Font("Microsoft Sans Serif", 16F, FontStyle.Regular, GraphicsUnit.Point);
-            labelNombreElemento.Location = new Point(265, 119);
+            labelNombreElemento.Font = new Font("Microsoft Sans Serif", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
+            labelNombreElemento.Location = new Point(23, 141);
             labelNombreElemento.Margin = new Padding(4, 0, 4, 0);
             labelNombreElemento.Name = "labelNombreElemento";
-            labelNombreElemento.Size = new Size(221, 26);
+            labelNombreElemento.Size = new Size(235, 25);
             labelNombreElemento.TabIndex = 2;
             labelNombreElemento.Text = "Nombre del elemento";
             // 
-            // labelNumInventario
-            // 
-            labelNumInventario.AutoSize = true;
-            labelNumInventario.Font = new Font("Microsoft Sans Serif", 16F, FontStyle.Regular, GraphicsUnit.Point);
-            labelNumInventario.Location = new Point(265, 183);
-            labelNumInventario.Margin = new Padding(4, 0, 4, 0);
-            labelNumInventario.Name = "labelNumInventario";
-            labelNumInventario.Size = new Size(221, 26);
-            labelNumInventario.TabIndex = 3;
-            labelNumInventario.Text = "Numero de Inventario";
-            // 
             // buttonAtras
             // 
-            buttonAtras.Location = new Point(14, 298);
+            buttonAtras.Location = new Point(11, 349);
             buttonAtras.Margin = new Padding(4, 3, 4, 3);
             buttonAtras.Name = "buttonAtras";
             buttonAtras.Size = new Size(223, 27);
@@ -95,7 +77,7 @@
             // 
             // buttonModificar
             // 
-            buttonModificar.Location = new Point(368, 298);
+            buttonModificar.Location = new Point(373, 349);
             buttonModificar.Margin = new Padding(4, 3, 4, 3);
             buttonModificar.Name = "buttonModificar";
             buttonModificar.Size = new Size(223, 27);
@@ -107,44 +89,89 @@
             // labelSeleccionarElemento
             // 
             labelSeleccionarElemento.AutoSize = true;
-            labelSeleccionarElemento.Location = new Point(14, 21);
+            labelSeleccionarElemento.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
+            labelSeleccionarElemento.Location = new Point(13, 66);
             labelSeleccionarElemento.Margin = new Padding(4, 0, 4, 0);
             labelSeleccionarElemento.Name = "labelSeleccionarElemento";
-            labelSeleccionarElemento.Size = new Size(128, 15);
+            labelSeleccionarElemento.Size = new Size(146, 19);
             labelSeleccionarElemento.TabIndex = 6;
             labelSeleccionarElemento.Text = "Selecciona el elemento";
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Segoe UI", 15F, FontStyle.Bold, GraphicsUnit.Point);
+            label1.ForeColor = Color.Red;
+            label1.Location = new Point(199, 18);
+            label1.Name = "label1";
+            label1.Size = new Size(229, 28);
+            label1.TabIndex = 7;
+            label1.Text = "Modificar un elemento";
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.Location = new Point(322, 108);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(285, 202);
+            pictureBox1.TabIndex = 8;
+            pictureBox1.TabStop = false;
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Font = new Font("Arial Narrow", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            label2.Location = new Point(23, 188);
+            label2.Margin = new Padding(4, 0, 4, 0);
+            label2.Name = "label2";
+            label2.Size = new Size(143, 20);
+            label2.TabIndex = 9;
+            label2.Text = "Numero de Inventario";
+            // 
+            // labnumInventario
+            // 
+            labnumInventario.AutoSize = true;
+            labnumInventario.Font = new Font("Segoe UI", 11F, FontStyle.Regular, GraphicsUnit.Point);
+            labnumInventario.ForeColor = SystemColors.Highlight;
+            labnumInventario.Location = new Point(23, 217);
+            labnumInventario.Name = "labnumInventario";
+            labnumInventario.Size = new Size(50, 20);
+            labnumInventario.TabIndex = 13;
+            labnumInventario.Text = "label5";
             // 
             // ModificarElemento
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(609, 351);
+            ClientSize = new Size(619, 388);
+            Controls.Add(labnumInventario);
+            Controls.Add(label2);
+            Controls.Add(pictureBox1);
+            Controls.Add(label1);
             Controls.Add(labelSeleccionarElemento);
             Controls.Add(buttonModificar);
             Controls.Add(buttonAtras);
-            Controls.Add(labelNumInventario);
             Controls.Add(labelNombreElemento);
-            Controls.Add(pictureBoxElemento);
-            Controls.Add(comboBoxSelecElemento);
+            Controls.Add(selecElemento);
             FormBorderStyle = FormBorderStyle.FixedSingle;
             Margin = new Padding(4, 3, 4, 3);
             MaximizeBox = false;
             Name = "ModificarElemento";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "ModificarElemento";
-            ((System.ComponentModel.ISupportInitialize)pictureBoxElemento).EndInit();
+            Text = "Modificar un elemento";
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
-
-        private ComboBox comboBoxSelecElemento;
-        private PictureBox pictureBoxElemento;
         private Label labelNombreElemento;
-        private Label labelNumInventario;
         private Button buttonAtras;
         private Button buttonModificar;
         private Label labelSeleccionarElemento;
+        private Label label1;
+        private PictureBox pictureBox1;
+        public ComboBox selecElemento;
+        private Label label2;
+        private Label labnumInventario;
     }
 }
