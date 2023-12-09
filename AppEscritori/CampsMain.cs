@@ -20,8 +20,17 @@ namespace AppEscritori
             InitializeComponent();
             this.gestionadorMuseo = gestor_Museo;
             ponerCampos();
+            poner_imagen();
         }
 
+        private void poner_imagen()
+        {
+            if (gestionadorMuseo.ruta_imagen != null)
+            {
+                imagen_elemento.Image = Image.FromFile(gestionadorMuseo.ruta_imagen);
+                imagen_elemento.SizeMode = PictureBoxSizeMode.StretchImage;
+            }
+        }
 
         private void ponerCampos()
         {

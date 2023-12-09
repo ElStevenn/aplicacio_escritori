@@ -115,7 +115,8 @@ namespace AppEscritori
 
                 gestorMuseo.actualizar_campos_espeng(elelementos_eng_esp[0], elelementos_eng_esp[1], elelementos_eng_esp[2], elelementos_eng_esp[3]);
                 // Añadir la ruta de la imagen -> 
-                // gestorMuseo.actualizar_ruta_imagen();
+                string ruta_elemento = @"..\..\..\JSON\museu_images\" + Path.GetFileName(elementoSeleccionado.image);
+                gestorMuseo.actualizar_ruta_imagen(ruta_elemento);
 
 
                 CampsMain menu = new CampsMain(gestorMuseo);

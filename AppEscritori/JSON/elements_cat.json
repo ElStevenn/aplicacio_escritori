@@ -1,6 +1,5 @@
 [
   {
-    "id":"001",
     "numInventory": 2,
     "field": 1,
     "nameElement": "ejemplofield1.1",
@@ -19,10 +18,11 @@
     "potency": 7,
     "kmsDone": 8,
     "sostreMaximDeVol": 1,
+    "sourceIncome": null,
     "speed": 1,
     "maxSpeed": 1,
     "inicialElement": true,
-    "year":1999
+    "year": 1999
   },
   {
     "numInventory": 3,
@@ -43,10 +43,11 @@
     "potency": 14,
     "kmsDone": 12,
     "sostreMaximDeVol": 11,
+    "sourceIncome": null,
     "speed": 1,
     "maxSpeed": 1,
     "inicialElement": false,
-    "year":2003
+    "year": 2003
   },
   {
     "numInventory": 4,
@@ -67,6 +68,7 @@
     "potency": 1,
     "kmsDone": 1,
     "sostreMaximDeVol": 1,
+    "sourceIncome": null,
     "speed": 1,
     "maxSpeed": 1,
     "inicialElement": true,
@@ -91,6 +93,7 @@
     "potency": 1,
     "kmsDone": 1,
     "sostreMaximDeVol": 1,
+    "sourceIncome": null,
     "speed": 1,
     "maxSpeed": 1,
     "inicialElement": true,
@@ -115,6 +118,7 @@
     "potency": 1,
     "kmsDone": 1,
     "sostreMaximDeVol": 1,
+    "sourceIncome": null,
     "speed": 1,
     "maxSpeed": 1,
     "inicialElement": true,
@@ -139,6 +143,7 @@
     "potency": 1,
     "kmsDone": 1,
     "sostreMaximDeVol": 1,
+    "sourceIncome": null,
     "speed": 1,
     "maxSpeed": 1,
     "inicialElement": true,
@@ -163,9 +168,35 @@
     "potency": 1,
     "kmsDone": 1,
     "sostreMaximDeVol": 1,
+    "sourceIncome": null,
     "speed": 1,
     "maxSpeed": 1,
     "inicialElement": true,
     "year": 1980
+  },
+  {
+    "numInventory": 1,
+    "field": 1,
+    "nameElement": "OjosPau",
+    "image": "WIN_20211224_18_26_02_Pro.jpg",
+    "description": "ojos del pau",
+    "autonomy": 1,
+    "disposalCapacity": 11,
+    "cicle": "",
+    "cilindrada": -1,
+    "wingspan": -1,
+    "energyfont": "",
+    "fromIncome": "12",
+    "manufacturingPlace": "",
+    "lenght": 1,
+    "weight": -1,
+    "potency": -1,
+    "kmsDone": -1,
+    "sostreMaximDeVol": -1,
+    "sourceIncome": "2",
+    "speed": -1,
+    "maxSpeed": -1,
+    "inicialElement": false,
+    "year": 0
   }
 ]

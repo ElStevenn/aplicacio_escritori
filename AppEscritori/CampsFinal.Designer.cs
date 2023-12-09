@@ -33,36 +33,27 @@
             titulo = new Label();
             label1 = new Label();
             groupBox1 = new GroupBox();
-            panel1 = new Panel();
+            descripcion_c = new Panel();
+            description = new Label();
             label3 = new Label();
             descripcion = new Label();
             ano_creacion = new Label();
             label4 = new Label();
             numero_inventario = new Label();
             label2 = new Label();
-            nomb_elem = new Label();
+            nombr_elem = new Label();
             imagen_elemento = new PictureBox();
-            label5 = new Label();
-            label6 = new Label();
-            label7 = new Label();
-            label8 = new Label();
-            label9 = new Label();
-            label10 = new Label();
-            label11 = new Label();
-            label12 = new Label();
-            label13 = new Label();
-            label14 = new Label();
             groupBox1.SuspendLayout();
-            panel1.SuspendLayout();
+            descripcion_c.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)imagen_elemento).BeginInit();
             SuspendLayout();
             // 
             // button_atras
             // 
-            button_atras.Location = new Point(11, 342);
+            button_atras.Location = new Point(18, 318);
             button_atras.Margin = new Padding(2);
             button_atras.Name = "button_atras";
-            button_atras.Size = new Size(87, 26);
+            button_atras.Size = new Size(122, 26);
             button_atras.TabIndex = 8;
             button_atras.Text = "Atrás";
             button_atras.UseVisualStyleBackColor = true;
@@ -70,10 +61,10 @@
             // 
             // button_generar
             // 
-            button_generar.Location = new Point(237, 342);
+            button_generar.Location = new Point(447, 318);
             button_generar.Margin = new Padding(2);
             button_generar.Name = "button_generar";
-            button_generar.Size = new Size(87, 26);
+            button_generar.Size = new Size(123, 26);
             button_generar.TabIndex = 9;
             button_generar.Text = "Confirmar";
             button_generar.UseVisualStyleBackColor = true;
@@ -82,11 +73,11 @@
             // titulo
             // 
             titulo.AutoSize = true;
-            titulo.Font = new Font("Microsoft Sans Serif", 17.25F, FontStyle.Regular, GraphicsUnit.Point);
+            titulo.Font = new Font("Microsoft Sans Serif", 17.25F, FontStyle.Bold, GraphicsUnit.Point);
             titulo.ForeColor = Color.Red;
             titulo.Location = new Point(118, 9);
             titulo.Name = "titulo";
-            titulo.Size = new Size(351, 29);
+            titulo.Size = new Size(373, 29);
             titulo.TabIndex = 10;
             titulo.Text = "RESULTADO DEL ELEMENTO";
             // 
@@ -103,13 +94,13 @@
             // 
             // groupBox1
             // 
-            groupBox1.Controls.Add(panel1);
+            groupBox1.Controls.Add(descripcion_c);
             groupBox1.Controls.Add(descripcion);
             groupBox1.Controls.Add(ano_creacion);
             groupBox1.Controls.Add(label4);
             groupBox1.Controls.Add(numero_inventario);
             groupBox1.Controls.Add(label2);
-            groupBox1.Controls.Add(nomb_elem);
+            groupBox1.Controls.Add(nombr_elem);
             groupBox1.Controls.Add(label1);
             groupBox1.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
             groupBox1.Location = new Point(12, 65);
@@ -119,24 +110,34 @@
             groupBox1.TabStop = false;
             groupBox1.Text = "Información principal del elemento";
             // 
-            // panel1
+            // descripcion_c
             // 
-            panel1.Controls.Add(label3);
-            panel1.Location = new Point(6, 104);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(297, 100);
-            panel1.TabIndex = 14;
+            descripcion_c.Controls.Add(description);
+            descripcion_c.Controls.Add(label3);
+            descripcion_c.Location = new Point(6, 104);
+            descripcion_c.Name = "descripcion_c";
+            descripcion_c.Size = new Size(297, 100);
+            descripcion_c.TabIndex = 14;
+            // 
+            // description
+            // 
+            description.Location = new Point(18, 13);
+            description.MaximumSize = new Size(40, 0);
+            description.Name = "description";
+            description.Size = new Size(40, 0);
+            description.TabIndex = 19;
+            description.Text = "Tu texto muy largo que quieres que se ajuste automáticamente en múltiples líneas.";
             // 
             // label3
             // 
-            label3.AutoSize = true;
             label3.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             label3.ForeColor = Color.Black;
-            label3.Location = new Point(8, 8);
+            label3.Location = new Point(0, 13);
+            label3.MaximumSize = new Size(30, 0);
             label3.Name = "label3";
-            label3.Size = new Size(115, 15);
+            label3.Size = new Size(30, 0);
             label3.TabIndex = 18;
-            label3.Text = "{numero_inventario}";
+            label3.Text = "idfu d9f8uyd pfdyfdyfdoufydoifuydfoiudyfoiduyfdoiufy doiufydfiudy fç";
             // 
             // descripcion
             // 
@@ -193,151 +194,31 @@
             label2.TabIndex = 13;
             label2.Text = "Número inventario:";
             // 
-            // nomb_elem
+            // nombr_elem
             // 
-            nomb_elem.AutoSize = true;
-            nomb_elem.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            nomb_elem.ForeColor = Color.Black;
-            nomb_elem.Location = new Point(8, 56);
-            nomb_elem.Name = "nomb_elem";
-            nomb_elem.RightToLeft = RightToLeft.No;
-            nomb_elem.Size = new Size(78, 15);
-            nomb_elem.TabIndex = 12;
-            nomb_elem.Text = "{nomb_elem}";
+            nombr_elem.AutoSize = true;
+            nombr_elem.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            nombr_elem.ForeColor = Color.Black;
+            nombr_elem.Location = new Point(8, 56);
+            nombr_elem.Name = "nombr_elem";
+            nombr_elem.RightToLeft = RightToLeft.No;
+            nombr_elem.Size = new Size(78, 15);
+            nombr_elem.TabIndex = 12;
+            nombr_elem.Text = "{nomb_elem}";
             // 
             // imagen_elemento
             // 
-            imagen_elemento.Location = new Point(361, 81);
+            imagen_elemento.Location = new Point(330, 107);
             imagen_elemento.Name = "imagen_elemento";
-            imagen_elemento.Size = new Size(191, 125);
+            imagen_elemento.Size = new Size(253, 162);
             imagen_elemento.TabIndex = 13;
             imagen_elemento.TabStop = false;
-            // 
-            // label5
-            // 
-            label5.AutoSize = true;
-            label5.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            label5.ForeColor = SystemColors.Highlight;
-            label5.Location = new Point(361, 218);
-            label5.Name = "label5";
-            label5.Size = new Size(70, 15);
-            label5.TabIndex = 18;
-            label5.Text = "Autonomía:";
-            // 
-            // label6
-            // 
-            label6.AutoSize = true;
-            label6.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            label6.ForeColor = SystemColors.Highlight;
-            label6.Location = new Point(457, 217);
-            label6.Name = "label6";
-            label6.Size = new Size(70, 15);
-            label6.TabIndex = 19;
-            label6.Text = "Autonomía:";
-            // 
-            // label7
-            // 
-            label7.AutoSize = true;
-            label7.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            label7.ForeColor = SystemColors.Highlight;
-            label7.Location = new Point(361, 244);
-            label7.Name = "label7";
-            label7.Size = new Size(70, 15);
-            label7.TabIndex = 20;
-            label7.Text = "Autonomía:";
-            // 
-            // label8
-            // 
-            label8.AutoSize = true;
-            label8.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            label8.ForeColor = SystemColors.Highlight;
-            label8.Location = new Point(457, 244);
-            label8.Name = "label8";
-            label8.Size = new Size(70, 15);
-            label8.TabIndex = 21;
-            label8.Text = "Autonomía:";
-            // 
-            // label9
-            // 
-            label9.AutoSize = true;
-            label9.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            label9.ForeColor = SystemColors.Highlight;
-            label9.Location = new Point(361, 270);
-            label9.Name = "label9";
-            label9.Size = new Size(70, 15);
-            label9.TabIndex = 22;
-            label9.Text = "Autonomía:";
-            // 
-            // label10
-            // 
-            label10.AutoSize = true;
-            label10.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            label10.ForeColor = SystemColors.Highlight;
-            label10.Location = new Point(457, 301);
-            label10.Name = "label10";
-            label10.Size = new Size(70, 15);
-            label10.TabIndex = 23;
-            label10.Text = "Autonomía:";
-            // 
-            // label11
-            // 
-            label11.AutoSize = true;
-            label11.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            label11.ForeColor = SystemColors.Highlight;
-            label11.Location = new Point(457, 270);
-            label11.Name = "label11";
-            label11.Size = new Size(70, 15);
-            label11.TabIndex = 23;
-            label11.Text = "Autonomía:";
-            // 
-            // label12
-            // 
-            label12.AutoSize = true;
-            label12.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            label12.ForeColor = SystemColors.Highlight;
-            label12.Location = new Point(361, 301);
-            label12.Name = "label12";
-            label12.Size = new Size(70, 15);
-            label12.TabIndex = 24;
-            label12.Text = "Autonomía:";
-            // 
-            // label13
-            // 
-            label13.AutoSize = true;
-            label13.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            label13.ForeColor = SystemColors.Highlight;
-            label13.Location = new Point(361, 333);
-            label13.Name = "label13";
-            label13.Size = new Size(70, 15);
-            label13.TabIndex = 25;
-            label13.Text = "Autonomía:";
-            // 
-            // label14
-            // 
-            label14.AutoSize = true;
-            label14.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            label14.ForeColor = SystemColors.Highlight;
-            label14.Location = new Point(457, 333);
-            label14.Name = "label14";
-            label14.Size = new Size(70, 15);
-            label14.TabIndex = 26;
-            label14.Text = "Autonomía:";
             // 
             // CampsFinal
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(595, 379);
-            Controls.Add(label14);
-            Controls.Add(label13);
-            Controls.Add(label12);
-            Controls.Add(label11);
-            Controls.Add(label10);
-            Controls.Add(label9);
-            Controls.Add(label8);
-            Controls.Add(label7);
-            Controls.Add(label6);
-            Controls.Add(label5);
+            ClientSize = new Size(595, 350);
             Controls.Add(imagen_elemento);
             Controls.Add(groupBox1);
             Controls.Add(titulo);
@@ -349,8 +230,7 @@
             Text = "Resultat";
             groupBox1.ResumeLayout(false);
             groupBox1.PerformLayout();
-            panel1.ResumeLayout(false);
-            panel1.PerformLayout();
+            descripcion_c.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)imagen_elemento).EndInit();
             ResumeLayout(false);
             PerformLayout();
@@ -362,24 +242,15 @@
         private Label titulo;
         private Label label1;
         private GroupBox groupBox1;
-        private Label nomb_elem;
+        private Label nombr_elem;
         private Label label2;
         private Label numero_inventario;
         private PictureBox imagen_elemento;
         private Label ano_creacion;
         private Label label4;
         private Label descripcion;
-        private Panel panel1;
+        private Panel descripcion_c;
+        private Label description;
         private Label label3;
-        private Label label5;
-        private Label label6;
-        private Label label7;
-        private Label label8;
-        private Label label9;
-        private Label label10;
-        private Label label11;
-        private Label label12;
-        private Label label13;
-        private Label label14;
     }
 }
