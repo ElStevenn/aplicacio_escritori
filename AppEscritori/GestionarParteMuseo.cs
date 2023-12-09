@@ -51,7 +51,7 @@ namespace AppEscritori
             public string eng_descripcionEelemento { get; set; } = string.Empty;
 
             // FOTO
-            public string ruta_imagen {  get; set; } = string.Empty;
+            public string ruta_imagen {  get; set; }
 
             // Pongo aquí la intancia para poder moverlo entre archivos
             private static Gestor_museo instance = null;

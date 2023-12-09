@@ -198,5 +198,30 @@
     "maxSpeed": -1,
     "inicialElement": false,
     "year": 0
+  },
+  {
+    "numInventory": 1,
+    "field": -1,
+    "nameElement": "dsfs",
+    "image": "WIN_20210915_15_53_50_Pro.jpg",
+    "description": "fsfsf",
+    "autonomy": 1,
+    "disposalCapacity": -1,
+    "cicle": "",
+    "cilindrada": 2,
+    "wingspan": 3,
+    "energyfont": "",
+    "fromIncome": "",
+    "manufacturingPlace": "",
+    "lenght": -1,
+    "weight": -1,
+    "potency": -1,
+    "kmsDone": -1,
+    "sostreMaximDeVol": -1,
+    "sourceIncome": "",
+    "speed": -1,
+    "maxSpeed": -1,
+    "inicialElement": false,
+    "year": 0
   }
 ]
