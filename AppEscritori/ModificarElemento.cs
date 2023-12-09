@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -53,7 +54,8 @@ namespace AppEscritori
             {
                 labelNombreElemento.Text = elementoSeleccionado.nameElement;
                 labnumInventario.Text = elementoSeleccionado.numInventory.ToString();
-
+                foto_elemento.Image = Image.FromFile(elementoSeleccionado.image);
+                foto_elemento.SizeMode = PictureBoxSizeMode.StretchImage;
                 // Se podrían cargar mas elementos como se necesite
             }
         }

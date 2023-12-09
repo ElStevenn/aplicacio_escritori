@@ -34,10 +34,10 @@
             buttonModificar = new Button();
             labelSeleccionarElemento = new Label();
             label1 = new Label();
-            pictureBox1 = new PictureBox();
+            foto_elemento = new PictureBox();
             label2 = new Label();
             labnumInventario = new Label();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)foto_elemento).BeginInit();
             SuspendLayout();
             // 
             // selecElemento
@@ -108,13 +108,13 @@
             label1.TabIndex = 7;
             label1.Text = "Modificar un elemento";
             // 
-            // pictureBox1
+            // foto_elemento
             // 
-            pictureBox1.Location = new Point(322, 108);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(285, 202);
-            pictureBox1.TabIndex = 8;
-            pictureBox1.TabStop = false;
+            foto_elemento.Location = new Point(322, 108);
+            foto_elemento.Name = "foto_elemento";
+            foto_elemento.Size = new Size(285, 202);
+            foto_elemento.TabIndex = 8;
+            foto_elemento.TabStop = false;
             // 
             // label2
             // 
@@ -145,7 +145,7 @@
             ClientSize = new Size(619, 388);
             Controls.Add(labnumInventario);
             Controls.Add(label2);
-            Controls.Add(pictureBox1);
+            Controls.Add(foto_elemento);
             Controls.Add(label1);
             Controls.Add(labelSeleccionarElemento);
             Controls.Add(buttonModificar);
@@ -158,7 +158,7 @@
             Name = "ModificarElemento";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Modificar un elemento";
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)foto_elemento).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -169,7 +169,7 @@
         private Button buttonModificar;
         private Label labelSeleccionarElemento;
         private Label label1;
-        private PictureBox pictureBox1;
+        private PictureBox foto_elemento;
         public ComboBox selecElemento;
         private Label label2;
         private Label labnumInventario;
