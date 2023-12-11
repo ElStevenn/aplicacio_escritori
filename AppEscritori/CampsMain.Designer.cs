@@ -43,6 +43,7 @@
             buttonSiguiente = new Button();
             abrir_archivo = new OpenFileDialog();
             button1 = new Button();
+            label5 = new Label();
             ((System.ComponentModel.ISupportInitialize)imagen_elemento).BeginInit();
             SuspendLayout();
             // 
@@ -161,11 +162,21 @@
             button1.UseVisualStyleBackColor = true;
             button1.Click += button1_Click;
             // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Location = new Point(225, 105);
+            label5.Name = "label5";
+            label5.Size = new Size(113, 30);
+            label5.TabIndex = 15;
+            label5.Text = "Añadir una imagen\r\n grande si es posible";
+            // 
             // CampsMain
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(576, 345);
+            Controls.Add(label5);
             Controls.Add(button1);
             Controls.Add(buttonSiguiente);
             Controls.Add(buttonAtras);
@@ -202,5 +213,6 @@
         private Button buttonSiguiente;
         private OpenFileDialog abrir_archivo;
         private Button button1;
+        private Label label5;
     }
 }

@@ -53,26 +53,6 @@ namespace AppEscritori
             // FOTO
             public string ruta_imagen {  get; set; }
 
-            // Pongo aquí la intancia para poder moverlo entre archivos
-            /*
-            private static Gestor_museo instance = null;
-
-            private Gestor_museo(string modo) {
-                this.modo_gestor = modo;
-            }
-
-            public static Gestor_museo Instance
-            {
-                get
-                {
-                    if (instance == null)
-                    {
-                        instance = new Gestor_museo("crear");
-                    }
-                    return instance;
-                }
-            }
-            */
             // Elemento inicial | Se inicia en false pero el usuario lo puede cambiar a true
             public bool elemento_incial {  get; set; } = false;
 

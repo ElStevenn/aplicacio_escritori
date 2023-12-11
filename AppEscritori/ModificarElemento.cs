@@ -55,6 +55,7 @@ namespace AppEscritori
                 string ruta_imagen = @"..\..\..\JSON\imgelements\" + elementoSeleccionado.image;
                 labelNombreElemento.Text = elementoSeleccionado.nameElement;
                 labnumInventario.Text = elementoSeleccionado.numInventory.ToString();
+                lab_fecha_fabricacion.Text = elementoSeleccionado.year.ToString();
                 foto_elemento.Image = Image.FromFile(ruta_imagen);
                 foto_elemento.SizeMode = PictureBoxSizeMode.StretchImage;
                 // Se podrían cargar mas elementos como se necesite

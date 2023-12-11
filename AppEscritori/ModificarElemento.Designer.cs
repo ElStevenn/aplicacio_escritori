@@ -37,6 +37,8 @@
             foto_elemento = new PictureBox();
             label2 = new Label();
             labnumInventario = new Label();
+            label3 = new Label();
+            lab_fecha_fabricacion = new Label();
             ((System.ComponentModel.ISupportInitialize)foto_elemento).BeginInit();
             SuspendLayout();
             // 
@@ -138,11 +140,35 @@
             labnumInventario.TabIndex = 13;
             labnumInventario.Text = "label5";
             // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Font = new Font("Arial Narrow", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            label3.Location = new Point(23, 247);
+            label3.Margin = new Padding(4, 0, 4, 0);
+            label3.Name = "label3";
+            label3.Size = new Size(138, 20);
+            label3.TabIndex = 14;
+            label3.Text = "Fecha de fabricación";
+            // 
+            // lab_fecha_fabricacion
+            // 
+            lab_fecha_fabricacion.AutoSize = true;
+            lab_fecha_fabricacion.Font = new Font("Segoe UI", 11F, FontStyle.Regular, GraphicsUnit.Point);
+            lab_fecha_fabricacion.ForeColor = SystemColors.Highlight;
+            lab_fecha_fabricacion.Location = new Point(23, 267);
+            lab_fecha_fabricacion.Name = "lab_fecha_fabricacion";
+            lab_fecha_fabricacion.Size = new Size(50, 20);
+            lab_fecha_fabricacion.TabIndex = 15;
+            lab_fecha_fabricacion.Text = "label5";
+            // 
             // ModificarElemento
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(619, 388);
+            Controls.Add(lab_fecha_fabricacion);
+            Controls.Add(label3);
             Controls.Add(labnumInventario);
             Controls.Add(label2);
             Controls.Add(foto_elemento);
@@ -173,5 +199,7 @@
         public ComboBox selecElemento;
         private Label label2;
         private Label labnumInventario;
+        private Label label3;
+        private Label lab_fecha_fabricacion;
     }
 }
