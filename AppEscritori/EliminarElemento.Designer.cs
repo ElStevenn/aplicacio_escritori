@@ -28,45 +28,45 @@
         /// </summary>
         private void InitializeComponent()
         {
-            pictureBoxElement = new PictureBox();
-            textBoxNameElement = new TextBox();
-            textBoxnumInventario = new TextBox();
+            fotoElemento = new PictureBox();
+            nombreElemento = new TextBox();
+            numInventario = new TextBox();
             buttonAtras = new Button();
             buttonEliminar = new Button();
             label1 = new Label();
             label2 = new Label();
             groupBoxElimElement = new GroupBox();
-            button1 = new Button();
-            ((System.ComponentModel.ISupportInitialize)pictureBoxElement).BeginInit();
+            selecElemento = new ComboBox();
+            ((System.ComponentModel.ISupportInitialize)fotoElemento).BeginInit();
             groupBoxElimElement.SuspendLayout();
             SuspendLayout();
             // 
-            // pictureBoxElement
+            // fotoElemento
             // 
-            pictureBoxElement.Location = new Point(6, 82);
-            pictureBoxElement.Margin = new Padding(4, 3, 4, 3);
-            pictureBoxElement.Name = "pictureBoxElement";
-            pictureBoxElement.Size = new Size(219, 142);
-            pictureBoxElement.TabIndex = 0;
-            pictureBoxElement.TabStop = false;
+            fotoElemento.Location = new Point(6, 82);
+            fotoElemento.Margin = new Padding(4, 3, 4, 3);
+            fotoElemento.Name = "fotoElemento";
+            fotoElemento.Size = new Size(219, 142);
+            fotoElemento.TabIndex = 0;
+            fotoElemento.TabStop = false;
             // 
-            // textBoxNameElement
+            // nombreElemento
             // 
-            textBoxNameElement.Location = new Point(233, 103);
-            textBoxNameElement.Margin = new Padding(4, 3, 4, 3);
-            textBoxNameElement.Name = "textBoxNameElement";
-            textBoxNameElement.Size = new Size(202, 23);
-            textBoxNameElement.TabIndex = 2;
-            textBoxNameElement.TextAlign = HorizontalAlignment.Center;
+            nombreElemento.Location = new Point(233, 103);
+            nombreElemento.Margin = new Padding(4, 3, 4, 3);
+            nombreElemento.Name = "nombreElemento";
+            nombreElemento.Size = new Size(202, 23);
+            nombreElemento.TabIndex = 2;
+            nombreElemento.TextAlign = HorizontalAlignment.Center;
             // 
-            // textBoxnumInventario
+            // numInventario
             // 
-            textBoxnumInventario.Location = new Point(233, 202);
-            textBoxnumInventario.Margin = new Padding(4, 3, 4, 3);
-            textBoxnumInventario.Name = "textBoxnumInventario";
-            textBoxnumInventario.Size = new Size(202, 23);
-            textBoxnumInventario.TabIndex = 3;
-            textBoxnumInventario.TextAlign = HorizontalAlignment.Center;
+            numInventario.Location = new Point(233, 177);
+            numInventario.Margin = new Padding(4, 3, 4, 3);
+            numInventario.Name = "numInventario";
+            numInventario.Size = new Size(202, 23);
+            numInventario.TabIndex = 3;
+            numInventario.TextAlign = HorizontalAlignment.Center;
             // 
             // buttonAtras
             // 
@@ -88,6 +88,7 @@
             buttonEliminar.TabIndex = 6;
             buttonEliminar.Text = "Eliminar";
             buttonEliminar.UseVisualStyleBackColor = true;
+            buttonEliminar.Click += buttonEliminar_Click;
             // 
             // label1
             // 
@@ -101,23 +102,22 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(232, 184);
+            label2.Location = new Point(233, 159);
             label2.Name = "label2";
             label2.Size = new Size(90, 15);
             label2.TabIndex = 8;
             label2.Text = "Num Inventario";
-            label2.Click += label2_Click;
             // 
             // groupBoxElimElement
             // 
-            groupBoxElimElement.Controls.Add(button1);
+            groupBoxElimElement.Controls.Add(selecElemento);
             groupBoxElimElement.Controls.Add(label2);
             groupBoxElimElement.Controls.Add(label1);
             groupBoxElimElement.Controls.Add(buttonEliminar);
             groupBoxElimElement.Controls.Add(buttonAtras);
-            groupBoxElimElement.Controls.Add(textBoxnumInventario);
-            groupBoxElimElement.Controls.Add(textBoxNameElement);
-            groupBoxElimElement.Controls.Add(pictureBoxElement);
+            groupBoxElimElement.Controls.Add(numInventario);
+            groupBoxElimElement.Controls.Add(nombreElemento);
+            groupBoxElimElement.Controls.Add(fotoElemento);
             groupBoxElimElement.Location = new Point(6, 14);
             groupBoxElimElement.Margin = new Padding(4, 3, 4, 3);
             groupBoxElimElement.Name = "groupBoxElimElement";
@@ -127,15 +127,18 @@
             groupBoxElimElement.TabStop = false;
             groupBoxElimElement.Text = "Eliminar Elemento";
             // 
-            // button1
+            // selecElemento
             // 
-            button1.Location = new Point(6, 29);
-            button1.Margin = new Padding(4, 3, 4, 3);
-            button1.Name = "button1";
-            button1.Size = new Size(88, 26);
-            button1.TabIndex = 10;
-            button1.Text = "Seleccionar elemento";
-            button1.UseVisualStyleBackColor = true;
+            selecElemento.FlatStyle = FlatStyle.System;
+            selecElemento.FormattingEnabled = true;
+            selecElemento.ImeMode = ImeMode.On;
+            selecElemento.Items.AddRange(new object[] { "item1", "item2", "item4" });
+            selecElemento.Location = new Point(8, 32);
+            selecElemento.Margin = new Padding(4, 3, 4, 3);
+            selecElemento.Name = "selecElemento";
+            selecElemento.Size = new Size(243, 23);
+            selecElemento.TabIndex = 11;
+            selecElemento.SelectedIndexChanged += selecElemento_SelectedIndexChanged;
             // 
             // EliminarElemento
             // 
@@ -147,7 +150,7 @@
             Name = "EliminarElemento";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Eliminar elemento";
-            ((System.ComponentModel.ISupportInitialize)pictureBoxElement).EndInit();
+            ((System.ComponentModel.ISupportInitialize)fotoElemento).EndInit();
             groupBoxElimElement.ResumeLayout(false);
             groupBoxElimElement.PerformLayout();
             ResumeLayout(false);
@@ -155,14 +158,14 @@
 
         #endregion
 
-        private PictureBox pictureBoxElement;
-        private TextBox textBoxNameElement;
-        private TextBox textBoxnumInventario;
+        private PictureBox fotoElemento;
+        private TextBox nombreElemento;
+        private TextBox numInventario;
         private Button buttonAtras;
         private Button buttonEliminar;
         private Label label1;
         private Label label2;
         private GroupBox groupBoxElimElement;
-        private Button button1;
+        public ComboBox selecElemento;
     }
 }

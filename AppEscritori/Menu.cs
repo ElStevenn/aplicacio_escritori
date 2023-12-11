@@ -49,7 +49,7 @@ namespace AppEscritori
 
         private void buttonEliminarElemento_Click(object sender, EventArgs e)
         {
-            EliminarElemento eliminarElemento = new EliminarElemento(this);
+            EliminarElemento eliminarElemento = new EliminarElemento();
             eliminarElemento.Show();
             this.Hide();
         }
