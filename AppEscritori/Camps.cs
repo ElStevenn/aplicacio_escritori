@@ -79,8 +79,6 @@ namespace AppEscritori
             string ambito = ambit.Text;
 
             // Compruevo que el usuario haya introducido bien el formato de los campos
-
-            // Este condicional no va, nosé como hacerlo, no puedo 
             if ((!string.IsNullOrEmpty(autonomia) && !EsNumericoGrande(autonomia)) ||
     (!string.IsNullOrEmpty(capacitat_diposit) && !EsNumericoGrande(capacitat_diposit)) ||
     (!string.IsNullOrEmpty(cilidrada) && !EsNumericoGrande(cilidrada)) ||
@@ -91,7 +89,7 @@ namespace AppEscritori
     (!string.IsNullOrEmpty(peso) && !EsNumericoGrande(peso)) ||
     (!string.IsNullOrEmpty(velocidad) && !EsNumericoGrande(velocidad)) ||
     (!string.IsNullOrEmpty(velocidad_maxima) && !EsNumericoGrande(velocidad_maxima)) ||
-    (!string.IsNullOrEmpty(longitud) && !EsNumericoGrande(longitud))) 
+    (!string.IsNullOrEmpty(longitud) && !EsNumericoGrande(longitud)))
             {
                 MessageBox.Show("Los campos autonomia, capacitat deposit, cilindrada, elemento, longitud, velocidad, velocidad máxima, quilometros hechos y peso deben de ser númericos! ", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
