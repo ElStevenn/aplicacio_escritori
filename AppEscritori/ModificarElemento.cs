@@ -52,9 +52,10 @@ namespace AppEscritori
         {
             if (selecElemento.SelectedItem is ElementoInventario elementoSeleccionado)
             {
+                string ruta_imagen = @"..\..\..\JSON\museu_images\" + elementoSeleccionado.image;
                 labelNombreElemento.Text = elementoSeleccionado.nameElement;
                 labnumInventario.Text = elementoSeleccionado.numInventory.ToString();
-                foto_elemento.Image = Image.FromFile(elementoSeleccionado.image);
+                foto_elemento.Image = Image.FromFile(ruta_imagen);
                 foto_elemento.SizeMode = PictureBoxSizeMode.StretchImage;
                 // Se podrían cargar mas elementos como se necesite
             }
