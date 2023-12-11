@@ -39,13 +39,16 @@
             textBoxNombre = new TextBox();
             textBoxContra = new TextBox();
             button_login = new Button();
+            label1 = new Label();
+            label2 = new Label();
+            label3 = new Label();
             SuspendLayout();
             // 
             // labelWarning
             // 
             labelWarning.AutoSize = true;
             labelWarning.ForeColor = Color.Red;
-            labelWarning.Location = new Point(70, 140);
+            labelWarning.Location = new Point(59, 176);
             labelWarning.Name = "labelWarning";
             labelWarning.Size = new Size(189, 15);
             labelWarning.TabIndex = 3;
@@ -54,7 +57,7 @@
             // 
             // textBoxNombre
             // 
-            textBoxNombre.Location = new Point(70, 33);
+            textBoxNombre.Location = new Point(70, 57);
             textBoxNombre.Margin = new Padding(2, 1, 2, 1);
             textBoxNombre.Name = "textBoxNombre";
             textBoxNombre.Size = new Size(178, 23);
@@ -63,7 +66,7 @@
             // 
             // textBoxContra
             // 
-            textBoxContra.Location = new Point(70, 77);
+            textBoxContra.Location = new Point(70, 104);
             textBoxContra.Margin = new Padding(2, 1, 2, 1);
             textBoxContra.Name = "textBoxContra";
             textBoxContra.PasswordChar = '*';
@@ -74,7 +77,7 @@
             // 
             // button_login
             // 
-            button_login.Location = new Point(100, 113);
+            button_login.Location = new Point(96, 144);
             button_login.Margin = new Padding(2, 1, 2, 1);
             button_login.Name = "button_login";
             button_login.Size = new Size(110, 23);
@@ -83,11 +86,43 @@
             button_login.UseVisualStyleBackColor = true;
             button_login.Click += button_login_Click;
             // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
+            label1.ForeColor = Color.FromArgb(192, 0, 0);
+            label1.Location = new Point(46, 9);
+            label1.Name = "label1";
+            label1.Size = new Size(220, 25);
+            label1.TabIndex = 4;
+            label1.Text = "Aplicación de escritorio";
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Location = new Point(71, 41);
+            label2.Name = "label2";
+            label2.Size = new Size(109, 15);
+            label2.TabIndex = 5;
+            label2.Text = "Nombre de usuario";
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Location = new Point(69, 89);
+            label3.Name = "label3";
+            label3.Size = new Size(67, 15);
+            label3.TabIndex = 6;
+            label3.Text = "Contraseña";
+            // 
             // Login
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(315, 173);
+            ClientSize = new Size(318, 203);
+            Controls.Add(label3);
+            Controls.Add(label2);
+            Controls.Add(label1);
             Controls.Add(labelWarning);
             Controls.Add(button_login);
             Controls.Add(textBoxContra);
@@ -102,5 +137,9 @@
         }
 
         #endregion
+
+        private Label label1;
+        private Label label2;
+        private Label label3;
     }
 }

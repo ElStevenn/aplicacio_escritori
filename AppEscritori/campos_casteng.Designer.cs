@@ -104,7 +104,7 @@
             // 
             nombre_esp.Location = new Point(6, 44);
             nombre_esp.Name = "nombre_esp";
-            nombre_esp.Size = new Size(121, 23);
+            nombre_esp.Size = new Size(262, 23);
             nombre_esp.TabIndex = 0;
             // 
             // groupBox2
@@ -146,14 +146,14 @@
             label2.Name = "label2";
             label2.Size = new Size(110, 15);
             label2.TabIndex = 46;
-            label2.Text = "Nomrne elemento";
+            label2.Text = "Nombre elemento";
             label2.TextAlign = ContentAlignment.MiddleLeft;
             // 
             // nombre_eng
             // 
             nombre_eng.Location = new Point(6, 44);
             nombre_eng.Name = "nombre_eng";
-            nombre_eng.Size = new Size(100, 23);
+            nombre_eng.Size = new Size(288, 23);
             nombre_eng.TabIndex = 1;
             // 
             // contextMenuStrip1

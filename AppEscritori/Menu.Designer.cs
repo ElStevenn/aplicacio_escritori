@@ -33,15 +33,14 @@
             buttonEliminarElemento = new Button();
             buttonConfJuego = new Button();
             labelHolaUsuari = new Label();
-            button1 = new Button();
             SuspendLayout();
             // 
             // buttonCrearElemento
             // 
-            buttonCrearElemento.Location = new Point(107, 71);
+            buttonCrearElemento.Location = new Point(107, 66);
             buttonCrearElemento.Margin = new Padding(4, 3, 4, 3);
             buttonCrearElemento.Name = "buttonCrearElemento";
-            buttonCrearElemento.Size = new Size(244, 36);
+            buttonCrearElemento.Size = new Size(244, 35);
             buttonCrearElemento.TabIndex = 0;
             buttonCrearElemento.Text = "Crear Elemento";
             buttonCrearElemento.UseVisualStyleBackColor = true;
@@ -49,10 +48,10 @@
             // 
             // buttonModElemento
             // 
-            buttonModElemento.Location = new Point(107, 113);
+            buttonModElemento.Location = new Point(107, 108);
             buttonModElemento.Margin = new Padding(4, 3, 4, 3);
             buttonModElemento.Name = "buttonModElemento";
-            buttonModElemento.Size = new Size(244, 36);
+            buttonModElemento.Size = new Size(244, 35);
             buttonModElemento.TabIndex = 1;
             buttonModElemento.Text = "Modificar Elemento";
             buttonModElemento.UseVisualStyleBackColor = true;
@@ -60,10 +59,10 @@
             // 
             // buttonEliminarElemento
             // 
-            buttonEliminarElemento.Location = new Point(107, 156);
+            buttonEliminarElemento.Location = new Point(107, 151);
             buttonEliminarElemento.Margin = new Padding(4, 3, 4, 3);
             buttonEliminarElemento.Name = "buttonEliminarElemento";
-            buttonEliminarElemento.Size = new Size(244, 36);
+            buttonEliminarElemento.Size = new Size(244, 35);
             buttonEliminarElemento.TabIndex = 2;
             buttonEliminarElemento.Text = "Eliminar Elemento";
             buttonEliminarElemento.UseVisualStyleBackColor = true;
@@ -71,10 +70,10 @@
             // 
             // buttonConfJuego
             // 
-            buttonConfJuego.Location = new Point(107, 199);
+            buttonConfJuego.Location = new Point(107, 194);
             buttonConfJuego.Margin = new Padding(4, 3, 4, 3);
             buttonConfJuego.Name = "buttonConfJuego";
-            buttonConfJuego.Size = new Size(244, 36);
+            buttonConfJuego.Size = new Size(244, 35);
             buttonConfJuego.TabIndex = 3;
             buttonConfJuego.Text = "Configuracion Juego 2D";
             buttonConfJuego.UseVisualStyleBackColor = true;
@@ -82,33 +81,22 @@
             // 
             // labelHolaUsuari
             // 
-            labelHolaUsuari.Font = new Font("Segoe UI", 15F, FontStyle.Regular, GraphicsUnit.Point);
-            labelHolaUsuari.Location = new Point(107, 24);
+            labelHolaUsuari.Font = new Font("Segoe UI", 15F, FontStyle.Bold, GraphicsUnit.Point);
+            labelHolaUsuari.ForeColor = Color.Red;
+            labelHolaUsuari.Location = new Point(113, 16);
             labelHolaUsuari.Margin = new Padding(4, 0, 4, 0);
             labelHolaUsuari.Name = "labelHolaUsuari";
-            labelHolaUsuari.Size = new Size(228, 42);
+            labelHolaUsuari.Size = new Size(228, 41);
             labelHolaUsuari.TabIndex = 5;
             labelHolaUsuari.Text = "Panel Administrativo";
             labelHolaUsuari.TextAlign = ContentAlignment.MiddleCenter;
             labelHolaUsuari.Click += labelHolaUsuari_Click;
             // 
-            // button1
-            // 
-            button1.Location = new Point(385, 12);
-            button1.Margin = new Padding(4, 3, 4, 3);
-            button1.Name = "button1";
-            button1.Size = new Size(69, 41);
-            button1.TabIndex = 6;
-            button1.Text = "Cambiar idioma";
-            button1.UseVisualStyleBackColor = true;
-            button1.Click += button1_Click;
-            // 
             // Menu
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(467, 251);
-            Controls.Add(button1);
+            ClientSize = new Size(458, 248);
             Controls.Add(labelHolaUsuari);
             Controls.Add(buttonConfJuego);
             Controls.Add(buttonEliminarElemento);
@@ -120,7 +108,7 @@
             MaximizeBox = false;
             Name = "Menu";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "Menu";
+            Text = "Panel administrativo";
             Load += Menu_Load;
             ResumeLayout(false);
         }
@@ -132,6 +120,5 @@
         private Button buttonEliminarElemento;
         private Button buttonConfJuego;
         private Label labelHolaUsuari;
-        private Button button1;
     }
 }

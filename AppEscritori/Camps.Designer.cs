@@ -212,7 +212,7 @@
             button1Enrere.Name = "button1Enrere";
             button1Enrere.Size = new Size(88, 28);
             button1Enrere.TabIndex = 21;
-            button1Enrere.Text = "Enrere";
+            button1Enrere.Text = "Atrás";
             button1Enrere.UseVisualStyleBackColor = true;
             button1Enrere.Click += button1Enrere_Click;
             // 
@@ -223,7 +223,7 @@
             button2Siguiente.Name = "button2Siguiente";
             button2Siguiente.Size = new Size(88, 28);
             button2Siguiente.TabIndex = 22;
-            button2Siguiente.Text = "Següent";
+            button2Siguiente.Text = "Siguiente";
             button2Siguiente.UseVisualStyleBackColor = true;
             button2Siguiente.Click += button2Siguiente_Click;
             // 
@@ -313,63 +313,63 @@
             label10.AutoSize = true;
             label10.Location = new Point(274, 56);
             label10.Name = "label10";
-            label10.Size = new Size(25, 15);
+            label10.Size = new Size(32, 15);
             label10.TabIndex = 32;
-            label10.Text = "Pes";
+            label10.Text = "Peso";
             // 
             // label11
             // 
             label11.AutoSize = true;
             label11.Location = new Point(273, 96);
             label11.Name = "label11";
-            label11.Size = new Size(52, 15);
+            label11.Size = new Size(58, 15);
             label11.TabIndex = 33;
-            label11.Text = "Velocitat";
+            label11.Text = "Velocidad";
             // 
             // label12
             // 
             label12.AutoSize = true;
             label12.Location = new Point(274, 137);
             label12.Name = "label12";
-            label12.Size = new Size(98, 15);
+            label12.Size = new Size(104, 15);
             label12.TabIndex = 34;
-            label12.Text = "Velocitat màxima";
+            label12.Text = "Velocidad máxima";
             // 
             // label13
             // 
             label13.AutoSize = true;
             label13.Location = new Point(273, 182);
             label13.Name = "label13";
-            label13.Size = new Size(83, 15);
+            label13.Size = new Size(101, 15);
             label13.TabIndex = 35;
-            label13.Text = "Font d'energia";
+            label13.Text = "Fuente de enetgía";
             // 
             // label14
             // 
             label14.AutoSize = true;
             label14.Location = new Point(273, 227);
             label14.Name = "label14";
-            label14.Size = new Size(76, 15);
+            label14.Size = new Size(101, 15);
             label14.TabIndex = 36;
-            label14.Text = "Font d'ingrés";
+            label14.Text = "Fuente de ingreso";
             // 
             // label15
             // 
             label15.AutoSize = true;
             label15.Location = new Point(273, 272);
             label15.Name = "label15";
-            label15.Size = new Size(86, 15);
+            label15.Size = new Size(99, 15);
             label15.TabIndex = 37;
-            label15.Text = "Forma d'ingrés";
+            label15.Text = "Forma de ingreso";
             // 
             // label16
             // 
             label16.AutoSize = true;
             label16.Location = new Point(273, 316);
             label16.Name = "label16";
-            label16.Size = new Size(100, 15);
+            label16.Size = new Size(115, 15);
             label16.TabIndex = 38;
-            label16.Text = "Lloc de fabricació";
+            label16.Text = "Lugar de fabricación";
             // 
             // label17
             // 

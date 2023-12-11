@@ -52,7 +52,7 @@ namespace AppEscritori
         {
             if (selecElemento.SelectedItem is ElementoInventario elementoSeleccionado)
             {
-                string ruta_imagen = @"..\..\..\JSON\museu_images\" + elementoSeleccionado.image;
+                string ruta_imagen = @"..\..\..\JSON\imgelements\" + elementoSeleccionado.image;
                 labelNombreElemento.Text = elementoSeleccionado.nameElement;
                 labnumInventario.Text = elementoSeleccionado.numInventory.ToString();
                 foto_elemento.Image = Image.FromFile(ruta_imagen);
@@ -104,7 +104,7 @@ namespace AppEscritori
             if (selecElemento.SelectedItem is ElementoInventario elementoSeleccionado)
             {
                 // aquí se le ponen todos los elementos a la classe
-                Gestor_museo gestorMuseo = GestionarParteMuseo.Gestor_museo.Instance;
+                Gestor_museo gestorMuseo = new Gestor_museo();
                 gestorMuseo.modo_gestor = "editar"; // Pongo la referencia que está en modo editar
 
 
@@ -118,7 +118,7 @@ namespace AppEscritori
 
                 gestorMuseo.actualizar_campos_espeng(elelementos_eng_esp[0], elelementos_eng_esp[1], elelementos_eng_esp[2], elelementos_eng_esp[3]);
                 // Añadir la ruta de la imagen -> 
-                string ruta_elemento = @"..\..\..\JSON\museu_images\" + Path.GetFileName(elementoSeleccionado.image);
+                string ruta_elemento = @"..\..\..\JSON\imgelements\" + Path.GetFileName(elementoSeleccionado.image);
                 gestorMuseo.actualizar_ruta_imagen(ruta_elemento);
 
 

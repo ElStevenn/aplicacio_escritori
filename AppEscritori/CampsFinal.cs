@@ -43,16 +43,32 @@ namespace AppEscritori
                 nombr_elem.Text = gestionadorMuseo.nombreElemento;
                 numero_inventario.Text = gestionadorMuseo.numeroInventario.ToString();
                 ano_creacion.Text = gestionadorMuseo.anoCreacion.ToString();
-                description.Text = gestionadorMuseo.descripcion_elemento;
+                //description.Text = gestionadorMuseo.descripcion_elemento; // En caso de que le quiera también añadir descripción en el elemento final
+
+                // Actualizar el boton del texto dependiendo si está creando o modificando un elemento
+                if (gestionadorMuseo.modo_gestor == "crear")
+                {
+                    button_generar.Text = "Crear elemento";
+                }
+                else if (gestionadorMuseo.modo_gestor == "editar")
+                {
+                    button_generar.Text = "Modificar el elemento";
+                }
+                else
+                {
+                    button_generar.Text = "Confirmar";
+                }
             }
 ;
         }
+
+
 
         private void button_generar_Click(object sender, EventArgs e)
         {
 
             string filename = Path.GetFileName(gestionadorMuseo.ruta_imagen);
-            string destinationFolderPath = @"..\..\..\JSON\museu_images\";
+            string destinationFolderPath = @"..\..\..\JSON\imgelements\";
 
             string destinationFilePath = Path.Combine(destinationFolderPath, filename);
 
@@ -62,10 +78,13 @@ namespace AppEscritori
             }
             catch (IOException iox)
             {
-                MessageBox.Show("Error al copiar el archivo: " + iox.Message);
-                return;
-            }
+                if (gestionadorMuseo.modo_gestor == "crear")
+                {
+                    MessageBox.Show("Error al copiar el archivo: " + iox.Message);
+                    return;
+                }
 
+            }
 
             // PARTE CARGAR EL JSON Y IMAGEN
             // Leer json
@@ -162,25 +181,79 @@ namespace AppEscritori
                 inicialElement = gestionadorMuseo.elemento_incial // Esto es un bool y no requiere coalescencia nula
             };
 
+            if (gestionadorMuseo.modo_gestor == "crear")
+            {
+                
 
 
-            // Agregar el elemento a la lista del json
-            inventario_cat.Add(nuevoElemento_cat);
-            inventario_esp.Add(nuevoElemento_esp);
-            inventario_eng.Add(nuevoElemento_eng);
+                // Agregar el elemento a la lista del json
+                inventario_cat.Add(nuevoElemento_cat);
+                inventario_esp.Add(nuevoElemento_esp);
+                inventario_eng.Add(nuevoElemento_eng);
 
-            // Serializar la lista modificada a JSON
-            string jsonModificado_ca = JsonConvert.SerializeObject(inventario_cat, Formatting.Indented);
-            string jsonModificado_es = JsonConvert.SerializeObject(inventario_esp, Formatting.Indented);
-            string jsonModificado_en = JsonConvert.SerializeObject(inventario_eng, Formatting.Indented);
+                // Serializar la lista modificada a JSON
+                string jsonModificado_ca = JsonConvert.SerializeObject(inventario_cat, Formatting.Indented);
+                string jsonModificado_es = JsonConvert.SerializeObject(inventario_esp, Formatting.Indented);
+                string jsonModificado_en = JsonConvert.SerializeObject(inventario_eng, Formatting.Indented);
 
-            // Guardar el JSON modificado en el archivo
-            File.WriteAllText(rutaArchivoJson_cat, jsonModificado_ca);
-            File.WriteAllText(rutaArchivoJson_esp, jsonModificado_es);
-            File.WriteAllText(rutaArchivoJson_eng, jsonModificado_en);
+                // Guardar el JSON modificado en el archivo
+                File.WriteAllText(rutaArchivoJson_cat, jsonModificado_ca);
+                File.WriteAllText(rutaArchivoJson_esp, jsonModificado_es);
+                File.WriteAllText(rutaArchivoJson_eng, jsonModificado_en);
 
 
-            MessageBox.Show("Elemento " + gestionadorMuseo.nombreElemento + " guardado con éxito.");
+                MessageBox.Show("Elemento " + gestionadorMuseo.nombreElemento + " creado con éxito.");
+            }
+            else if (gestionadorMuseo.modo_gestor == "editar")
+            {
+                // Función para actualizar un elemento por numInventario
+                void ActualizarElemento(List<ElementoInventario> lista, ElementoInventario elementoActualizado)
+                {
+                    var elementoAEditar = lista.FirstOrDefault(e => e.numInventory == elementoActualizado.numInventory);
+                    if (elementoAEditar != null)
+                    {
+                        // Actualiza las propiedades del elemento encontrado
+                        elementoAEditar.field = elementoActualizado.field;
+                        elementoAEditar.nameElement = elementoActualizado.nameElement;
+                        elementoAEditar.image = elementoActualizado.image;
+                        elementoAEditar.description = elementoActualizado.description;
+                        elementoAEditar.autonomy = elementoActualizado.autonomy;
+                        elementoAEditar.disposalCapacity = elementoActualizado.disposalCapacity;
+                        elementoAEditar.cicle = elementoActualizado.cicle;
+                        elementoAEditar.cilindrada = elementoActualizado.cilindrada;
+                        elementoAEditar.wingspan = elementoActualizado.wingspan;
+                        elementoAEditar.energyfont = elementoActualizado.energyfont;
+                        elementoAEditar.sourceIncome = elementoActualizado.sourceIncome;
+                        elementoAEditar.fromIncome = elementoActualizado.fromIncome;
+                        elementoAEditar.manufacturingPlace = elementoActualizado.manufacturingPlace;
+                        elementoAEditar.lenght = elementoActualizado.lenght;
+                        elementoAEditar.weight = elementoActualizado.weight;
+                        elementoAEditar.potency = elementoActualizado.potency;
+                        elementoAEditar.kmsDone = elementoActualizado.kmsDone;
+                        elementoAEditar.sostreMaximDeVol = elementoActualizado.sostreMaximDeVol;
+                        elementoAEditar.speed = elementoActualizado.speed;
+                        elementoAEditar.maxSpeed = elementoActualizado.maxSpeed;
+                        elementoAEditar.inicialElement = elementoActualizado.inicialElement;
+                    }
+                }
+
+                // Actualizar el elemento en las listas
+                ActualizarElemento(inventario_cat, nuevoElemento_cat);
+                ActualizarElemento(inventario_esp, nuevoElemento_esp);
+                ActualizarElemento(inventario_eng, nuevoElemento_eng);
+
+                // Serializar la lista modificada a JSON y guardar en el archivo
+                string jsonModificado_cat = JsonConvert.SerializeObject(inventario_cat, Formatting.Indented);
+                string jsonModificado_esp = JsonConvert.SerializeObject(inventario_esp, Formatting.Indented);
+                string jsonModificado_eng = JsonConvert.SerializeObject(inventario_eng, Formatting.Indented);
+
+                File.WriteAllText(rutaArchivoJson_cat, jsonModificado_cat);
+                File.WriteAllText(rutaArchivoJson_esp, jsonModificado_esp);
+                File.WriteAllText(rutaArchivoJson_eng, jsonModificado_eng);
+
+                MessageBox.Show("Elemento " + gestionadorMuseo.nombreElemento + " actualizado con éxito.");
+                // Resto del código...
+            }
             Menu menu = new Menu();
             menu.Show();
             this.Hide();

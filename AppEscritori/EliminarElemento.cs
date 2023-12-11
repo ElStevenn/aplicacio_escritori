@@ -65,6 +65,37 @@ namespace AppEscritori
                     if (elementoAEliminar != null)
                     {
                         lista.Remove(elementoAEliminar);
+                        fotoElemento.Image.Dispose();
+                        fotoElemento.Image = null;
+
+                        // Eliminar la imagen del fichero imgelements
+                        if (fotoElemento.Image != null)
+                        {
+                            fotoElemento.Image.Dispose();
+                            fotoElemento.Image = null;
+                        }
+
+                        // Eliminar la imagen del sistema de archivos
+                        string ruta_imagen_eliminar = Path.Combine(@"..\..\..\JSON\imgelements\", elementoSeleccionado.image);
+                        try
+                        {
+                            if (File.Exists(ruta_imagen_eliminar))
+                            {
+                                File.Delete(ruta_imagen_eliminar);
+                            }
+                        }
+                        catch (IOException ioEx)
+                        {
+                            MessageBox.Show("No se pudo eliminar la imagen: " + ioEx.Message);
+                            return;
+                        }
+                        catch (UnauthorizedAccessException unAuthEx)
+                        {
+                            MessageBox.Show("Acceso denegado: " + unAuthEx.Message);
+                            return;
+                        }
+
+
                     }
                 }
 
@@ -83,8 +114,11 @@ namespace AppEscritori
                 File.WriteAllText(rutaArchivoJson_esp, jsonActualizado_esp);
                 File.WriteAllText(rutaArchivoJson_eng, jsonActualizado_eng);
 
+
+
                 // Actualizar el ComboBox y otros controles si es necesario
                 ConfigurarComboBox();
+
             }
             else
             {
@@ -97,7 +131,7 @@ namespace AppEscritori
         {
             if (selecElemento.SelectedItem is ElementoInventario elementoSeleccionado)
             {
-                string ruta_imagen = @"..\..\..\JSON\museu_images\" + elementoSeleccionado.image;
+                string ruta_imagen = @"..\..\..\JSON\imgelements\" + elementoSeleccionado.image;
                 nombreElemento.Text = elementoSeleccionado.nameElement;
                 numInventario.Text = elementoSeleccionado.numInventory.ToString();
                 fotoElemento.Image = Image.FromFile(ruta_imagen);
