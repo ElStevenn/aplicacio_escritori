@@ -51,9 +51,45 @@ namespace AppEscritori
 
         private void buttonEliminar_Click(object sender, EventArgs e)
         {
-            // Botón de eliminar el elemento
+            if (selecElemento.SelectedItem is ElementoInventario elementoSeleccionado)
+            {
+                // Cargar las listas actuales de elementos desde los archivos JSON
+                List<ElementoInventario> elementos_cat = CargarDatosDesdeJson(rutaArchivoJson_cat);
+                List<ElementoInventario> elementos_esp = CargarDatosDesdeJson(rutaArchivoJson_esp);
+                List<ElementoInventario> elementos_eng = CargarDatosDesdeJson(rutaArchivoJson_eng);
 
-            // Comprovar si el elemento es correcto y eliminarlo
+                // Función para eliminar un elemento por numInventario
+                void EliminarElementoPorNumInventario(List<ElementoInventario> lista)
+                {
+                    var elementoAEliminar = lista.FirstOrDefault(e => e.numInventory == elementoSeleccionado.numInventory);
+                    if (elementoAEliminar != null)
+                    {
+                        lista.Remove(elementoAEliminar);
+                    }
+                }
+
+                // Eliminar el elemento seleccionado de las listas
+                EliminarElementoPorNumInventario(elementos_cat);
+                EliminarElementoPorNumInventario(elementos_esp);
+                EliminarElementoPorNumInventario(elementos_eng);
+
+                // Convertir las listas actualizadas a formato JSON
+                string jsonActualizado_cat = JsonConvert.SerializeObject(elementos_cat, Formatting.Indented);
+                string jsonActualizado_esp = JsonConvert.SerializeObject(elementos_esp, Formatting.Indented);
+                string jsonActualizado_eng = JsonConvert.SerializeObject(elementos_eng, Formatting.Indented);
+
+                // Sobrescribir los archivos JSON con los datos actualizados (en todos los idiomas)
+                File.WriteAllText(rutaArchivoJson_cat, jsonActualizado_cat);
+                File.WriteAllText(rutaArchivoJson_esp, jsonActualizado_esp);
+                File.WriteAllText(rutaArchivoJson_eng, jsonActualizado_eng);
+
+                // Actualizar el ComboBox y otros controles si es necesario
+                ConfigurarComboBox();
+            }
+            else
+            {
+                MessageBox.Show("Por favor, seleccione un elemento para eliminar.");
+            }
 
         }
 
