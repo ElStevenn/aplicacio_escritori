@@ -91,7 +91,7 @@
             Cilindrada_c.Margin = new Padding(2);
             Cilindrada_c.Name = "Cilindrada_c";
             Cilindrada_c.Size = new Size(180, 23);
-            Cilindrada_c.TabIndex = 2;
+            Cilindrada_c.TabIndex = 3;
             // 
             // cicle_cam
             // 
@@ -99,7 +99,7 @@
             cicle_cam.Margin = new Padding(2);
             cicle_cam.Name = "cicle_cam";
             cicle_cam.Size = new Size(180, 23);
-            cicle_cam.TabIndex = 3;
+            cicle_cam.TabIndex = 2;
             // 
             // Element
             // 
@@ -107,7 +107,7 @@
             Element.Margin = new Padding(4, 3, 4, 3);
             Element.Name = "Element";
             Element.Size = new Size(180, 23);
-            Element.TabIndex = 8;
+            Element.TabIndex = 4;
             // 
             // Envergadura_c
             // 
@@ -115,7 +115,7 @@
             Envergadura_c.Margin = new Padding(4, 3, 4, 3);
             Envergadura_c.Name = "Envergadura_c";
             Envergadura_c.Size = new Size(180, 23);
-            Envergadura_c.TabIndex = 9;
+            Envergadura_c.TabIndex = 5;
             // 
             // Potencia_c
             // 
@@ -123,7 +123,7 @@
             Potencia_c.Margin = new Padding(4, 3, 4, 3);
             Potencia_c.Name = "Potencia_c";
             Potencia_c.Size = new Size(180, 23);
-            Potencia_c.TabIndex = 10;
+            Potencia_c.TabIndex = 6;
             // 
             // quilometres_fets
             // 
@@ -131,7 +131,7 @@
             quilometres_fets.Margin = new Padding(4, 3, 4, 3);
             quilometres_fets.Name = "quilometres_fets";
             quilometres_fets.Size = new Size(180, 23);
-            quilometres_fets.TabIndex = 11;
+            quilometres_fets.TabIndex = 7;
             // 
             // sostre_maxim
             // 
@@ -139,7 +139,7 @@
             sostre_maxim.Margin = new Padding(4, 3, 4, 3);
             sostre_maxim.Name = "sostre_maxim";
             sostre_maxim.Size = new Size(180, 23);
-            sostre_maxim.TabIndex = 12;
+            sostre_maxim.TabIndex = 8;
             // 
             // velocitat
             // 
@@ -147,7 +147,7 @@
             velocitat.Margin = new Padding(4, 3, 4, 3);
             velocitat.Name = "velocitat";
             velocitat.Size = new Size(180, 23);
-            velocitat.TabIndex = 13;
+            velocitat.TabIndex = 10;
             // 
             // velocitat_maxima
             // 
@@ -155,7 +155,7 @@
             velocitat_maxima.Margin = new Padding(4, 3, 4, 3);
             velocitat_maxima.Name = "velocitat_maxima";
             velocitat_maxima.Size = new Size(180, 23);
-            velocitat_maxima.TabIndex = 14;
+            velocitat_maxima.TabIndex = 11;
             // 
             // font_energia
             // 
@@ -163,7 +163,7 @@
             font_energia.Margin = new Padding(4, 3, 4, 3);
             font_energia.Name = "font_energia";
             font_energia.Size = new Size(180, 23);
-            font_energia.TabIndex = 15;
+            font_energia.TabIndex = 12;
             // 
             // font_ingres
             // 
@@ -171,7 +171,7 @@
             font_ingres.Margin = new Padding(4, 3, 4, 3);
             font_ingres.Name = "font_ingres";
             font_ingres.Size = new Size(180, 23);
-            font_ingres.TabIndex = 16;
+            font_ingres.TabIndex = 13;
             // 
             // forma_ingres
             // 
@@ -179,7 +179,7 @@
             forma_ingres.Margin = new Padding(4, 3, 4, 3);
             forma_ingres.Name = "forma_ingres";
             forma_ingres.Size = new Size(180, 23);
-            forma_ingres.TabIndex = 17;
+            forma_ingres.TabIndex = 14;
             // 
             // lloc_fabricacio
             // 
@@ -187,7 +187,7 @@
             lloc_fabricacio.Margin = new Padding(4, 3, 4, 3);
             lloc_fabricacio.Name = "lloc_fabricacio";
             lloc_fabricacio.Size = new Size(180, 23);
-            lloc_fabricacio.TabIndex = 18;
+            lloc_fabricacio.TabIndex = 15;
             // 
             // longitud_c
             // 
@@ -195,7 +195,7 @@
             longitud_c.Margin = new Padding(4, 3, 4, 3);
             longitud_c.Name = "longitud_c";
             longitud_c.Size = new Size(180, 23);
-            longitud_c.TabIndex = 19;
+            longitud_c.TabIndex = 16;
             // 
             // pes
             // 
@@ -203,7 +203,7 @@
             pes.Margin = new Padding(4, 3, 4, 3);
             pes.Name = "pes";
             pes.Size = new Size(180, 23);
-            pes.TabIndex = 20;
+            pes.TabIndex = 9;
             // 
             // button1Enrere
             // 
@@ -212,7 +212,7 @@
             button1Enrere.Name = "button1Enrere";
             button1Enrere.Size = new Size(88, 28);
             button1Enrere.TabIndex = 21;
-            button1Enrere.Text = "Atrás";
+            button1Enrere.Text = "Enrrere";
             button1Enrere.UseVisualStyleBackColor = true;
             button1Enrere.Click += button1Enrere_Click;
             // 
@@ -223,7 +223,7 @@
             button2Siguiente.Name = "button2Siguiente";
             button2Siguiente.Size = new Size(88, 28);
             button2Siguiente.TabIndex = 22;
-            button2Siguiente.Text = "Siguiente";
+            button2Siguiente.Text = "Següent";
             button2Siguiente.UseVisualStyleBackColor = true;
             button2Siguiente.Click += button2Siguiente_Click;
             // 
@@ -313,63 +313,63 @@
             label10.AutoSize = true;
             label10.Location = new Point(274, 56);
             label10.Name = "label10";
-            label10.Size = new Size(32, 15);
+            label10.Size = new Size(25, 15);
             label10.TabIndex = 32;
-            label10.Text = "Peso";
+            label10.Text = "Pes";
             // 
             // label11
             // 
             label11.AutoSize = true;
             label11.Location = new Point(273, 96);
             label11.Name = "label11";
-            label11.Size = new Size(58, 15);
+            label11.Size = new Size(55, 15);
             label11.TabIndex = 33;
-            label11.Text = "Velocidad";
+            label11.Text = "Velocidat";
             // 
             // label12
             // 
             label12.AutoSize = true;
             label12.Location = new Point(274, 137);
             label12.Name = "label12";
-            label12.Size = new Size(104, 15);
+            label12.Size = new Size(98, 15);
             label12.TabIndex = 34;
-            label12.Text = "Velocidad máxima";
+            label12.Text = "Velocitat màxima";
             // 
             // label13
             // 
             label13.AutoSize = true;
             label13.Location = new Point(273, 182);
             label13.Name = "label13";
-            label13.Size = new Size(101, 15);
+            label13.Size = new Size(83, 15);
             label13.TabIndex = 35;
-            label13.Text = "Fuente de enetgía";
+            label13.Text = "Font d'energia";
             // 
             // label14
             // 
             label14.AutoSize = true;
             label14.Location = new Point(273, 227);
             label14.Name = "label14";
-            label14.Size = new Size(101, 15);
+            label14.Size = new Size(76, 15);
             label14.TabIndex = 36;
-            label14.Text = "Fuente de ingreso";
+            label14.Text = "Font d'ingrés";
             // 
             // label15
             // 
             label15.AutoSize = true;
             label15.Location = new Point(273, 272);
             label15.Name = "label15";
-            label15.Size = new Size(99, 15);
+            label15.Size = new Size(86, 15);
             label15.TabIndex = 37;
-            label15.Text = "Forma de ingreso";
+            label15.Text = "Forma d'ingrés";
             // 
             // label16
             // 
             label16.AutoSize = true;
             label16.Location = new Point(273, 316);
             label16.Name = "label16";
-            label16.Size = new Size(115, 15);
+            label16.Size = new Size(100, 15);
             label16.TabIndex = 38;
-            label16.Text = "Lugar de fabricación";
+            label16.Text = "Lloc de fabricació";
             // 
             // label17
             // 
@@ -387,9 +387,9 @@
             label18.ForeColor = Color.Red;
             label18.Location = new Point(133, 9);
             label18.Name = "label18";
-            label18.Size = new Size(166, 25);
+            label18.Size = new Size(190, 25);
             label18.TabIndex = 40;
-            label18.Text = "CARACTERÍSICAS";
+            label18.Text = "CARACTERÍSTIQUES";
             // 
             // ambit
             // 
@@ -397,16 +397,16 @@
             ambit.Margin = new Padding(4, 3, 4, 3);
             ambit.Name = "ambit";
             ambit.Size = new Size(180, 23);
-            ambit.TabIndex = 41;
+            ambit.TabIndex = 17;
             // 
             // label19
             // 
             label19.AutoSize = true;
             label19.Location = new Point(274, 404);
             label19.Name = "label19";
-            label19.Size = new Size(47, 15);
+            label19.Size = new Size(40, 15);
             label19.TabIndex = 42;
-            label19.Text = "Ámbito";
+            label19.Text = "Àmbit";
             // 
             // Camps
             // 

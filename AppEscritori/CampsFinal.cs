@@ -15,9 +15,10 @@ namespace AppEscritori
     public partial class CampsFinal : Form
     {
         public GestionarParteMuseo.Gestor_museo gestionadorMuseo;
-        public string rutaArchivoJson_cat = @"..\..\..\JSON\elements_cat.json";
-        public string rutaArchivoJson_esp = @"..\..\..\JSON\elements_esp.json";
-        public string rutaArchivoJson_eng = @"..\..\..\JSON\elements_eng.json";
+        public string rutaArchivoJson_cat;
+        public string rutaArchivoJson_esp;
+        public string rutaArchivoJson_eng;
+        public string rutaImagenes;
 
         public CampsFinal()
         {
@@ -27,6 +28,11 @@ namespace AppEscritori
         {
             InitializeComponent();
             this.gestionadorMuseo = gestor_Museo;
+            string baseDirectory = AppDomain.CurrentDomain.BaseDirectory;
+            rutaArchivoJson_cat = Path.Combine(baseDirectory, "JSON", "elements_cat.json");
+            rutaArchivoJson_esp = Path.Combine(baseDirectory, "JSON", "elements_esp.json");
+            rutaArchivoJson_eng = Path.Combine(baseDirectory, "JSON", "elements_eng.json");
+            rutaImagenes = Path.Combine(baseDirectory, "JSON", "imgelements");
             cargar_campos();
         }
 

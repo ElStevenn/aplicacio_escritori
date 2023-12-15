@@ -13,18 +13,27 @@ namespace AppEscritori
 {
     public partial class EliminarElemento : Form
     {
-
         public GestionarParteMuseo.Gestor_museo gestionadorMuseo;
-        public string rutaArchivoJson_cat = @"..\..\..\JSON\elements_cat.json";
-        public string rutaArchivoJson_esp = @"..\..\..\JSON\elements_esp.json";
-        public string rutaArchivoJson_eng = @"..\..\..\JSON\elements_eng.json";
+        public string rutaArchivoJson_cat;
+        public string rutaArchivoJson_esp;
+        public string rutaArchivoJson_eng;
+        public string rutaImagenes;
+        
 
         public EliminarElemento()
         {
             InitializeComponent();
+            ConfigurarRutas();
             ConfigurarComboBox();
         }
-
+        private void ConfigurarRutas()
+        {
+            string baseDirectory = AppDomain.CurrentDomain.BaseDirectory;
+            rutaArchivoJson_cat = Path.Combine(baseDirectory, "JSON", "elements_cat.json");
+            rutaArchivoJson_esp = Path.Combine(baseDirectory, "JSON", "elements_esp.json");
+            rutaArchivoJson_eng = Path.Combine(baseDirectory, "JSON", "elements_eng.json");
+            rutaImagenes = Path.Combine(baseDirectory, "JSON", "imgelements"); // Cambiado a una carpeta específica para imágenes
+        }
 
         public List<ElementoInventario> CargarDatosDesdeJson(string ruta)
         {
@@ -76,7 +85,7 @@ namespace AppEscritori
                         }
 
                         // Eliminar la imagen del sistema de archivos
-                        string ruta_imagen_eliminar = Path.Combine(@"..\..\..\JSON\imgelements\", elementoSeleccionado.image);
+                        string ruta_imagen_eliminar = Path.Combine(rutaImagenes, elementoSeleccionado.image);
                         try
                         {
                             if (File.Exists(ruta_imagen_eliminar))
@@ -131,7 +140,7 @@ namespace AppEscritori
         {
             if (selecElemento.SelectedItem is ElementoInventario elementoSeleccionado)
             {
-                string ruta_imagen = @"..\..\..\JSON\imgelements\" + elementoSeleccionado.image;
+                string ruta_imagen = Path.Combine(rutaImagenes, elementoSeleccionado.image);
                 nombreElemento.Text = elementoSeleccionado.nameElement;
                 numInventario.Text = elementoSeleccionado.numInventory.ToString();
                 fotoElemento.Image = Image.FromFile(ruta_imagen);
