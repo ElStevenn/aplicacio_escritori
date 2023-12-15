@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Reflection.Metadata.Ecma335;
@@ -22,13 +23,11 @@ namespace AppEscritori
             Del
         }
 
-        List<Question> questions;
-        Mode mode = Mode.Mod;
+        private List<Question> questions;
+        private List<Question> displayedQuestions;
+        Mode mode = Mode.Add;
         ConfJuego confjuego;
-        public ConfPregunta()
-        {
-            InitializeComponent();
-        }
+
         public ConfPregunta(ConfJuego confjuego)
         {
             InitializeComponent();
@@ -42,21 +41,21 @@ namespace AppEscritori
             this.confjuego.Show();
         }
 
-        private void añadirToolStripMenuItem_Click(object sender, EventArgs e)
+        private void addToolStripMenuItem_Click(object sender, EventArgs e)
         {
             mode = Mode.Add;
             showControls();
             loadQuestionsJSON();
         }
 
-        private void modificarToolStripMenuItem_Click(object sender, EventArgs e)
+        private void modToolStripMenuItem_Click(object sender, EventArgs e)
         {
             mode = Mode.Mod;
             showControls();
             loadQuestionsJSON();
         }
 
-        private void eliminarToolStripMenuItem_Click(object sender, EventArgs e)
+        private void delToolStripMenuItem_Click(object sender, EventArgs e)
         {
             mode = Mode.Del;
             showControls();
@@ -167,16 +166,21 @@ namespace AppEscritori
 
         private void buttonDel()
         {
-            Question questionShown = comboBoxQuestions.SelectedItem as Question;
-            if (questionShown != null)
-            {
-                questions.Remove(questionShown);
+            DialogResult resultado = MessageBox.Show("¿Estás seguro de que quieres eliminar esta pregunta?", "Confirmación", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
 
-                saveQuestionsJSON();
-                loadQuestionsJSON();
-                labelXPreguntas.Text = "Hay " + questions.Count() + " preguntas";
-                warning();
+            if (resultado == DialogResult.Yes)
+            {
+                Question questionShown = comboBoxQuestions.SelectedItem as Question;
+                if (questionShown != null)
+                {
+                    questions.Remove(questionShown);
+
+                    saveQuestionsJSON();
+                    loadQuestionsJSON();
+                    warning();
+                }
             }
+
         }
 
 
@@ -185,6 +189,11 @@ namespace AppEscritori
             switch (mode)
             {
                 case Mode.Add:
+
+                    labelSearchQuestionFilter.Visible = false;
+                    textBoxBuscar.Visible = false;
+                    textBoxBuscar.Text = "";
+
                     labelIdioma.Location = new System.Drawing.Point(11, 56);
                     labelSeleccionarPregunta.Visible = false;
                     comboBoxIdiomas.Location = new System.Drawing.Point(76, 56);
@@ -205,12 +214,16 @@ namespace AppEscritori
                     clearButtonSelection();
                     enableButtons();
 
-                    buttonAccion.Text = "Añadir";
+                    buttonAccion.Text = "Afegir";
                     break;
                 case Mode.Mod:
-                    labelIdioma.Location = new System.Drawing.Point(11, 31);
+
+                    labelSearchQuestionFilter.Visible = true;
+                    textBoxBuscar.Visible = true;
+
+                    labelIdioma.Location = new System.Drawing.Point(8, 42);
                     labelSeleccionarPregunta.Visible = true;
-                    comboBoxIdiomas.Location = new System.Drawing.Point(76, 29);
+                    comboBoxIdiomas.Location = new System.Drawing.Point(73, 40);
                     comboBoxQuestions.Visible = true;
 
                     textBoxPregunta.ReadOnly = false;
@@ -224,9 +237,13 @@ namespace AppEscritori
                     buttonAccion.Text = "Modificar";
                     break;
                 case Mode.Del:
-                    labelIdioma.Location = new System.Drawing.Point(11, 31);
+
+                    labelSearchQuestionFilter.Visible = true;
+                    textBoxBuscar.Visible = true;
+
+                    labelIdioma.Location = new System.Drawing.Point(8, 42);
                     labelSeleccionarPregunta.Visible = true;
-                    comboBoxIdiomas.Location = new System.Drawing.Point(76, 29);
+                    comboBoxIdiomas.Location = new System.Drawing.Point(73, 40);
                     comboBoxQuestions.Visible = true;
 
                     textBoxPregunta.ReadOnly = true;
@@ -301,20 +318,18 @@ namespace AppEscritori
         {
             string language = comboBoxIdiomas.SelectedItem.ToString();
 
-            string basePath = AppDomain.CurrentDomain.BaseDirectory;
-
             switch (language)
             {
-                case "Castellano":
-                    JArray jarrayquestionsES = JArray.Parse(File.ReadAllText(Path.Combine(basePath, @"..\..\..\JSON\questionsES.json"), Encoding.Default));
+                case "Castellà":
+                    JArray jarrayquestionsES = JArray.Parse(File.ReadAllText(@"JSON\questionsES.json", Encoding.Default));
                     questions = jarrayquestionsES.ToObject<List<Question>>();
                     break;
-                case "Catalán":
-                    JArray jarrayquestionsCAT = JArray.Parse(File.ReadAllText(Path.Combine(basePath, @"..\..\..\JSON\questionsCAT.json"), Encoding.Default));
+                case "Català":
+                    JArray jarrayquestionsCAT = JArray.Parse(File.ReadAllText(@"JSON\questionsCAT.json", Encoding.Default));
                     questions = jarrayquestionsCAT.ToObject<List<Question>>();
                     break;
-                case "Inglés":
-                    JArray jarrayquestionsEN = JArray.Parse(File.ReadAllText(Path.Combine(basePath, @"..\..\..\JSON\questionsEN.json"), Encoding.Default));
+                case "Anglès":
+                    JArray jarrayquestionsEN = JArray.Parse(File.ReadAllText(@"JSON\questionsEN.json", Encoding.Default));
                     questions = jarrayquestionsEN.ToObject<List<Question>>();
                     break;
             }
@@ -324,28 +339,60 @@ namespace AppEscritori
                 comboBoxQuestions.DataSource = null;
                 comboBoxQuestions.DataSource = questions;
                 comboBoxQuestions.DisplayMember = "question";
+
+
+                // Aplica el filtro si hay texto en el cuadro de búsqueda
+                if (!string.IsNullOrEmpty(textBoxBuscar.Text))
+                {
+                    displayedQuestions = questions
+                        .Where(q => q.question.ToLower().Contains(textBoxBuscar.Text.ToLower()))
+                        .ToList();
+                }
+                else
+                {
+                    // Si no hay texto de búsqueda, muestra todas las preguntas
+                    displayedQuestions = new List<Question>(questions);
+                }
+
+                // Actualiza la lista visual de preguntas
+                UpdateDisplayedQuestions();
             }
+            else
+            {
+                labelXPreguntas.Text = "Hi ha " + questions.Count() + " preguntes en total";
+            }
+
+        }
+
+
+        private void UpdateDisplayedQuestions()
+        {
+            // Actualiza la lista visual de preguntas
+            comboBoxQuestions.DataSource = null;
+            comboBoxQuestions.DataSource = displayedQuestions;
+            comboBoxQuestions.DisplayMember = "question";
+
+            labelXPreguntas.Text = "S'han trobat " + displayedQuestions.Count + " preguntes";
         }
 
         private void saveQuestionsJSON()
         {
 
             string language = comboBoxIdiomas.SelectedItem.ToString();
-            string basePath = AppDomain.CurrentDomain.BaseDirectory;
 
             switch (language)
             {
-                case "Castellano":
+                case "Castellà":
                     JArray arrayquestionsES = (JArray)JToken.FromObject(questions);
-                    File.WriteAllText(Path.Combine(basePath, @"..\..\..\JSON\questionsES.json"), arrayquestionsES.ToString());
+                    File.WriteAllText(@"JSON\questionsES.json", arrayquestionsES.ToString());
                     break;
-                case "Catalán":
+                case "Català":
                     JArray arrayquestionsCAT = (JArray)JToken.FromObject(questions);
-                    File.WriteAllText(Path.Combine(basePath, @"..\..\..\JSON\questionsCAT.json"), arrayquestionsCAT.ToString());
+                    File.WriteAllText(@"JSON\questionsCAT.json", arrayquestionsCAT.ToString());
                     break;
-                case "Inglés":
+                case "Anglès":
                     JArray arrayquestionsEN = (JArray)JToken.FromObject(questions);
-                    File.WriteAllText(Path.Combine(basePath, @"..\..\..\JSON\questionsEN.json"), arrayquestionsEN.ToString());
+                    File.WriteAllText(@"JSON\questionsEN.json", arrayquestionsEN.ToString());
                     break;
             }
         }
@@ -355,14 +402,14 @@ namespace AppEscritori
 
             switch (language)
             {
-                case "Castellano":
-                    MessageBox.Show("Los cambios se han aplicado. Revisa las preguntas también en catalán e inglés.", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                case "Castellà":
+                    MessageBox.Show("S'han aplicat els canvis. Revisa les preguntes també en català i en anglès.", "Avís", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     break;
-                case "Catalán":
-                    MessageBox.Show("Los cambios se han aplicado. Revisa las preguntas también en castellano e inglés.", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                case "Català":
+                    MessageBox.Show("S'han aplicat els canvis. Revisa les preguntes també en castellà i en anglès.", "Avís", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     break;
-                case "Inglés":
-                    MessageBox.Show("Los cambios se han aplicado. Revisa las preguntas también en catalán y castellano.", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                case "Anglès":
+                    MessageBox.Show("S'han aplicat els canvis. Revisa les preguntes també en català i en castellà.", "Avís", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     break;
             }
         }
@@ -410,7 +457,25 @@ namespace AppEscritori
             showControls();
             comboBoxIdiomas.SelectedIndex = 0;
             loadQuestionsJSON();
-            labelXPreguntas.Text = "Hay " + questions.Count + " preguntas";
+        }
+
+        private void textBoxBuscar_TextChanged(object sender, EventArgs e)
+        {
+            loadQuestionsJSON();
+        }
+
+        private void ConfPregunta_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            DialogResult result = MessageBox.Show("¿Estás seguro de que quieres cerrar?", "Confirmación", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (result == DialogResult.No)
+            {
+                e.Cancel = true; // Cancela el cierre del formulario
+            }
+        }
+
+        private void ConfPregunta_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

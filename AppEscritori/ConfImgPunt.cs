@@ -87,7 +87,7 @@ namespace AppEscritori
                 imagen.Save(rutaCompletaNuevaImagen);
 
                 // Puedes mostrar un mensaje o realizar otras acciones después de guardar la imagen
-                MessageBox.Show("Imagen guardada con éxito en: " + rutaCompletaNuevaImagen, "Mensaje", MessageBoxButtons.OK,MessageBoxIcon.Information);
+                MessageBox.Show("Imagen guardada con éxito en: " + rutaCompletaNuevaImagen, "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
 
             }
