@@ -53,9 +53,11 @@
             comboBoxIdiomas = new ComboBox();
             groupBoxButtonsCO = new GroupBox();
             menuStrip1 = new MenuStrip();
-            añadirToolStripMenuItem = new ToolStripMenuItem();
-            modificarToolStripMenuItem = new ToolStripMenuItem();
-            eliminarToolStripMenuItem = new ToolStripMenuItem();
+            addToolStripMenuItem = new ToolStripMenuItem();
+            modToolStripMenuItem = new ToolStripMenuItem();
+            delToolStripMenuItem = new ToolStripMenuItem();
+            textBoxBuscar = new TextBox();
+            labelSearchQuestionFilter = new Label();
             groupBoxButtonsCO.SuspendLayout();
             menuStrip1.SuspendLayout();
             SuspendLayout();
@@ -64,7 +66,7 @@
             // 
             labelIdioma.AutoSize = true;
             labelIdioma.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            labelIdioma.Location = new Point(11, 31);
+            labelIdioma.Location = new Point(8, 42);
             labelIdioma.Name = "labelIdioma";
             labelIdioma.Size = new Size(58, 21);
             labelIdioma.TabIndex = 53;
@@ -74,11 +76,11 @@
             // 
             labelRespuestaCorrecta.AutoSize = true;
             labelRespuestaCorrecta.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            labelRespuestaCorrecta.Location = new Point(12, 254);
+            labelRespuestaCorrecta.Location = new Point(9, 265);
             labelRespuestaCorrecta.Name = "labelRespuestaCorrecta";
-            labelRespuestaCorrecta.Size = new Size(141, 21);
+            labelRespuestaCorrecta.Size = new Size(133, 21);
             labelRespuestaCorrecta.TabIndex = 51;
-            labelRespuestaCorrecta.Text = "Respuesta correcta";
+            labelRespuestaCorrecta.Text = "Resposta correcta";
             // 
             // RespuestaCorrectaD
             // 
@@ -128,7 +130,7 @@
             // 
             labelD.AutoSize = true;
             labelD.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            labelD.Location = new Point(11, 227);
+            labelD.Location = new Point(8, 238);
             labelD.Name = "labelD";
             labelD.Size = new Size(21, 21);
             labelD.TabIndex = 46;
@@ -138,7 +140,7 @@
             // 
             labelC.AutoSize = true;
             labelC.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            labelC.Location = new Point(12, 198);
+            labelC.Location = new Point(9, 209);
             labelC.Name = "labelC";
             labelC.Size = new Size(20, 21);
             labelC.TabIndex = 45;
@@ -148,7 +150,7 @@
             // 
             labelB.AutoSize = true;
             labelB.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            labelB.Location = new Point(12, 169);
+            labelB.Location = new Point(9, 180);
             labelB.Name = "labelB";
             labelB.Size = new Size(19, 21);
             labelB.TabIndex = 44;
@@ -158,7 +160,7 @@
             // 
             labelA.AutoSize = true;
             labelA.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            labelA.Location = new Point(11, 140);
+            labelA.Location = new Point(8, 151);
             labelA.Name = "labelA";
             labelA.Size = new Size(20, 21);
             labelA.TabIndex = 43;
@@ -168,26 +170,26 @@
             // 
             labelRespuestas.AutoSize = true;
             labelRespuestas.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            labelRespuestas.Location = new Point(11, 114);
+            labelRespuestas.Location = new Point(8, 125);
             labelRespuestas.Name = "labelRespuestas";
-            labelRespuestas.Size = new Size(88, 21);
+            labelRespuestas.Size = new Size(80, 21);
             labelRespuestas.TabIndex = 42;
-            labelRespuestas.Text = "Respuestas";
+            labelRespuestas.Text = "Respostas";
             // 
             // labelXPreguntas
             // 
             labelXPreguntas.AutoSize = true;
             labelXPreguntas.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             labelXPreguntas.ForeColor = Color.Firebrick;
-            labelXPreguntas.Location = new Point(401, 251);
+            labelXPreguntas.Location = new Point(339, 265);
             labelXPreguntas.Name = "labelXPreguntas";
-            labelXPreguntas.Size = new Size(135, 21);
+            labelXPreguntas.Size = new Size(145, 21);
             labelXPreguntas.TabIndex = 41;
-            labelXPreguntas.Text = "Hay X preguntas";
+            labelXPreguntas.Text = "Hi ha X preguntes";
             // 
             // respuestaA
             // 
-            respuestaA.Location = new Point(38, 138);
+            respuestaA.Location = new Point(35, 149);
             respuestaA.Margin = new Padding(4, 3, 4, 3);
             respuestaA.Name = "respuestaA";
             respuestaA.Size = new Size(512, 23);
@@ -196,7 +198,7 @@
             // 
             // buttonAccion
             // 
-            buttonAccion.Location = new Point(436, 278);
+            buttonAccion.Location = new Point(433, 289);
             buttonAccion.Margin = new Padding(4, 3, 4, 3);
             buttonAccion.Name = "buttonAccion";
             buttonAccion.Size = new Size(114, 27);
@@ -207,7 +209,7 @@
             // 
             // buttonAtras
             // 
-            buttonAtras.Location = new Point(17, 278);
+            buttonAtras.Location = new Point(14, 289);
             buttonAtras.Margin = new Padding(4, 3, 4, 3);
             buttonAtras.Name = "buttonAtras";
             buttonAtras.Size = new Size(114, 27);
@@ -218,7 +220,7 @@
             // 
             // respuestaD
             // 
-            respuestaD.Location = new Point(39, 225);
+            respuestaD.Location = new Point(36, 236);
             respuestaD.Margin = new Padding(4, 3, 4, 3);
             respuestaD.Name = "respuestaD";
             respuestaD.Size = new Size(511, 23);
@@ -227,7 +229,7 @@
             // 
             // respuestaC
             // 
-            respuestaC.Location = new Point(39, 196);
+            respuestaC.Location = new Point(36, 207);
             respuestaC.Margin = new Padding(4, 3, 4, 3);
             respuestaC.Name = "respuestaC";
             respuestaC.Size = new Size(511, 23);
@@ -236,7 +238,7 @@
             // 
             // respuestaB
             // 
-            respuestaB.Location = new Point(38, 167);
+            respuestaB.Location = new Point(35, 178);
             respuestaB.Margin = new Padding(4, 3, 4, 3);
             respuestaB.Name = "respuestaB";
             respuestaB.Size = new Size(512, 23);
@@ -245,7 +247,7 @@
             // 
             // textBoxPregunta
             // 
-            textBoxPregunta.Location = new Point(91, 86);
+            textBoxPregunta.Location = new Point(88, 97);
             textBoxPregunta.Margin = new Padding(4, 3, 4, 3);
             textBoxPregunta.Name = "textBoxPregunta";
             textBoxPregunta.Size = new Size(459, 23);
@@ -256,7 +258,7 @@
             // 
             labelPregunta.AutoSize = true;
             labelPregunta.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            labelPregunta.Location = new Point(11, 86);
+            labelPregunta.Location = new Point(8, 97);
             labelPregunta.Name = "labelPregunta";
             labelPregunta.Size = new Size(73, 21);
             labelPregunta.TabIndex = 40;
@@ -266,7 +268,7 @@
             // 
             labelSeleccionarPregunta.AutoSize = true;
             labelSeleccionarPregunta.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            labelSeleccionarPregunta.Location = new Point(11, 56);
+            labelSeleccionarPregunta.Location = new Point(8, 67);
             labelSeleccionarPregunta.Name = "labelSeleccionarPregunta";
             labelSeleccionarPregunta.Size = new Size(156, 21);
             labelSeleccionarPregunta.TabIndex = 54;
@@ -276,7 +278,7 @@
             // 
             comboBoxQuestions.DropDownStyle = ComboBoxStyle.DropDownList;
             comboBoxQuestions.FormattingEnabled = true;
-            comboBoxQuestions.Location = new Point(173, 58);
+            comboBoxQuestions.Location = new Point(170, 69);
             comboBoxQuestions.Name = "comboBoxQuestions";
             comboBoxQuestions.Size = new Size(377, 23);
             comboBoxQuestions.TabIndex = 55;
@@ -286,8 +288,8 @@
             // 
             comboBoxIdiomas.DropDownStyle = ComboBoxStyle.DropDownList;
             comboBoxIdiomas.FormattingEnabled = true;
-            comboBoxIdiomas.Items.AddRange(new object[] { "Castellano", "Catalán", "Inglés" });
-            comboBoxIdiomas.Location = new Point(76, 29);
+            comboBoxIdiomas.Items.AddRange(new object[] { "Castellà", "Català", "Anglès" });
+            comboBoxIdiomas.Location = new Point(73, 40);
             comboBoxIdiomas.Name = "comboBoxIdiomas";
             comboBoxIdiomas.Size = new Size(121, 23);
             comboBoxIdiomas.TabIndex = 56;
@@ -299,7 +301,7 @@
             groupBoxButtonsCO.Controls.Add(RespuestaCorrectaC);
             groupBoxButtonsCO.Controls.Add(RespuestaCorrectaB);
             groupBoxButtonsCO.Controls.Add(RespuestaCorrectaA);
-            groupBoxButtonsCO.Location = new Point(159, 254);
+            groupBoxButtonsCO.Location = new Point(156, 265);
             groupBoxButtonsCO.Name = "groupBoxButtonsCO";
             groupBoxButtonsCO.Size = new Size(158, 23);
             groupBoxButtonsCO.TabIndex = 57;
@@ -307,39 +309,59 @@
             // 
             // menuStrip1
             // 
-            menuStrip1.Items.AddRange(new ToolStripItem[] { añadirToolStripMenuItem, modificarToolStripMenuItem, eliminarToolStripMenuItem });
+            menuStrip1.Items.AddRange(new ToolStripItem[] { addToolStripMenuItem, modToolStripMenuItem, delToolStripMenuItem });
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
-            menuStrip1.Size = new Size(559, 24);
+            menuStrip1.Size = new Size(553, 24);
             menuStrip1.TabIndex = 58;
             menuStrip1.Text = "menuStrip1";
             // 
-            // añadirToolStripMenuItem
+            // addToolStripMenuItem
             // 
-            añadirToolStripMenuItem.Name = "añadirToolStripMenuItem";
-            añadirToolStripMenuItem.Size = new Size(54, 20);
-            añadirToolStripMenuItem.Text = "Añadir";
-            añadirToolStripMenuItem.Click += añadirToolStripMenuItem_Click;
+            addToolStripMenuItem.Name = "addToolStripMenuItem";
+            addToolStripMenuItem.Size = new Size(51, 20);
+            addToolStripMenuItem.Text = "Afegir";
+            addToolStripMenuItem.Click += addToolStripMenuItem_Click;
             // 
-            // modificarToolStripMenuItem
+            // modToolStripMenuItem
             // 
-            modificarToolStripMenuItem.Name = "modificarToolStripMenuItem";
-            modificarToolStripMenuItem.Size = new Size(70, 20);
-            modificarToolStripMenuItem.Text = "Modificar";
-            modificarToolStripMenuItem.Click += modificarToolStripMenuItem_Click;
+            modToolStripMenuItem.Name = "modToolStripMenuItem";
+            modToolStripMenuItem.Size = new Size(70, 20);
+            modToolStripMenuItem.Text = "Modificar";
+            modToolStripMenuItem.Click += modToolStripMenuItem_Click;
             // 
-            // eliminarToolStripMenuItem
+            // delToolStripMenuItem
             // 
-            eliminarToolStripMenuItem.Name = "eliminarToolStripMenuItem";
-            eliminarToolStripMenuItem.Size = new Size(62, 20);
-            eliminarToolStripMenuItem.Text = "Eliminar";
-            eliminarToolStripMenuItem.Click += eliminarToolStripMenuItem_Click;
+            delToolStripMenuItem.Name = "delToolStripMenuItem";
+            delToolStripMenuItem.Size = new Size(62, 20);
+            delToolStripMenuItem.Text = "Eliminar";
+            delToolStripMenuItem.Click += delToolStripMenuItem_Click;
+            // 
+            // textBoxBuscar
+            // 
+            textBoxBuscar.Location = new Point(200, 40);
+            textBoxBuscar.Name = "textBoxBuscar";
+            textBoxBuscar.Size = new Size(284, 23);
+            textBoxBuscar.TabIndex = 59;
+            textBoxBuscar.TextChanged += textBoxBuscar_TextChanged;
+            // 
+            // labelSearchQuestionFilter
+            // 
+            labelSearchQuestionFilter.AutoSize = true;
+            labelSearchQuestionFilter.Location = new Point(200, 22);
+            labelSearchQuestionFilter.Name = "labelSearchQuestionFilter";
+            labelSearchQuestionFilter.Size = new Size(100, 15);
+            labelSearchQuestionFilter.TabIndex = 60;
+            labelSearchQuestionFilter.Text = "Cerca la pregunta";
             // 
             // ConfPregunta
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
-            AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(559, 314);
+            AutoScaleDimensions = new SizeF(96F, 96F);
+            AutoScaleMode = AutoScaleMode.Dpi;
+            BackColor = SystemColors.Control;
+            ClientSize = new Size(553, 319);
+            Controls.Add(labelSearchQuestionFilter);
+            Controls.Add(textBoxBuscar);
             Controls.Add(groupBoxButtonsCO);
             Controls.Add(comboBoxIdiomas);
             Controls.Add(comboBoxQuestions);
@@ -368,6 +390,8 @@
             Name = "ConfPregunta";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Configurar Preguntas";
+            FormClosing += ConfPregunta_FormClosing;
+            FormClosed += ConfPregunta_FormClosed;
             Load += ConfPregunta_Load;
             groupBoxButtonsCO.ResumeLayout(false);
             groupBoxButtonsCO.PerformLayout();
@@ -404,9 +428,11 @@
         private ComboBox comboBoxIdiomas;
         private GroupBox groupBoxButtonsCO;
         private MenuStrip menuStrip1;
-        private ToolStripMenuItem añadirToolStripMenuItem;
-        private ToolStripMenuItem modificarToolStripMenuItem;
-        private ToolStripMenuItem eliminarToolStripMenuItem;
+        private ToolStripMenuItem addToolStripMenuItem;
+        private ToolStripMenuItem modToolStripMenuItem;
+        private ToolStripMenuItem delToolStripMenuItem;
+        private TextBox textBoxBuscar;
+        private Label labelSearchQuestionFilter;
     }
 
 }
