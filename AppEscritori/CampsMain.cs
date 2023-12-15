@@ -53,43 +53,67 @@ namespace AppEscritori
             string anoCreacion = any_creacio.Text;
             string descripcion_elemento = descripcio_element.Text;
 
-            // Validación de campos vacíos.
-            if (string.IsNullOrEmpty(nombreElemento) || string.IsNullOrEmpty(numeroInventario) ||
-                string.IsNullOrEmpty(anoCreacion) || string.IsNullOrEmpty(descripcion_elemento))
+            string mensajeError = "";
+
+            // Verificar si los campos están vacíos y acumular los mensajes de error.
+            if (string.IsNullOrEmpty(nombreElemento))
             {
-                MessageBox.Show("Debes de rellenar todos los campos con valores correctos", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                mensajeError += "El campo 'nombre elemento' está vacío.\n";
             }
-            else if (string.IsNullOrEmpty(gestionadorMuseo.ruta_imagen))
+            if (string.IsNullOrEmpty(numeroInventario))
             {
-                MessageBox.Show("Debes de subir una imagen", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                mensajeError += "El campo 'número inventario' está vacío.\n";
             }
-            else
+            if (string.IsNullOrEmpty(anoCreacion))
             {
-                // Compruevo que el usuario haya colocado numeros en Año creación y numero inventario
-                int anoCreacionNumero;
-                int numeroInventarioNumero;
-                if (!int.TryParse(anoCreacion, out anoCreacionNumero) || !int.TryParse(numeroInventario, out numeroInventarioNumero))
-                {
-                    // Compruevo si el usuario ha introducido valor no numericos en los campos
-                    MessageBox.Show("Los campos \"Año creación\" y \"Descripcion elemento\" deben de ser numericos", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-
-                }
-                else
-                {
-                    // Actualiza los campos y los almacena en la clase gestionadorMuseo.
-                    gestionadorMuseo.actualizar_campos_main(nombreElemento, numeroInventario, anoCreacion, descripcion_elemento);
-
-                    // Pasar a la pantalla de campos para ponerlo en catalán y en español
-                    campos_casteng campsengesp = new campos_casteng(gestionadorMuseo);
-                    campsengesp.Show();
-                    this.Hide();
-                }
-
-
-
-
+                mensajeError += "El campo 'año de creación' está vacío.\n";
             }
+            if (string.IsNullOrEmpty(descripcion_elemento))
+            {
+                mensajeError += "El campo 'descripción elemento' está vacío.\n";
+            }
+
+            // Verificar si hay algún mensaje de error.
+            if (!string.IsNullOrEmpty(mensajeError))
+            {
+                MessageBox.Show(mensajeError, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            // Verificar la carga de la imagen.
+            if (string.IsNullOrEmpty(gestionadorMuseo.ruta_imagen))
+            {
+                MessageBox.Show("Debes subir una imagen", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            string mensajeErrorNumerico = "";
+
+            if (!int.TryParse(anoCreacion, out int anoCreacionNumero))
+            {
+                mensajeErrorNumerico += "El campo 'Año creación' debe ser numérico.\n";
+            }
+            if (!int.TryParse(numeroInventario, out int numeroInventarioNumero))
+            {
+                mensajeErrorNumerico += "El campo 'Número inventario' debe ser numérico.\n";
+            }
+
+            // Verificar si hay algún mensaje de error.
+            if (!string.IsNullOrEmpty(mensajeErrorNumerico))
+            {
+                MessageBox.Show(mensajeErrorNumerico, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            // Continuar con la lógica de negocio si todo está correcto.
+            gestionadorMuseo.actualizar_campos_main(nombreElemento, numeroInventario, anoCreacion, descripcion_elemento);
+
+            // Pasar a la pantalla de campos para ponerlo en catalán y en español.
+            campos_casteng campsengesp = new campos_casteng(gestionadorMuseo);
+            campsengesp.Show();
+            this.Hide();
         }
+
 
 
         private void buttonAtras_Click(object sender, EventArgs e)
