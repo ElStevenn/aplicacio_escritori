@@ -28,7 +28,7 @@ namespace AppEscritori
         {
             if (gestionadorMuseo != null)
             {
-                descrp_eng.Text = gestionadorMuseo.eng_nombreElemento;
+                descrp_eng.Text = gestionadorMuseo.eng_descripcionEelemento;
                 nombre_eng.Text = gestionadorMuseo.eng_nombreElemento;
                 nombre_esp.Text = gestionadorMuseo.es_nombreElemento;
                 descrp_esp.Text = gestionadorMuseo.es_descripcionElemento;

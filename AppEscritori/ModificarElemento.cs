@@ -18,28 +18,49 @@ namespace AppEscritori
     public partial class ModificarElemento : Form
     {
         public GestionarParteMuseo.Gestor_museo gestionadorMuseo;
-        public string rutaArchivoJson_cat = @"..\..\..\JSON\elements_cat.json";
-        public string rutaArchivoJson_esp = @"..\..\..\JSON\elements_esp.json";
-        public string rutaArchivoJson_eng = @"..\..\..\JSON\elements_eng.json";
+
+        // Estas rutas se establecerán correctamente en tiempo de ejecución
+        public string rutaArchivoJson_cat;
+        public string rutaArchivoJson_esp;
+        public string rutaArchivoJson_eng;
+        public string rutaImagenes;
 
         public ModificarElemento()
         {
             InitializeComponent();
+            ConfigurarRutas();
             ConfigurarComboBox();
         }
+
 
         public ModificarElemento(Gestor_museo gestor_Museo)
         {
             InitializeComponent();
             this.gestionadorMuseo = gestor_Museo;
+            ConfigurarRutas();
             ConfigurarComboBox();
+        }
+
+        private void ConfigurarRutas()
+        {
+            string baseDirectory = AppDomain.CurrentDomain.BaseDirectory;
+            rutaArchivoJson_cat = Path.Combine(baseDirectory, "JSON", "elements_cat.json");
+            rutaArchivoJson_esp = Path.Combine(baseDirectory, "JSON", "elements_esp.json");
+            rutaArchivoJson_eng = Path.Combine(baseDirectory, "JSON", "elements_eng.json");
+            rutaImagenes = Path.Combine(baseDirectory, "JSON", "imgelements"); // Cambiado a una carpeta específica para imágenes
         }
 
         public List<ElementoInventario> CargarDatosDesdeJson(string ruta)
         {
+            if (string.IsNullOrEmpty(ruta))
+            {
+                throw new ArgumentException("La ruta del archivo no puede ser nula o vacía.", nameof(ruta));
+            }
+
             string json = File.ReadAllText(ruta);
             return JsonConvert.DeserializeObject<List<ElementoInventario>>(json);
         }
+
 
         public void ConfigurarComboBox()
         {
@@ -52,7 +73,7 @@ namespace AppEscritori
         {
             if (selecElemento.SelectedItem is ElementoInventario elementoSeleccionado)
             {
-                string ruta_imagen = @"..\..\..\JSON\imgelements\" + elementoSeleccionado.image;
+                string ruta_imagen = Path.Combine(rutaImagenes,  elementoSeleccionado.image);
                 labelNombreElemento.Text = elementoSeleccionado.nameElement;
                 labnumInventario.Text = elementoSeleccionado.numInventory.ToString();
                 lab_fecha_fabricacion.Text = elementoSeleccionado.year.ToString();
@@ -119,8 +140,8 @@ namespace AppEscritori
 
                 gestorMuseo.actualizar_campos_espeng(elelementos_eng_esp[0], elelementos_eng_esp[1], elelementos_eng_esp[2], elelementos_eng_esp[3]);
                 // Añadir la ruta de la imagen -> 
-                string ruta_elemento = @"..\..\..\JSON\imgelements\" + Path.GetFileName(elementoSeleccionado.image);
-                gestorMuseo.actualizar_ruta_imagen(ruta_elemento);
+                string rutaElemento = Path.Combine(rutaImagenes, elementoSeleccionado.image);
+                gestorMuseo.actualizar_ruta_imagen(rutaElemento);
 
 
                 CampsMain menu = new CampsMain(gestorMuseo);
