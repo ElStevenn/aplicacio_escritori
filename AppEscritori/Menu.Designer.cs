@@ -90,7 +90,6 @@
             labelHolaUsuari.TabIndex = 5;
             labelHolaUsuari.Text = "Panel Administrativo";
             labelHolaUsuari.TextAlign = ContentAlignment.MiddleCenter;
-            labelHolaUsuari.Click += labelHolaUsuari_Click;
             // 
             // Menu
             // 
@@ -109,7 +108,7 @@
             Name = "Menu";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Panel administrativo";
-            Load += Menu_Load;
+            FormClosing += Menu_FormClosing;
             ResumeLayout(false);
         }
 

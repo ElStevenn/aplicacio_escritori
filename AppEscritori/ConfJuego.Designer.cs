@@ -78,7 +78,8 @@
             Margin = new Padding(4, 3, 4, 3);
             Name = "ConfJuego";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "Configuración del videojuego";
+            Text = "Configuració Joc";
+            FormClosing += ConfJuego_FormClosing;
             ResumeLayout(false);
         }
 

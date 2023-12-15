@@ -64,11 +64,6 @@ namespace AppEscritori
 
         }
 
-        private void labelHolaUsuari_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void button1_Click(object sender, EventArgs e)
         {
             ManejarIdioma menu = new ManejarIdioma();
@@ -76,9 +71,16 @@ namespace AppEscritori
             this.Hide();
         }
 
-        private void Menu_Load(object sender, EventArgs e)
+        private void Menu_FormClosing(object sender, FormClosingEventArgs e)
         {
 
+            DialogResult result = MessageBox.Show("Estàs segur que vols tancar?", "Confirmació", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+            if (result == DialogResult.Yes)
+            {
+                e.Cancel = false;
+                this.login.Show();
+            }
         }
     }
 }

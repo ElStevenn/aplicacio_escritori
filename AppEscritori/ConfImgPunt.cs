@@ -28,9 +28,7 @@ namespace AppEscritori
 
         private void button2Enrere_Click(object sender, EventArgs e)
         {
-
             this.Close();
-            this.confJuego.Show();
         }
 
         private void button1SeleccionarImatge_Click(object sender, EventArgs e)
@@ -62,7 +60,7 @@ namespace AppEscritori
         {
             Dictionary<string, int> dificultades = new Dictionary<string, int>
                 {
-                    { "Fácil", 1 },
+                    { "Fàcil", 1 },
                     { "Normal", 2 },
                     { "Difícil", 3 }
                 };
@@ -185,6 +183,15 @@ namespace AppEscritori
             return string.Empty;
         }
 
+        private void ConfImgPunt_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            DialogResult result = MessageBox.Show("Estàs segur que vols tancar?", "Confirmació", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
 
+            if (result == DialogResult.Yes)
+            {
+                e.Cancel = false;
+                this.confJuego.Show();
+            }
+        }
     }
 }
