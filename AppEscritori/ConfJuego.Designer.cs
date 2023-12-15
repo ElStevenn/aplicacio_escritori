@@ -62,7 +62,7 @@
             buttonAtrasConfPreg.Name = "buttonAtrasConfPreg";
             buttonAtrasConfPreg.Size = new Size(80, 29);
             buttonAtrasConfPreg.TabIndex = 4;
-            buttonAtrasConfPreg.Text = "Enrrere";
+            buttonAtrasConfPreg.Text = "Enrere";
             buttonAtrasConfPreg.UseVisualStyleBackColor = true;
             buttonAtrasConfPreg.Click += buttonAtrasConfPreg_Click;
             // 

@@ -389,9 +389,8 @@
             MaximizeBox = false;
             Name = "ConfPregunta";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "Configurar Preguntas";
+            Text = "Configurar Preguntes";
             FormClosing += ConfPregunta_FormClosing;
-            FormClosed += ConfPregunta_FormClosed;
             Load += ConfPregunta_Load;
             groupBoxButtonsCO.ResumeLayout(false);
             groupBoxButtonsCO.PerformLayout();
