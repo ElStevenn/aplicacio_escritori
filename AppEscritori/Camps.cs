@@ -63,7 +63,8 @@ namespace AppEscritori
             string capacitat_diposit = capacitatDiposit.Text;
             string clicle = cicle_cam.Text;
             string cilidrada = Cilindrada_c.Text;
-            string elemento = Element.Text;
+            //string elemento = Element.Text;
+            string elemento = "";
             string envergadura = Envergadura_c.Text;
             string potencia = Potencia_c.Text;
             string quilometros_hechos = quilometres_fets.Text;
@@ -80,16 +81,17 @@ namespace AppEscritori
 
             // Compruevo que el usuario haya introducido bien el formato de los campos
             if ((!string.IsNullOrEmpty(autonomia) && !EsNumericoGrande(autonomia)) ||
-    (!string.IsNullOrEmpty(capacitat_diposit) && !EsNumericoGrande(capacitat_diposit)) ||
-    (!string.IsNullOrEmpty(cilidrada) && !EsNumericoGrande(cilidrada)) ||
-    (!string.IsNullOrEmpty(envergadura) && !EsNumericoGrande(envergadura)) ||
-    (!string.IsNullOrEmpty(potencia) && !EsNumericoGrande(potencia)) ||
-    (!string.IsNullOrEmpty(quilometros_hechos) && !EsNumericoGrande(quilometros_hechos)) ||
-    (!string.IsNullOrEmpty(techo_maximo) && !EsNumericoGrande(techo_maximo)) ||
-    (!string.IsNullOrEmpty(peso) && !EsNumericoGrande(peso)) ||
-    (!string.IsNullOrEmpty(velocidad) && !EsNumericoGrande(velocidad)) ||
-    (!string.IsNullOrEmpty(velocidad_maxima) && !EsNumericoGrande(velocidad_maxima)) ||
-    (!string.IsNullOrEmpty(longitud) && !EsNumericoGrande(longitud)))
+                (!string.IsNullOrEmpty(capacitat_diposit) && !EsNumericoGrande(capacitat_diposit)) ||
+                (!string.IsNullOrEmpty(cilidrada) && !EsNumericoGrande(cilidrada)) ||
+                (!string.IsNullOrEmpty(envergadura) && !EsNumericoGrande(envergadura)) ||
+                (!string.IsNullOrEmpty(potencia) && !EsNumericoGrande(potencia)) ||
+                (!string.IsNullOrEmpty(quilometros_hechos) && !EsNumericoGrande(quilometros_hechos)) ||
+                (!string.IsNullOrEmpty(techo_maximo) && !EsNumericoGrande(techo_maximo)) ||
+                (!string.IsNullOrEmpty(peso) && !EsNumericoGrande(peso)) ||
+                (!string.IsNullOrEmpty(velocidad) && !EsNumericoGrande(velocidad)) ||
+                (!string.IsNullOrEmpty(velocidad_maxima) && !EsNumericoGrande(velocidad_maxima)) ||
+                (!string.IsNullOrEmpty(longitud) && !EsNumericoGrande(longitud))
+            )
             {
                 MessageBox.Show("Los campos autonomia, capacitat deposit, cilindrada, elemento, longitud, velocidad, velocidad máxima, quilometros hechos y peso deben de ser númericos! ", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
@@ -105,7 +107,7 @@ namespace AppEscritori
                 campsFinal.Show();
                 this.Hide();
             }
-           
+
 
         }
 
