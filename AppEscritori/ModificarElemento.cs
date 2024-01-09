@@ -78,19 +78,11 @@ namespace AppEscritori
                 labelNombreElemento.Text = elementoSeleccionado.nameElement;
                 labnumInventario.Text = elementoSeleccionado.numInventory.ToString();
                 lab_fecha_fabricacion.Text = elementoSeleccionado.year.ToString();
-                try
-                {
-                    foto_elemento.Image = Image.FromFile(ruta_imagen);
-                    foto_elemento.SizeMode = PictureBoxSizeMode.StretchImage;
-                    // Se podrían cargar mas elementos como se necesite
-                }catch(Exception ex)
-                {
-                    string ruta_not_disp_imagen = Path.Combine(this.baseDirectory, "imagenes_internas");
-                    foto_elemento.Image = Image.FromFile(ruta_not_disp_imagen);
-                    foto_elemento.SizeMode = PictureBoxSizeMode.StretchImage;
-                }
-
-
+   
+                foto_elemento.Image = Image.FromFile(ruta_imagen);
+                foto_elemento.SizeMode = PictureBoxSizeMode.StretchImage;
+               
+         
             }
         }
 
