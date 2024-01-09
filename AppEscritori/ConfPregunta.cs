@@ -358,7 +358,7 @@ namespace AppEscritori
             }
             else
             {
-                labelXPreguntas.Text = "Hay " + questions.Count() + " preguntas en total";
+                labelXPreguntas.Text = "Hi ha " + questions.Count() + " preguntes en total";
             }
 
         }
@@ -477,6 +477,7 @@ namespace AppEscritori
 
         private void textBoxBuscar_TextChanged(object sender, EventArgs e)
         {
+            disableButtons();
             loadQuestionsJSON();
         }
 
@@ -486,9 +487,22 @@ namespace AppEscritori
 
             if (result == DialogResult.Yes)
             {
-                e.Cancel = false;
                 this.confjuego.Show();
             }
+            else if (result == DialogResult.No)
+            {
+                e.Cancel = true;
+            }
+        }
+
+        private void textBoxBuscar_Click(object sender, EventArgs e)
+        {
+            disableButtons();
+        }
+
+        private void comboBoxQuestions_Click(object sender, EventArgs e)
+        {
+            enableButtons();
         }
     }
 }

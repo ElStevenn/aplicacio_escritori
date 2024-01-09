@@ -63,6 +63,7 @@
             textBoxNombre.Size = new Size(178, 23);
             textBoxNombre.TabIndex = 0;
             textBoxNombre.TextAlign = HorizontalAlignment.Center;
+            textBoxNombre.KeyPress += Login_KeyPress;
             // 
             // textBoxContra
             // 
@@ -74,6 +75,7 @@
             textBoxContra.Size = new Size(178, 23);
             textBoxContra.TabIndex = 1;
             textBoxContra.TextAlign = HorizontalAlignment.Center;
+            textBoxContra.KeyPress += Login_KeyPress;
             // 
             // button_login
             // 
@@ -132,6 +134,7 @@
             Name = "Login";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Login";
+            KeyPress += Login_KeyPress;
             ResumeLayout(false);
             PerformLayout();
         }

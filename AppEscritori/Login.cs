@@ -25,6 +25,9 @@ namespace AppEscritori
                 Menu menu = new Menu(this);
                 menu.Show();
                 this.Hide();
+                textBoxNombre.Text = "";
+                textBoxContra.Text = "";
+                labelWarning.Visible = false;
             }
             else
             {
@@ -33,5 +36,13 @@ namespace AppEscritori
             }
         }
 
+        private void Login_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            // Verificar si la tecla presionada es Enter
+            if (e.KeyChar == (char)Keys.Enter)
+            {
+                button_login_Click(sender, e);
+            }
+        }
     }
 }

@@ -78,9 +78,14 @@ namespace AppEscritori
 
             if (result == DialogResult.Yes)
             {
-                e.Cancel = false;
                 this.login.Show();
+                
             }
+            else if (result == DialogResult.No)
+            {
+                e.Cancel = true;
+            }
+
         }
     }
 }
