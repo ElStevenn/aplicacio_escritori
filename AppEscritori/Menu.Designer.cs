@@ -42,7 +42,7 @@
             buttonCrearElemento.Name = "buttonCrearElemento";
             buttonCrearElemento.Size = new Size(244, 35);
             buttonCrearElemento.TabIndex = 0;
-            buttonCrearElemento.Text = "Crear Elemento";
+            buttonCrearElemento.Text = "Crear Element";
             buttonCrearElemento.UseVisualStyleBackColor = true;
             buttonCrearElemento.Click += buttonCrearElemento_Click;
             // 
@@ -53,7 +53,7 @@
             buttonModElemento.Name = "buttonModElemento";
             buttonModElemento.Size = new Size(244, 35);
             buttonModElemento.TabIndex = 1;
-            buttonModElemento.Text = "Modificar Elemento";
+            buttonModElemento.Text = "Modificar Element";
             buttonModElemento.UseVisualStyleBackColor = true;
             buttonModElemento.Click += buttonModElemento_Click;
             // 
@@ -64,7 +64,7 @@
             buttonEliminarElemento.Name = "buttonEliminarElemento";
             buttonEliminarElemento.Size = new Size(244, 35);
             buttonEliminarElemento.TabIndex = 2;
-            buttonEliminarElemento.Text = "Eliminar Elemento";
+            buttonEliminarElemento.Text = "Eliminar Element";
             buttonEliminarElemento.UseVisualStyleBackColor = true;
             buttonEliminarElemento.Click += buttonEliminarElemento_Click;
             // 
@@ -75,7 +75,7 @@
             buttonConfJuego.Name = "buttonConfJuego";
             buttonConfJuego.Size = new Size(244, 35);
             buttonConfJuego.TabIndex = 3;
-            buttonConfJuego.Text = "Configuracion Juego 2D";
+            buttonConfJuego.Text = "Configuració Joc 2D";
             buttonConfJuego.UseVisualStyleBackColor = true;
             buttonConfJuego.Click += buttonConfJuego_Click;
             // 
@@ -88,7 +88,7 @@
             labelHolaUsuari.Name = "labelHolaUsuari";
             labelHolaUsuari.Size = new Size(228, 41);
             labelHolaUsuari.TabIndex = 5;
-            labelHolaUsuari.Text = "Panel Administrativo";
+            labelHolaUsuari.Text = "Panell Administratiu";
             labelHolaUsuari.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // Menu
@@ -107,7 +107,7 @@
             MaximizeBox = false;
             Name = "Menu";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "Panel administrativo";
+            Text = "Panell administratiu";
             FormClosing += Menu_FormClosing;
             ResumeLayout(false);
         }
