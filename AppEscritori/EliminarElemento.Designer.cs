@@ -75,7 +75,7 @@
             buttonAtras.Name = "buttonAtras";
             buttonAtras.Size = new Size(88, 26);
             buttonAtras.TabIndex = 5;
-            buttonAtras.Text = "Atrás";
+            buttonAtras.Text = "Enrere";
             buttonAtras.UseVisualStyleBackColor = true;
             buttonAtras.Click += buttonAtras_Click;
             // 
@@ -95,18 +95,18 @@
             label1.AutoSize = true;
             label1.Location = new Point(232, 85);
             label1.Name = "label1";
-            label1.Size = new Size(123, 15);
+            label1.Size = new Size(102, 15);
             label1.TabIndex = 7;
-            label1.Text = "Nombre del elemento";
+            label1.Text = "Nom de l'element";
             // 
             // label2
             // 
             label2.AutoSize = true;
             label2.Location = new Point(233, 159);
             label2.Name = "label2";
-            label2.Size = new Size(90, 15);
+            label2.Size = new Size(110, 15);
             label2.TabIndex = 8;
-            label2.Text = "Num Inventario";
+            label2.Text = "Número d'inventari";
             // 
             // groupBoxElimElement
             // 
@@ -125,7 +125,7 @@
             groupBoxElimElement.Size = new Size(451, 277);
             groupBoxElimElement.TabIndex = 0;
             groupBoxElimElement.TabStop = false;
-            groupBoxElimElement.Text = "Eliminar Elemento";
+            groupBoxElimElement.Text = "Eliminar Element";
             // 
             // selecElemento
             // 
@@ -149,7 +149,7 @@
             Margin = new Padding(4, 3, 4, 3);
             Name = "EliminarElemento";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "Eliminar elemento";
+            Text = "Eliminar element";
             ((System.ComponentModel.ISupportInitialize)fotoElemento).EndInit();
             groupBoxElimElement.ResumeLayout(false);
             groupBoxElimElement.PerformLayout();

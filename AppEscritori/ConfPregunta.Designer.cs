@@ -174,7 +174,7 @@
             labelRespuestas.Name = "labelRespuestas";
             labelRespuestas.Size = new Size(80, 21);
             labelRespuestas.TabIndex = 42;
-            labelRespuestas.Text = "Respostas";
+            labelRespuestas.Text = "Respostes";
             // 
             // labelXPreguntas
             // 
@@ -203,7 +203,7 @@
             buttonAccion.Name = "buttonAccion";
             buttonAccion.Size = new Size(114, 27);
             buttonAccion.TabIndex = 39;
-            buttonAccion.Text = "..";
+            buttonAccion.Text = "Ok";
             buttonAccion.UseVisualStyleBackColor = true;
             buttonAccion.Click += buttonAccion_Click;
             // 

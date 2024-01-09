@@ -18,7 +18,7 @@ namespace AppEscritori
         public string rutaArchivoJson_esp;
         public string rutaArchivoJson_eng;
         public string rutaImagenes;
-        
+
 
         public EliminarElemento()
         {

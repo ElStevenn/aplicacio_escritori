@@ -42,9 +42,9 @@
             label1.ForeColor = Color.Crimson;
             label1.Location = new Point(30, 9);
             label1.Name = "label1";
-            label1.Size = new Size(256, 21);
+            label1.Size = new Size(242, 21);
             label1.TabIndex = 0;
-            label1.Text = "Cambiar l'idioma de la aplicació";
+            label1.Text = "Canviar l'idioma de l'aplicació";
             label1.Click += label1_Click;
             // 
             // button1
@@ -53,7 +53,7 @@
             button1.Name = "button1";
             button1.Size = new Size(63, 32);
             button1.TabIndex = 1;
-            button1.Text = "Atrás";
+            button1.Text = "Enrere";
             button1.UseVisualStyleBackColor = true;
             button1.Click += button1_Click;
             // 
@@ -74,7 +74,7 @@
             button3.Name = "button3";
             button3.Size = new Size(149, 51);
             button3.TabIndex = 3;
-            button3.Text = "Castellà";
+            button3.Text = "Castellano";
             button3.UseVisualStyleBackColor = true;
             // 
             // button4
@@ -84,7 +84,7 @@
             button4.Name = "button4";
             button4.Size = new Size(149, 51);
             button4.TabIndex = 4;
-            button4.Text = "Anglès";
+            button4.Text = "English";
             button4.UseVisualStyleBackColor = true;
             // 
             // ManejarIdioma
@@ -98,7 +98,7 @@
             Controls.Add(button1);
             Controls.Add(label1);
             Name = "ManejarIdioma";
-            Text = "Cambiar el idioma de la aplicación";
+            Text = "Canviar l'idioma de l'aplicació";
             ResumeLayout(false);
             PerformLayout();
         }
