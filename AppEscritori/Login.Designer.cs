@@ -82,7 +82,7 @@
             button_login.Name = "button_login";
             button_login.Size = new Size(110, 23);
             button_login.TabIndex = 2;
-            button_login.Text = "login";
+            button_login.Text = "Accedir";
             button_login.UseVisualStyleBackColor = true;
             button_login.Click += button_login_Click;
             // 
@@ -91,29 +91,29 @@
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
             label1.ForeColor = Color.FromArgb(192, 0, 0);
-            label1.Location = new Point(46, 9);
+            label1.Location = new Point(15, 9);
             label1.Name = "label1";
-            label1.Size = new Size(220, 25);
+            label1.Size = new Size(291, 25);
             label1.TabIndex = 4;
-            label1.Text = "Aplicación de escritorio";
+            label1.Text = "Gestió de dades d'App Android";
             // 
             // label2
             // 
             label2.AutoSize = true;
             label2.Location = new Point(71, 41);
             label2.Name = "label2";
-            label2.Size = new Size(109, 15);
+            label2.Size = new Size(85, 15);
             label2.TabIndex = 5;
-            label2.Text = "Nombre de usuario";
+            label2.Text = "Nom de usuari";
             // 
             // label3
             // 
             label3.AutoSize = true;
             label3.Location = new Point(69, 89);
             label3.Name = "label3";
-            label3.Size = new Size(67, 15);
+            label3.Size = new Size(73, 15);
             label3.TabIndex = 6;
-            label3.Text = "Contraseña";
+            label3.Text = "Contrasenya";
             // 
             // Login
             // 
