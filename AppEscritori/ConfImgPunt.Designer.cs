@@ -163,7 +163,7 @@
             button2Enrere.Name = "button2Enrere";
             button2Enrere.Size = new Size(87, 27);
             button2Enrere.TabIndex = 3;
-            button2Enrere.Text = "Atrás";
+            button2Enrere.Text = "Enrere";
             button2Enrere.UseVisualStyleBackColor = true;
             button2Enrere.Click += button2Enrere_Click;
             // 
@@ -210,15 +210,15 @@
             labelRuta.AutoSize = true;
             labelRuta.Location = new Point(12, 110);
             labelRuta.Name = "labelRuta";
-            labelRuta.Size = new Size(213, 15);
+            labelRuta.Size = new Size(190, 15);
             labelRuta.TabIndex = 8;
-            labelRuta.Text = "Selecciona donde guardarás la imagen:";
+            labelRuta.Text = "Selecciona on guardaràs la imatge:";
             // 
             // comboBoxDifs
             // 
             comboBoxDifs.DropDownStyle = ComboBoxStyle.DropDownList;
             comboBoxDifs.FormattingEnabled = true;
-            comboBoxDifs.Items.AddRange(new object[] { "Fácil", "Normal", "Difícil" });
+            comboBoxDifs.Items.AddRange(new object[] { "Fàcil", "Normal", "Difícil" });
             comboBoxDifs.Location = new Point(347, 84);
             comboBoxDifs.Name = "comboBoxDifs";
             comboBoxDifs.Size = new Size(121, 23);
@@ -230,18 +230,18 @@
             labelExplanation.AutoSize = true;
             labelExplanation.Location = new Point(13, 9);
             labelExplanation.Name = "labelExplanation";
-            labelExplanation.Size = new Size(458, 30);
+            labelExplanation.Size = new Size(428, 30);
             labelExplanation.TabIndex = 10;
-            labelExplanation.Text = "Selecciona la dificultad a la que quieres cambiar la foto, después el rango de pregunta\r\nal que quieres asignar y por último donde guardarás la imagen.";
+            labelExplanation.Text = "Selecciona la dificultat a la que vols canviar la foto, després el rang de preguntes\r\nal que vols assignar i finalment on guardaràs la imatge.";
             // 
             // labelDif
             // 
             labelDif.AutoSize = true;
             labelDif.Location = new Point(347, 66);
             labelDif.Name = "labelDif";
-            labelDif.Size = new Size(58, 15);
+            labelDif.Size = new Size(55, 15);
             labelDif.TabIndex = 11;
-            labelDif.Text = "Dificultad";
+            labelDif.Text = "Dificultat";
             // 
             // ConfImgPunt
             // 
@@ -263,7 +263,8 @@
             FormBorderStyle = FormBorderStyle.FixedSingle;
             Name = "ConfImgPunt";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "Formulari 14";
+            Text = "Seleccionar imatge amb la puntuació";
+            FormClosing += ConfImgPunt_FormClosing;
             groupBoxResultat.ResumeLayout(false);
             groupBoxResultat.PerformLayout();
             groupBox2ImatgeVehicle.ResumeLayout(false);

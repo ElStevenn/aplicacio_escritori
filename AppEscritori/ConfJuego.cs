@@ -34,7 +34,6 @@ namespace AppEscritori
         private void buttonAtrasConfPreg_Click(object sender, EventArgs e)
         {
             this.Close();
-            this.menu.Show();
         }
 
         private void button2ConfImagPunt_Click(object sender, EventArgs e)
@@ -42,6 +41,11 @@ namespace AppEscritori
             ConfImgPunt confImgPunt = new ConfImgPunt(this);
             confImgPunt.Show();
             this.Hide();
+        }
+
+        private void ConfJuego_FormClosing(object sender, FormClosingEventArgs e)
+        {
+                this.menu.Show();
         }
     }
 }

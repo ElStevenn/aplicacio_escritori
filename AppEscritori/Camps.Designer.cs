@@ -212,7 +212,7 @@
             button1Enrere.Name = "button1Enrere";
             button1Enrere.Size = new Size(88, 28);
             button1Enrere.TabIndex = 21;
-            button1Enrere.Text = "Enrrere";
+            button1Enrere.Text = "Enrere";
             button1Enrere.UseVisualStyleBackColor = true;
             button1Enrere.Click += button1Enrere_Click;
             // 
@@ -322,9 +322,9 @@
             label11.AutoSize = true;
             label11.Location = new Point(273, 96);
             label11.Name = "label11";
-            label11.Size = new Size(55, 15);
+            label11.Size = new Size(52, 15);
             label11.TabIndex = 33;
-            label11.Text = "Velocidat";
+            label11.Text = "Velocitat";
             // 
             // label12
             // 

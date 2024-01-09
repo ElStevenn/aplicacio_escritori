@@ -5,9 +5,11 @@ using System.ComponentModel;
 using System.Data;
 using System.Diagnostics;
 using System.Drawing;
+using System.Globalization;
 using System.Linq;
 using System.Reflection.Metadata.Ecma335;
 using System.Text;
+using System.Threading.Channels;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -38,7 +40,6 @@ namespace AppEscritori
         private void buttonAtras_Click(object sender, EventArgs e)
         {
             this.Close();
-            this.confjuego.Show();
         }
 
         private void addToolStripMenuItem_Click(object sender, EventArgs e)
@@ -337,15 +338,13 @@ namespace AppEscritori
             if (mode != Mode.Add)
             {
                 comboBoxQuestions.DataSource = null;
-                comboBoxQuestions.DataSource = questions;
                 comboBoxQuestions.DisplayMember = "question";
-
 
                 // Aplica el filtro si hay texto en el cuadro de búsqueda
                 if (!string.IsNullOrEmpty(textBoxBuscar.Text))
                 {
                     displayedQuestions = questions
-                        .Where(q => q.question.ToLower().Contains(textBoxBuscar.Text.ToLower()))
+                        .Where(q => ContainsIgnoreCaseAndAccentInsensitive(q.question, textBoxBuscar.Text))
                         .ToList();
                 }
                 else
@@ -359,9 +358,26 @@ namespace AppEscritori
             }
             else
             {
-                labelXPreguntas.Text = "Hi ha " + questions.Count() + " preguntes en total";
+                labelXPreguntas.Text = "Hay " + questions.Count() + " preguntas en total";
             }
 
+        }
+
+        private bool ContainsIgnoreCaseAndAccentInsensitive(string source, string searchString)
+        {
+            // Normaliza ambas cadenas para comparación sin distinción de mayúsculas y tildes
+            string normalizedSource = RemoveAccents(source.ToLower());
+            string normalizedSearch = RemoveAccents(searchString.ToLower());
+
+            // Realiza la comparación
+            return normalizedSource.Contains(normalizedSearch);
+        }
+
+        private string RemoveAccents(string input)
+        {
+            return new string(input.Normalize(NormalizationForm.FormD)
+                                    .Where(c => CharUnicodeInfo.GetUnicodeCategory(c) != UnicodeCategory.NonSpacingMark)
+                                    .ToArray());
         }
 
 
@@ -466,16 +482,13 @@ namespace AppEscritori
 
         private void ConfPregunta_FormClosing(object sender, FormClosingEventArgs e)
         {
-            DialogResult result = MessageBox.Show("¿Estás seguro de que quieres cerrar?", "Confirmación", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-            if (result == DialogResult.No)
-            {
-                e.Cancel = true; // Cancela el cierre del formulario
-            }
-        }
+            DialogResult result = MessageBox.Show("Estàs segur que vols tancar?", "Confirmació", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
 
-        private void ConfPregunta_FormClosed(object sender, FormClosedEventArgs e)
-        {
-            Application.Exit();
+            if (result == DialogResult.Yes)
+            {
+                e.Cancel = false;
+                this.confjuego.Show();
+            }
         }
     }
 }

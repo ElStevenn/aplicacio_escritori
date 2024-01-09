@@ -191,7 +191,9 @@
             Controls.Add(groupBox2);
             Controls.Add(groupBox1);
             Controls.Add(label18);
+            FormBorderStyle = FormBorderStyle.FixedSingle;
             Name = "campos_casteng";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "campos_casteng";
             groupBox1.ResumeLayout(false);
             groupBox1.PerformLayout();
