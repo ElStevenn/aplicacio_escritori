@@ -230,9 +230,9 @@
             labelExplanation.AutoSize = true;
             labelExplanation.Location = new Point(13, 9);
             labelExplanation.Name = "labelExplanation";
-            labelExplanation.Size = new Size(428, 30);
+            labelExplanation.Size = new Size(455, 30);
             labelExplanation.TabIndex = 10;
-            labelExplanation.Text = "Selecciona la dificultat a la que vols canviar la foto, després el rang de preguntes\r\nal que vols assignar i finalment on guardaràs la imatge.";
+            labelExplanation.Text = "Selecciona la dificultat a la qual vols canviar-li la foto, tot seguit el rang de preguntes \r\nal que vols assignar i finalment on es desarà la imatge.";
             // 
             // labelDif
             // 
