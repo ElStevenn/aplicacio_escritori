@@ -189,7 +189,7 @@ namespace AppEscritori
 
             if (gestionadorMuseo.modo_gestor == "crear")
             {
-                
+
 
 
                 // Agregar el elemento a la lista del json
