@@ -18,6 +18,7 @@ namespace AppEscritori
     public partial class ModificarElemento : Form
     {
         public GestionarParteMuseo.Gestor_museo gestionadorMuseo;
+        public string baseDirectory = AppDomain.CurrentDomain.BaseDirectory;
 
         // Estas rutas se establecerán correctamente en tiempo de ejecución
         public string rutaArchivoJson_cat;
@@ -43,11 +44,11 @@ namespace AppEscritori
 
         private void ConfigurarRutas()
         {
-            string baseDirectory = AppDomain.CurrentDomain.BaseDirectory;
-            rutaArchivoJson_cat = Path.Combine(baseDirectory, "JSON", "elements_cat.json");
-            rutaArchivoJson_esp = Path.Combine(baseDirectory, "JSON", "elements_esp.json");
-            rutaArchivoJson_eng = Path.Combine(baseDirectory, "JSON", "elements_eng.json");
-            rutaImagenes = Path.Combine(baseDirectory, "JSON", "imgelements"); // Cambiado a una carpeta específica para imágenes
+            //string baseDirectory = AppDomain.CurrentDomain.BaseDirectory;
+            rutaArchivoJson_cat = Path.Combine(this.baseDirectory, "JSON", "elements_cat.json");
+            rutaArchivoJson_esp = Path.Combine(this.baseDirectory, "JSON", "elements_esp.json");
+            rutaArchivoJson_eng = Path.Combine(this.baseDirectory, "JSON", "elements_eng.json");
+            rutaImagenes = Path.Combine(this.baseDirectory, "JSON", "imgelements"); // Cambiado a una carpeta específica para imágenes
         }
 
         public List<ElementoInventario> CargarDatosDesdeJson(string ruta)
@@ -77,9 +78,19 @@ namespace AppEscritori
                 labelNombreElemento.Text = elementoSeleccionado.nameElement;
                 labnumInventario.Text = elementoSeleccionado.numInventory.ToString();
                 lab_fecha_fabricacion.Text = elementoSeleccionado.year.ToString();
-                foto_elemento.Image = Image.FromFile(ruta_imagen);
-                foto_elemento.SizeMode = PictureBoxSizeMode.StretchImage;
-                // Se podrían cargar mas elementos como se necesite
+                try
+                {
+                    foto_elemento.Image = Image.FromFile(ruta_imagen);
+                    foto_elemento.SizeMode = PictureBoxSizeMode.StretchImage;
+                    // Se podrían cargar mas elementos como se necesite
+                }catch(Exception ex)
+                {
+                    string ruta_not_disp_imagen = Path.Combine(this.baseDirectory, "imagenes_internas");
+                    foto_elemento.Image = Image.FromFile(ruta_not_disp_imagen);
+                    foto_elemento.SizeMode = PictureBoxSizeMode.StretchImage;
+                }
+
+
             }
         }
 
