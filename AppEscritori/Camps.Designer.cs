@@ -304,9 +304,9 @@
             label9.AutoSize = true;
             label9.Location = new Point(17, 404);
             label9.Name = "label9";
-            label9.Size = new Size(118, 15);
+            label9.Size = new Size(114, 15);
             label9.TabIndex = 31;
-            label9.Text = "Sostre màxim de volt";
+            label9.Text = "Sostre màxim de vol";
             // 
             // label10
             // 
