@@ -50,7 +50,7 @@
             button_atras.Name = "button_atras";
             button_atras.Size = new Size(122, 26);
             button_atras.TabIndex = 8;
-            button_atras.Text = "Atrás";
+            button_atras.Text = "Enrere";
             button_atras.UseVisualStyleBackColor = true;
             button_atras.Click += button_atras_Click;
             // 
@@ -72,9 +72,9 @@
             titulo.ForeColor = Color.Red;
             titulo.Location = new Point(118, 9);
             titulo.Name = "titulo";
-            titulo.Size = new Size(373, 29);
+            titulo.Size = new Size(337, 29);
             titulo.TabIndex = 10;
-            titulo.Text = "RESULTADO DEL ELEMENTO";
+            titulo.Text = "RESULTAT DE L'ELEMENT";
             // 
             // label1
             // 
@@ -83,9 +83,9 @@
             label1.ForeColor = SystemColors.Highlight;
             label1.Location = new Point(13, 29);
             label1.Name = "label1";
-            label1.Size = new Size(71, 21);
+            label1.Size = new Size(48, 21);
             label1.TabIndex = 11;
-            label1.Text = "Nombre:";
+            label1.Text = "Nom:";
             // 
             // groupBox1
             // 
@@ -101,7 +101,7 @@
             groupBox1.Size = new Size(312, 225);
             groupBox1.TabIndex = 12;
             groupBox1.TabStop = false;
-            groupBox1.Text = "Información principal del elemento";
+            groupBox1.Text = "Informació principal de l'element";
             // 
             // ano_creacion
             // 
@@ -121,9 +121,9 @@
             label4.ForeColor = SystemColors.Highlight;
             label4.Location = new Point(181, 29);
             label4.Name = "label4";
-            label4.Size = new Size(100, 21);
+            label4.Size = new Size(114, 21);
             label4.TabIndex = 15;
-            label4.Text = "Año creación";
+            label4.Text = "Any de creació:";
             // 
             // numero_inventario
             // 
@@ -143,9 +143,9 @@
             label2.ForeColor = SystemColors.Highlight;
             label2.Location = new Point(6, 95);
             label2.Name = "label2";
-            label2.Size = new Size(145, 21);
+            label2.Size = new Size(149, 21);
             label2.TabIndex = 13;
-            label2.Text = "Número inventario:";
+            label2.Text = "Número d'inventari:";
             // 
             // nombr_elem
             // 
