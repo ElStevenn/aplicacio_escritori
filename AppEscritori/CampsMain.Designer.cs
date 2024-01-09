@@ -73,9 +73,9 @@
             label1.AutoSize = true;
             label1.Location = new Point(41, 9);
             label1.Name = "label1";
-            label1.Size = new Size(104, 15);
+            label1.Size = new Size(102, 15);
             label1.TabIndex = 6;
-            label1.Text = "Nombre elemento";
+            label1.Text = "Nom de l'element";
             label1.TextAlign = ContentAlignment.MiddleLeft;
             // 
             // label2
@@ -83,18 +83,18 @@
             label2.AutoSize = true;
             label2.Location = new Point(225, 9);
             label2.Name = "label2";
-            label2.Size = new Size(107, 15);
+            label2.Size = new Size(110, 15);
             label2.TabIndex = 7;
-            label2.Text = "Numero inventario";
+            label2.Text = "Número d'inventari";
             // 
             // label3
             // 
             label3.AutoSize = true;
             label3.Location = new Point(431, 9);
             label3.Name = "label3";
-            label3.Size = new Size(93, 15);
+            label3.Size = new Size(85, 15);
             label3.TabIndex = 8;
-            label3.Text = "Año de creación";
+            label3.Text = "Any de creació";
             // 
             // imageList1
             // 
@@ -123,9 +123,9 @@
             label4.AutoSize = true;
             label4.Location = new Point(12, 188);
             label4.Name = "label4";
-            label4.Size = new Size(122, 15);
+            label4.Size = new Size(130, 15);
             label4.TabIndex = 11;
-            label4.Text = "Descripción elemento";
+            label4.Text = "Descripció de l'element";
             // 
             // buttonAtras
             // 
@@ -133,7 +133,7 @@
             buttonAtras.Name = "buttonAtras";
             buttonAtras.Size = new Size(133, 23);
             buttonAtras.TabIndex = 12;
-            buttonAtras.Text = "Atrás";
+            buttonAtras.Text = "Enrere";
             buttonAtras.UseVisualStyleBackColor = true;
             buttonAtras.Click += buttonAtras_Click;
             // 
@@ -143,7 +143,7 @@
             buttonSiguiente.Name = "buttonSiguiente";
             buttonSiguiente.Size = new Size(133, 23);
             buttonSiguiente.TabIndex = 13;
-            buttonSiguiente.Text = "Siguiente";
+            buttonSiguiente.Text = "Següent";
             buttonSiguiente.UseVisualStyleBackColor = true;
             buttonSiguiente.Click += buttonSiguiente_Click;
             // 
@@ -158,18 +158,19 @@
             button1.Name = "button1";
             button1.Size = new Size(147, 23);
             button1.TabIndex = 14;
-            button1.Text = "Seleccionar Imagen";
+            button1.Text = "Seleccionar imatge";
             button1.UseVisualStyleBackColor = true;
             button1.Click += button1_Click;
             // 
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(225, 105);
+            label5.Location = new Point(209, 102);
             label5.Name = "label5";
-            label5.Size = new Size(113, 30);
+            label5.Size = new Size(200, 15);
             label5.TabIndex = 15;
-            label5.Text = "Añadir una imagen\r\n grande si es posible";
+            label5.Text = "Afegir una imatge gran si és possible";
+            label5.Click += label5_Click;
             // 
             // CampsMain
             // 
@@ -191,7 +192,7 @@
             Controls.Add(Nom_element);
             Name = "CampsMain";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "Campos Principales";
+            Text = "Camps Principals";
             ((System.ComponentModel.ISupportInitialize)imagen_elemento).EndInit();
             ResumeLayout(false);
             PerformLayout();
