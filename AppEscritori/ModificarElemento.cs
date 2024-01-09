@@ -44,12 +44,17 @@ namespace AppEscritori
 
         private void ConfigurarRutas()
         {
-            //string baseDirectory = AppDomain.CurrentDomain.BaseDirectory;
-            rutaArchivoJson_cat = Path.Combine(this.baseDirectory, "JSON", "elements_cat.json");
-            rutaArchivoJson_esp = Path.Combine(this.baseDirectory, "JSON", "elements_esp.json");
-            rutaArchivoJson_eng = Path.Combine(this.baseDirectory, "JSON", "elements_eng.json");
-            rutaImagenes = Path.Combine(this.baseDirectory, "JSON", "imgelements"); // Cambiado a una carpeta específica para imágenes
+            // Obtener la ruta del directorio donde se ejecuta el proyecto (normalmente la raíz del proyecto en desarrollo)
+            string projectRoot = Path.GetFullPath(Path.Combine(baseDirectory, @"..\..\.."));
+            rutaArchivoJson_cat = Path.Combine(projectRoot, "JSON", "elements_cat.json");
+            rutaArchivoJson_esp = Path.Combine(projectRoot, "JSON", "elements_esp.json");
+            rutaArchivoJson_eng = Path.Combine(projectRoot, "JSON", "elements_eng.json");
+            rutaImagenes = Path.Combine(projectRoot, "JSON", "imgelements");
         }
+
+
+
+
 
         public List<ElementoInventario> CargarDatosDesdeJson(string ruta)
         {
@@ -75,16 +80,21 @@ namespace AppEscritori
             if (selecElemento.SelectedItem is ElementoInventario elementoSeleccionado)
             {
                 string ruta_imagen = Path.Combine(rutaImagenes, elementoSeleccionado.image);
-                labelNombreElemento.Text = elementoSeleccionado.nameElement;
-                labnumInventario.Text = elementoSeleccionado.numInventory.ToString();
-                lab_fecha_fabricacion.Text = elementoSeleccionado.year.ToString();
-   
-                foto_elemento.Image = Image.FromFile(ruta_imagen);
-                foto_elemento.SizeMode = PictureBoxSizeMode.StretchImage;
-               
-         
+                Console.WriteLine("Ruta de imagen intentada: " + ruta_imagen);
+
+                if (File.Exists(ruta_imagen))
+                {
+                    foto_elemento.Image = Image.FromFile(ruta_imagen);
+                    foto_elemento.SizeMode = PictureBoxSizeMode.StretchImage;
+                }
+                else
+                {
+                    MessageBox.Show("El archivo de imagen no se encontró en la ruta: " + ruta_imagen, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
             }
         }
+
+
 
         public List<string> CargarCamposEngEsp(int numero_inventario)
         {
