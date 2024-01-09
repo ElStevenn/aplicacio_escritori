@@ -59,25 +59,25 @@ namespace AppEscritori
         private void button2Siguiente_Click(object sender, EventArgs e)
         {
             // Obtener cada uno de los valores
-            string autonomia = Autonomia.Text;
-            string capacitat_diposit = capacitatDiposit.Text;
-            string clicle = cicle_cam.Text;
-            string cilidrada = Cilindrada_c.Text;
-            //string elemento = Element.Text;
+            string autonomia = Autonomia.Text.Trim();
+            string capacitat_diposit = capacitatDiposit.Text.Trim();
+            string clicle = cicle_cam.Text.Trim();
+            string cilidrada = Cilindrada_c.Text.Trim();
+            //string elemento = Element.Text.Trim();
             string elemento = "";
-            string envergadura = Envergadura_c.Text;
-            string potencia = Potencia_c.Text;
-            string quilometros_hechos = quilometres_fets.Text;
-            string techo_maximo = sostre_maxim.Text;
-            string peso = pes.Text;
-            string velocidad = velocitat.Text;
-            string velocidad_maxima = velocitat_maxima.Text;
-            string fuente_energia = font_energia.Text;
-            string fuente_ingreso = font_ingres.Text;
-            string forma_ingreso = forma_ingres.Text;
-            string lugar_fabricacion = lloc_fabricacio.Text;
-            string longitud = longitud_c.Text;
-            string ambito = ambit.Text;
+            string envergadura = Envergadura_c.Text.Trim();
+            string potencia = Potencia_c.Text.Trim();
+            string quilometros_hechos = quilometres_fets.Text.Trim();
+            string techo_maximo = sostre_maxim.Text.Trim();
+            string peso = pes.Text.Trim();
+            string velocidad = velocitat.Text.Trim();
+            string velocidad_maxima = velocitat_maxima.Text.Trim();
+            string fuente_energia = font_energia.Text.Trim();
+            string fuente_ingreso = font_ingres.Text.Trim();
+            string forma_ingreso = forma_ingres.Text.Trim();
+            string lugar_fabricacion = lloc_fabricacio.Text.Trim();
+            string longitud = longitud_c.Text.Trim();
+            string ambito = ambit.Text.Trim();
 
             // Compruevo que el usuario haya introducido bien el formato de los campos
             if ((!string.IsNullOrEmpty(autonomia) && !EsNumericoGrande(autonomia)) ||

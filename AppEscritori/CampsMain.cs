@@ -48,10 +48,10 @@ namespace AppEscritori
         private void buttonSiguiente_Click(object sender, EventArgs e)
         {
             // Obtengo los valores de los TextBoxes.
-            string nombreElemento = Nom_element.Text;
-            string numeroInventario = Numero_inventari.Text;
-            string anoCreacion = any_creacio.Text;
-            string descripcion_elemento = descripcio_element.Text;
+            string nombreElemento = Nom_element.Text.Trim();
+            string numeroInventario = Numero_inventari.Text.Trim();
+            string anoCreacion = any_creacio.Text.Trim();
+            string descripcion_elemento = descripcio_element.Text.Trim();
 
             string mensajeError = "";
 
