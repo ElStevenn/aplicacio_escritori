@@ -54,9 +54,9 @@
             label18.ForeColor = Color.Red;
             label18.Location = new Point(142, 9);
             label18.Name = "label18";
-            label18.Size = new Size(297, 25);
+            label18.Size = new Size(292, 25);
             label18.TabIndex = 41;
-            label18.Text = "CAMPOS EN ESPAÑOL E INGLÉS";
+            label18.Text = "CAMPS EN CASTELLÀ I ANGLÈS";
             // 
             // groupBox1
             // 
@@ -70,7 +70,7 @@
             groupBox1.Size = new Size(274, 230);
             groupBox1.TabIndex = 42;
             groupBox1.TabStop = false;
-            groupBox1.Text = "ESPAÑOL";
+            groupBox1.Text = "CASTELLÀ";
             // 
             // descrp_esp
             // 
@@ -85,9 +85,9 @@
             label3.AutoSize = true;
             label3.Location = new Point(6, 70);
             label3.Name = "label3";
-            label3.Size = new Size(72, 15);
+            label3.Size = new Size(65, 15);
             label3.TabIndex = 46;
-            label3.Text = "Descripción";
+            label3.Text = "Descripció";
             label3.TextAlign = ContentAlignment.MiddleLeft;
             // 
             // label1
@@ -95,9 +95,9 @@
             label1.AutoSize = true;
             label1.Location = new Point(6, 26);
             label1.Name = "label1";
-            label1.Size = new Size(105, 15);
+            label1.Size = new Size(108, 15);
             label1.TabIndex = 45;
-            label1.Text = "Nombe elemento";
+            label1.Text = "Nom de l'element";
             label1.TextAlign = ContentAlignment.MiddleLeft;
             // 
             // nombre_esp
@@ -119,7 +119,7 @@
             groupBox2.Size = new Size(300, 230);
             groupBox2.TabIndex = 43;
             groupBox2.TabStop = false;
-            groupBox2.Text = "INGLÉS";
+            groupBox2.Text = "ANGLÈS";
             // 
             // descrp_eng
             // 
@@ -134,9 +134,9 @@
             label4.AutoSize = true;
             label4.Location = new Point(6, 70);
             label4.Name = "label4";
-            label4.Size = new Size(72, 15);
+            label4.Size = new Size(65, 15);
             label4.TabIndex = 47;
-            label4.Text = "Descripción";
+            label4.Text = "Descripció";
             label4.TextAlign = ContentAlignment.MiddleLeft;
             // 
             // label2
@@ -144,9 +144,9 @@
             label2.AutoSize = true;
             label2.Location = new Point(6, 26);
             label2.Name = "label2";
-            label2.Size = new Size(110, 15);
+            label2.Size = new Size(108, 15);
             label2.TabIndex = 46;
-            label2.Text = "Nombre elemento";
+            label2.Text = "Nom de l'element";
             label2.TextAlign = ContentAlignment.MiddleLeft;
             // 
             // nombre_eng
@@ -167,7 +167,7 @@
             buttonAtras.Name = "buttonAtras";
             buttonAtras.Size = new Size(133, 23);
             buttonAtras.TabIndex = 45;
-            buttonAtras.Text = "Atrás";
+            buttonAtras.Text = "Enrere";
             buttonAtras.UseVisualStyleBackColor = true;
             buttonAtras.Click += buttonAtras_Click;
             // 
@@ -177,7 +177,7 @@
             buttonSiguiente.Name = "buttonSiguiente";
             buttonSiguiente.Size = new Size(133, 23);
             buttonSiguiente.TabIndex = 46;
-            buttonSiguiente.Text = "Siguiente";
+            buttonSiguiente.Text = "Següent";
             buttonSiguiente.UseVisualStyleBackColor = true;
             buttonSiguiente.Click += buttonSiguiente_Click;
             // 
@@ -194,7 +194,7 @@
             FormBorderStyle = FormBorderStyle.FixedSingle;
             Name = "campos_casteng";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "campos_casteng";
+            Text = "Camps en castellà i anglès";
             groupBox1.ResumeLayout(false);
             groupBox1.PerformLayout();
             groupBox2.ResumeLayout(false);

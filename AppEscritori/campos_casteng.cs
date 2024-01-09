@@ -64,7 +64,7 @@ namespace AppEscritori
                 // En caso de que no introduzca los campos correctamente
                 MessageBox.Show("Debes de rellenar todos los campos con valores correctos", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-            else 
+            else
             {
                 // Poner los campos en la classe
                 gestionadorMuseo.actualizar_campos_espeng(nombre_elemento_espanol, descrpipcion_esp, nombre_elemento_eng, descripcion_eng);
@@ -74,7 +74,7 @@ namespace AppEscritori
                 campsFinals.Show();
                 this.Hide();
             }
-          
+
         }
     }
 }
