@@ -73,7 +73,7 @@ namespace AppEscritori
         {
             if (selecElemento.SelectedItem is ElementoInventario elementoSeleccionado)
             {
-                string ruta_imagen = Path.Combine(rutaImagenes,  elementoSeleccionado.image);
+                string ruta_imagen = Path.Combine(rutaImagenes, elementoSeleccionado.image);
                 labelNombreElemento.Text = elementoSeleccionado.nameElement;
                 labnumInventario.Text = elementoSeleccionado.numInventory.ToString();
                 lab_fecha_fabricacion.Text = elementoSeleccionado.year.ToString();

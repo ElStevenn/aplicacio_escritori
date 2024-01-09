@@ -62,9 +62,9 @@
             labelNombreElemento.Location = new Point(23, 141);
             labelNombreElemento.Margin = new Padding(4, 0, 4, 0);
             labelNombreElemento.Name = "labelNombreElemento";
-            labelNombreElemento.Size = new Size(235, 25);
+            labelNombreElemento.Size = new Size(193, 25);
             labelNombreElemento.TabIndex = 2;
-            labelNombreElemento.Text = "Nombre del elemento";
+            labelNombreElemento.Text = "Nom de l'element";
             // 
             // buttonAtras
             // 
@@ -73,7 +73,7 @@
             buttonAtras.Name = "buttonAtras";
             buttonAtras.Size = new Size(223, 27);
             buttonAtras.TabIndex = 4;
-            buttonAtras.Text = "Atrás";
+            buttonAtras.Text = "Enrere";
             buttonAtras.UseVisualStyleBackColor = true;
             buttonAtras.Click += buttonAtras_Click;
             // 
@@ -95,9 +95,9 @@
             labelSeleccionarElemento.Location = new Point(13, 66);
             labelSeleccionarElemento.Margin = new Padding(4, 0, 4, 0);
             labelSeleccionarElemento.Name = "labelSeleccionarElemento";
-            labelSeleccionarElemento.Size = new Size(146, 19);
+            labelSeleccionarElemento.Size = new Size(130, 19);
             labelSeleccionarElemento.TabIndex = 6;
-            labelSeleccionarElemento.Text = "Selecciona el elemento";
+            labelSeleccionarElemento.Text = "Selecciona l'element";
             // 
             // label1
             // 
@@ -106,9 +106,9 @@
             label1.ForeColor = Color.Red;
             label1.Location = new Point(199, 18);
             label1.Name = "label1";
-            label1.Size = new Size(229, 28);
+            label1.Size = new Size(217, 28);
             label1.TabIndex = 7;
-            label1.Text = "Modificar un elemento";
+            label1.Text = "Modificar un element";
             // 
             // foto_elemento
             // 
@@ -125,9 +125,9 @@
             label2.Location = new Point(23, 188);
             label2.Margin = new Padding(4, 0, 4, 0);
             label2.Name = "label2";
-            label2.Size = new Size(143, 20);
+            label2.Size = new Size(127, 20);
             label2.TabIndex = 9;
-            label2.Text = "Numero de Inventario";
+            label2.Text = "Número d'Inventari";
             // 
             // labnumInventario
             // 
@@ -147,9 +147,9 @@
             label3.Location = new Point(23, 247);
             label3.Margin = new Padding(4, 0, 4, 0);
             label3.Name = "label3";
-            label3.Size = new Size(138, 20);
+            label3.Size = new Size(120, 20);
             label3.TabIndex = 14;
-            label3.Text = "Fecha de fabricación";
+            label3.Text = "Data de fabricació";
             // 
             // lab_fecha_fabricacion
             // 
@@ -183,7 +183,7 @@
             MaximizeBox = false;
             Name = "ModificarElemento";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "Modificar un elemento";
+            Text = "Modificar un element";
             ((System.ComponentModel.ISupportInitialize)foto_elemento).EndInit();
             ResumeLayout(false);
             PerformLayout();
