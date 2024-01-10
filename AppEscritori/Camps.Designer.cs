@@ -71,47 +71,48 @@
             // 
             // Autonomia
             // 
-            Autonomia.Location = new Point(16, 71);
+            Autonomia.Location = new Point(19, 111);
             Autonomia.Margin = new Padding(2);
             Autonomia.Name = "Autonomia";
             Autonomia.Size = new Size(180, 23);
-            Autonomia.TabIndex = 0;
+            Autonomia.TabIndex = 1;
             // 
             // capacitatDiposit
             // 
-            capacitatDiposit.Location = new Point(16, 112);
+            capacitatDiposit.Location = new Point(19, 153);
             capacitatDiposit.Margin = new Padding(2);
             capacitatDiposit.Name = "capacitatDiposit";
             capacitatDiposit.Size = new Size(180, 23);
-            capacitatDiposit.TabIndex = 1;
+            capacitatDiposit.TabIndex = 2;
             // 
             // Cilindrada_c
             // 
-            Cilindrada_c.Location = new Point(15, 197);
+            Cilindrada_c.Location = new Point(19, 242);
             Cilindrada_c.Margin = new Padding(2);
             Cilindrada_c.Name = "Cilindrada_c";
             Cilindrada_c.Size = new Size(180, 23);
-            Cilindrada_c.TabIndex = 3;
+            Cilindrada_c.TabIndex = 4;
             // 
             // cicle_cam
             // 
-            cicle_cam.Location = new Point(16, 153);
+            cicle_cam.Location = new Point(19, 197);
             cicle_cam.Margin = new Padding(2);
             cicle_cam.Name = "cicle_cam";
             cicle_cam.Size = new Size(180, 23);
-            cicle_cam.TabIndex = 2;
+            cicle_cam.TabIndex = 3;
             // 
             // Element
             // 
-            Element.Location = new Point(16, 244);
+            Element.Enabled = false;
+            Element.Location = new Point(18, 71);
             Element.Margin = new Padding(4, 3, 4, 3);
             Element.Name = "Element";
             Element.Size = new Size(180, 23);
-            Element.TabIndex = 4;
+            Element.TabIndex = 0;
             // 
             // Envergadura_c
             // 
-            Envergadura_c.Location = new Point(16, 287);
+            Envergadura_c.Location = new Point(18, 287);
             Envergadura_c.Margin = new Padding(4, 3, 4, 3);
             Envergadura_c.Name = "Envergadura_c";
             Envergadura_c.Size = new Size(180, 23);
@@ -119,7 +120,7 @@
             // 
             // Potencia_c
             // 
-            Potencia_c.Location = new Point(16, 331);
+            Potencia_c.Location = new Point(19, 331);
             Potencia_c.Margin = new Padding(4, 3, 4, 3);
             Potencia_c.Name = "Potencia_c";
             Potencia_c.Size = new Size(180, 23);
@@ -127,7 +128,7 @@
             // 
             // quilometres_fets
             // 
-            quilometres_fets.Location = new Point(16, 375);
+            quilometres_fets.Location = new Point(17, 375);
             quilometres_fets.Margin = new Padding(4, 3, 4, 3);
             quilometres_fets.Name = "quilometres_fets";
             quilometres_fets.Size = new Size(180, 23);
@@ -230,25 +231,25 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(16, 54);
+            label1.Location = new Point(17, 96);
             label1.Name = "label1";
-            label1.Size = new Size(67, 15);
+            label1.Size = new Size(95, 15);
             label1.TabIndex = 23;
-            label1.Text = "Autonomia";
+            label1.Text = "Autonomia (km)";
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(15, 96);
+            label2.Location = new Point(19, 137);
             label2.Name = "label2";
-            label2.Size = new Size(103, 15);
+            label2.Size = new Size(113, 15);
             label2.TabIndex = 24;
-            label2.Text = "Capacitat dipoòsit";
+            label2.Text = "Capacitat dipòsit (L)";
             // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(16, 137);
+            label3.Location = new Point(19, 182);
             label3.Name = "label3";
             label3.Size = new Size(33, 15);
             label3.TabIndex = 25;
@@ -257,16 +258,17 @@
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(16, 182);
+            label4.Location = new Point(19, 227);
             label4.Name = "label4";
-            label4.Size = new Size(61, 15);
+            label4.Size = new Size(84, 15);
             label4.TabIndex = 26;
-            label4.Text = "Cilindrada";
+            label4.Text = "Cilindrada (cc)";
             // 
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(16, 228);
+            label5.Enabled = false;
+            label5.Location = new Point(19, 56);
             label5.Name = "label5";
             label5.Size = new Size(50, 15);
             label5.TabIndex = 27;
@@ -277,63 +279,63 @@
             label6.AutoSize = true;
             label6.Location = new Point(17, 272);
             label6.Name = "label6";
-            label6.Size = new Size(73, 15);
+            label6.Size = new Size(95, 15);
             label6.TabIndex = 28;
-            label6.Text = "Envergadura";
+            label6.Text = "Envergadura (m)";
             // 
             // label7
             // 
             label7.AutoSize = true;
-            label7.Location = new Point(16, 316);
+            label7.Location = new Point(19, 316);
             label7.Name = "label7";
-            label7.Size = new Size(53, 15);
+            label7.Size = new Size(81, 15);
             label7.TabIndex = 29;
-            label7.Text = "Potència";
+            label7.Text = "Potència (kW)";
             // 
             // label8
             // 
             label8.AutoSize = true;
-            label8.Location = new Point(16, 360);
+            label8.Location = new Point(16, 357);
             label8.Name = "label8";
-            label8.Size = new Size(94, 15);
+            label8.Size = new Size(112, 15);
             label8.TabIndex = 30;
-            label8.Text = "Quilòmetres fets";
+            label8.Text = "Quilometratge (km)";
             // 
             // label9
             // 
             label9.AutoSize = true;
             label9.Location = new Point(17, 404);
             label9.Name = "label9";
-            label9.Size = new Size(114, 15);
+            label9.Size = new Size(142, 15);
             label9.TabIndex = 31;
-            label9.Text = "Sostre màxim de vol";
+            label9.Text = "Sostre màxim de vol (km)";
             // 
             // label10
             // 
             label10.AutoSize = true;
             label10.Location = new Point(274, 56);
             label10.Name = "label10";
-            label10.Size = new Size(25, 15);
+            label10.Size = new Size(49, 15);
             label10.TabIndex = 32;
-            label10.Text = "Pes";
+            label10.Text = "Pes (kg)";
             // 
             // label11
             // 
             label11.AutoSize = true;
             label11.Location = new Point(273, 96);
             label11.Name = "label11";
-            label11.Size = new Size(52, 15);
+            label11.Size = new Size(92, 15);
             label11.TabIndex = 33;
-            label11.Text = "Velocitat";
+            label11.Text = "Velocitat (km/h)";
             // 
             // label12
             // 
             label12.AutoSize = true;
             label12.Location = new Point(274, 137);
             label12.Name = "label12";
-            label12.Size = new Size(98, 15);
+            label12.Size = new Size(138, 15);
             label12.TabIndex = 34;
-            label12.Text = "Velocitat màxima";
+            label12.Text = "Velocitat màxima (km/h)";
             // 
             // label13
             // 
@@ -376,9 +378,9 @@
             label17.AutoSize = true;
             label17.Location = new Point(274, 357);
             label17.Name = "label17";
-            label17.Size = new Size(55, 15);
+            label17.Size = new Size(77, 15);
             label17.TabIndex = 39;
-            label17.Text = "Longitud";
+            label17.Text = "Longitud (m)";
             // 
             // label18
             // 
@@ -404,9 +406,9 @@
             label19.AutoSize = true;
             label19.Location = new Point(274, 404);
             label19.Name = "label19";
-            label19.Size = new Size(40, 15);
+            label19.Size = new Size(93, 15);
             label19.TabIndex = 42;
-            label19.Text = "Àmbit";
+            label19.Text = "Àmbit (número)";
             // 
             // Camps
             // 

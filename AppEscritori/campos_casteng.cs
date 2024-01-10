@@ -39,10 +39,10 @@ namespace AppEscritori
         private void buttonAtras_Click(object sender, EventArgs e)
         {
             // Manejar en caso de que el usuario haya puesto campos
-            string nombre_elemento_espanol = nombre_esp.Text;
-            string descrpipcion_esp = descrp_esp.Text;
-            string nombre_elemento_eng = nombre_eng.Text;
-            string descripcion_eng = descrp_eng.Text;
+            string nombre_elemento_espanol = nombre_esp.Text.Trim();
+            string descrpipcion_esp = descrp_esp.Text.Trim();
+            string nombre_elemento_eng = nombre_eng.Text.Trim();
+            string descripcion_eng = descrp_eng.Text.Trim();
             gestionadorMuseo.actualizar_campos_espeng(nombre_elemento_espanol, descrpipcion_esp, nombre_elemento_eng, descripcion_eng);
 
             // Volver a campos main

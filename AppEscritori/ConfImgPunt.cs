@@ -189,8 +189,11 @@ namespace AppEscritori
 
             if (result == DialogResult.Yes)
             {
-                e.Cancel = false;
                 this.confJuego.Show();
+            }
+            else if (result == DialogResult.No)
+            {
+                e.Cancel = true;
             }
         }
     }

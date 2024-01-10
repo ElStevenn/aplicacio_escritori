@@ -85,13 +85,13 @@ namespace AppEscritori
             {
                 Question questionAdded = new Question();
 
-                questionAdded.question = textBoxPregunta.Text;
+                questionAdded.question = textBoxPregunta.Text.Trim();
 
                 string[] optionsModified = new string[4];
-                optionsModified[0] = respuestaA.Text;
-                optionsModified[1] = respuestaB.Text;
-                optionsModified[2] = respuestaC.Text;
-                optionsModified[3] = respuestaD.Text;
+                optionsModified[0] = respuestaA.Text.Trim();
+                optionsModified[1] = respuestaB.Text.Trim();
+                optionsModified[2] = respuestaC.Text.Trim();
+                optionsModified[3] = respuestaD.Text.Trim();
 
                 questionAdded.options = optionsModified;
 
@@ -136,13 +136,13 @@ namespace AppEscritori
 
             if (questionShown != null && checkBlank())
             {
-                questionModified.question = textBoxPregunta.Text;
+                questionModified.question = textBoxPregunta.Text.Trim();
 
                 string[] optionsModified = new string[4];
-                optionsModified[0] = respuestaA.Text;
-                optionsModified[1] = respuestaB.Text;
-                optionsModified[2] = respuestaC.Text;
-                optionsModified[3] = respuestaD.Text;
+                optionsModified[0] = respuestaA.Text.Trim();
+                optionsModified[1] = respuestaB.Text.Trim();
+                optionsModified[2] = respuestaC.Text.Trim();
+                optionsModified[3] = respuestaD.Text.Trim();
 
                 questionModified.options = optionsModified;
 
@@ -358,7 +358,7 @@ namespace AppEscritori
             }
             else
             {
-                labelXPreguntas.Text = "Hay " + questions.Count() + " preguntas en total";
+                labelXPreguntas.Text = "Hi ha " + questions.Count() + " preguntes en total";
             }
 
         }
@@ -477,6 +477,7 @@ namespace AppEscritori
 
         private void textBoxBuscar_TextChanged(object sender, EventArgs e)
         {
+            disableButtons();
             loadQuestionsJSON();
         }
 
@@ -486,9 +487,22 @@ namespace AppEscritori
 
             if (result == DialogResult.Yes)
             {
-                e.Cancel = false;
                 this.confjuego.Show();
             }
+            else if (result == DialogResult.No)
+            {
+                e.Cancel = true;
+            }
+        }
+
+        private void textBoxBuscar_Click(object sender, EventArgs e)
+        {
+            disableButtons();
+        }
+
+        private void comboBoxQuestions_Click(object sender, EventArgs e)
+        {
+            enableButtons();
         }
     }
 }

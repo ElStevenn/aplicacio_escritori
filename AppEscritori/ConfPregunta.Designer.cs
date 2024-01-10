@@ -283,6 +283,7 @@
             comboBoxQuestions.Size = new Size(377, 23);
             comboBoxQuestions.TabIndex = 55;
             comboBoxQuestions.SelectedIndexChanged += comboBoxQuestions_SelectedIndexChanged;
+            comboBoxQuestions.Click += comboBoxQuestions_Click;
             // 
             // comboBoxIdiomas
             // 
