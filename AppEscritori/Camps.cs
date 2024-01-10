@@ -23,6 +23,7 @@ namespace AppEscritori
         public Camps(Gestor_museo gestor_Museo)
         {
             InitializeComponent();
+            comboBox1Ambit.SelectedIndex = 0;
             this.gestionadorMuseo = gestor_Museo;
             ponerCampos();
         }
@@ -48,6 +49,32 @@ namespace AppEscritori
                 lloc_fabricacio.Text = gestionadorMuseo.lugar_fabricacion;
                 longitud_c.Text = gestionadorMuseo.longitud;
                 sostre_maxim.Text = gestionadorMuseo.techoMaximo;
+                //comboBox1Ambit.SelectedIndex = 1;
+                switch (gestionadorMuseo.ambito)
+                {
+                    case "1":
+                        comboBox1Ambit.SelectedIndex = 1;
+                        break;
+                    case "2":
+                        comboBox1Ambit.SelectedIndex = 2;
+                        break;
+                    case "3":
+                        comboBox1Ambit.SelectedIndex = 3;
+                        break;
+                    case "4":
+                        comboBox1Ambit.SelectedIndex = 4;
+                        break;
+                    case "5":
+                        comboBox1Ambit.SelectedIndex = 5;
+                        break;
+                    case "6":
+                        comboBox1Ambit.SelectedIndex = 6;
+                        break;
+                    default:
+                        comboBox1Ambit.SelectedIndex = 0;
+                        break;
+                }
+
             }
 
         }
@@ -77,9 +104,14 @@ namespace AppEscritori
             string forma_ingreso = forma_ingres.Text.Trim();
             string lugar_fabricacion = lloc_fabricacio.Text.Trim();
             string longitud = longitud_c.Text.Trim();
-            string ambito = ambit.Text.Trim();
+            //string ambito = ambit.Text.Trim();
+            string ambito = "";
+            if (comboBox1Ambit.SelectedIndex != 0)
+            {
+                ambito = comboBox1Ambit.SelectedIndex.ToString();
+            }
 
-            // Compruevo que el usuario haya introducido bien el formato de los campos
+            // Compruevo que el usuario haya introducido bien el formato de los campos TODO A LA VEZ
             /*
             if ((!string.IsNullOrEmpty(autonomia) && !EsNumericoGrande(autonomia)) ||
                 (!string.IsNullOrEmpty(capacitat_diposit) && !EsNumericoGrande(capacitat_diposit)) ||
@@ -244,5 +276,9 @@ namespace AppEscritori
             this.Hide();
         }
 
+        private void comboBox1Ambit_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            //MessageBox.Show("Degug...", "Debug", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
     }
 }

@@ -67,6 +67,7 @@
             label18 = new Label();
             ambit = new TextBox();
             label19 = new Label();
+            comboBox1Ambit = new ComboBox();
             SuspendLayout();
             // 
             // Autonomia
@@ -395,11 +396,12 @@
             // 
             // ambit
             // 
-            ambit.Location = new Point(273, 419);
+            ambit.Location = new Point(274, 451);
             ambit.Margin = new Padding(4, 3, 4, 3);
             ambit.Name = "ambit";
             ambit.Size = new Size(180, 23);
             ambit.TabIndex = 17;
+            ambit.Visible = false;
             // 
             // label19
             // 
@@ -410,11 +412,23 @@
             label19.TabIndex = 42;
             label19.Text = "Àmbit (número)";
             // 
+            // comboBox1Ambit
+            // 
+            comboBox1Ambit.DropDownStyle = ComboBoxStyle.DropDownList;
+            comboBox1Ambit.FormattingEnabled = true;
+            comboBox1Ambit.Items.AddRange(new object[] { "Sense àmbit definit", "1: Transport de persones i mercaderies", "2: Motocicletes catalanes", "3: Bombers", "4: Microcotxes, elèctrics i prototips únics", "5: La revolució de l'utilitari", "6: Els inicis de l'aviació" });
+            comboBox1Ambit.Location = new Point(273, 422);
+            comboBox1Ambit.Name = "comboBox1Ambit";
+            comboBox1Ambit.Size = new Size(181, 23);
+            comboBox1Ambit.TabIndex = 43;
+            comboBox1Ambit.SelectedIndexChanged += comboBox1Ambit_SelectedIndexChanged;
+            // 
             // Camps
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(462, 499);
+            Controls.Add(comboBox1Ambit);
             Controls.Add(label19);
             Controls.Add(ambit);
             Controls.Add(label18);
@@ -503,5 +517,6 @@
         private Label label18;
         private TextBox ambit;
         private Label label19;
+        private ComboBox comboBox1Ambit;
     }
 }
