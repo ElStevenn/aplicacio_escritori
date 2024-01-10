@@ -38,7 +38,7 @@
             label2 = new Label();
             labnumInventario = new Label();
             label3 = new Label();
-            lab_fecha_fabricacion = new Label();
+            ano_creacion = new Label();
             ((System.ComponentModel.ISupportInitialize)foto_elemento).BeginInit();
             SuspendLayout();
             // 
@@ -147,27 +147,27 @@
             label3.Location = new Point(23, 247);
             label3.Margin = new Padding(4, 0, 4, 0);
             label3.Name = "label3";
-            label3.Size = new Size(120, 20);
+            label3.Size = new Size(110, 20);
             label3.TabIndex = 14;
-            label3.Text = "Data de fabricació";
+            label3.Text = "Año de creación";
             // 
-            // lab_fecha_fabricacion
+            // ano_creacion
             // 
-            lab_fecha_fabricacion.AutoSize = true;
-            lab_fecha_fabricacion.Font = new Font("Segoe UI", 11F, FontStyle.Regular, GraphicsUnit.Point);
-            lab_fecha_fabricacion.ForeColor = SystemColors.Highlight;
-            lab_fecha_fabricacion.Location = new Point(23, 267);
-            lab_fecha_fabricacion.Name = "lab_fecha_fabricacion";
-            lab_fecha_fabricacion.Size = new Size(50, 20);
-            lab_fecha_fabricacion.TabIndex = 15;
-            lab_fecha_fabricacion.Text = "label5";
+            ano_creacion.AutoSize = true;
+            ano_creacion.Font = new Font("Segoe UI", 11F, FontStyle.Regular, GraphicsUnit.Point);
+            ano_creacion.ForeColor = SystemColors.Highlight;
+            ano_creacion.Location = new Point(23, 267);
+            ano_creacion.Name = "ano_creacion";
+            ano_creacion.Size = new Size(50, 20);
+            ano_creacion.TabIndex = 15;
+            ano_creacion.Text = "label5";
             // 
             // ModificarElemento
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(619, 388);
-            Controls.Add(lab_fecha_fabricacion);
+            Controls.Add(ano_creacion);
             Controls.Add(label3);
             Controls.Add(labnumInventario);
             Controls.Add(label2);
@@ -200,6 +200,6 @@
         private Label label2;
         private Label labnumInventario;
         private Label label3;
-        private Label lab_fecha_fabricacion;
+        private Label ano_creacion;
     }
 }

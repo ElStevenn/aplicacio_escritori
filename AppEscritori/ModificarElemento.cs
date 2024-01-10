@@ -30,6 +30,7 @@ namespace AppEscritori
         {
             InitializeComponent();
             ConfigurarRutas();
+            cconfigurarTextos();
             ConfigurarComboBox();
         }
 
@@ -40,6 +41,7 @@ namespace AppEscritori
             this.gestionadorMuseo = gestor_Museo;
             ConfigurarRutas();
             ConfigurarComboBox();
+            cconfigurarTextos();
         }
 
         private void ConfigurarRutas()
@@ -64,6 +66,20 @@ namespace AppEscritori
             return JsonConvert.DeserializeObject<List<ElementoInventario>>(json);
         }
 
+        public void cconfigurarTextos()
+        {
+            if (this.gestionadorMuseo != null)
+            {
+                labnumInventario.Text = this.gestionadorMuseo.numeroInventario.ToString();
+                ano_creacion.Text = this.gestionadorMuseo.anoCreacion.ToString();
+            }
+            else
+            {
+                labnumInventario.Text = "";
+                ano_creacion.Text = "";
+            }
+
+        }
 
         public void ConfigurarComboBox()
         {
