@@ -102,6 +102,7 @@ namespace AppEscritori
                     sostre_maxim.Text = gestionadorMuseo.techoMaximo;
                 }
                 else { sostre_maxim.Text = ""; }
+
                 //comboBox1Ambit.SelectedIndex = 1;
                 switch (gestionadorMuseo.ambito)
                 {

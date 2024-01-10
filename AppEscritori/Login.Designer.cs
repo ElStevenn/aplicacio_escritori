@@ -104,9 +104,9 @@
             label2.AutoSize = true;
             label2.Location = new Point(71, 41);
             label2.Name = "label2";
-            label2.Size = new Size(85, 15);
+            label2.Size = new Size(79, 15);
             label2.TabIndex = 5;
-            label2.Text = "Nom de usuari";
+            label2.Text = "Nom d'usuari";
             // 
             // label3
             // 
