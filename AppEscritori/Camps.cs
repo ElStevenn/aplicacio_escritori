@@ -32,23 +32,77 @@ namespace AppEscritori
         {
             if (gestionadorMuseo != null)
             {
-                Autonomia.Text = gestionadorMuseo.autonomia;
-                capacitatDiposit.Text = gestionadorMuseo.capacitat_diposit;
-                cicle_cam.Text = gestionadorMuseo.cicle;
-                Cilindrada_c.Text = gestionadorMuseo.cilidrada;
-                Element.Text = gestionadorMuseo.elemento;
-                Envergadura_c.Text = gestionadorMuseo.envergadura;
-                Potencia_c.Text = gestionadorMuseo.potencia;
-                quilometres_fets.Text = gestionadorMuseo.quilometros_h;
-                pes.Text = gestionadorMuseo.peso;
-                velocitat.Text = gestionadorMuseo.velocidad;
-                velocitat_maxima.Text = gestionadorMuseo.velocidad_maxima;
+                if (gestionadorMuseo.autonomia != "0" && gestionadorMuseo.autonomia != "-1")
+                {
+                    Autonomia.Text = gestionadorMuseo.autonomia;
+                } else { Autonomia.Text = ""; }
+                if (gestionadorMuseo.capacitat_diposit != "0" && gestionadorMuseo.capacitat_diposit != "-1")
+                {
+                    capacitatDiposit.Text = gestionadorMuseo.capacitat_diposit;
+                }
+                else { capacitatDiposit.Text = ""; }
+                if (gestionadorMuseo.cicle != "0" && gestionadorMuseo.cicle != "-1")
+                {
+                    cicle_cam.Text = gestionadorMuseo.cicle;
+                }
+                else { cicle_cam.Text = ""; }
+                if (gestionadorMuseo.cilidrada != "0" && gestionadorMuseo.cilidrada != "-1")
+                {
+                    Cilindrada_c.Text = gestionadorMuseo.cilidrada;
+                }
+                else { Cilindrada_c.Text = ""; }
+                if (gestionadorMuseo.elemento != "0" && gestionadorMuseo.elemento != "-1")
+                {
+                    Element.Text = gestionadorMuseo.elemento;
+                }
+                else { Element.Text = ""; }
+                    if (gestionadorMuseo.envergadura != "0" && gestionadorMuseo.envergadura != "-1")
+                {
+                    Envergadura_c.Text = gestionadorMuseo.envergadura;
+                }
+                else { Envergadura_c.Text = ""; }
+                if (gestionadorMuseo.potencia != "0" && gestionadorMuseo.potencia != "-1")
+                {
+                    Potencia_c.Text = gestionadorMuseo.potencia;
+                }
+                else { Potencia_c.Text = ""; }
+                if (gestionadorMuseo.quilometros_h != "0" && gestionadorMuseo.quilometros_h != "-1")
+                {
+                    quilometres_fets.Text = gestionadorMuseo.quilometros_h;
+                }
+                else { quilometres_fets.Text = ""; }
+                if (gestionadorMuseo.peso != "0" && gestionadorMuseo.peso != "-1")
+                {
+                    pes.Text = gestionadorMuseo.peso;
+                }
+                else { pes.Text = ""; }
+                if (gestionadorMuseo.velocidad != "0" && gestionadorMuseo.velocidad != "-1")
+                {
+                    velocitat.Text = gestionadorMuseo.velocidad;
+                }
+                else { velocitat.Text = ""; }
+                if (gestionadorMuseo.velocidad_maxima != "0" && gestionadorMuseo.velocidad_maxima != "-1")
+                {
+                    velocitat_maxima.Text = gestionadorMuseo.velocidad_maxima;
+                }
+                else { velocitat_maxima.Text = ""; }
+
                 font_energia.Text = gestionadorMuseo.fuente_energia;
                 font_ingres.Text = gestionadorMuseo.fuente_ingreso;
                 forma_ingres.Text = gestionadorMuseo.forma_ingreso;
                 lloc_fabricacio.Text = gestionadorMuseo.lugar_fabricacion;
-                longitud_c.Text = gestionadorMuseo.longitud;
-                sostre_maxim.Text = gestionadorMuseo.techoMaximo;
+
+                if (gestionadorMuseo.longitud != "0" && gestionadorMuseo.longitud != "-1")
+                {
+                    longitud_c.Text = gestionadorMuseo.longitud;
+                }
+                else { longitud_c.Text = ""; }
+                if (gestionadorMuseo.techoMaximo != "0" && gestionadorMuseo.techoMaximo != "-1")
+                {
+                    sostre_maxim.Text = gestionadorMuseo.techoMaximo;
+                }
+                else { sostre_maxim.Text = ""; }
+
                 //comboBox1Ambit.SelectedIndex = 1;
                 switch (gestionadorMuseo.ambito)
                 {

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -15,6 +16,7 @@ namespace AppEscritori
     {
         private readonly Login login;
         public GestionarParteMuseo.Gestor_museo gestorMuseo;
+        string rutaActual = AppDomain.CurrentDomain.BaseDirectory;
 
         public Menu()
         {
@@ -24,6 +26,7 @@ namespace AppEscritori
         public Menu(Login login) : this()
         {
             this.login = login;
+            textBox1JsonUbicacio.Text = rutaActual;
         }
 
         private void buttonCrearElemento_Click(object sender, EventArgs e)
@@ -79,13 +82,26 @@ namespace AppEscritori
             if (result == DialogResult.Yes)
             {
                 this.login.Show();
-                
+
             }
             else if (result == DialogResult.No)
             {
                 e.Cancel = true;
             }
 
+        }
+
+        private void textBox1JsonUbicacio_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1JsonUbicacio_Click(object sender, EventArgs e)
+        {
+            string rutaActual = AppDomain.CurrentDomain.BaseDirectory;
+
+            // Abre el Explorador de Archivos en la ruta actual
+            Process.Start("explorer.exe", rutaActual);
         }
     }
 }

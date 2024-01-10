@@ -64,7 +64,7 @@
             groupBox1.Controls.Add(label3);
             groupBox1.Controls.Add(label1);
             groupBox1.Controls.Add(nombre_esp);
-            groupBox1.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            groupBox1.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             groupBox1.Location = new Point(12, 54);
             groupBox1.Name = "groupBox1";
             groupBox1.Size = new Size(274, 230);
@@ -83,21 +83,23 @@
             // label3
             // 
             label3.AutoSize = true;
+            label3.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             label3.Location = new Point(6, 70);
             label3.Name = "label3";
-            label3.Size = new Size(65, 15);
+            label3.Size = new Size(120, 15);
             label3.TabIndex = 46;
-            label3.Text = "Descripció";
+            label3.Text = "Descripció en castellà";
             label3.TextAlign = ContentAlignment.MiddleLeft;
             // 
             // label1
             // 
             label1.AutoSize = true;
+            label1.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             label1.Location = new Point(6, 26);
             label1.Name = "label1";
-            label1.Size = new Size(108, 15);
+            label1.Size = new Size(160, 15);
             label1.TabIndex = 45;
-            label1.Text = "Nom de l'element";
+            label1.Text = "Nom de l'element en castellà";
             label1.TextAlign = ContentAlignment.MiddleLeft;
             // 
             // nombre_esp
@@ -113,7 +115,7 @@
             groupBox2.Controls.Add(label4);
             groupBox2.Controls.Add(label2);
             groupBox2.Controls.Add(nombre_eng);
-            groupBox2.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            groupBox2.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             groupBox2.Location = new Point(308, 54);
             groupBox2.Name = "groupBox2";
             groupBox2.Size = new Size(300, 230);
@@ -132,21 +134,23 @@
             // label4
             // 
             label4.AutoSize = true;
+            label4.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             label4.Location = new Point(6, 70);
             label4.Name = "label4";
-            label4.Size = new Size(65, 15);
+            label4.Size = new Size(115, 15);
             label4.TabIndex = 47;
-            label4.Text = "Descripció";
+            label4.Text = "Descripció en anglès";
             label4.TextAlign = ContentAlignment.MiddleLeft;
             // 
             // label2
             // 
             label2.AutoSize = true;
+            label2.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             label2.Location = new Point(6, 26);
             label2.Name = "label2";
-            label2.Size = new Size(108, 15);
+            label2.Size = new Size(155, 15);
             label2.TabIndex = 46;
-            label2.Text = "Nom de l'element";
+            label2.Text = "Nom de l'element en anglès";
             label2.TextAlign = ContentAlignment.MiddleLeft;
             // 
             // nombre_eng
