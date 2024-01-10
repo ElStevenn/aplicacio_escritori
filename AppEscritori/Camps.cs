@@ -101,7 +101,9 @@ namespace AppEscritori
                 MessageBox.Show("El camp autonomia ha de ser numèric!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 dadesNoValides = true;
                 Autonomia.ForeColor = Color.Red;
-            } else {
+            }
+            else
+            {
                 //dadesNoValides = false;
                 Autonomia.ForeColor = Color.Black;
             }
@@ -173,7 +175,7 @@ namespace AppEscritori
             }
             if (!string.IsNullOrEmpty(peso) && !EsNumericoGrande(peso))
             {
-                MessageBox.Show("El camp pes ha de ser numèrics!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("El camp pes ha de ser numèric!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 dadesNoValides = true;
                 pes.ForeColor = Color.Red;
             }
@@ -184,7 +186,7 @@ namespace AppEscritori
             }
             if (!string.IsNullOrEmpty(velocidad) && !EsNumericoGrande(velocidad))
             {
-                MessageBox.Show("El camp velocitat ha de ser numèrics!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("El camp velocitat ha de ser numèric!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 dadesNoValides = true;
                 velocitat.ForeColor = Color.Red;
             }
@@ -195,7 +197,7 @@ namespace AppEscritori
             }
             if (!string.IsNullOrEmpty(velocidad_maxima) && !EsNumericoGrande(velocidad_maxima))
             {
-                MessageBox.Show("El camp velocitat màxima ha de ser numèrics!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("El camp velocitat màxima ha de ser numèric!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 dadesNoValides = true;
                 velocitat_maxima.ForeColor = Color.Red;
             }
@@ -206,7 +208,7 @@ namespace AppEscritori
             }
             if (!string.IsNullOrEmpty(longitud) && !EsNumericoGrande(longitud))
             {
-                MessageBox.Show("El camp longitud ha de ser numèrics!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("El camp longitud ha de ser numèric!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 dadesNoValides = true;
                 longitud_c.ForeColor = Color.Red;
             }
