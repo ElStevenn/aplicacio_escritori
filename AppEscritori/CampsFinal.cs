@@ -257,7 +257,6 @@ namespace AppEscritori
                 File.WriteAllText(rutaArchivoJson_eng, jsonModificado_eng);
 
                 MessageBox.Show("Elemento " + gestionadorMuseo.nombreElemento + " actualizado con éxito.");
-                // Resto del código...
             }
             Menu menu = new Menu();
             menu.Show();

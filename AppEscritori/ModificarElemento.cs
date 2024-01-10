@@ -53,9 +53,6 @@ namespace AppEscritori
         }
 
 
-
-
-
         public List<ElementoInventario> CargarDatosDesdeJson(string ruta)
         {
             if (string.IsNullOrEmpty(ruta))

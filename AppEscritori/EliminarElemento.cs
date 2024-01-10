@@ -32,7 +32,7 @@ namespace AppEscritori
             rutaArchivoJson_cat = Path.Combine(baseDirectory, "JSON", "elements_cat.json");
             rutaArchivoJson_esp = Path.Combine(baseDirectory, "JSON", "elements_esp.json");
             rutaArchivoJson_eng = Path.Combine(baseDirectory, "JSON", "elements_eng.json");
-            rutaImagenes = Path.Combine(baseDirectory, "JSON", "imgelements"); // Cambiado a una carpeta específica para imágenes
+            rutaImagenes = Path.Combine(baseDirectory, "JSON", "imgelements"); 
         }
 
         public List<ElementoInventario> CargarDatosDesdeJson(string ruta)
@@ -74,10 +74,6 @@ namespace AppEscritori
                     if (elementoAEliminar != null)
                     {
                         lista.Remove(elementoAEliminar);
-                        fotoElemento.Image.Dispose();
-                        fotoElemento.Image = null;
-
-                        // Eliminar la imagen del fichero imgelements
                         if (fotoElemento.Image != null)
                         {
                             fotoElemento.Image.Dispose();
@@ -91,6 +87,7 @@ namespace AppEscritori
                             if (File.Exists(ruta_imagen_eliminar))
                             {
                                 File.Delete(ruta_imagen_eliminar);
+                                MessageBox.Show("Imagen eliminada con éxito");
                             }
                         }
                         catch (IOException ioEx)
@@ -103,8 +100,6 @@ namespace AppEscritori
                             MessageBox.Show("Acceso denegado: " + unAuthEx.Message);
                             return;
                         }
-
-
                     }
                 }
 
