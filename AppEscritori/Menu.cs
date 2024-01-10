@@ -16,11 +16,12 @@ namespace AppEscritori
     {
         private readonly Login login;
         public GestionarParteMuseo.Gestor_museo gestorMuseo;
-        string rutaActual = AppDomain.CurrentDomain.BaseDirectory;
+        string rutaActual = AppDomain.CurrentDomain.BaseDirectory + "JSON";
 
         public Menu()
         {
             InitializeComponent();
+            textBox1JsonUbicacio.Text = rutaActual;
         }
 
         public Menu(Login login) : this()
@@ -98,7 +99,7 @@ namespace AppEscritori
 
         private void button1JsonUbicacio_Click(object sender, EventArgs e)
         {
-            string rutaActual = AppDomain.CurrentDomain.BaseDirectory;
+            string rutaActual = AppDomain.CurrentDomain.BaseDirectory + "JSON";
 
             // Abre el Explorador de Archivos en la ruta actual
             Process.Start("explorer.exe", rutaActual);

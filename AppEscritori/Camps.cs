@@ -35,7 +35,8 @@ namespace AppEscritori
                 if (gestionadorMuseo.autonomia != "0" && gestionadorMuseo.autonomia != "-1")
                 {
                     Autonomia.Text = gestionadorMuseo.autonomia;
-                } else { Autonomia.Text = ""; }
+                }
+                else { Autonomia.Text = ""; }
                 if (gestionadorMuseo.capacitat_diposit != "0" && gestionadorMuseo.capacitat_diposit != "-1")
                 {
                     capacitatDiposit.Text = gestionadorMuseo.capacitat_diposit;
@@ -56,7 +57,7 @@ namespace AppEscritori
                     Element.Text = gestionadorMuseo.elemento;
                 }
                 else { Element.Text = ""; }
-                    if (gestionadorMuseo.envergadura != "0" && gestionadorMuseo.envergadura != "-1")
+                if (gestionadorMuseo.envergadura != "0" && gestionadorMuseo.envergadura != "-1")
                 {
                     Envergadura_c.Text = gestionadorMuseo.envergadura;
                 }
@@ -182,9 +183,12 @@ namespace AppEscritori
             */
             //missatge d'error per cada camp que falli
             Boolean dadesNoValides = false;
+            List<string> campsErronis = new List<string>();
+
             if (!string.IsNullOrEmpty(autonomia) && !EsNumericoGrande(autonomia))
             {
-                MessageBox.Show("El camp autonomia ha de ser numèric!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                campsErronis.Add(" Autonomia");
+                //MessageBox.Show("El camp autonomia ha de ser numèric!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 dadesNoValides = true;
                 Autonomia.ForeColor = Color.Red;
             }
@@ -195,7 +199,8 @@ namespace AppEscritori
             }
             if (!string.IsNullOrEmpty(capacitat_diposit) && !EsNumericoGrande(capacitat_diposit))
             {
-                MessageBox.Show("El camp capacitat dipòsit ha de ser numèric!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                campsErronis.Add(" Capacitat dipòsit");
+                //MessageBox.Show("El camp capacitat dipòsit ha de ser numèric!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 dadesNoValides = true;
                 capacitatDiposit.ForeColor = Color.Red;
             }
@@ -206,7 +211,8 @@ namespace AppEscritori
             }
             if (!string.IsNullOrEmpty(cilidrada) && !EsNumericoGrande(cilidrada))
             {
-                MessageBox.Show("El camp cilindrada ha de ser numèric!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                campsErronis.Add(" Cilindrada");
+                //MessageBox.Show("El camp cilindrada ha de ser numèric!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 dadesNoValides = true;
                 Cilindrada_c.ForeColor = Color.Red;
             }
@@ -217,7 +223,8 @@ namespace AppEscritori
             }
             if (!string.IsNullOrEmpty(envergadura) && !EsNumericoGrande(envergadura))
             {
-                MessageBox.Show("El camp envergadura ha de ser numèric!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                campsErronis.Add(" Envergadura");
+                //MessageBox.Show("El camp envergadura ha de ser numèric!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 dadesNoValides = true;
                 Envergadura_c.ForeColor = Color.Red;
             }
@@ -228,7 +235,8 @@ namespace AppEscritori
             }
             if (!string.IsNullOrEmpty(potencia) && !EsNumericoGrande(potencia))
             {
-                MessageBox.Show("El camp potència ha de ser numèrics!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                campsErronis.Add(" Potència");
+                //MessageBox.Show("El camp potència ha de ser numèrics!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 dadesNoValides = true;
                 Potencia_c.ForeColor = Color.Red;
             }
@@ -239,7 +247,8 @@ namespace AppEscritori
             }
             if (!string.IsNullOrEmpty(quilometros_hechos) && !EsNumericoGrande(quilometros_hechos))
             {
-                MessageBox.Show("El camp quilòmetres fets ha de ser numèric!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                campsErronis.Add(" Quilometratge");
+                //MessageBox.Show("El camp quilòmetratge ha de ser numèric!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 dadesNoValides = true;
                 quilometres_fets.ForeColor = Color.Red;
             }
@@ -250,7 +259,8 @@ namespace AppEscritori
             }
             if (!string.IsNullOrEmpty(techo_maximo) && !EsNumericoGrande(techo_maximo))
             {
-                MessageBox.Show("El camp sostre màxim de vol ha de ser numèric!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                campsErronis.Add(" Sostre màxim de vol");
+                //MessageBox.Show("El camp sostre màxim de vol ha de ser numèric!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 dadesNoValides = true;
                 sostre_maxim.ForeColor = Color.Red;
             }
@@ -261,7 +271,8 @@ namespace AppEscritori
             }
             if (!string.IsNullOrEmpty(peso) && !EsNumericoGrande(peso))
             {
-                MessageBox.Show("El camp pes ha de ser numèric!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                campsErronis.Add(" Pes");
+                //MessageBox.Show("El camp pes ha de ser numèric!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 dadesNoValides = true;
                 pes.ForeColor = Color.Red;
             }
@@ -272,7 +283,8 @@ namespace AppEscritori
             }
             if (!string.IsNullOrEmpty(velocidad) && !EsNumericoGrande(velocidad))
             {
-                MessageBox.Show("El camp velocitat ha de ser numèric!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                campsErronis.Add(" Velocitat");
+                //MessageBox.Show("El camp velocitat ha de ser numèric!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 dadesNoValides = true;
                 velocitat.ForeColor = Color.Red;
             }
@@ -283,7 +295,8 @@ namespace AppEscritori
             }
             if (!string.IsNullOrEmpty(velocidad_maxima) && !EsNumericoGrande(velocidad_maxima))
             {
-                MessageBox.Show("El camp velocitat màxima ha de ser numèric!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                campsErronis.Add(" Velocitat màxima");
+                //MessageBox.Show("El camp velocitat màxima ha de ser numèric!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 dadesNoValides = true;
                 velocitat_maxima.ForeColor = Color.Red;
             }
@@ -294,7 +307,8 @@ namespace AppEscritori
             }
             if (!string.IsNullOrEmpty(longitud) && !EsNumericoGrande(longitud))
             {
-                MessageBox.Show("El camp longitud ha de ser numèric!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                campsErronis.Add(" Longitud");
+                //MessageBox.Show("El camp longitud ha de ser numèric!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 dadesNoValides = true;
                 longitud_c.ForeColor = Color.Red;
             }
@@ -306,7 +320,13 @@ namespace AppEscritori
             //validació per canviar al següent formulari
             if (dadesNoValides == true)
             {
-                MessageBox.Show("Los campos autonomia, capacitat deposit, cilindrada, elemento, longitud, velocidad, velocidad máxima, quilometros hechos y peso deben de ser númericos! ", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                String errorsJunts = "";
+                foreach (string item in campsErronis)
+                {
+                    errorsJunts += item;
+                }
+                MessageBox.Show("Els camps" + errorsJunts + " han de ser numèrics!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                //MessageBox.Show("Els camps " + campsErronis.ToString + " han de ser numèrics!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
             }
             else

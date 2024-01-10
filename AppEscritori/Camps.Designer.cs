@@ -267,7 +267,6 @@
             // label5
             // 
             label5.AutoSize = true;
-            label5.Enabled = false;
             label5.Location = new Point(19, 56);
             label5.Name = "label5";
             label5.Size = new Size(50, 15);
@@ -460,7 +459,7 @@
             Margin = new Padding(2);
             Name = "Camps";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "Establir els camps";
+            Text = "Establir les característiques";
             ResumeLayout(false);
             PerformLayout();
         }

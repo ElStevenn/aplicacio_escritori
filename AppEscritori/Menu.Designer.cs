@@ -34,9 +34,9 @@
             buttonConfJuego = new Button();
             labelHolaUsuari = new Label();
             groupBox1JsonUbicacio = new GroupBox();
+            button1JsonUbicacio = new Button();
             label1JsonExplicacio = new Label();
             textBox1JsonUbicacio = new TextBox();
-            button1JsonUbicacio = new Button();
             groupBox1JsonUbicacio.SuspendLayout();
             SuspendLayout();
             // 
@@ -103,33 +103,14 @@
             groupBox1JsonUbicacio.Controls.Add(label1JsonExplicacio);
             groupBox1JsonUbicacio.Location = new Point(107, 235);
             groupBox1JsonUbicacio.Name = "groupBox1JsonUbicacio";
-            groupBox1JsonUbicacio.Size = new Size(244, 99);
+            groupBox1JsonUbicacio.Size = new Size(244, 122);
             groupBox1JsonUbicacio.TabIndex = 6;
             groupBox1JsonUbicacio.TabStop = false;
             groupBox1JsonUbicacio.Text = "Ubicació dels arxius";
             // 
-            // label1JsonExplicacio
-            // 
-            label1JsonExplicacio.AutoSize = true;
-            label1JsonExplicacio.Location = new Point(6, 19);
-            label1JsonExplicacio.MaximumSize = new Size(240, 0);
-            label1JsonExplicacio.Name = "label1JsonExplicacio";
-            label1JsonExplicacio.Size = new Size(235, 45);
-            label1JsonExplicacio.TabIndex = 0;
-            label1JsonExplicacio.Text = "La ubicació de la carpeta on ubicar els arxius JSON (en cas de voler modificar-los) és:";
-            // 
-            // textBox1JsonUbicacio
-            // 
-            textBox1JsonUbicacio.Location = new Point(6, 67);
-            textBox1JsonUbicacio.Name = "textBox1JsonUbicacio";
-            textBox1JsonUbicacio.ReadOnly = true;
-            textBox1JsonUbicacio.Size = new Size(128, 23);
-            textBox1JsonUbicacio.TabIndex = 1;
-            textBox1JsonUbicacio.TextChanged += textBox1JsonUbicacio_TextChanged;
-            // 
             // button1JsonUbicacio
             // 
-            button1JsonUbicacio.Location = new Point(140, 67);
+            button1JsonUbicacio.Location = new Point(140, 92);
             button1JsonUbicacio.Name = "button1JsonUbicacio";
             button1JsonUbicacio.Size = new Size(101, 23);
             button1JsonUbicacio.TabIndex = 2;
@@ -137,11 +118,30 @@
             button1JsonUbicacio.UseVisualStyleBackColor = true;
             button1JsonUbicacio.Click += button1JsonUbicacio_Click;
             // 
+            // label1JsonExplicacio
+            // 
+            label1JsonExplicacio.AutoSize = true;
+            label1JsonExplicacio.Location = new Point(6, 19);
+            label1JsonExplicacio.MaximumSize = new Size(240, 0);
+            label1JsonExplicacio.Name = "label1JsonExplicacio";
+            label1JsonExplicacio.Size = new Size(236, 60);
+            label1JsonExplicacio.TabIndex = 0;
+            label1JsonExplicacio.Text = "En cas de voler modificar un element s'han d'ubicar TOTS els arxius JSON a una subcarpeta JSON ubicada a la mateixa carpeta que l'executable (.exe). ";
+            // 
+            // textBox1JsonUbicacio
+            // 
+            textBox1JsonUbicacio.Location = new Point(6, 92);
+            textBox1JsonUbicacio.Name = "textBox1JsonUbicacio";
+            textBox1JsonUbicacio.ReadOnly = true;
+            textBox1JsonUbicacio.Size = new Size(128, 23);
+            textBox1JsonUbicacio.TabIndex = 1;
+            textBox1JsonUbicacio.TextChanged += textBox1JsonUbicacio_TextChanged;
+            // 
             // Menu
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(458, 346);
+            ClientSize = new Size(458, 369);
             Controls.Add(groupBox1JsonUbicacio);
             Controls.Add(labelHolaUsuari);
             Controls.Add(buttonConfJuego);
