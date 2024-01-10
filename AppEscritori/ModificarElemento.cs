@@ -18,7 +18,7 @@ namespace AppEscritori
     public partial class ModificarElemento : Form
     {
         public GestionarParteMuseo.Gestor_museo gestionadorMuseo;
-        public string baseDirectory = AppDomain.CurrentDomain.BaseDirectory;
+        // public string baseDirectory = AppDomain.CurrentDomain.BaseDirectory;
 
         // Estas rutas se establecerán correctamente en tiempo de ejecución
         public string rutaArchivoJson_cat;
@@ -45,7 +45,7 @@ namespace AppEscritori
         private void ConfigurarRutas()
         {
             // Obtener la ruta del directorio donde se ejecuta el proyecto (normalmente la raíz del proyecto en desarrollo)
-            string projectRoot = Path.GetFullPath(Path.Combine(baseDirectory, @"..\..\.."));
+            string projectRoot = AppDomain.CurrentDomain.BaseDirectory;
             rutaArchivoJson_cat = Path.Combine(projectRoot, "JSON", "elements_cat.json");
             rutaArchivoJson_esp = Path.Combine(projectRoot, "JSON", "elements_esp.json");
             rutaArchivoJson_eng = Path.Combine(projectRoot, "JSON", "elements_eng.json");

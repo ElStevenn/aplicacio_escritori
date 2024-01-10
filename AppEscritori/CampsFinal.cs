@@ -74,9 +74,8 @@ namespace AppEscritori
         {
 
             string filename = Path.GetFileName(gestionadorMuseo.ruta_imagen);
-            string destinationFolderPath = @"..\..\..\JSON\imgelements\";
 
-            string destinationFilePath = Path.Combine(destinationFolderPath, filename);
+            string destinationFilePath = Path.Combine(rutaImagenes, filename);
 
             try
             {
